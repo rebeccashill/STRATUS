@@ -1,0 +1,133 @@
+{
+  "verified_at_utc": "2026-11-14T14:20:57.009491+00:00",
+  "status": "passed",
+  "url": "http://127.0.0.1:8767/",
+  "method": "Actual browser interactions through the application UI, not a simulated DOM",
+  "source_sha256": {
+    "stratus/inspection/ground.py": "941841e0ddf64378d091aeba70e4013a807b9dbea19980ea0b1bdb065bdb0ce6",
+    "stratus/inspection/dashboard.py": "dc7ea84dcf8812f71a3eb85a96098e57e76213e568c4bf44e198e4f5008193f3",
+    "stratus/inspection/web/app.js": "ab7d68f6bd06a1c44c3895153440c993b30326901861ee3daa637c385be0df83"
+  },
+  "checkpoint": "saved-runs/first-inspection.json",
+  "checkpoint_sha256": "86fe2600fa85fc06406b423705caad301e0e7960354e1d10f13171755be8a568",
+  "asset_view_checks": [
+    {
+      "asset_id": "P01",
+      "view_id": "overview",
+      "result": "correct image and separate quality/finding labels"
+    },
+    {
+      "asset_id": "P01",
+      "view_id": "follow-up",
+      "result": "correct image and separate quality/finding labels"
+    },
+    {
+      "asset_id": "P02",
+      "view_id": "overview",
+      "result": "correct image and separate quality/finding labels"
+    },
+    {
+      "asset_id": "P02",
+      "view_id": "follow-up",
+      "result": "correct image and separate quality/finding labels"
+    },
+    {
+      "asset_id": "P03",
+      "view_id": "overview",
+      "result": "correct image and separate quality/finding labels"
+    },
+    {
+      "asset_id": "P03",
+      "view_id": "follow-up",
+      "result": "correct image and separate quality/finding labels"
+    },
+    {
+      "asset_id": "P04",
+      "view_id": "overview",
+      "result": "correct image and separate quality/finding labels"
+    },
+    {
+      "asset_id": "P04",
+      "view_id": "follow-up",
+      "result": "correct image and separate quality/finding labels"
+    },
+    {
+      "asset_id": "P05",
+      "view_id": "overview",
+      "result": "correct image and separate quality/finding labels"
+    },
+    {
+      "asset_id": "P05",
+      "view_id": "follow-up",
+      "result": "correct image and separate quality/finding labels"
+    },
+    {
+      "asset_id": "P06",
+      "view_id": "overview",
+      "result": "explicit unavailable / finding unknown"
+    },
+    {
+      "asset_id": "P06",
+      "view_id": "follow-up",
+      "result": "explicit unavailable / finding unknown"
+    }
+  ],
+  "map_mouse_and_keyboard_selection": "passed",
+  "review_queue_link": "P02 overview -> unclear / finding unknown",
+  "fresh_mission": {
+    "battery": "100.00",
+    "actions": "3 / 3"
+  },
+  "restored_checkpoint": {
+    "battery": "79.19",
+    "actions": "2 / 3"
+  },
+  "source_modes_checked": [
+    "Live",
+    "Recorded",
+    "Synthetic example",
+    "Unavailable"
+  ],
+  "live_hardware": {
+    "BME280": "unavailable",
+    "PMSA003I": "unavailable",
+    "error": "RuntimeError: BLINKA_MCP2221 environment variable set, but no MCP2221 device found",
+    "new_physical_success": false
+  },
+  "synthetic_values": [
+    21,
+    45,
+    1013,
+    1,
+    2,
+    3
+  ],
+  "synthetic_export_as_measured": "disabled",
+  "unavailable_values": "all six dashes; no zeros substituted",
+  "recorded_acquisition_times_preserved_after_three_refreshes": true,
+  "export": {
+    "path": "C:\\Users\\shill\\Downloads\\stratus-recorded-ground.json",
+    "sha256": "7e7c7204816913478120eda115272823ba970c5c10982a7afd3ccdb514e70ac4",
+    "mode": "recorded_measured",
+    "observations": 6,
+    "exact_original_observations": true
+  },
+  "what_if": {
+    "reserve": 50,
+    "capture_cost": 20,
+    "result": "No feasible capture; return/hold for review",
+    "mode": "wolfram_local",
+    "battery_after": "79.19",
+    "actions_after": "2 / 3"
+  },
+  "computation_modes_observed": [
+    "wolfram_local",
+    "cached_wolfram_local"
+  ],
+  "final_ground_mode": "recorded_measured",
+  "final_view": "P03/overview; clear image and tentative concern pending review",
+  "console_errors": [],
+  "full_page_visual_review": "passed; one page with readable map/evidence/costs/ground/preview/review",
+  "preview_refresh_and_evidence_do_not_execute_capture": true,
+  "browser_tab_retained": true
+}

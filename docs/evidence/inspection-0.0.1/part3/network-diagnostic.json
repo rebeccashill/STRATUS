@@ -1,0 +1,12 @@
+{
+  "checked_at_utc": "2026-11-14T03:36:54.600091+00:00",
+  "host": "api.openai.com",
+  "dns": "failed",
+  "error_type": "gaierror",
+  "errno": 11001,
+  "message": "getaddrinfo failed",
+  "https_status": "no_http_response_received",
+  "credit_update": "operator_reported_not_independently_verified",
+  "status": "historical_restricted_session_diagnostic; superseded_for_live_gate_by_successful_normal_PowerShell_run",
+  "successful_live_verification_at_utc": "2026-11-14T03:38:52.709380+00:00"
+}

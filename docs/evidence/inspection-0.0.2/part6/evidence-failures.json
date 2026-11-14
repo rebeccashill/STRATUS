@@ -1,0 +1,61 @@
+{
+  "evidence_kind": "isolated temporary copy; original project images unchanged",
+  "cases": [
+    {
+      "injected_case": "missing",
+      "viewer": {
+        "mission_id": "solar-array-001",
+        "scenario_id": "synthetic-solar-array-001",
+        "asset_id": "P02",
+        "view_id": "follow-up",
+        "timestamp": "2026-11-14T16:10:28.922384+00:00",
+        "timestamp_kind": "response_created_at_not_camera_capture",
+        "capture_mode": "simulated_local_fixture",
+        "real_flight": false,
+        "state_transition_applied": false,
+        "source_label": null,
+        "source_mode": null,
+        "assessment_mode": "unavailable_no_assessment",
+        "status": "unavailable",
+        "image_quality": "unknown",
+        "finding": "unknown",
+        "evidence_ref": null,
+        "annotation": null,
+        "reason": "evidence_unavailable: [WinError 2] The system cannot find the file specified: 'C:\\\\Users\\\\shill\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{f23d3481-2767-4308-9825-974bc84e9db2}\\\\AC\\\\Temp\\\\stratus-evidence-failure-3lgi8e01\\\\evidence\\\\inspection\\\\images\\\\P02-follow-up.png'"
+      },
+      "report_effective_quality": "unknown",
+      "report_effective_finding": "unknown",
+      "load_error": "Cannot restore run: executed action violates current rules",
+      "after_restoring_original_bytes": "same checkpoint and budget restore exactly",
+      "budget_unchanged": true
+    },
+    {
+      "injected_case": "corrupt",
+      "viewer": {
+        "mission_id": "solar-array-001",
+        "scenario_id": "synthetic-solar-array-001",
+        "asset_id": "P02",
+        "view_id": "follow-up",
+        "timestamp": "2026-11-14T16:10:29.138488+00:00",
+        "timestamp_kind": "response_created_at_not_camera_capture",
+        "capture_mode": "simulated_local_fixture",
+        "real_flight": false,
+        "state_transition_applied": false,
+        "source_label": null,
+        "source_mode": null,
+        "assessment_mode": "unavailable_no_assessment",
+        "status": "unavailable",
+        "image_quality": "unknown",
+        "finding": "unknown",
+        "evidence_ref": null,
+        "annotation": null,
+        "reason": "evidence_unavailable: image is not a PNG"
+      },
+      "report_effective_quality": "unknown",
+      "report_effective_finding": "unknown",
+      "load_error": "Cannot restore run: executed action violates current rules",
+      "after_restoring_original_bytes": "same checkpoint and budget restore exactly",
+      "budget_unchanged": true
+    }
+  ]
+}

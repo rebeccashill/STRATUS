@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-11-14T02:23:24.633974+00:00",
+  "workspace_checked": "C:\\Users\\shill\\AppData\\Local\\Temp\\STRATUS_Part1_20261113",
+  "intended_workspace": "C:\\Users\\shill\\OneDrive\\Desktop\\STRATUS",
+  "migration_status": "destination_write_denied; standalone copy staged",
+  "python": "3.10.11",
+  "standard_library_only_launch_verified": true,
+  "startup_exit_code": 0,
+  "mission_sanity_checks": "6 reviewed unique panels, metres, 2 historical placeholders, 3 new actions, explicit energy and reserve",
+  "mission_unchanged_after_launch": true,
+  "saved_inspection_runs_created": 0,
+  "malformed_json_and_missing_file_exit_codes": [
+    2,
+    2
+  ],
+  "fresh_credential_and_output_ignore_rules": "passed",
+  "prior_project_code_or_environment_required": false,
+  "full_mission_validation_and_evidence_capture": "pending Part 2"
+}

@@ -1,0 +1,12 @@
+{
+  "stratus/hazards/bridge.py": "8ba1b6ea775d7f067ac81176ab4c591df95264e243cab5b2bd5a6ab825601b91",
+  "stratus/hazards/core.py": "e43e709402a7e178fcdafc57cb71fbcb428edd460b0b9999908837e2fadd4f55",
+  "stratus/hazards/fixtures.py": "d974f4e5607181e7ded4131564d9f86f9fbf5c1a337ac38adeabdcb9b41e9032",
+  "stratus/hazards/fleet_adapter.py": "3fab893d95ef33b5a4bbcc8ae061a45332e87644d9b6e2518a04a4f45e4cccfd",
+  "stratus/hazards/harness.py": "f902f9e76b2676f09f96053e48aa1b736f44508d66fcc41bc870861279186bc8",
+  "stratus/hazards/preview.py": "7688a52fbb23c14920957473d0236320437815e7408ce6b8dc30cd94755ea8fc",
+  "stratus/hazards/__init__.py": "e62a519594eacc410faa2b56b219054b8c54772cbd3c842f111d496c3783f81a",
+  "stratus/inspection/web/hazards.css": "1796ecb7d06d7ff9d7d740689dd6559c9b2992ca0e0e461059e8c448043b0a77",
+  "stratus/inspection/web/hazards.html": "5389675103085dbba38f0bc7d28d86a1c076d73844c93463c18c2bb5d49b657f",
+  "stratus/inspection/web/hazards.js": "44c06422f7e01314b1a8fdb5c0c2ff8059c89e9a5f05ab7064656f518d6698c3"
+}

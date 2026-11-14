@@ -1,0 +1,255 @@
+{
+  "impact": {
+    "schema_version": "fleet-hazard-v1",
+    "hazard_revision": 1,
+    "at_sim_time": 0.0,
+    "assessed_count": 2,
+    "affected_count": 2,
+    "review_required_drone_ids": [
+      "D002"
+    ],
+    "assessments": [
+      {
+        "schema_version": "stratus-hazard-assessment-v1",
+        "checked_revision": 1,
+        "state": "blocked",
+        "hazard_ids": [
+          "crane-001"
+        ],
+        "reason": "Reported exclusion intersects outbound, return",
+        "intersections": [
+          {
+            "hazard_id": "crane-001",
+            "leg": "outbound",
+            "hazard_state": "active"
+          },
+          {
+            "hazard_id": "crane-001",
+            "leg": "return",
+            "hazard_state": "active"
+          }
+        ],
+        "path_signature": "a6fef301225da3e42881a16728d036e273c29d84eec6670fddd33d54fad7e00b",
+        "coordinate_mapping": "Declared identity between authored local-metre fixture grids; not a real-world reprojection",
+        "drone_id": "D001",
+        "task_id": "A006:overview",
+        "path": {
+          "schema_version": "stratus-fleet-path-v1",
+          "scenario_id": "stratus-solar-200-v1",
+          "drone_id": "D001",
+          "task_id": "A006:overview",
+          "view_id": "overview",
+          "fleet_revision": 1,
+          "drone_revision": 0,
+          "task_revision": 1,
+          "hazard_revision": 1,
+          "model_version": "toy-euclidean-energy-v1",
+          "coordinate_frame": {
+            "name": "solar-site-local-v1",
+            "unit": "m"
+          },
+          "origin": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "current": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 12,
+            "y": 2
+          },
+          "return_point": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "segments": {
+            "outbound": [
+              {
+                "x": 10.0,
+                "y": 0.0
+              },
+              {
+                "x": 12,
+                "y": 2
+              }
+            ],
+            "protected_return": [
+              {
+                "x": 12,
+                "y": 2
+              },
+              {
+                "x": 10.0,
+                "y": 0.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "schema_version": "stratus-hazard-assessment-v1",
+        "checked_revision": 1,
+        "state": "blocked",
+        "hazard_ids": [
+          "crane-001"
+        ],
+        "reason": "Reported exclusion intersects outbound, return",
+        "intersections": [
+          {
+            "hazard_id": "crane-001",
+            "leg": "outbound",
+            "hazard_state": "active"
+          },
+          {
+            "hazard_id": "crane-001",
+            "leg": "return",
+            "hazard_state": "active"
+          }
+        ],
+        "path_signature": "f7bc9c9467c6d499cc3432fba80aabccc06eb8b34762ad61dbc97516ca8561fc",
+        "coordinate_mapping": "Declared identity between authored local-metre fixture grids; not a real-world reprojection",
+        "drone_id": "D002",
+        "task_id": "A015:overview",
+        "path": {
+          "schema_version": "stratus-fleet-path-v1",
+          "scenario_id": "stratus-solar-200-v1",
+          "drone_id": "D002",
+          "task_id": "A015:overview",
+          "view_id": "overview",
+          "fleet_revision": 1,
+          "drone_revision": 1,
+          "task_revision": 1,
+          "hazard_revision": 1,
+          "model_version": "toy-euclidean-energy-v1",
+          "coordinate_frame": {
+            "name": "solar-site-local-v1",
+            "unit": "m"
+          },
+          "origin": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "current": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 30,
+            "y": 2
+          },
+          "return_point": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "segments": {
+            "outbound": [
+              {
+                "x": 30.0,
+                "y": 0.0
+              },
+              {
+                "x": 30,
+                "y": 2
+              }
+            ],
+            "protected_return": [
+              {
+                "x": 30,
+                "y": 2
+              },
+              {
+                "x": 30.0,
+                "y": 0.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "duration_seconds": 0.0009240999934263527,
+    "acknowledgement_mode": "Actual fleet simulator assessments; no real radio acknowledgement"
+  },
+  "before": {
+    "D001": {
+      "position": {
+        "x": 10.0,
+        "y": 0.0
+      },
+      "battery": 100.0,
+      "actions_used": 0
+    },
+    "D002": {
+      "position": {
+        "x": 30.0,
+        "y": 0.0
+      },
+      "battery": 100.0,
+      "actions_used": 0
+    }
+  },
+  "after": {
+    "D001": {
+      "position": {
+        "x": 10.0,
+        "y": 0.0
+      },
+      "battery": 77.52129133538094,
+      "actions_used": 3
+    },
+    "D002": {
+      "position": {
+        "x": 30.0,
+        "y": 0.0
+      },
+      "battery": 100.0,
+      "actions_used": 0
+    }
+  },
+  "metrics": {
+    "fleet_size": 2,
+    "seed": 11,
+    "method": "coordinator",
+    "captures": 3,
+    "unique_usable_assets": 3,
+    "usable_priority": 8,
+    "total_priority": 399,
+    "unresolved_assets": 197,
+    "unclear_views": 0,
+    "human_review_pending": 3,
+    "total_energy_EU": 22.478708664619063,
+    "total_battery_EU": 177.52129133538094,
+    "remaining_captures": 3,
+    "travel_metres": 14.957417329238151,
+    "drone_participation": 1,
+    "rounds": 6,
+    "candidate_pairs": 34,
+    "event_count": 12,
+    "logical_seconds": 13.478708664,
+    "allocation_wall_seconds": [
+      0.0072368999972241,
+      0.008455200004391372,
+      0.008558800007449463,
+      0.007128299999749288,
+      2.9400005587376654e-05,
+      1.679999695625156e-05
+    ],
+    "violations": 0,
+    "status_counts": {
+      "idle": 0,
+      "assigned": 0,
+      "traveling": 0,
+      "inspecting": 0,
+      "returning": 0,
+      "complete": 1,
+      "held": 1,
+      "unavailable": 0
+    },
+    "stop_reason": "No feasible shortlisted capture remains; completed returns or explicit holds retained. This is not a global infeasibility proof.",
+    "local_kernel_calls": 0,
+    "cloud_requests": 0,
+    "alpha_calls": 0,
+    "ai_requests": 0
+  }
+}

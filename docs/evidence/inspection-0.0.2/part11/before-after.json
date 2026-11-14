@@ -1,0 +1,29 @@
+{
+  "source": "Read existing dashboard HTML/CSS/JS before editing; final browser notes are separate",
+  "changes": [
+    {
+      "before": "Map, viewer and technical next-decision card had equal prominence",
+      "after": "Next-step recommendation and costs come first, with mission budgets above"
+    },
+    {
+      "before": "Small labels such as Plan next / Execute simulated capture / Margin",
+      "after": "Review next action / Run simulated inspection / Energy after reserve, with explanations"
+    },
+    {
+      "before": "No compact workflow or concrete no-actions instruction",
+      "after": "Five-step progress, execution gate and save/review/Fresh mission continuation"
+    },
+    {
+      "before": "Ground source mode mostly a badge; sensor times in technical JSON",
+      "after": "Readable source meanings, sensor status/age, original UTC times, unknown location and missing-value help"
+    },
+    {
+      "before": "Calculation mode could only be selected at launch",
+      "after": "Explicit Wolfram + Python check versus Local Python choice; read-only recalculation, honest cache/fallback/disagreement"
+    },
+    {
+      "before": "Export report immediately downloaded; separate report styling",
+      "after": "Visible Open/Download report links, confirmed save messages and matching Aevaryn black/amber report styling"
+    }
+  ]
+}

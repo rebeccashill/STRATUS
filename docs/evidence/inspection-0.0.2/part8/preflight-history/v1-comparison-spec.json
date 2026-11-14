@@ -1,0 +1,114 @@
+{
+  "version": "stratus-comparison-v1",
+  "frozen_at_utc": "2026-11-14T17:05:07.971521+00:00",
+  "cases": [
+    {
+      "case_id": "clear",
+      "mission_path": "docs/evidence/inspection-0.0.2/part8/cases/clear/mission.json",
+      "battery": 100,
+      "description": "All authored images clear; two clear prior records"
+    },
+    {
+      "case_id": "unclear",
+      "mission_path": "docs/evidence/inspection-0.0.2/part8/cases/unclear/mission.json",
+      "battery": 100,
+      "description": "P02 prior overview blurred; P03 new overview occluded; distinct follow-ups clear"
+    },
+    {
+      "case_id": "low-battery",
+      "mission_path": "docs/evidence/inspection-0.0.2/part8/cases/low-battery/mission.json",
+      "battery": 20,
+      "description": "Clear imagery but 20 energy units cannot cover any new capture plus protected return/reserve"
+    }
+  ],
+  "methods": [
+    "fixed-order",
+    "nearest-feasible",
+    "adaptive"
+  ],
+  "fixed_order": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06"
+  ],
+  "fixed_order_rule": "Cyclic asset route; advance cursor after every capture. A new follow-up waits for the next route pass.",
+  "nearest_rule": "Minimum outbound distance among identical eligible views; ties by asset ID then view ID.",
+  "adaptive_rule": "Current AdaptiveWorkflow ranking: requested view, descending operator priority, observed unclear follow-up, outbound plus capture cost, asset/view ID.",
+  "adaptive_weights": {
+    "priority_values": {
+      "P01": 1,
+      "P02": 3,
+      "P03": 3,
+      "P04": 2,
+      "P05": 2,
+      "P06": 1
+    },
+    "ranking": "lexicographic; no fitted weights; unchanged after freeze"
+  },
+  "common_review_policy": "Scripted benchmark reviewer resolves only clear no-apparent-concern task rows, including priors; unclear tasks stay open. It is not real human review, diagnosis or training.",
+  "common_guards": "Same compute_mission_options, AdaptiveWorkflow candidate eligibility, explicit execution engine, evidence identity, exclusions, three-capture cap, return reserve.",
+  "follow_up_policy": "Distinct declared uncaptured view and earlier view required; every follow-up uses one capture action.",
+  "ground_source": "context/ground-measurements/hotplug-recovered.json",
+  "ground_snapshot_id": "ground-bcbb93b21dfa8783fb5d3360d16b851fc1b9757bffe6d49280e808c73dd7eba5",
+  "ground_rule": "Same exact frozen snapshot for all nine runs; no live polling or influence on energy/exclusions/findings.",
+  "metric": "Usable priority coverage: sum each eligible asset priority once if at least one available clear image exists, divided by total eligible priority. Include common priors and report the new gain separately.",
+  "review_metric": "Open scripted operator tasks and unresolved assets; authored human-review metadata remains pending.",
+  "random_seed": null,
+  "stochastic_inputs": false,
+  "live_llm_used": false,
+  "planner_computation_mode": "local_python",
+  "cache_policy": "Fresh local calculator per method/case; numerical service/cache measurements reported separately.",
+  "numeric_boundaries": {
+    "point_m": [
+      6,
+      8
+    ],
+    "rate": 0.5,
+    "capture": 5,
+    "reserve": 15,
+    "cases": [
+      {
+        "name": "below",
+        "battery": 29.999999,
+        "expected_margin": -1e-06,
+        "expected_feasible": false
+      },
+      {
+        "name": "equal",
+        "battery": 30,
+        "expected_margin": 0,
+        "expected_feasible": true
+      },
+      {
+        "name": "above",
+        "battery": 30.000001,
+        "expected_margin": 1e-06,
+        "expected_feasible": true
+      },
+      {
+        "name": "exhausted",
+        "battery": 31,
+        "remaining_actions": 0,
+        "expected_margin": 1,
+        "expected_feasible": false
+      }
+    ],
+    "unit_case": "Equivalent metres/kilometres must normalize to identical inputs/results/cache keys",
+    "failure_cases": [
+      "stale cache",
+      "timeout",
+      "quota/access denial",
+      "malformed response",
+      "material disagreement"
+    ],
+    "tolerance": {
+      "absolute": 1e-08,
+      "relative": 1e-10,
+      "feasibility_sign": "strict; no tolerance relaxation"
+    }
+  },
+  "claims": "Three authored cases only; no image accuracy, sensor calibration, real flight or universal planner-superiority claim."
+}

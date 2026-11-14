@@ -1,0 +1,637 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "STRATUS ground observation v1",
+  "description": "One value per observation. Shared live/replay shape; ground context never owns mission state.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "observation_id": {
+      "type": "string",
+      "pattern": "^obs_[a-f0-9]{24}$"
+    },
+    "node_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sensor_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sensor_model": {
+      "enum": [
+        "BME280",
+        "PMSA003I"
+      ]
+    },
+    "variable": {
+      "enum": [
+        "temperature",
+        "relative_humidity",
+        "pressure",
+        "pm1_0",
+        "pm2_5",
+        "pm10"
+      ]
+    },
+    "value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "unit": {
+      "enum": [
+        "degC",
+        "%RH",
+        "hPa",
+        "ug/m3"
+      ]
+    },
+    "acquired_at_utc": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "(Z|\\+00:00)$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "received_at_utc": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "(Z|\\+00:00)$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "receipt_time_status": {
+      "enum": [
+        "recorded",
+        "unknown"
+      ]
+    },
+    "timestamp_basis": {
+      "const": "host_read_completion"
+    },
+    "normalized_at_utc": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "(Z|\\+00:00)$"
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "known",
+            "unknown"
+          ]
+        },
+        "label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "x",
+                "y",
+                "unit"
+              ],
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                },
+                "unit": {
+                  "enum": [
+                    "m",
+                    "deg"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "coordinate_frame": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "label",
+        "position",
+        "coordinate_frame"
+      ]
+    },
+    "source_mode": {
+      "enum": [
+        "live_measured",
+        "recorded_measured",
+        "synthetic",
+        "unavailable"
+      ]
+    },
+    "acquisition_source": {
+      "enum": [
+        "physical_sensor",
+        "synthetic",
+        "unknown"
+      ]
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "unreviewed",
+            "reviewed",
+            "invalid",
+            "unavailable"
+          ]
+        },
+        "flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "status",
+        "flags"
+      ]
+    },
+    "calibration": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "unknown",
+            "documented"
+          ]
+        },
+        "reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "reference"
+      ]
+    },
+    "uncertainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "unknown",
+            "estimated"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kind": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "value",
+        "unit",
+        "kind"
+      ]
+    },
+    "context_role": {
+      "const": "ground_context_only"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_file": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "source_row": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "original_source_mode": {
+          "enum": [
+            "live_measured",
+            "recorded_measured",
+            "synthetic",
+            "unavailable"
+          ]
+        }
+      },
+      "required": [
+        "source_file",
+        "source_sha256",
+        "source_row",
+        "original_source_mode"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "observation_id",
+    "node_id",
+    "sensor_id",
+    "sensor_model",
+    "variable",
+    "value",
+    "unit",
+    "acquired_at_utc",
+    "received_at_utc",
+    "receipt_time_status",
+    "timestamp_basis",
+    "normalized_at_utc",
+    "location",
+    "source_mode",
+    "acquisition_source",
+    "quality",
+    "calibration",
+    "uncertainty",
+    "context_role",
+    "provenance"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "variable": {
+            "const": "temperature"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "unit": {
+            "const": "degC"
+          },
+          "sensor_model": {
+            "const": "BME280"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "variable": {
+            "const": "relative_humidity"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "unit": {
+            "const": "%RH"
+          },
+          "sensor_model": {
+            "const": "BME280"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "variable": {
+            "const": "pressure"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "unit": {
+            "const": "hPa"
+          },
+          "sensor_model": {
+            "const": "BME280"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "variable": {
+            "const": "pm1_0"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "unit": {
+            "const": "ug/m3"
+          },
+          "sensor_model": {
+            "const": "PMSA003I"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "variable": {
+            "const": "pm2_5"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "unit": {
+            "const": "ug/m3"
+          },
+          "sensor_model": {
+            "const": "PMSA003I"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "variable": {
+            "const": "pm10"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "unit": {
+            "const": "ug/m3"
+          },
+          "sensor_model": {
+            "const": "PMSA003I"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "location": {
+            "properties": {
+              "status": {
+                "const": "unknown"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "location": {
+            "properties": {
+              "label": {
+                "type": "null"
+              },
+              "position": {
+                "type": "null"
+              },
+              "coordinate_frame": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "receipt_time_status": {
+            "const": "unknown"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "received_at_utc": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "receipt_time_status": {
+            "const": "recorded"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "received_at_utc": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "(Z|\\+00:00)$"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "calibration": {
+            "properties": {
+              "status": {
+                "const": "unknown"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "calibration": {
+            "properties": {
+              "reference": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "uncertainty": {
+            "properties": {
+              "status": {
+                "const": "unknown"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "uncertainty": {
+            "properties": {
+              "value": {
+                "type": "null"
+              },
+              "unit": {
+                "type": "null"
+              },
+              "kind": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "source_mode": {
+            "enum": [
+              "live_measured",
+              "recorded_measured"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "type": "number"
+          },
+          "acquired_at_utc": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "(Z|\\+00:00)$"
+          },
+          "acquisition_source": {
+            "const": "physical_sensor"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "source_mode": {
+            "const": "unavailable"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "type": "null"
+          },
+          "quality": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "invalid",
+                  "unavailable"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "source_mode": {
+            "const": "synthetic"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "acquisition_source": {
+            "const": "synthetic"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "location": {
+            "properties": {
+              "position": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "location": {
+            "properties": {
+              "coordinate_frame": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

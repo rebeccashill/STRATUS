@@ -1,0 +1,48 @@
+{
+  "recorded_at_utc": "2026-11-14T13:10:54.346063+00:00",
+  "original_stop_target_utc": "2026-11-14T05:00:00+00:00",
+  "original_stop_target_met": false,
+  "timing_note": "Checkpoint completed at its actual time in response to Rebecca's request to continue; original midnight stop was missed, not backdated.",
+  "planned_resume_local": "2026-11-14T09:00:00-05:00",
+  "timezone": "America/New_York",
+  "saved_run": "saved-runs\\first-inspection-20261114T131054Z-e8d85e.json",
+  "normal_launch": ".\\.venv\\Scripts\\python.exe -B -m stratus.inspection",
+  "reopen": ".\\.venv\\Scripts\\python.exe -B -m stratus.inspection --load saved-runs\\first-inspection-20261114T131054Z-e8d85e.json --summary",
+  "fallback_modes": {
+    "computation": "local_python",
+    "assessment": "authored_replay_annotation",
+    "ground": "recorded_measured"
+  },
+  "blockers": [
+    {
+      "component": "Wolfram",
+      "status": "latest Windows attempts timed out; earlier successful parity retained",
+      "next_step": "Run scripts/verify_wolfram.py in normal PowerShell before selecting Wolfram mode; keep Python fallback until a new actual call passes"
+    },
+    {
+      "component": "Live ground backend",
+      "status": "independent/shared-bus acquisition verified; backend polling/UI pending",
+      "next_step": "Implement H009/H010 using the shared record contract and original node location"
+    },
+    {
+      "component": "Location/calibration/uncertainty",
+      "status": "unknown; saved labels retained",
+      "next_step": "Supply real node location and verified calibration metadata when available"
+    },
+    {
+      "component": "Vision/human review",
+      "status": "annotated replay; human review pending",
+      "next_step": "Implement the explicit vision/review path in 0.0.2; keep unknowns/tentative flags"
+    },
+    {
+      "component": "Live AI planning",
+      "status": "previously verified in normal PowerShell; not called by this gate",
+      "next_step": "Use the configured optional live mode when needed; deterministic planning remains available"
+    }
+  ],
+  "physical_acquisition_performed": false,
+  "cloud_requests": 0,
+  "alpha_calls": 0,
+  "live_ai_requests": 0,
+  "new_zip_created": false
+}

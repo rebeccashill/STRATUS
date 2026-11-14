@@ -1,0 +1,1721 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-11-14T19:42:14.624713+00:00",
+  "runtime": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+  "boundary_checks": [
+    {
+      "name": "below",
+      "status": "passed",
+      "python": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": -1.0000000010279564e-06,
+        "feasible": false
+      },
+      "wolfram": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": -1.0000000010279564e-06,
+        "feasible": false
+      },
+      "latency_seconds": 2.8821624999982305
+    },
+    {
+      "name": "equal",
+      "status": "passed",
+      "python": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": 0.0,
+        "feasible": true
+      },
+      "wolfram": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": 0.0,
+        "feasible": true
+      },
+      "latency_seconds": 2.0974828000034904
+    },
+    {
+      "name": "above",
+      "status": "passed",
+      "python": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": 1.0000000010279564e-06,
+        "feasible": true
+      },
+      "wolfram": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": 1.0000000010279564e-06,
+        "feasible": true
+      },
+      "latency_seconds": 2.0200276999967173
+    },
+    {
+      "name": "exhausted",
+      "status": "passed",
+      "python": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": 1.0,
+        "feasible": false
+      },
+      "wolfram": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": 1.0,
+        "feasible": false
+      },
+      "latency_seconds": 2.0255107000120915
+    }
+  ],
+  "unit_conversion": {
+    "status": "passed",
+    "metre_input": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "part8-boundary",
+      "mission_revision": "predeclared-v1",
+      "state_revision": 0,
+      "position": {
+        "point_id": "current",
+        "x": 0,
+        "y": 0
+      },
+      "launch": {
+        "point_id": "launch",
+        "x": 0,
+        "y": 0
+      },
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "battery_available": 30,
+      "capture_cost": 5,
+      "travel_energy_per_distance": 0.5,
+      "return_reserve": 15,
+      "remaining_actions": 3,
+      "candidates": [
+        {
+          "asset_id": "boundary",
+          "view_id": "overview",
+          "x": 6,
+          "y": 8
+        }
+      ]
+    },
+    "kilometre_input": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "part8-boundary",
+      "mission_revision": "predeclared-v1",
+      "state_revision": 0,
+      "position": {
+        "point_id": "current",
+        "x": 0,
+        "y": 0
+      },
+      "launch": {
+        "point_id": "launch",
+        "x": 0,
+        "y": 0
+      },
+      "distance_unit": "km",
+      "energy_unit": "simulated_energy_unit",
+      "battery_available": 30,
+      "capture_cost": 5,
+      "travel_energy_per_distance": 500,
+      "return_reserve": 15,
+      "remaining_actions": 3,
+      "candidates": [
+        {
+          "asset_id": "boundary",
+          "view_id": "overview",
+          "x": 0.006,
+          "y": 0.008
+        }
+      ]
+    },
+    "identical_normalized_input": true,
+    "identical_python_output": true,
+    "computation": {
+      "mode": "cached_wolfram_local",
+      "execution_permitted": true,
+      "normalized_input": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part8-boundary",
+        "mission_revision": "predeclared-v1",
+        "state_revision": 0,
+        "position": {
+          "point_id": "current",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "launch": {
+          "point_id": "launch",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "battery_available": 30.0,
+        "capture_cost": 5.0,
+        "travel_energy_per_distance": 0.5,
+        "return_reserve": 15.0,
+        "remaining_actions": 3,
+        "candidates": [
+          {
+            "asset_id": "boundary",
+            "view_id": "overview",
+            "x": 6.0,
+            "y": 8.0
+          }
+        ]
+      },
+      "cache_key": "66578bd75903fd22a98c4f5fb303c5dfbbad874cf8a96e5cc9af9373b277d631",
+      "model_version": "toy-euclidean-energy-v1",
+      "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+      "output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part8-boundary",
+        "mission_revision": "predeclared-v1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "boundary",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 5.0,
+            "reserve": 15.0,
+            "margin": 0.0,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "python_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part8-boundary",
+        "mission_revision": "predeclared-v1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "boundary",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 5.0,
+            "reserve": 15.0,
+            "margin": 0.0,
+            "feasible": true
+          }
+        ]
+      },
+      "wolfram_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part8-boundary",
+        "mission_revision": "predeclared-v1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "boundary",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 5.0,
+            "reserve": 15.0,
+            "margin": 0.0,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "failure": null,
+      "disagreements": [],
+      "tolerance": {
+        "absolute": 1e-08,
+        "relative": 1e-10,
+        "feasibility_sign": "strict; never relaxed by tolerance"
+      },
+      "request_counts": {
+        "local_kernel_calls": 4,
+        "cloud_requests": 0,
+        "alpha_calls": 0
+      },
+      "state_transition_applied": false
+    },
+    "latency_seconds": 0.0003634000022429973
+  },
+  "fresh_mission_typed_batch": 12,
+  "cache_observed": true,
+  "operator_preview": {
+    "preview_id": "preview-cdd436e80008462489e7490274fe060b",
+    "timestamp": "2026-11-14T19:22:41.451301+00:00",
+    "state_revision": 2,
+    "review_revision": 2,
+    "mission_revision": "0.0.1-part2",
+    "model_version": "toy-euclidean-energy-v1",
+    "base_plan_id": "plan-7f2e85ece5b84169a5fb2aba39ac5cf0",
+    "baseline_computation": {
+      "mode": "cached_wolfram_local",
+      "execution_permitted": true,
+      "normalized_input": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "solar-array-001",
+        "mission_revision": "0.0.1-part2",
+        "state_revision": 2,
+        "position": {
+          "point_id": "current",
+          "x": 20.0,
+          "y": 20.0
+        },
+        "launch": {
+          "point_id": "launch",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "battery_available": 75.85786437626905,
+        "capture_cost": 5.0,
+        "travel_energy_per_distance": 0.5,
+        "return_reserve": 15.0,
+        "remaining_actions": 1,
+        "candidates": [
+          {
+            "asset_id": "P01",
+            "view_id": "follow-up",
+            "x": 10.0,
+            "y": 10.0
+          },
+          {
+            "asset_id": "P01",
+            "view_id": "overview",
+            "x": 10.0,
+            "y": 10.0
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "follow-up",
+            "x": 20.0,
+            "y": 10.0
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "overview",
+            "x": 20.0,
+            "y": 10.0
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "follow-up",
+            "x": 30.0,
+            "y": 10.0
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "x": 30.0,
+            "y": 10.0
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "follow-up",
+            "x": 10.0,
+            "y": 20.0
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "overview",
+            "x": 10.0,
+            "y": 20.0
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "follow-up",
+            "x": 20.0,
+            "y": 20.0
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "overview",
+            "x": 20.0,
+            "y": 20.0
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "follow-up",
+            "x": 30.0,
+            "y": 20.0
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "overview",
+            "x": 30.0,
+            "y": 20.0
+          }
+        ]
+      },
+      "cache_key": "8caa0f872c0f0d4822726e01a115de3af2359462ba5dd6da86c845a47ae72a73",
+      "model_version": "toy-euclidean-energy-v1",
+      "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+      "output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "solar-array-001",
+        "mission_revision": "0.0.1-part2",
+        "state_revision": 2,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P01",
+            "view_id": "follow-up",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 15.0,
+            "margin": 41.7157287525381,
+            "feasible": true
+          },
+          {
+            "asset_id": "P01",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 15.0,
+            "margin": 41.7157287525381,
+            "feasible": true
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 15.0,
+            "margin": 39.6775244887701,
+            "feasible": true
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 15.0,
+            "margin": 39.6775244887701,
+            "feasible": true
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "follow-up",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 15.811388300841898,
+            "reserve": 15.0,
+            "margin": 32.975408263561675,
+            "feasible": true
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 15.811388300841898,
+            "reserve": 15.0,
+            "margin": 32.975408263561675,
+            "feasible": true
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 15.0,
+            "margin": 39.6775244887701,
+            "feasible": true
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 15.0,
+            "margin": 39.6775244887701,
+            "feasible": true
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "follow-up",
+            "outbound": 0.0,
+            "capture": 5.0,
+            "return_cost": 14.142135623730951,
+            "reserve": 15.0,
+            "margin": 41.7157287525381,
+            "feasible": true
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "overview",
+            "outbound": 0.0,
+            "capture": 5.0,
+            "return_cost": 14.142135623730951,
+            "reserve": 15.0,
+            "margin": 41.7157287525381,
+            "feasible": true
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 18.027756377319946,
+            "reserve": 15.0,
+            "margin": 32.8301079989491,
+            "feasible": true
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 18.027756377319946,
+            "reserve": 15.0,
+            "margin": 32.8301079989491,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "python_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "solar-array-001",
+        "mission_revision": "0.0.1-part2",
+        "state_revision": 2,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P01",
+            "view_id": "follow-up",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 15.0,
+            "margin": 41.7157287525381,
+            "feasible": true
+          },
+          {
+            "asset_id": "P01",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 15.0,
+            "margin": 41.7157287525381,
+            "feasible": true
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 15.0,
+            "margin": 39.6775244887701,
+            "feasible": true
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 15.0,
+            "margin": 39.6775244887701,
+            "feasible": true
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "follow-up",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 15.811388300841896,
+            "reserve": 15.0,
+            "margin": 32.975408263561675,
+            "feasible": true
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 15.811388300841896,
+            "reserve": 15.0,
+            "margin": 32.975408263561675,
+            "feasible": true
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 15.0,
+            "margin": 39.6775244887701,
+            "feasible": true
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 15.0,
+            "margin": 39.6775244887701,
+            "feasible": true
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "follow-up",
+            "outbound": 0.0,
+            "capture": 5.0,
+            "return_cost": 14.142135623730951,
+            "reserve": 15.0,
+            "margin": 41.7157287525381,
+            "feasible": true
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "overview",
+            "outbound": 0.0,
+            "capture": 5.0,
+            "return_cost": 14.142135623730951,
+            "reserve": 15.0,
+            "margin": 41.7157287525381,
+            "feasible": true
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 18.027756377319946,
+            "reserve": 15.0,
+            "margin": 32.8301079989491,
+            "feasible": true
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 18.027756377319946,
+            "reserve": 15.0,
+            "margin": 32.8301079989491,
+            "feasible": true
+          }
+        ]
+      },
+      "wolfram_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "solar-array-001",
+        "mission_revision": "0.0.1-part2",
+        "state_revision": 2,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P01",
+            "view_id": "follow-up",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 15.0,
+            "margin": 41.7157287525381,
+            "feasible": true
+          },
+          {
+            "asset_id": "P01",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 15.0,
+            "margin": 41.7157287525381,
+            "feasible": true
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 15.0,
+            "margin": 39.6775244887701,
+            "feasible": true
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 15.0,
+            "margin": 39.6775244887701,
+            "feasible": true
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "follow-up",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 15.811388300841898,
+            "reserve": 15.0,
+            "margin": 32.975408263561675,
+            "feasible": true
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 15.811388300841898,
+            "reserve": 15.0,
+            "margin": 32.975408263561675,
+            "feasible": true
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 15.0,
+            "margin": 39.6775244887701,
+            "feasible": true
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 15.0,
+            "margin": 39.6775244887701,
+            "feasible": true
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "follow-up",
+            "outbound": 0.0,
+            "capture": 5.0,
+            "return_cost": 14.142135623730951,
+            "reserve": 15.0,
+            "margin": 41.7157287525381,
+            "feasible": true
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "overview",
+            "outbound": 0.0,
+            "capture": 5.0,
+            "return_cost": 14.142135623730951,
+            "reserve": 15.0,
+            "margin": 41.7157287525381,
+            "feasible": true
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 18.027756377319946,
+            "reserve": 15.0,
+            "margin": 32.8301079989491,
+            "feasible": true
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 18.027756377319946,
+            "reserve": 15.0,
+            "margin": 32.8301079989491,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "failure": null,
+      "disagreements": [],
+      "tolerance": {
+        "absolute": 1e-08,
+        "relative": 1e-10,
+        "feasibility_sign": "strict; never relaxed by tolerance"
+      },
+      "request_counts": {
+        "local_kernel_calls": 3,
+        "cloud_requests": 0,
+        "alpha_calls": 0
+      },
+      "state_transition_applied": false,
+      "action_checks": [
+        {
+          "asset_id": "P01",
+          "view_id": "follow-up",
+          "execution_allowed": true,
+          "code": "allowed"
+        },
+        {
+          "asset_id": "P01",
+          "view_id": "overview",
+          "execution_allowed": false,
+          "code": "duplicate_view"
+        },
+        {
+          "asset_id": "P02",
+          "view_id": "follow-up",
+          "execution_allowed": true,
+          "code": "allowed"
+        },
+        {
+          "asset_id": "P02",
+          "view_id": "overview",
+          "execution_allowed": false,
+          "code": "duplicate_view"
+        },
+        {
+          "asset_id": "P03",
+          "view_id": "follow-up",
+          "execution_allowed": false,
+          "code": "prior_view_required"
+        },
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "execution_allowed": true,
+          "code": "allowed"
+        },
+        {
+          "asset_id": "P04",
+          "view_id": "follow-up",
+          "execution_allowed": false,
+          "code": "prior_view_required"
+        },
+        {
+          "asset_id": "P04",
+          "view_id": "overview",
+          "execution_allowed": true,
+          "code": "allowed"
+        },
+        {
+          "asset_id": "P05",
+          "view_id": "follow-up",
+          "execution_allowed": false,
+          "code": "duplicate_view"
+        },
+        {
+          "asset_id": "P05",
+          "view_id": "overview",
+          "execution_allowed": false,
+          "code": "duplicate_view"
+        },
+        {
+          "asset_id": "P06",
+          "view_id": "follow-up",
+          "execution_allowed": false,
+          "code": "asset_excluded"
+        },
+        {
+          "asset_id": "P06",
+          "view_id": "overview",
+          "execution_allowed": false,
+          "code": "asset_excluded"
+        }
+      ]
+    },
+    "changed_computation": {
+      "mode": "wolfram_local",
+      "execution_permitted": true,
+      "normalized_input": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "solar-array-001",
+        "mission_revision": "0.0.1-part2",
+        "state_revision": 2,
+        "position": {
+          "point_id": "current",
+          "x": 20.0,
+          "y": 20.0
+        },
+        "launch": {
+          "point_id": "launch",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "battery_available": 75.85786437626905,
+        "capture_cost": 20.0,
+        "travel_energy_per_distance": 0.5,
+        "return_reserve": 50.0,
+        "remaining_actions": 1,
+        "candidates": [
+          {
+            "asset_id": "P01",
+            "view_id": "follow-up",
+            "x": 10.0,
+            "y": 10.0
+          },
+          {
+            "asset_id": "P01",
+            "view_id": "overview",
+            "x": 10.0,
+            "y": 10.0
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "follow-up",
+            "x": 20.0,
+            "y": 10.0
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "overview",
+            "x": 20.0,
+            "y": 10.0
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "follow-up",
+            "x": 30.0,
+            "y": 10.0
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "x": 30.0,
+            "y": 10.0
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "follow-up",
+            "x": 10.0,
+            "y": 20.0
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "overview",
+            "x": 10.0,
+            "y": 20.0
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "follow-up",
+            "x": 20.0,
+            "y": 20.0
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "overview",
+            "x": 20.0,
+            "y": 20.0
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "follow-up",
+            "x": 30.0,
+            "y": 20.0
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "overview",
+            "x": 30.0,
+            "y": 20.0
+          }
+        ]
+      },
+      "cache_key": "11b046c45ffed860e5806a24e6616c60d55e1d233a2011af51ddc2b24f15d855",
+      "model_version": "toy-euclidean-energy-v1",
+      "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+      "output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "solar-array-001",
+        "mission_revision": "0.0.1-part2",
+        "state_revision": 2,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P01",
+            "view_id": "follow-up",
+            "outbound": 7.0710678118654755,
+            "capture": 20.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 50.0,
+            "margin": -8.284271247461902,
+            "feasible": false
+          },
+          {
+            "asset_id": "P01",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 20.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 50.0,
+            "margin": -8.284271247461902,
+            "feasible": false
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 50.0,
+            "margin": -10.322475511229896,
+            "feasible": false
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 50.0,
+            "margin": -10.322475511229896,
+            "feasible": false
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "follow-up",
+            "outbound": 7.0710678118654755,
+            "capture": 20.0,
+            "return_cost": 15.811388300841898,
+            "reserve": 50.0,
+            "margin": -17.024591736438325,
+            "feasible": false
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 20.0,
+            "return_cost": 15.811388300841898,
+            "reserve": 50.0,
+            "margin": -17.024591736438325,
+            "feasible": false
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 50.0,
+            "margin": -10.322475511229896,
+            "feasible": false
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 50.0,
+            "margin": -10.322475511229896,
+            "feasible": false
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "follow-up",
+            "outbound": 0.0,
+            "capture": 20.0,
+            "return_cost": 14.142135623730951,
+            "reserve": 50.0,
+            "margin": -8.284271247461902,
+            "feasible": false
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "overview",
+            "outbound": 0.0,
+            "capture": 20.0,
+            "return_cost": 14.142135623730951,
+            "reserve": 50.0,
+            "margin": -8.284271247461902,
+            "feasible": false
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 18.027756377319946,
+            "reserve": 50.0,
+            "margin": -17.169892001050897,
+            "feasible": false
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 18.027756377319946,
+            "reserve": 50.0,
+            "margin": -17.169892001050897,
+            "feasible": false
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "python_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "solar-array-001",
+        "mission_revision": "0.0.1-part2",
+        "state_revision": 2,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P01",
+            "view_id": "follow-up",
+            "outbound": 7.0710678118654755,
+            "capture": 20.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 50.0,
+            "margin": -8.284271247461902,
+            "feasible": false
+          },
+          {
+            "asset_id": "P01",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 20.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 50.0,
+            "margin": -8.284271247461902,
+            "feasible": false
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 50.0,
+            "margin": -10.3224755112299,
+            "feasible": false
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 50.0,
+            "margin": -10.3224755112299,
+            "feasible": false
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "follow-up",
+            "outbound": 7.0710678118654755,
+            "capture": 20.0,
+            "return_cost": 15.811388300841896,
+            "reserve": 50.0,
+            "margin": -17.024591736438325,
+            "feasible": false
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 20.0,
+            "return_cost": 15.811388300841896,
+            "reserve": 50.0,
+            "margin": -17.024591736438325,
+            "feasible": false
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 50.0,
+            "margin": -10.3224755112299,
+            "feasible": false
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 50.0,
+            "margin": -10.3224755112299,
+            "feasible": false
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "follow-up",
+            "outbound": 0.0,
+            "capture": 20.0,
+            "return_cost": 14.142135623730951,
+            "reserve": 50.0,
+            "margin": -8.284271247461902,
+            "feasible": false
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "overview",
+            "outbound": 0.0,
+            "capture": 20.0,
+            "return_cost": 14.142135623730951,
+            "reserve": 50.0,
+            "margin": -8.284271247461902,
+            "feasible": false
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 18.027756377319946,
+            "reserve": 50.0,
+            "margin": -17.169892001050897,
+            "feasible": false
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 18.027756377319946,
+            "reserve": 50.0,
+            "margin": -17.169892001050897,
+            "feasible": false
+          }
+        ]
+      },
+      "wolfram_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "solar-array-001",
+        "mission_revision": "0.0.1-part2",
+        "state_revision": 2,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P01",
+            "view_id": "follow-up",
+            "outbound": 7.0710678118654755,
+            "capture": 20.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 50.0,
+            "margin": -8.284271247461902,
+            "feasible": false
+          },
+          {
+            "asset_id": "P01",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 20.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 50.0,
+            "margin": -8.284271247461902,
+            "feasible": false
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 50.0,
+            "margin": -10.322475511229896,
+            "feasible": false
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 50.0,
+            "margin": -10.322475511229896,
+            "feasible": false
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "follow-up",
+            "outbound": 7.0710678118654755,
+            "capture": 20.0,
+            "return_cost": 15.811388300841898,
+            "reserve": 50.0,
+            "margin": -17.024591736438325,
+            "feasible": false
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 20.0,
+            "return_cost": 15.811388300841898,
+            "reserve": 50.0,
+            "margin": -17.024591736438325,
+            "feasible": false
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 50.0,
+            "margin": -10.322475511229896,
+            "feasible": false
+          },
+          {
+            "asset_id": "P04",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 11.180339887498949,
+            "reserve": 50.0,
+            "margin": -10.322475511229896,
+            "feasible": false
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "follow-up",
+            "outbound": 0.0,
+            "capture": 20.0,
+            "return_cost": 14.142135623730951,
+            "reserve": 50.0,
+            "margin": -8.284271247461902,
+            "feasible": false
+          },
+          {
+            "asset_id": "P05",
+            "view_id": "overview",
+            "outbound": 0.0,
+            "capture": 20.0,
+            "return_cost": 14.142135623730951,
+            "reserve": 50.0,
+            "margin": -8.284271247461902,
+            "feasible": false
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "follow-up",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 18.027756377319946,
+            "reserve": 50.0,
+            "margin": -17.169892001050897,
+            "feasible": false
+          },
+          {
+            "asset_id": "P06",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 20.0,
+            "return_cost": 18.027756377319946,
+            "reserve": 50.0,
+            "margin": -17.169892001050897,
+            "feasible": false
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "failure": null,
+      "disagreements": [],
+      "tolerance": {
+        "absolute": 1e-08,
+        "relative": 1e-10,
+        "feasibility_sign": "strict; never relaxed by tolerance"
+      },
+      "request_counts": {
+        "local_kernel_calls": 4,
+        "cloud_requests": 0,
+        "alpha_calls": 0
+      },
+      "state_transition_applied": false,
+      "action_checks": [
+        {
+          "asset_id": "P01",
+          "view_id": "follow-up",
+          "execution_allowed": false,
+          "code": "return_reserve_violation"
+        },
+        {
+          "asset_id": "P01",
+          "view_id": "overview",
+          "execution_allowed": false,
+          "code": "duplicate_view"
+        },
+        {
+          "asset_id": "P02",
+          "view_id": "follow-up",
+          "execution_allowed": false,
+          "code": "return_reserve_violation"
+        },
+        {
+          "asset_id": "P02",
+          "view_id": "overview",
+          "execution_allowed": false,
+          "code": "duplicate_view"
+        },
+        {
+          "asset_id": "P03",
+          "view_id": "follow-up",
+          "execution_allowed": false,
+          "code": "prior_view_required"
+        },
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "execution_allowed": false,
+          "code": "return_reserve_violation"
+        },
+        {
+          "asset_id": "P04",
+          "view_id": "follow-up",
+          "execution_allowed": false,
+          "code": "prior_view_required"
+        },
+        {
+          "asset_id": "P04",
+          "view_id": "overview",
+          "execution_allowed": false,
+          "code": "return_reserve_violation"
+        },
+        {
+          "asset_id": "P05",
+          "view_id": "follow-up",
+          "execution_allowed": false,
+          "code": "duplicate_view"
+        },
+        {
+          "asset_id": "P05",
+          "view_id": "overview",
+          "execution_allowed": false,
+          "code": "duplicate_view"
+        },
+        {
+          "asset_id": "P06",
+          "view_id": "follow-up",
+          "execution_allowed": false,
+          "code": "asset_excluded"
+        },
+        {
+          "asset_id": "P06",
+          "view_id": "overview",
+          "execution_allowed": false,
+          "code": "asset_excluded"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "asset_id": "P01",
+        "view_id": "follow-up",
+        "outbound": 7.0710678118654755,
+        "capture": 20.0,
+        "return_cost": 7.0710678118654755,
+        "reserve": 50.0,
+        "margin": -8.284271247461902,
+        "feasible": false,
+        "priority": 1,
+        "execution_allowed": false,
+        "reason_code": "return_reserve_violation",
+        "operator_requested": false,
+        "unclear_follow_up": false
+      },
+      {
+        "asset_id": "P01",
+        "view_id": "overview",
+        "outbound": 7.0710678118654755,
+        "capture": 20.0,
+        "return_cost": 7.0710678118654755,
+        "reserve": 50.0,
+        "margin": -8.284271247461902,
+        "feasible": false,
+        "priority": 1,
+        "execution_allowed": false,
+        "reason_code": "duplicate_view",
+        "operator_requested": false,
+        "unclear_follow_up": false
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "follow-up",
+        "outbound": 5.0,
+        "capture": 20.0,
+        "return_cost": 11.180339887498949,
+        "reserve": 50.0,
+        "margin": -10.322475511229896,
+        "feasible": false,
+        "priority": 3,
+        "execution_allowed": false,
+        "reason_code": "return_reserve_violation",
+        "operator_requested": false,
+        "unclear_follow_up": true
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 20.0,
+        "return_cost": 11.180339887498949,
+        "reserve": 50.0,
+        "margin": -10.322475511229896,
+        "feasible": false,
+        "priority": 3,
+        "execution_allowed": false,
+        "reason_code": "duplicate_view",
+        "operator_requested": false,
+        "unclear_follow_up": false
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "follow-up",
+        "outbound": 7.0710678118654755,
+        "capture": 20.0,
+        "return_cost": 15.811388300841898,
+        "reserve": 50.0,
+        "margin": -17.024591736438325,
+        "feasible": false,
+        "priority": 3,
+        "execution_allowed": false,
+        "reason_code": "prior_view_required",
+        "operator_requested": false,
+        "unclear_follow_up": true
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "overview",
+        "outbound": 7.0710678118654755,
+        "capture": 20.0,
+        "return_cost": 15.811388300841898,
+        "reserve": 50.0,
+        "margin": -17.024591736438325,
+        "feasible": false,
+        "priority": 3,
+        "execution_allowed": false,
+        "reason_code": "return_reserve_violation",
+        "operator_requested": false,
+        "unclear_follow_up": false
+      },
+      {
+        "asset_id": "P04",
+        "view_id": "follow-up",
+        "outbound": 5.0,
+        "capture": 20.0,
+        "return_cost": 11.180339887498949,
+        "reserve": 50.0,
+        "margin": -10.322475511229896,
+        "feasible": false,
+        "priority": 2,
+        "execution_allowed": false,
+        "reason_code": "prior_view_required",
+        "operator_requested": false,
+        "unclear_follow_up": true
+      },
+      {
+        "asset_id": "P04",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 20.0,
+        "return_cost": 11.180339887498949,
+        "reserve": 50.0,
+        "margin": -10.322475511229896,
+        "feasible": false,
+        "priority": 2,
+        "execution_allowed": false,
+        "reason_code": "return_reserve_violation",
+        "operator_requested": false,
+        "unclear_follow_up": false
+      },
+      {
+        "asset_id": "P05",
+        "view_id": "follow-up",
+        "outbound": 0.0,
+        "capture": 20.0,
+        "return_cost": 14.142135623730951,
+        "reserve": 50.0,
+        "margin": -8.284271247461902,
+        "feasible": false,
+        "priority": 2,
+        "execution_allowed": false,
+        "reason_code": "duplicate_view",
+        "operator_requested": false,
+        "unclear_follow_up": false
+      },
+      {
+        "asset_id": "P05",
+        "view_id": "overview",
+        "outbound": 0.0,
+        "capture": 20.0,
+        "return_cost": 14.142135623730951,
+        "reserve": 50.0,
+        "margin": -8.284271247461902,
+        "feasible": false,
+        "priority": 2,
+        "execution_allowed": false,
+        "reason_code": "duplicate_view",
+        "operator_requested": false,
+        "unclear_follow_up": false
+      },
+      {
+        "asset_id": "P06",
+        "view_id": "follow-up",
+        "outbound": 5.0,
+        "capture": 20.0,
+        "return_cost": 18.027756377319946,
+        "reserve": 50.0,
+        "margin": -17.169892001050897,
+        "feasible": false,
+        "priority": 1,
+        "execution_allowed": false,
+        "reason_code": "asset_excluded",
+        "operator_requested": false,
+        "unclear_follow_up": true
+      },
+      {
+        "asset_id": "P06",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 20.0,
+        "return_cost": 18.027756377319946,
+        "reserve": 50.0,
+        "margin": -17.169892001050897,
+        "feasible": false,
+        "priority": 1,
+        "execution_allowed": false,
+        "reason_code": "asset_excluded",
+        "operator_requested": false,
+        "unclear_follow_up": false
+      }
+    ],
+    "baseline_selected": {
+      "asset_id": "P02",
+      "view_id": "follow-up",
+      "outbound": 5.0,
+      "capture": 5.0,
+      "return_cost": 11.180339887498949,
+      "reserve": 15.0,
+      "margin": 39.6775244887701,
+      "feasible": true,
+      "priority": 3,
+      "execution_allowed": true,
+      "reason_code": "allowed",
+      "operator_requested": false,
+      "unclear_follow_up": true
+    },
+    "selected": null,
+    "alternative": null,
+    "mode": "wolfram_local",
+    "reserve": 50,
+    "capture_cost": 20,
+    "removed_candidates": [
+      [
+        "P01",
+        "follow-up"
+      ],
+      [
+        "P02",
+        "follow-up"
+      ],
+      [
+        "P03",
+        "overview"
+      ],
+      [
+        "P04",
+        "overview"
+      ]
+    ],
+    "added_candidates": [],
+    "recommendation_changed": true,
+    "preview_only": true,
+    "state_transition_applied": false,
+    "explanation": "No capture fits the preview budget; return/hold for review."
+  },
+  "successful_local_kernel_calls_by_phase": {
+    "boundaries": 4,
+    "startup_mission": 1,
+    "separate_ui_calculator_instance": 4
+  },
+  "successful_local_cost_calls_total": 9,
+  "cloud_requests": 0,
+  "alpha_calls": 0,
+  "credit_consumption": "Unknown; account usage not inspected. Local counters do not determine Cloud/Service Credit consumption.",
+  "initial_restricted_session": "One timed-out attempt retained separately; not counted as successful",
+  "scope": "Normal-host startup and original browser walkthrough through the 19:23 UTC report only. Subsequent active-run activity and injected tests excluded."
+}

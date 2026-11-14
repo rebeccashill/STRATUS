@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-11-14T21:06:13.623201+00:00",
+  "url": "http://127.0.0.1:8774/fleet",
+  "fleet_paused": true,
+  "fleet_size": 2,
+  "captures": 0,
+  "single_checkpoint": "ui11-browser-final.json",
+  "ground_snapshot_id": "ground-6763d6c03c57934df080e286edf6041a514d8ddb21c4fed9d3e88ac9c5cec894",
+  "fleet_computation": "wolfram",
+  "hardware_automatically_polled": false,
+  "wolfram_status": "passed"
+}

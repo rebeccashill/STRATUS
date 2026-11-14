@@ -1,0 +1,20 @@
+STRATUS 0.0.1 | Part 1 foundation
+Mission: solar-array-001 | revision: 0.0.1-part1
+Mode: local_foundation_preview | readiness: skeleton_evidence_pending_part_2
+Operator: Solar-site maintenance operator
+Decision: Choose the next useful panel inspection or follow-up view under incomplete image coverage, limited battery, a three-action cap, and return reserve; return or stop when no capture is feasible.
+Layout: 6 panels | coordinates: m
+Launch/return: {'x': 0, 'y': 0} | current position: {'x': 0, 'y': 0}
+Battery: 100 simulated_energy_unit | reserve: 15 simulated_energy_unit
+New capture actions: 3 remaining / 3 maximum
+Prior records: 2 | new actions consumed by prior records: 0
+Assets (priority 3=high, 2=medium, 1=low):
+  P01 {'x': 10, 'y': 10} | priority 1 | eligible | coverage: prior_clear_annotation_evidence_pending
+  P02 {'x': 20, 'y': 10} | priority 3 | eligible | coverage: prior_unclear_annotation_evidence_pending
+  P03 {'x': 30, 'y': 10} | priority 3 | eligible | coverage: uninspected
+  P04 {'x': 10, 'y': 20} | priority 2 | eligible | coverage: uninspected
+  P05 {'x': 20, 'y': 20} | priority 2 | eligible | coverage: uninspected
+  P06 {'x': 30, 'y': 20} | priority 1 | excluded | coverage: excluded_uninspected
+Evidence: pending Part 2; prior labels are synthetic scenario annotations.
+No flight, capture, AI call, or saved inspection run has occurred.
+Next: prepare permitted/synthetic images, index asset/view evidence, and implement the validated loader (Part 2).

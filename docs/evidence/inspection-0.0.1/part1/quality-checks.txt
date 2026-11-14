@@ -1,0 +1,11 @@
+Standalone Part 1 source checks
+
+Black format_str API, line_length=100, target_versions={PY310}:
+  Standalone formatting passed: 4 new files
+
+Ruff, isolated configuration, rules E/F/I, E501 ignored:
+  All checks passed!
+
+The application runtime and verification use Python's standard library only.
+Formatting/lint tools are development tools and are not bundled dependencies.
+No earlier project tests or code are included in the standalone handoff.

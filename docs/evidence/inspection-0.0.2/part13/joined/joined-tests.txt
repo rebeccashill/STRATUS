@@ -1,0 +1,9 @@
+Focused real-engine/service integration check result
+Command: .venv/Scripts/python.exe -B -m unittest discover -s tests -p test_joined_hazards.py -v
+18 tests passed in 17.140 seconds.
+The initial run had one outdated expected revision after adding logical expiry;
+the assertion now checks the actual current registry revision. The rerun passed.
+Coverage: 2/50 actual fleet impact, stale commits, travel/capture/return boundaries,
+eligible reallocation, route digests, exact active save/load, legacy empty runs,
+expiry/review/clearance, strict controller tokens, reports, ground loss and reset.
+No socket, hardware, live AI, Cloud/Alpha, full-suite or benchmark invocation.

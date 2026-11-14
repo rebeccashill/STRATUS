@@ -1,0 +1,1038 @@
+{
+  "injected": true,
+  "actual_external_requests": 0,
+  "result": {
+    "mode": "wolfram_disagreement",
+    "input": {
+      "contract_version": "stratus-fleet-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "scenario_id": "stratus-solar-200-v1",
+      "fleet_revision": 0,
+      "hazard_revision": 0,
+      "pairs": [
+        {
+          "drone_id": "D001",
+          "task_id": "A003:overview",
+          "asset_id": "A003",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 6.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A004:overview",
+          "asset_id": "A004",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 8.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A005:overview",
+          "asset_id": "A005",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 10.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A006:overview",
+          "asset_id": "A006",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 12.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A007:overview",
+          "asset_id": "A007",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 14.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A009:overview",
+          "asset_id": "A009",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 18.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A012:overview",
+          "asset_id": "A012",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 24.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A025:overview",
+          "asset_id": "A025",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 10.0,
+            "y": 4.0
+          },
+          "launch": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A003:overview",
+          "asset_id": "A003",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 6.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A006:overview",
+          "asset_id": "A006",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 12.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A009:overview",
+          "asset_id": "A009",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 18.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A012:overview",
+          "asset_id": "A012",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 24.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A013:overview",
+          "asset_id": "A013",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 26.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A014:overview",
+          "asset_id": "A014",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 28.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A015:overview",
+          "asset_id": "A015",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 30.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A016:overview",
+          "asset_id": "A016",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 32.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A017:overview",
+          "asset_id": "A017",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 34.0,
+            "y": 2.0
+          },
+          "launch": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A035:overview",
+          "asset_id": "A035",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 30.0,
+            "y": 4.0
+          },
+          "launch": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        }
+      ]
+    },
+    "python_output": {
+      "contract_version": "stratus-fleet-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "scenario_id": "stratus-solar-200-v1",
+      "fleet_revision": 0,
+      "hazard_revision": 0,
+      "options": [
+        {
+          "drone_id": "D001",
+          "task_id": "A003:overview",
+          "asset_id": "A003",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.23606797749979,
+          "capture": 5.0,
+          "return_cost": 2.23606797749979,
+          "reserve": 15.0,
+          "margin": 75.52786404500043,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A004:overview",
+          "asset_id": "A004",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 1.4142135623730951,
+          "capture": 5.0,
+          "return_cost": 1.4142135623730951,
+          "reserve": 15.0,
+          "margin": 77.17157287525382,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A005:overview",
+          "asset_id": "A005",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 1.0,
+          "capture": 5.0,
+          "return_cost": 1.0,
+          "reserve": 15.0,
+          "margin": 78.0,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A006:overview",
+          "asset_id": "A006",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 1.4142135623730951,
+          "capture": 5.0,
+          "return_cost": 1.4142135623730951,
+          "reserve": 15.0,
+          "margin": 77.17157287525382,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A007:overview",
+          "asset_id": "A007",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.23606797749979,
+          "capture": 5.0,
+          "return_cost": 2.23606797749979,
+          "reserve": 15.0,
+          "margin": 75.52786404500043,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A009:overview",
+          "asset_id": "A009",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 4.123105625617661,
+          "capture": 5.0,
+          "return_cost": 4.123105625617661,
+          "reserve": 15.0,
+          "margin": 71.75378874876468,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A012:overview",
+          "asset_id": "A012",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 7.0710678118654755,
+          "capture": 5.0,
+          "return_cost": 7.0710678118654755,
+          "reserve": 15.0,
+          "margin": 65.85786437626905,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A025:overview",
+          "asset_id": "A025",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.0,
+          "capture": 5.0,
+          "return_cost": 2.0,
+          "reserve": 15.0,
+          "margin": 76.0,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A003:overview",
+          "asset_id": "A003",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 12.041594578792296,
+          "capture": 5.0,
+          "return_cost": 12.041594578792296,
+          "reserve": 15.0,
+          "margin": 55.91681084241541,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A006:overview",
+          "asset_id": "A006",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 9.055385138137417,
+          "capture": 5.0,
+          "return_cost": 9.055385138137417,
+          "reserve": 15.0,
+          "margin": 61.889229723725165,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A009:overview",
+          "asset_id": "A009",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 6.082762530298219,
+          "capture": 5.0,
+          "return_cost": 6.082762530298219,
+          "reserve": 15.0,
+          "margin": 67.83447493940356,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A012:overview",
+          "asset_id": "A012",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 3.1622776601683795,
+          "capture": 5.0,
+          "return_cost": 3.1622776601683795,
+          "reserve": 15.0,
+          "margin": 73.67544467966324,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A013:overview",
+          "asset_id": "A013",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.23606797749979,
+          "capture": 5.0,
+          "return_cost": 2.23606797749979,
+          "reserve": 15.0,
+          "margin": 75.52786404500043,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A014:overview",
+          "asset_id": "A014",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 1.4142135623730951,
+          "capture": 5.0,
+          "return_cost": 1.4142135623730951,
+          "reserve": 15.0,
+          "margin": 77.17157287525382,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A015:overview",
+          "asset_id": "A015",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 1.0,
+          "capture": 5.0,
+          "return_cost": 1.0,
+          "reserve": 15.0,
+          "margin": 78.0,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A016:overview",
+          "asset_id": "A016",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 1.4142135623730951,
+          "capture": 5.0,
+          "return_cost": 1.4142135623730951,
+          "reserve": 15.0,
+          "margin": 77.17157287525382,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A017:overview",
+          "asset_id": "A017",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.23606797749979,
+          "capture": 5.0,
+          "return_cost": 2.23606797749979,
+          "reserve": 15.0,
+          "margin": 75.52786404500043,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A035:overview",
+          "asset_id": "A035",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.0,
+          "capture": 5.0,
+          "return_cost": 2.0,
+          "reserve": 15.0,
+          "margin": 76.0,
+          "feasible": true
+        }
+      ]
+    },
+    "output": {
+      "contract_version": "stratus-fleet-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "scenario_id": "stratus-solar-200-v1",
+      "fleet_revision": 0,
+      "hazard_revision": 0,
+      "options": [
+        {
+          "drone_id": "D001",
+          "task_id": "A003:overview",
+          "asset_id": "A003",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.23606797749979,
+          "capture": 5.0,
+          "return_cost": 2.23606797749979,
+          "reserve": 15.0,
+          "margin": 75.52786404500043,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A004:overview",
+          "asset_id": "A004",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 1.4142135623730951,
+          "capture": 5.0,
+          "return_cost": 1.4142135623730951,
+          "reserve": 15.0,
+          "margin": 77.17157287525382,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A005:overview",
+          "asset_id": "A005",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 1.0,
+          "capture": 5.0,
+          "return_cost": 1.0,
+          "reserve": 15.0,
+          "margin": 78.0,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A006:overview",
+          "asset_id": "A006",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 1.4142135623730951,
+          "capture": 5.0,
+          "return_cost": 1.4142135623730951,
+          "reserve": 15.0,
+          "margin": 77.17157287525382,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A007:overview",
+          "asset_id": "A007",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.23606797749979,
+          "capture": 5.0,
+          "return_cost": 2.23606797749979,
+          "reserve": 15.0,
+          "margin": 75.52786404500043,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A009:overview",
+          "asset_id": "A009",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 4.123105625617661,
+          "capture": 5.0,
+          "return_cost": 4.123105625617661,
+          "reserve": 15.0,
+          "margin": 71.75378874876468,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A012:overview",
+          "asset_id": "A012",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 7.0710678118654755,
+          "capture": 5.0,
+          "return_cost": 7.0710678118654755,
+          "reserve": 15.0,
+          "margin": 65.85786437626905,
+          "feasible": true
+        },
+        {
+          "drone_id": "D001",
+          "task_id": "A025:overview",
+          "asset_id": "A025",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.0,
+          "capture": 5.0,
+          "return_cost": 2.0,
+          "reserve": 15.0,
+          "margin": 76.0,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A003:overview",
+          "asset_id": "A003",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 12.041594578792296,
+          "capture": 5.0,
+          "return_cost": 12.041594578792296,
+          "reserve": 15.0,
+          "margin": 55.91681084241541,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A006:overview",
+          "asset_id": "A006",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 9.055385138137417,
+          "capture": 5.0,
+          "return_cost": 9.055385138137417,
+          "reserve": 15.0,
+          "margin": 61.889229723725165,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A009:overview",
+          "asset_id": "A009",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 6.082762530298219,
+          "capture": 5.0,
+          "return_cost": 6.082762530298219,
+          "reserve": 15.0,
+          "margin": 67.83447493940356,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A012:overview",
+          "asset_id": "A012",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 3.1622776601683795,
+          "capture": 5.0,
+          "return_cost": 3.1622776601683795,
+          "reserve": 15.0,
+          "margin": 73.67544467966324,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A013:overview",
+          "asset_id": "A013",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.23606797749979,
+          "capture": 5.0,
+          "return_cost": 2.23606797749979,
+          "reserve": 15.0,
+          "margin": 75.52786404500043,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A014:overview",
+          "asset_id": "A014",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 1.4142135623730951,
+          "capture": 5.0,
+          "return_cost": 1.4142135623730951,
+          "reserve": 15.0,
+          "margin": 77.17157287525382,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A015:overview",
+          "asset_id": "A015",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 1.0,
+          "capture": 5.0,
+          "return_cost": 1.0,
+          "reserve": 15.0,
+          "margin": 78.0,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A016:overview",
+          "asset_id": "A016",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 1.4142135623730951,
+          "capture": 5.0,
+          "return_cost": 1.4142135623730951,
+          "reserve": 15.0,
+          "margin": 77.17157287525382,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A017:overview",
+          "asset_id": "A017",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.23606797749979,
+          "capture": 5.0,
+          "return_cost": 2.23606797749979,
+          "reserve": 15.0,
+          "margin": 75.52786404500043,
+          "feasible": true
+        },
+        {
+          "drone_id": "D002",
+          "task_id": "A035:overview",
+          "asset_id": "A035",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.0,
+          "capture": 5.0,
+          "return_cost": 2.0,
+          "reserve": 15.0,
+          "margin": 76.0,
+          "feasible": true
+        }
+      ]
+    },
+    "wolfram_output": null,
+    "execution_permitted": false,
+    "cache_key": "11649e40e42f37ca4ebe926e1b9c1e3b57c34edc7aa580ecc2a324cc383963d7",
+    "failure": {
+      "code": "invalid_response",
+      "message": "Malformed/missing/mismatched fleet results cannot authorize an action"
+    },
+    "differences": [],
+    "latency_seconds": 0.0009845999884419143,
+    "request_counts": {
+      "local_kernel_calls": 1,
+      "cloud_requests": 0,
+      "alpha_calls": 0
+    }
+  }
+}

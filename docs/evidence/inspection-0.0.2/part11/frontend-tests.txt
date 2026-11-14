@@ -1,0 +1,10 @@
+PASS: late evidence responses preserve the newest asset/view, finding and provenance
+PASS: repeated execution clicks send one request while a workflow mutation is pending
+PASS: a committed capture opens its returned asset/view instead of the previously selected image
+PASS: a newly computed next plan needs explicit review before another capture can be sent
+PASS: proposal review and numerical permission control execution guidance
+PASS: an exhausted run has a concrete save/review/restart path
+PASS: actual, cached, local and unavailable Wolfram modes remain distinct
+PASS: recorded zero, original time and unavailable dash are not conflated
+PASS: rendering guidance, costs and source labels cannot execute a capture
+PASS: initial and duplicate mission loads cannot race the saved-run selector

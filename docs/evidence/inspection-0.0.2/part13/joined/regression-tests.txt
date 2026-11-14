@@ -1,0 +1,20 @@
+test_50_drones_act_independently_and_return_with_reserve (test_fleet.FleetTests) ... ok
+test_empty_hazard_contract_and_stale_commit_gate (test_fleet.FleetTests) ... ok
+test_50_drone_pause_save_reopen_resumes_identically (test_fleet.FleetTests) ... ok
+test_task_contention_and_numeric_model_tamper_are_rejected (test_fleet.FleetTests) ... ok
+test_duplicate_receipt_does_not_charge_or_append (test_fleet.FleetTests) ... ok
+test_bounds_nonfinite_and_fixed_script_allowlist (test_fleet.FleetCostTests) ... ok
+test_material_missing_duplicate_and_wrong_ID_rows_block (test_fleet.FleetCostTests) ... ok
+test_timeout_access_quota_fallback_is_bounded_and_explicit (test_fleet.FleetCostTests) ... ok
+test_typed_identity_cache_and_changed_revision (test_fleet.FleetCostTests) ... ok
+test_unit_conversion_and_reserve_boundaries (test_fleet.FleetCostTests) ... ok
+test_stale_plan_after_feedback_cannot_capture (test_adaptive.AdaptiveTests) ... ok
+test_execution_retry_after_saved_reload_never_debits_twice (test_adaptive.AdaptiveTests) ... ok
+test_feedback_changes_hold_to_next_plan_without_aircraft_debit (test_adaptive.AdaptiveTests) ... ok
+test_ground_values_or_text_never_change_costs_or_image_findings (test_adaptive.AdaptiveTests) ... ok
+test_disagreement_blocks_and_timeout_fallback_retains_explicit_mode (test_adaptive.AdaptiveTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 33.820s
+
+OK

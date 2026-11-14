@@ -1,0 +1,1 @@
+Superseded preflight v1. No planner scores were run. Corrected an obsolete source display label before final input freeze; all observations and planner rules stayed unchanged. These are audit snapshots, not the current runnable input pack.

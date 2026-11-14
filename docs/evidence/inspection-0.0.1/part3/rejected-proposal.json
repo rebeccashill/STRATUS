@@ -1,0 +1,115 @@
+{
+  "decision": {
+    "allowed": false,
+    "code": "asset_excluded",
+    "message": "Operator excluded this panel/point",
+    "state_revision": 0,
+    "proposal": {
+      "action_type": "inspect",
+      "asset_id": "P06",
+      "view_id": "overview",
+      "reason": "Test excluded panel",
+      "alternative": "Return"
+    },
+    "costs": null
+  },
+  "state_before": {
+    "mission_id": "solar-array-001",
+    "scenario_id": "synthetic-solar-array-001",
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "battery_available": 100,
+    "actions_used": 0,
+    "actions_remaining": 3,
+    "completed_views": [
+      {
+        "asset_id": "P01",
+        "view_id": "overview"
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "overview"
+      }
+    ],
+    "history": [
+      {
+        "record_id": "prior-001",
+        "asset_id": "P01",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "clear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P01:overview",
+        "consumes_new_action": false
+      },
+      {
+        "record_id": "prior-002",
+        "asset_id": "P02",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "unclear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P02:overview",
+        "consumes_new_action": false
+      }
+    ],
+    "revision": 0,
+    "status": "active"
+  },
+  "state_after": {
+    "mission_id": "solar-array-001",
+    "scenario_id": "synthetic-solar-array-001",
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "battery_available": 100,
+    "actions_used": 0,
+    "actions_remaining": 3,
+    "completed_views": [
+      {
+        "asset_id": "P01",
+        "view_id": "overview"
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "overview"
+      }
+    ],
+    "history": [
+      {
+        "record_id": "prior-001",
+        "asset_id": "P01",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "clear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P01:overview",
+        "consumes_new_action": false
+      },
+      {
+        "record_id": "prior-002",
+        "asset_id": "P02",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "unclear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P02:overview",
+        "consumes_new_action": false
+      }
+    ],
+    "revision": 0,
+    "status": "active"
+  },
+  "state_transition_applied": false
+}

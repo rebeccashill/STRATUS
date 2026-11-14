@@ -1,0 +1,238 @@
+{
+  "status": "passed",
+  "actual_physical_sample_rows": [
+    {
+      "observation_id": "obs_8fc731a40518c8c94964c84d",
+      "variable": "temperature",
+      "value": 22.29296875,
+      "unit": "degC",
+      "acquired_at_utc": "2026-11-14T19:20:34.504783+00:00",
+      "raw_csv": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+      "raw_sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff",
+      "matches": true
+    },
+    {
+      "observation_id": "obs_a3ab46b57b11eb3bc7a51678",
+      "variable": "relative_humidity",
+      "value": 38.80852985622828,
+      "unit": "%RH",
+      "acquired_at_utc": "2026-11-14T19:20:34.504783+00:00",
+      "raw_csv": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+      "raw_sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff",
+      "matches": true
+    },
+    {
+      "observation_id": "obs_d5d46a5e28d70c5bc922d7ea",
+      "variable": "pressure",
+      "value": 1006.855264680805,
+      "unit": "hPa",
+      "acquired_at_utc": "2026-11-14T19:20:34.504783+00:00",
+      "raw_csv": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+      "raw_sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff",
+      "matches": true
+    },
+    {
+      "observation_id": "obs_46f8d5442580740e017b1023",
+      "variable": "pm1_0",
+      "value": 0,
+      "unit": "ug/m3",
+      "acquired_at_utc": "2026-11-14T19:20:34.527880+00:00",
+      "raw_csv": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+      "raw_sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff",
+      "matches": true
+    },
+    {
+      "observation_id": "obs_214bcf2d6f9b6136aaeb71ea",
+      "variable": "pm2_5",
+      "value": 0,
+      "unit": "ug/m3",
+      "acquired_at_utc": "2026-11-14T19:20:34.527880+00:00",
+      "raw_csv": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+      "raw_sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff",
+      "matches": true
+    },
+    {
+      "observation_id": "obs_1a5b9abe91a186ebd897e285",
+      "variable": "pm10",
+      "value": 0,
+      "unit": "ug/m3",
+      "acquired_at_utc": "2026-11-14T19:20:34.527880+00:00",
+      "raw_csv": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+      "raw_sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff",
+      "matches": true
+    }
+  ],
+  "browser_display_values": [
+    22.29,
+    38.81,
+    1006.86,
+    0,
+    0,
+    0
+  ],
+  "exact_report_observations_equal": true,
+  "matching_snapshot_ids": [
+    "ground-566800dec8fbe4130bbd6baf24a62e5055e74be142eac3454ce86e2681198c6c",
+    "ground-62c43b7096348ccac2456703c6bc8b96a6b4fbc1bc5d5da2f0a90f69d1769e23",
+    "ground-2bb5d3b341f420ac78398b63be62a65134e12529cbe42003d1d158b72b931178",
+    "ground-74493777159aebc72706279fcabee2de3544b4ccffb5f3205d0019067c1ce5d4",
+    "ground-1d3b2b5b88e0b59984991ef419371b233d1e745ef6093cdd3dda9609c1d0f345",
+    "ground-78808e5fdf2b165fda271bbebad10ad91940a2c333862b31bbb16db2b67270ac",
+    "ground-8cab6eb65d3331d9e02a504beefd127d3613bb8bbc3a0aaef73e6971fb2901b3"
+  ],
+  "mode": "Recorded",
+  "location": "unknown",
+  "quality": "unreviewed",
+  "calibration": "unverified",
+  "report_download_byte_equal": true,
+  "report_html": "saved-runs/reports/inspection-e43ba3f0-20261114T192313934149Z.html",
+  "report_sha256": "0674a7a6b4d792293ab2a1592b6e54a5bb87dca84fdd4008f5fc3dd8f716cde5",
+  "checkpoint": "saved-runs/adaptive-e43ba3f0-cdedd7.json",
+  "checkpoint_sha256_before_reopen": "88d8e3bcb9a747e9e663b36378b1a72db7893d8d5f5f651fdfcbb3dbe433a057",
+  "budget": {
+    "mission_id": "solar-array-001",
+    "scenario_id": "synthetic-solar-array-001",
+    "position": {
+      "x": 20,
+      "y": 20
+    },
+    "battery_available": 75.85786437626905,
+    "actions_used": 2,
+    "actions_remaining": 1,
+    "completed_views": [
+      {
+        "asset_id": "P01",
+        "view_id": "overview"
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "overview"
+      },
+      {
+        "asset_id": "P05",
+        "view_id": "follow-up"
+      },
+      {
+        "asset_id": "P05",
+        "view_id": "overview"
+      }
+    ],
+    "history": [
+      {
+        "record_id": "prior-001",
+        "asset_id": "P01",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "clear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P01:overview",
+        "consumes_new_action": false
+      },
+      {
+        "record_id": "prior-002",
+        "asset_id": "P02",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "unclear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P02:overview",
+        "consumes_new_action": false
+      },
+      {
+        "record_id": "simulated-001",
+        "asset_id": "P05",
+        "view_id": "overview",
+        "evidence": {
+          "mission_id": "solar-array-001",
+          "scenario_id": "synthetic-solar-array-001",
+          "asset_id": "P05",
+          "view_id": "overview",
+          "timestamp": "2026-11-14T19:21:14.431669+00:00",
+          "timestamp_kind": "response_created_at_not_camera_capture",
+          "capture_mode": "simulated_local_fixture",
+          "real_flight": false,
+          "state_transition_applied": false,
+          "source_label": "synthetic",
+          "source_mode": "procedural_synthetic",
+          "assessment_mode": "authored_replay_annotation",
+          "status": "available",
+          "image_quality": "unclear",
+          "finding": "unknown",
+          "evidence_ref": {
+            "evidence_id": "synthetic-solar-array-001:P05:overview",
+            "image_path": "evidence/inspection/images/P05-overview.png",
+            "sha256": "815228cf90cc3e30c0cc2dd1ac9fa18574ecd217760c09d1f26d524355af9de5",
+            "width": 480,
+            "height": 320,
+            "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+            "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+          },
+          "annotation": {
+            "evidence_id": "synthetic-solar-array-001:P05:overview",
+            "scenario_id": "synthetic-solar-array-001",
+            "assessment_mode": "authored_replay_annotation",
+            "annotation_author": "AI-assisted scenario preparation; human review pending",
+            "human_review_status": "pending",
+            "live_model_output": false,
+            "image_quality": "unclear",
+            "finding": "unknown",
+            "note": "Authored bright occlusion; hidden cells remain unknown."
+          },
+          "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+        },
+        "consumes_new_action": true
+      },
+      {
+        "record_id": "simulated-002",
+        "asset_id": "P05",
+        "view_id": "follow-up",
+        "evidence": {
+          "mission_id": "solar-array-001",
+          "scenario_id": "synthetic-solar-array-001",
+          "asset_id": "P05",
+          "view_id": "follow-up",
+          "timestamp": "2026-11-14T19:22:01.028978+00:00",
+          "timestamp_kind": "response_created_at_not_camera_capture",
+          "capture_mode": "simulated_local_fixture",
+          "real_flight": false,
+          "state_transition_applied": false,
+          "source_label": "synthetic",
+          "source_mode": "procedural_synthetic",
+          "assessment_mode": "authored_replay_annotation",
+          "status": "available",
+          "image_quality": "clear",
+          "finding": "no_apparent_concern_in_synthetic_drawing",
+          "evidence_ref": {
+            "evidence_id": "synthetic-solar-array-001:P05:follow-up",
+            "image_path": "evidence/inspection/images/P05-follow-up.png",
+            "sha256": "ecb7436a7647d5269d89c7d07188edb2cadf3364ce15caa1cc2ab4f86283c7e0",
+            "width": 480,
+            "height": 320,
+            "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+            "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+          },
+          "annotation": {
+            "evidence_id": "synthetic-solar-array-001:P05:follow-up",
+            "scenario_id": "synthetic-solar-array-001",
+            "assessment_mode": "authored_replay_annotation",
+            "annotation_author": "AI-assisted scenario preparation; human review pending",
+            "human_review_status": "pending",
+            "live_model_output": false,
+            "image_quality": "clear",
+            "finding": "no_apparent_concern_in_synthetic_drawing",
+            "note": "Grid visible in the authored illustration; this is not a defect diagnosis."
+          },
+          "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+        },
+        "consumes_new_action": true
+      }
+    ],
+    "revision": 2,
+    "status": "active"
+  },
+  "limits": "Source/data/software parity only; not calibration, clean-air certification or defect-detection accuracy"
+}

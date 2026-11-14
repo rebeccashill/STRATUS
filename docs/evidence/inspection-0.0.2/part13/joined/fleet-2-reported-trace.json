@@ -1,0 +1,1069 @@
+{
+  "mode": "actual_part12_fleet_integration",
+  "fleet_size": 2,
+  "seed": 11,
+  "reported": true,
+  "initial_state_sha256": "b10f11756790d0ab23929dff745ee841d3a0ccdbdcc38e07c28f16c58d7c8114",
+  "ground": {
+    "context_role": "ground_context_only",
+    "source_mode": "recorded_measured",
+    "source_label": "Recorded",
+    "as_of_utc": "2026-11-14T20:28:53.911422+00:00",
+    "node_id": "ground-node-001",
+    "location": {
+      "status": "unknown",
+      "label": null,
+      "position": null,
+      "coordinate_frame": null
+    },
+    "observations": [
+      {
+        "schema_version": "1.0.0",
+        "observation_id": "obs_8fc731a40518c8c94964c84d",
+        "node_id": "ground-node-001",
+        "sensor_id": "ground-node-001/bme280",
+        "sensor_model": "BME280",
+        "variable": "temperature",
+        "value": 22.29296875,
+        "unit": "degC",
+        "acquired_at_utc": "2026-11-14T19:20:34.504783+00:00",
+        "received_at_utc": "2026-11-14T19:20:34.528876+00:00",
+        "receipt_time_status": "recorded",
+        "timestamp_basis": "host_read_completion",
+        "normalized_at_utc": "2026-11-14T19:20:34.528876+00:00",
+        "location": {
+          "status": "unknown",
+          "label": null,
+          "position": null,
+          "coordinate_frame": null
+        },
+        "source_mode": "recorded_measured",
+        "acquisition_source": "physical_sensor",
+        "quality": {
+          "status": "unreviewed",
+          "flags": [
+            "calibration_unknown",
+            "uncertainty_unknown"
+          ]
+        },
+        "calibration": {
+          "status": "unknown",
+          "reference": null
+        },
+        "uncertainty": {
+          "status": "unknown",
+          "value": null,
+          "unit": null,
+          "kind": null
+        },
+        "context_role": "ground_context_only",
+        "provenance": {
+          "source_file": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+          "source_sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff",
+          "source_row": 2,
+          "original_source_mode": "live_measured"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "observation_id": "obs_a3ab46b57b11eb3bc7a51678",
+        "node_id": "ground-node-001",
+        "sensor_id": "ground-node-001/bme280",
+        "sensor_model": "BME280",
+        "variable": "relative_humidity",
+        "value": 38.80852985622828,
+        "unit": "%RH",
+        "acquired_at_utc": "2026-11-14T19:20:34.504783+00:00",
+        "received_at_utc": "2026-11-14T19:20:34.528876+00:00",
+        "receipt_time_status": "recorded",
+        "timestamp_basis": "host_read_completion",
+        "normalized_at_utc": "2026-11-14T19:20:34.528876+00:00",
+        "location": {
+          "status": "unknown",
+          "label": null,
+          "position": null,
+          "coordinate_frame": null
+        },
+        "source_mode": "recorded_measured",
+        "acquisition_source": "physical_sensor",
+        "quality": {
+          "status": "unreviewed",
+          "flags": [
+            "calibration_unknown",
+            "uncertainty_unknown"
+          ]
+        },
+        "calibration": {
+          "status": "unknown",
+          "reference": null
+        },
+        "uncertainty": {
+          "status": "unknown",
+          "value": null,
+          "unit": null,
+          "kind": null
+        },
+        "context_role": "ground_context_only",
+        "provenance": {
+          "source_file": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+          "source_sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff",
+          "source_row": 3,
+          "original_source_mode": "live_measured"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "observation_id": "obs_d5d46a5e28d70c5bc922d7ea",
+        "node_id": "ground-node-001",
+        "sensor_id": "ground-node-001/bme280",
+        "sensor_model": "BME280",
+        "variable": "pressure",
+        "value": 1006.855264680805,
+        "unit": "hPa",
+        "acquired_at_utc": "2026-11-14T19:20:34.504783+00:00",
+        "received_at_utc": "2026-11-14T19:20:34.528876+00:00",
+        "receipt_time_status": "recorded",
+        "timestamp_basis": "host_read_completion",
+        "normalized_at_utc": "2026-11-14T19:20:34.528876+00:00",
+        "location": {
+          "status": "unknown",
+          "label": null,
+          "position": null,
+          "coordinate_frame": null
+        },
+        "source_mode": "recorded_measured",
+        "acquisition_source": "physical_sensor",
+        "quality": {
+          "status": "unreviewed",
+          "flags": [
+            "calibration_unknown",
+            "uncertainty_unknown"
+          ]
+        },
+        "calibration": {
+          "status": "unknown",
+          "reference": null
+        },
+        "uncertainty": {
+          "status": "unknown",
+          "value": null,
+          "unit": null,
+          "kind": null
+        },
+        "context_role": "ground_context_only",
+        "provenance": {
+          "source_file": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+          "source_sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff",
+          "source_row": 4,
+          "original_source_mode": "live_measured"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "observation_id": "obs_46f8d5442580740e017b1023",
+        "node_id": "ground-node-001",
+        "sensor_id": "ground-node-001/pmsa003i",
+        "sensor_model": "PMSA003I",
+        "variable": "pm1_0",
+        "value": 0,
+        "unit": "ug/m3",
+        "acquired_at_utc": "2026-11-14T19:20:34.527880+00:00",
+        "received_at_utc": "2026-11-14T19:20:34.528876+00:00",
+        "receipt_time_status": "recorded",
+        "timestamp_basis": "host_read_completion",
+        "normalized_at_utc": "2026-11-14T19:20:34.528876+00:00",
+        "location": {
+          "status": "unknown",
+          "label": null,
+          "position": null,
+          "coordinate_frame": null
+        },
+        "source_mode": "recorded_measured",
+        "acquisition_source": "physical_sensor",
+        "quality": {
+          "status": "unreviewed",
+          "flags": [
+            "calibration_unknown",
+            "uncertainty_unknown"
+          ]
+        },
+        "calibration": {
+          "status": "unknown",
+          "reference": null
+        },
+        "uncertainty": {
+          "status": "unknown",
+          "value": null,
+          "unit": null,
+          "kind": null
+        },
+        "context_role": "ground_context_only",
+        "provenance": {
+          "source_file": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+          "source_sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff",
+          "source_row": 5,
+          "original_source_mode": "live_measured"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "observation_id": "obs_214bcf2d6f9b6136aaeb71ea",
+        "node_id": "ground-node-001",
+        "sensor_id": "ground-node-001/pmsa003i",
+        "sensor_model": "PMSA003I",
+        "variable": "pm2_5",
+        "value": 0,
+        "unit": "ug/m3",
+        "acquired_at_utc": "2026-11-14T19:20:34.527880+00:00",
+        "received_at_utc": "2026-11-14T19:20:34.528876+00:00",
+        "receipt_time_status": "recorded",
+        "timestamp_basis": "host_read_completion",
+        "normalized_at_utc": "2026-11-14T19:20:34.528876+00:00",
+        "location": {
+          "status": "unknown",
+          "label": null,
+          "position": null,
+          "coordinate_frame": null
+        },
+        "source_mode": "recorded_measured",
+        "acquisition_source": "physical_sensor",
+        "quality": {
+          "status": "unreviewed",
+          "flags": [
+            "calibration_unknown",
+            "uncertainty_unknown"
+          ]
+        },
+        "calibration": {
+          "status": "unknown",
+          "reference": null
+        },
+        "uncertainty": {
+          "status": "unknown",
+          "value": null,
+          "unit": null,
+          "kind": null
+        },
+        "context_role": "ground_context_only",
+        "provenance": {
+          "source_file": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+          "source_sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff",
+          "source_row": 6,
+          "original_source_mode": "live_measured"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "observation_id": "obs_1a5b9abe91a186ebd897e285",
+        "node_id": "ground-node-001",
+        "sensor_id": "ground-node-001/pmsa003i",
+        "sensor_model": "PMSA003I",
+        "variable": "pm10",
+        "value": 0,
+        "unit": "ug/m3",
+        "acquired_at_utc": "2026-11-14T19:20:34.527880+00:00",
+        "received_at_utc": "2026-11-14T19:20:34.528876+00:00",
+        "receipt_time_status": "recorded",
+        "timestamp_basis": "host_read_completion",
+        "normalized_at_utc": "2026-11-14T19:20:34.528876+00:00",
+        "location": {
+          "status": "unknown",
+          "label": null,
+          "position": null,
+          "coordinate_frame": null
+        },
+        "source_mode": "recorded_measured",
+        "acquisition_source": "physical_sensor",
+        "quality": {
+          "status": "unreviewed",
+          "flags": [
+            "calibration_unknown",
+            "uncertainty_unknown"
+          ]
+        },
+        "calibration": {
+          "status": "unknown",
+          "reference": null
+        },
+        "uncertainty": {
+          "status": "unknown",
+          "value": null,
+          "unit": null,
+          "kind": null
+        },
+        "context_role": "ground_context_only",
+        "provenance": {
+          "source_file": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+          "source_sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff",
+          "source_row": 7,
+          "original_source_mode": "live_measured"
+        }
+      }
+    ],
+    "sensors": [
+      {
+        "sensor_model": "BME280",
+        "sensor_id": "ground-node-001/bme280",
+        "status": "stale",
+        "age_seconds": 4099.406639,
+        "channels": [
+          {
+            "variable": "temperature",
+            "unit": "degC",
+            "value": 22.29296875,
+            "acquired_at_utc": "2026-11-14T19:20:34.504783+00:00",
+            "quality": {
+              "status": "unreviewed",
+              "flags": [
+                "calibration_unknown",
+                "uncertainty_unknown"
+              ]
+            }
+          },
+          {
+            "variable": "relative_humidity",
+            "unit": "%RH",
+            "value": 38.80852985622828,
+            "acquired_at_utc": "2026-11-14T19:20:34.504783+00:00",
+            "quality": {
+              "status": "unreviewed",
+              "flags": [
+                "calibration_unknown",
+                "uncertainty_unknown"
+              ]
+            }
+          },
+          {
+            "variable": "pressure",
+            "unit": "hPa",
+            "value": 1006.855264680805,
+            "acquired_at_utc": "2026-11-14T19:20:34.504783+00:00",
+            "quality": {
+              "status": "unreviewed",
+              "flags": [
+                "calibration_unknown",
+                "uncertainty_unknown"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "sensor_model": "PMSA003I",
+        "sensor_id": "ground-node-001/pmsa003i",
+        "status": "stale",
+        "age_seconds": 4099.383542,
+        "channels": [
+          {
+            "variable": "pm1_0",
+            "unit": "ug/m3",
+            "value": 0,
+            "acquired_at_utc": "2026-11-14T19:20:34.527880+00:00",
+            "quality": {
+              "status": "unreviewed",
+              "flags": [
+                "calibration_unknown",
+                "uncertainty_unknown"
+              ]
+            }
+          },
+          {
+            "variable": "pm2_5",
+            "unit": "ug/m3",
+            "value": 0,
+            "acquired_at_utc": "2026-11-14T19:20:34.527880+00:00",
+            "quality": {
+              "status": "unreviewed",
+              "flags": [
+                "calibration_unknown",
+                "uncertainty_unknown"
+              ]
+            }
+          },
+          {
+            "variable": "pm10",
+            "unit": "ug/m3",
+            "value": 0,
+            "acquired_at_utc": "2026-11-14T19:20:34.527880+00:00",
+            "quality": {
+              "status": "unreviewed",
+              "flags": [
+                "calibration_unknown",
+                "uncertainty_unknown"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "source": {
+      "path": "context/ground-measurements/live/20261114T191808Z-b987b5/sample-00028.csv",
+      "sha256": "9f9faadb5a8e3144126246783b39abaccd0051c732561bcbf27f4a906e2e5aff"
+    },
+    "frozen_for_decision": true,
+    "limitations": [
+      "Ground node context only; not simulated aircraft position",
+      "Location/calibration/uncertainty may be unknown",
+      "Not wind, flight clearance, airborne conditions or panel diagnosis",
+      "Freshness is evaluated at snapshot time; replay retains original measurement times"
+    ],
+    "snapshot_id": "ground-6763d6c03c57934df080e286edf6041a514d8ddb21c4fed9d3e88ac9c5cec894"
+  },
+  "prepared_assignments": {
+    "D002": {
+      "assignment_id": "r1:D002:A015:overview",
+      "drone_id": "D002",
+      "task_id": "A015:overview",
+      "fleet_revision": 1,
+      "hazard_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 1,
+      "phase": "assigned",
+      "origin": {
+        "x": 30.0,
+        "y": 0.0
+      },
+      "initial_battery": 100.0,
+      "numeric": {
+        "drone_id": "D002",
+        "task_id": "A015:overview",
+        "asset_id": "A015",
+        "view_id": "overview",
+        "drone_revision": 0,
+        "task_revision": 0,
+        "position": {
+          "x": 30.0,
+          "y": 0.0
+        },
+        "target": {
+          "x": 30,
+          "y": 2
+        },
+        "launch": {
+          "x": 30.0,
+          "y": 0.0
+        },
+        "battery": 100.0,
+        "capture": 5.0,
+        "rate": 0.5,
+        "reserve": 15.0,
+        "remaining_actions": 3,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit"
+      },
+      "cost": {
+        "drone_id": "D002",
+        "task_id": "A015:overview",
+        "asset_id": "A015",
+        "view_id": "overview",
+        "drone_revision": 0,
+        "task_revision": 0,
+        "outbound": 1.0,
+        "capture": 5.0,
+        "return_cost": 1.0,
+        "reserve": 15.0,
+        "margin": 78.0,
+        "feasible": true
+      },
+      "mode": "local_python",
+      "execution_permitted": true,
+      "route_signature": "8b6f0950c5a68200b42dbecfe59a57ed13bc922b32e21b8c374194c17174274b"
+    },
+    "D001": {
+      "assignment_id": "r1:D001:A006:overview",
+      "drone_id": "D001",
+      "task_id": "A006:overview",
+      "fleet_revision": 1,
+      "hazard_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 1,
+      "phase": "assigned",
+      "origin": {
+        "x": 10.0,
+        "y": 0.0
+      },
+      "initial_battery": 100.0,
+      "numeric": {
+        "drone_id": "D001",
+        "task_id": "A006:overview",
+        "asset_id": "A006",
+        "view_id": "overview",
+        "drone_revision": 0,
+        "task_revision": 0,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "target": {
+          "x": 12,
+          "y": 2
+        },
+        "launch": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "battery": 100.0,
+        "capture": 5.0,
+        "rate": 0.5,
+        "reserve": 15.0,
+        "remaining_actions": 3,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit"
+      },
+      "cost": {
+        "drone_id": "D001",
+        "task_id": "A006:overview",
+        "asset_id": "A006",
+        "view_id": "overview",
+        "drone_revision": 0,
+        "task_revision": 0,
+        "outbound": 1.4142135623730951,
+        "capture": 5.0,
+        "return_cost": 1.4142135623730951,
+        "reserve": 15.0,
+        "margin": 77.17157287525382,
+        "feasible": true
+      },
+      "mode": "local_python",
+      "execution_permitted": true,
+      "route_signature": "b9a3b21ce372ad8c79f7f3bf83c4c548e2c6dc32d22edd0b416d0b6cadcca804"
+    }
+  },
+  "impact": {
+    "schema_version": "fleet-hazard-v1",
+    "hazard_revision": 1,
+    "at_sim_time": 0.0,
+    "assessed_count": 2,
+    "affected_count": 2,
+    "review_required_drone_ids": [],
+    "assessments": [
+      {
+        "schema_version": "stratus-hazard-assessment-v1",
+        "checked_revision": 1,
+        "state": "blocked",
+        "hazard_ids": [
+          "crane-001"
+        ],
+        "reason": "Reported exclusion intersects outbound, return",
+        "intersections": [
+          {
+            "hazard_id": "crane-001",
+            "leg": "outbound",
+            "hazard_state": "active"
+          },
+          {
+            "hazard_id": "crane-001",
+            "leg": "return",
+            "hazard_state": "active"
+          }
+        ],
+        "path_signature": "a6fef301225da3e42881a16728d036e273c29d84eec6670fddd33d54fad7e00b",
+        "coordinate_mapping": "Declared identity between authored local-metre fixture grids; not a real-world reprojection",
+        "drone_id": "D001",
+        "task_id": "A006:overview",
+        "path": {
+          "schema_version": "stratus-fleet-path-v1",
+          "scenario_id": "stratus-solar-200-v1",
+          "drone_id": "D001",
+          "task_id": "A006:overview",
+          "view_id": "overview",
+          "fleet_revision": 1,
+          "drone_revision": 0,
+          "task_revision": 1,
+          "hazard_revision": 1,
+          "model_version": "toy-euclidean-energy-v1",
+          "coordinate_frame": {
+            "name": "solar-site-local-v1",
+            "unit": "m"
+          },
+          "origin": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "current": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 12,
+            "y": 2
+          },
+          "return_point": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "segments": {
+            "outbound": [
+              {
+                "x": 10.0,
+                "y": 0.0
+              },
+              {
+                "x": 12,
+                "y": 2
+              }
+            ],
+            "protected_return": [
+              {
+                "x": 12,
+                "y": 2
+              },
+              {
+                "x": 10.0,
+                "y": 0.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "schema_version": "stratus-hazard-assessment-v1",
+        "checked_revision": 1,
+        "state": "blocked",
+        "hazard_ids": [
+          "crane-001"
+        ],
+        "reason": "Reported exclusion intersects outbound, return",
+        "intersections": [
+          {
+            "hazard_id": "crane-001",
+            "leg": "outbound",
+            "hazard_state": "active"
+          },
+          {
+            "hazard_id": "crane-001",
+            "leg": "return",
+            "hazard_state": "active"
+          }
+        ],
+        "path_signature": "101101bd2f4910e3ba74c686433096a5efb4b814709b2c5d5732836c3a62fdda",
+        "coordinate_mapping": "Declared identity between authored local-metre fixture grids; not a real-world reprojection",
+        "drone_id": "D002",
+        "task_id": "A015:overview",
+        "path": {
+          "schema_version": "stratus-fleet-path-v1",
+          "scenario_id": "stratus-solar-200-v1",
+          "drone_id": "D002",
+          "task_id": "A015:overview",
+          "view_id": "overview",
+          "fleet_revision": 1,
+          "drone_revision": 0,
+          "task_revision": 1,
+          "hazard_revision": 1,
+          "model_version": "toy-euclidean-energy-v1",
+          "coordinate_frame": {
+            "name": "solar-site-local-v1",
+            "unit": "m"
+          },
+          "origin": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "current": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 30,
+            "y": 2
+          },
+          "return_point": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "segments": {
+            "outbound": [
+              {
+                "x": 30.0,
+                "y": 0.0
+              },
+              {
+                "x": 30,
+                "y": 2
+              }
+            ],
+            "protected_return": [
+              {
+                "x": 30,
+                "y": 2
+              },
+              {
+                "x": 30.0,
+                "y": 0.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "duration_seconds": 0.0009540000028209761,
+    "acknowledgement_mode": "Actual fleet simulator assessments; no real radio acknowledgement"
+  },
+  "stale_rejections": [
+    {
+      "drone_id": "D002",
+      "status": "rejected",
+      "reason": "unknown_assignment"
+    },
+    {
+      "drone_id": "D001",
+      "status": "rejected",
+      "reason": "unknown_assignment"
+    }
+  ],
+  "report_and_rejections_resources_unchanged": true,
+  "resources_after_report_and_rejections": {
+    "D001": {
+      "position": {
+        "x": 10.0,
+        "y": 0.0
+      },
+      "battery": 100.0,
+      "actions_used": 0
+    },
+    "D002": {
+      "position": {
+        "x": 30.0,
+        "y": 0.0
+      },
+      "battery": 100.0,
+      "actions_used": 0
+    }
+  },
+  "resources_before_report": {
+    "D001": {
+      "position": {
+        "x": 10.0,
+        "y": 0.0
+      },
+      "battery": 100.0,
+      "actions_used": 0
+    },
+    "D002": {
+      "position": {
+        "x": 30.0,
+        "y": 0.0
+      },
+      "battery": 100.0,
+      "actions_used": 0
+    }
+  },
+  "replacements": [
+    {
+      "drone_id": "D001",
+      "old_task_id": "A006:overview",
+      "assignment": {
+        "assignment_id": "r2:D001:A003:overview",
+        "drone_id": "D001",
+        "task_id": "A003:overview",
+        "fleet_revision": 3,
+        "hazard_revision": 1,
+        "drone_revision": 0,
+        "task_revision": 1,
+        "phase": "assigned",
+        "origin": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "initial_battery": 100.0,
+        "numeric": {
+          "drone_id": "D001",
+          "task_id": "A003:overview",
+          "asset_id": "A003",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 6,
+            "y": 2
+          },
+          "launch": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        "cost": {
+          "drone_id": "D001",
+          "task_id": "A003:overview",
+          "asset_id": "A003",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.23606797749979,
+          "capture": 5.0,
+          "return_cost": 2.23606797749979,
+          "reserve": 15.0,
+          "margin": 75.52786404500043,
+          "feasible": true
+        },
+        "mode": "local_python",
+        "execution_permitted": true,
+        "route_signature": "35c8be2bf4139f79934b55c88594a8c7ab9403a3db0e906bd632032996f44c37"
+      },
+      "path": {
+        "schema_version": "stratus-fleet-path-v1",
+        "scenario_id": "stratus-solar-200-v1",
+        "drone_id": "D001",
+        "task_id": "A003:overview",
+        "view_id": "overview",
+        "fleet_revision": 3,
+        "drone_revision": 0,
+        "task_revision": 1,
+        "hazard_revision": 1,
+        "model_version": "toy-euclidean-energy-v1",
+        "coordinate_frame": {
+          "name": "solar-site-local-v1",
+          "unit": "m"
+        },
+        "origin": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "current": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "target": {
+          "x": 6,
+          "y": 2
+        },
+        "return_point": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "segments": {
+          "outbound": [
+            {
+              "x": 10.0,
+              "y": 0.0
+            },
+            {
+              "x": 6,
+              "y": 2
+            }
+          ],
+          "protected_return": [
+            {
+              "x": 6,
+              "y": 2
+            },
+            {
+              "x": 10.0,
+              "y": 0.0
+            }
+          ]
+        }
+      },
+      "assessment": {
+        "schema_version": "stratus-hazard-assessment-v1",
+        "checked_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "intersections": [],
+        "path_signature": "af0f341f3b8cb75d462f3d32b44356cdbbdd838005441937a4fc5b5053cf1437",
+        "coordinate_mapping": "Declared identity between authored local-metre fixture grids; not a real-world reprojection"
+      }
+    },
+    {
+      "drone_id": "D002",
+      "old_task_id": "A015:overview",
+      "assignment": {
+        "assignment_id": "r2:D002:A017:overview",
+        "drone_id": "D002",
+        "task_id": "A017:overview",
+        "fleet_revision": 3,
+        "hazard_revision": 1,
+        "drone_revision": 0,
+        "task_revision": 1,
+        "phase": "assigned",
+        "origin": {
+          "x": 30.0,
+          "y": 0.0
+        },
+        "initial_battery": 100.0,
+        "numeric": {
+          "drone_id": "D002",
+          "task_id": "A017:overview",
+          "asset_id": "A017",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "position": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "target": {
+            "x": 34,
+            "y": 2
+          },
+          "launch": {
+            "x": 30.0,
+            "y": 0.0
+          },
+          "battery": 100.0,
+          "capture": 5.0,
+          "rate": 0.5,
+          "reserve": 15.0,
+          "remaining_actions": 3,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit"
+        },
+        "cost": {
+          "drone_id": "D002",
+          "task_id": "A017:overview",
+          "asset_id": "A017",
+          "view_id": "overview",
+          "drone_revision": 0,
+          "task_revision": 0,
+          "outbound": 2.23606797749979,
+          "capture": 5.0,
+          "return_cost": 2.23606797749979,
+          "reserve": 15.0,
+          "margin": 75.52786404500043,
+          "feasible": true
+        },
+        "mode": "local_python",
+        "execution_permitted": true,
+        "route_signature": "1cfa9dcdbeef589d3690c62af387a21f64dcc440db9d5bd98c49c9b79077214f"
+      },
+      "path": {
+        "schema_version": "stratus-fleet-path-v1",
+        "scenario_id": "stratus-solar-200-v1",
+        "drone_id": "D002",
+        "task_id": "A017:overview",
+        "view_id": "overview",
+        "fleet_revision": 3,
+        "drone_revision": 0,
+        "task_revision": 1,
+        "hazard_revision": 1,
+        "model_version": "toy-euclidean-energy-v1",
+        "coordinate_frame": {
+          "name": "solar-site-local-v1",
+          "unit": "m"
+        },
+        "origin": {
+          "x": 30.0,
+          "y": 0.0
+        },
+        "current": {
+          "x": 30.0,
+          "y": 0.0
+        },
+        "target": {
+          "x": 34,
+          "y": 2
+        },
+        "return_point": {
+          "x": 30.0,
+          "y": 0.0
+        },
+        "segments": {
+          "outbound": [
+            {
+              "x": 30.0,
+              "y": 0.0
+            },
+            {
+              "x": 34,
+              "y": 2
+            }
+          ],
+          "protected_return": [
+            {
+              "x": 34,
+              "y": 2
+            },
+            {
+              "x": 30.0,
+              "y": 0.0
+            }
+          ]
+        }
+      },
+      "assessment": {
+        "schema_version": "stratus-hazard-assessment-v1",
+        "checked_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "intersections": [],
+        "path_signature": "43d5fae456aa3c7988b2b032bfaa6c1d996e34ce517f5a1371304e2f29dd20d9",
+        "coordinate_mapping": "Declared identity between authored local-metre fixture grids; not a real-world reprojection"
+      }
+    }
+  ],
+  "exact_active_save_reopen": true,
+  "resumed_outcome_exact": true,
+  "duplicate_capture": {
+    "status": "already_processed",
+    "drone_id": "D001",
+    "task_id": "A003:overview",
+    "evidence_id": "stratus-solar-200-v1:11:A003:overview"
+  },
+  "metrics": {
+    "fleet_size": 2,
+    "seed": 11,
+    "method": "coordinator",
+    "captures": 6,
+    "unique_usable_assets": 5,
+    "usable_priority": 13,
+    "total_priority": 399,
+    "unresolved_assets": 195,
+    "unclear_views": 1,
+    "human_review_pending": 6,
+    "total_energy_EU": 43.877054302287235,
+    "total_battery_EU": 156.12294569771277,
+    "remaining_captures": 0,
+    "travel_metres": 27.75410860457449,
+    "drone_participation": 2,
+    "rounds": 4,
+    "candidate_pairs": 47,
+    "event_count": 21,
+    "logical_seconds": 13.812559199,
+    "allocation_wall_seconds": [
+      0.01348629999847617,
+      0.01273139999830164,
+      0.0159879999991972,
+      0.02083729999139905
+    ],
+    "violations": 0,
+    "status_counts": {
+      "idle": 0,
+      "assigned": 0,
+      "traveling": 0,
+      "inspecting": 0,
+      "returning": 0,
+      "complete": 2,
+      "held": 0,
+      "unavailable": 0
+    },
+    "stop_reason": "No feasible shortlisted capture remains; completed returns or explicit holds retained. This is not a global infeasibility proof.",
+    "local_kernel_calls": 0,
+    "cloud_requests": 0,
+    "alpha_calls": 0,
+    "ai_requests": 0
+  },
+  "calculation_modes": [
+    "local_python"
+  ],
+  "affected_drone_ids": [
+    "D001",
+    "D002"
+  ],
+  "reassigned_task_count": 2,
+  "held_drone_ids": [],
+  "unaffected_participating_drone_ids": [],
+  "limitations": "Authored 2D exclusion; no real collision outcome, obstacle detection, radio acknowledgement, or detour planning."
+}

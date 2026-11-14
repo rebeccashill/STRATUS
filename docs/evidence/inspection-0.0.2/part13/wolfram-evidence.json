@@ -1,0 +1,1160 @@
+{
+  "status": "passed",
+  "host_mode": "fixture_host_not_part12_fleet_integration",
+  "part12_joined": false,
+  "scope": "Three selected single-drone numerical batches inside explicit 2/50 fixture hosts; not the Part 12 fleet batch",
+  "before_report": {
+    "path": {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D001",
+      "task_id": "T001",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "target": {
+        "x": 50.0,
+        "y": 0.0
+      },
+      "return_point": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "outbound": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 50.0,
+          "y": 0.0
+        }
+      ],
+      "return": [
+        {
+          "x": 50.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "numerical": {
+      "mode": "wolfram_local",
+      "execution_permitted": true,
+      "normalized_input": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part13-authored-fixture",
+        "mission_revision": "part13-v1",
+        "state_revision": 0,
+        "position": {
+          "point_id": "current",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "launch": {
+          "point_id": "return",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "battery_available": 100.0,
+        "capture_cost": 5.0,
+        "travel_energy_per_distance": 0.5,
+        "return_reserve": 15.0,
+        "remaining_actions": 3,
+        "candidates": [
+          {
+            "asset_id": "T001",
+            "view_id": "overview",
+            "x": 50.0,
+            "y": 0.0
+          }
+        ]
+      },
+      "cache_key": "ec2f4050ab1897abf72d88c9cf1a86cf8772a57ce6142a31082ee8f506872739",
+      "model_version": "toy-euclidean-energy-v1",
+      "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+      "output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part13-authored-fixture",
+        "mission_revision": "part13-v1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "T001",
+            "view_id": "overview",
+            "outbound": 25.0,
+            "capture": 5.0,
+            "return_cost": 25.0,
+            "reserve": 15.0,
+            "margin": 30.0,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "python_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part13-authored-fixture",
+        "mission_revision": "part13-v1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "T001",
+            "view_id": "overview",
+            "outbound": 25.0,
+            "capture": 5.0,
+            "return_cost": 25.0,
+            "reserve": 15.0,
+            "margin": 30.0,
+            "feasible": true
+          }
+        ]
+      },
+      "wolfram_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part13-authored-fixture",
+        "mission_revision": "part13-v1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "T001",
+            "view_id": "overview",
+            "outbound": 25.0,
+            "capture": 5.0,
+            "return_cost": 25.0,
+            "reserve": 15.0,
+            "margin": 30.0,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "failure": null,
+      "disagreements": [],
+      "tolerance": {
+        "absolute": 1e-08,
+        "relative": 1e-10,
+        "feasibility_sign": "strict; never relaxed by tolerance"
+      },
+      "request_counts": {
+        "local_kernel_calls": 1,
+        "cloud_requests": 0,
+        "alpha_calls": 0
+      },
+      "state_transition_applied": false
+    },
+    "hazard": {
+      "schema_version": "fleet-hazard-v1",
+      "hazard_revision": 0,
+      "path_signature": "a9a4ad5c95477a02bcfaa4651a271d51f11b5fa885f96eb68d66c0811ede8f1d",
+      "assessment": {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D001",
+        "hazard_revision": 0,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "a9a4ad5c95477a02bcfaa4651a271d51f11b5fa885f96eb68d66c0811ede8f1d"
+      }
+    },
+    "mode": "fixture_host_not_part12_fleet_integration",
+    "prepared_at_utc": "2026-11-14T20:20:32.666044+00:00"
+  },
+  "stale_rejection": {
+    "status": "rejected",
+    "code": "stale_proposal",
+    "reason": "Drone/task/fleet/hazard revision or path changed",
+    "state_transition_applied": false,
+    "capture_action_debit": 0,
+    "battery_debit": 0,
+    "hazard_assessment": null
+  },
+  "after_replan": {
+    "path": {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D001",
+      "task_id": "ALT-D001",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 2,
+      "drone_revision": 1,
+      "task_revision": 1,
+      "hazard_revision": 1,
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "target": {
+        "x": 10.0,
+        "y": 10.0
+      },
+      "return_point": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "outbound": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 10.0,
+          "y": 10.0
+        }
+      ],
+      "return": [
+        {
+          "x": 10.0,
+          "y": 10.0
+        },
+        {
+          "x": 0.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "numerical": {
+      "mode": "wolfram_local",
+      "execution_permitted": true,
+      "normalized_input": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part13-authored-fixture",
+        "mission_revision": "part13-v1",
+        "state_revision": 1,
+        "position": {
+          "point_id": "current",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "launch": {
+          "point_id": "return",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "battery_available": 100.0,
+        "capture_cost": 5.0,
+        "travel_energy_per_distance": 0.5,
+        "return_reserve": 15.0,
+        "remaining_actions": 3,
+        "candidates": [
+          {
+            "asset_id": "ALT-D001",
+            "view_id": "overview",
+            "x": 10.0,
+            "y": 10.0
+          }
+        ]
+      },
+      "cache_key": "6aa43be8afea23ff8699215316a2bf541e6c5d0977ac384a987fc4caee91040e",
+      "model_version": "toy-euclidean-energy-v1",
+      "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+      "output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part13-authored-fixture",
+        "mission_revision": "part13-v1",
+        "state_revision": 1,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "ALT-D001",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 15.0,
+            "margin": 65.85786437626905,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "python_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part13-authored-fixture",
+        "mission_revision": "part13-v1",
+        "state_revision": 1,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "ALT-D001",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 15.0,
+            "margin": 65.85786437626905,
+            "feasible": true
+          }
+        ]
+      },
+      "wolfram_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part13-authored-fixture",
+        "mission_revision": "part13-v1",
+        "state_revision": 1,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "ALT-D001",
+            "view_id": "overview",
+            "outbound": 7.0710678118654755,
+            "capture": 5.0,
+            "return_cost": 7.0710678118654755,
+            "reserve": 15.0,
+            "margin": 65.85786437626905,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "failure": null,
+      "disagreements": [],
+      "tolerance": {
+        "absolute": 1e-08,
+        "relative": 1e-10,
+        "feasibility_sign": "strict; never relaxed by tolerance"
+      },
+      "request_counts": {
+        "local_kernel_calls": 2,
+        "cloud_requests": 0,
+        "alpha_calls": 0
+      },
+      "state_transition_applied": false
+    },
+    "hazard": {
+      "schema_version": "fleet-hazard-v1",
+      "hazard_revision": 1,
+      "path_signature": "0f86495052b4ff77b452bc7193d5dfef709315912d999f1309bd03e26fe30b9c",
+      "assessment": {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D001",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "0f86495052b4ff77b452bc7193d5dfef709315912d999f1309bd03e26fe30b9c"
+      }
+    },
+    "mode": "fixture_host_not_part12_fleet_integration",
+    "prepared_at_utc": "2026-11-14T20:20:38.446132+00:00"
+  },
+  "replanned_receipt": {
+    "status": "executed",
+    "mode": "fixture_host_not_part12_fleet_integration",
+    "request_id": "live-replanned",
+    "drone_id": "D001",
+    "task_id": "ALT-D001",
+    "hazard_assessment": {
+      "schema_version": "fleet-hazard-v1",
+      "drone_id": "D001",
+      "hazard_revision": 1,
+      "state": "clear",
+      "hazard_ids": [],
+      "intersections": [],
+      "reason": "Both proposed segments clear of currently reported 2D exclusions",
+      "path_signature": "0f86495052b4ff77b452bc7193d5dfef709315912d999f1309bd03e26fe30b9c"
+    },
+    "path_signature": "0f86495052b4ff77b452bc7193d5dfef709315912d999f1309bd03e26fe30b9c",
+    "battery_debit": 12.071067811865476,
+    "capture_action_debit": 1,
+    "state_transition_applied": true,
+    "numerical_mode": "wolfram_local",
+    "sim_time": 2,
+    "evidence": "Synthetic contract-fixture capture; no camera or Part 12 flight engine executed"
+  },
+  "fifty_record_impact": {
+    "schema_version": "fleet-hazard-v1",
+    "hazard_revision": 1,
+    "assessed_count": 50,
+    "affected_count": 2,
+    "assessments": [
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D001",
+        "hazard_revision": 1,
+        "state": "blocked",
+        "hazard_ids": [
+          "crane-001"
+        ],
+        "intersections": [
+          {
+            "hazard_id": "crane-001",
+            "leg": "outbound",
+            "hazard_state": "active"
+          },
+          {
+            "hazard_id": "crane-001",
+            "leg": "return",
+            "hazard_state": "active"
+          }
+        ],
+        "reason": "Reported exclusion intersects outbound, return",
+        "path_signature": "35a294912c52094d7cbfc8df42a4fe323db9de94c4ad7d06bb3c2e85275f9185"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D002",
+        "hazard_revision": 1,
+        "state": "blocked",
+        "hazard_ids": [
+          "crane-001"
+        ],
+        "intersections": [
+          {
+            "hazard_id": "crane-001",
+            "leg": "outbound",
+            "hazard_state": "active"
+          },
+          {
+            "hazard_id": "crane-001",
+            "leg": "return",
+            "hazard_state": "active"
+          }
+        ],
+        "reason": "Reported exclusion intersects outbound, return",
+        "path_signature": "5bc21b37aa91736da29d7f51b19480486278028996da2233c542b803aedc9ffe"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D003",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "cc5174aed1422af6d6b379ddb46c6d7432bf5eb78b6210274bd0ead4a1f7cf9f"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D004",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "a97a498cf773fec2c33d396ecd0c0d192987dfba25c0bae2ef31a4b8578d7ef7"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D005",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "a270b72f984d3656a8527dc774711a15c95c9d479c8660ea4bda2b87fd430e05"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D006",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "091ea65d08799643173977127a9bace5d04fcd00e9f06705d78571c4e67d6f9b"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D007",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "368231cdbccfaa237e0f632be6c23a19f087f8fbc49fe9fd09512f22d0c249b6"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D008",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "3e81325cd5af753e1134e36a585a961fa739097d70963c9e645e817b7cc960d9"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D009",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "cbb8f9fceb9a0f9c00ea08d072498f81bc5d758e469c3a29d60bc370299c442e"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D010",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "b995caffe7476b35206b074c4913bf8713ade7d8e94fd4f67c2088cd27425a38"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D011",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "d5e55e9ff6e5298a520cd0924c691c25e94e674cb6f58afca1c43508222ec640"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D012",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "c84aed276fbb0a01aab8c6e61825fa3ee8816ebb953dd3b44bd0c7792224199a"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D013",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "1df394b55ed43d573977c8afe8da9ff48536b14b046effb4662af4a9c6787063"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D014",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "33abc53059cc5dc446455573d752f912e83ab2cbac5c96bc7ef27b945d2221c4"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D015",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "4f785b8911303446042ff57b575f8217f71266dcdfe859f81eb55c1753fc0a57"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D016",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "b30a0f3d1143869bc4d911979913b1a5c818f77e52b2a3435f3e2691c8058e08"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D017",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "47e1864376b299e3867f7d2135242ec69f2eace2644fa749cebec7fc7c8deabc"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D018",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "1b367e5ef2f938b8404d102f67a70e9e370c2049ff425ca0b157b91fd7e81f49"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D019",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "190915b2f05997495d9f4c6de4b7b7981930b3b03b7a0fa21129856c192b7ec5"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D020",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "1e43cf1e9ffc607af28bcd69143dbe1212cec71686f6661ab5b763ccdd7edfe1"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D021",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "8815320de59965de0ed7709d6f8242f2060ce597c03ced9d13d1f8a289c050f2"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D022",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "8583fcb83909da3af93d0a50bc74eeae9a5755089f2061844ffa23a31c96eefe"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D023",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "41c33c514a7c2bc7a6979e9e42d9393fc6af9992d61beece05752f4f21944743"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D024",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "16fc521eaef791646194cc711b0811c0cb3d0d1f496f9c603c8b5f16cedb9a97"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D025",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "387a7d6d0220b06af4cf2c99f586c34ea4ae2b6e2c0f914d7342de2b67377bdd"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D026",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "18dd1819692eaaa679f0f61131b51d784f7ca8cb5f1a86b1d6a48dd1601f843f"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D027",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "94242460e2e638288a6d74ee332454aacad0e500ceedce5a39850b90d30f635d"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D028",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "67cb88e7418a16aa67245530c439a8b7d8413a2a59870e229a124670e49f0f3f"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D029",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "7ef7dff7655f5644f927494fd9346ffb97dbd440815c120e8abdf262693191d2"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D030",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "f41cb2de1150816728bdda43945c37fafca0e0730243d23cc17ad806c7443717"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D031",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "f629d706dca5ba8b2e45c94832001fa577aec42b1f9b2fc83ca1c1752a408fde"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D032",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "be8320769f316d7239fd73c6c706796a2f057c889ed2f993e960045b36e439b3"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D033",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "2182be43657e303a50200c95beac9f824af3af31a9fc1c823e96ff33a37fa343"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D034",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "49c8d6ddca8f5d81663b9b473a7f42e139332d44cbb1aad2ccf7e5805619640f"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D035",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "81f15666465e0662dfc45eee51e9cae1406806a679a0b2fefa00a2a7c55c9cba"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D036",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "8ffd62e4c1fb948ee062944f5730888bc7f21c4dcab09987daea02b8a84292b0"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D037",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "3ae7ef44fcfa2742001de9d78a02ca2cff7fbed51ed53311b1c4e9782a2bed53"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D038",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "30a72e3f8caeba7dec7f36be14b9906e038844b283887d9849b326bb76065e9c"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D039",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "2b1cb32a4590db1663f4ba5f9adbeb1b93061cc021ae495b0a12a27347cc7f12"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D040",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "ea4bd7e23b27570404542d4c2ecd52eb6c6cfb65e2760c2f6f8089b2865e05bf"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D041",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "3afa0f15329244454c4a55583e1431dde9d633e35fc61d052b88512989f7445f"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D042",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "b6addeafdeb986d5b796bfcedcc86e46a477b9dddbd06d5ced6c8e3bcc6a7b43"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D043",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "80a84f6393fd076d2e7f2ec74e2a78a521a099f69308b7f7ee1c412e81410ee1"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D044",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "5253f189136c9e76b18eadabc027d9e9be639477ad720eb78dcc401e3d09f5de"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D045",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "f7d79bc83a3043d071db02f3129e37d3dd9b9d1b36e579186dfdb9b8ca5ca101"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D046",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "67bd996287f89aeaf7c3e629ea679b4b6a33b5ca2561a424777562fb2b91dcc4"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D047",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "bae521ab3e8f80312f04474a96993b99fa1467b882e3b47e8ea11172afc22019"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D048",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "68fd1a38d7c10eab8d878744e553e933348e1ad0986f3fb2e5ed3adf6ed1f44b"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D049",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "066b1c7551d765ff4d7d9388c3d8d2904a9c87a9a5720b06bf82ca22787c1c94"
+      },
+      {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D050",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "5831ad8057ee169507196339ee5e33af873cee5c23375074a0454ae4c63173a1"
+      }
+    ],
+    "duration_seconds": 0.005078000001958571,
+    "acknowledgement_mode": "simulator state assessment; no real radio acknowledgement"
+  },
+  "fifty_selected_numerical": {
+    "path": {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D050",
+      "task_id": "T050",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 1,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 1,
+      "position": {
+        "x": 0.0,
+        "y": 177.0
+      },
+      "target": {
+        "x": 15.0,
+        "y": 177.0
+      },
+      "return_point": {
+        "x": 0.0,
+        "y": 177.0
+      },
+      "outbound": [
+        {
+          "x": 0.0,
+          "y": 177.0
+        },
+        {
+          "x": 15.0,
+          "y": 177.0
+        }
+      ],
+      "return": [
+        {
+          "x": 15.0,
+          "y": 177.0
+        },
+        {
+          "x": 0.0,
+          "y": 177.0
+        }
+      ]
+    },
+    "numerical": {
+      "mode": "wolfram_local",
+      "execution_permitted": true,
+      "normalized_input": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part13-authored-fixture",
+        "mission_revision": "part13-v1",
+        "state_revision": 0,
+        "position": {
+          "point_id": "current",
+          "x": 0.0,
+          "y": 177.0
+        },
+        "launch": {
+          "point_id": "return",
+          "x": 0.0,
+          "y": 177.0
+        },
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "battery_available": 100.0,
+        "capture_cost": 5.0,
+        "travel_energy_per_distance": 0.5,
+        "return_reserve": 15.0,
+        "remaining_actions": 3,
+        "candidates": [
+          {
+            "asset_id": "T050",
+            "view_id": "overview",
+            "x": 15.0,
+            "y": 177.0
+          }
+        ]
+      },
+      "cache_key": "be87eabee60b888c8786ab4a74428037c800cd6cea4fefded032416fc9088e40",
+      "model_version": "toy-euclidean-energy-v1",
+      "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+      "output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part13-authored-fixture",
+        "mission_revision": "part13-v1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "T050",
+            "view_id": "overview",
+            "outbound": 7.5,
+            "capture": 5.0,
+            "return_cost": 7.5,
+            "reserve": 15.0,
+            "margin": 65.0,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "python_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part13-authored-fixture",
+        "mission_revision": "part13-v1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "T050",
+            "view_id": "overview",
+            "outbound": 7.5,
+            "capture": 5.0,
+            "return_cost": 7.5,
+            "reserve": 15.0,
+            "margin": 65.0,
+            "feasible": true
+          }
+        ]
+      },
+      "wolfram_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part13-authored-fixture",
+        "mission_revision": "part13-v1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "T050",
+            "view_id": "overview",
+            "outbound": 7.5,
+            "capture": 5.0,
+            "return_cost": 7.5,
+            "reserve": 15.0,
+            "margin": 65.0,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "failure": null,
+      "disagreements": [],
+      "tolerance": {
+        "absolute": 1e-08,
+        "relative": 1e-10,
+        "feasibility_sign": "strict; never relaxed by tolerance"
+      },
+      "request_counts": {
+        "local_kernel_calls": 3,
+        "cloud_requests": 0,
+        "alpha_calls": 0
+      },
+      "state_transition_applied": false
+    },
+    "hazard": {
+      "schema_version": "fleet-hazard-v1",
+      "hazard_revision": 1,
+      "path_signature": "8228a5a97570d2e2add8273a4587018b0f23ab82ac3782499e3f275097f975f3",
+      "assessment": {
+        "schema_version": "fleet-hazard-v1",
+        "drone_id": "D050",
+        "hazard_revision": 1,
+        "state": "clear",
+        "hazard_ids": [],
+        "intersections": [],
+        "reason": "Both proposed segments clear of currently reported 2D exclusions",
+        "path_signature": "8228a5a97570d2e2add8273a4587018b0f23ab82ac3782499e3f275097f975f3"
+      }
+    },
+    "mode": "fixture_host_not_part12_fleet_integration",
+    "prepared_at_utc": "2026-11-14T20:20:42.975777+00:00"
+  },
+  "fifty_selected_receipt": {
+    "status": "executed",
+    "mode": "fixture_host_not_part12_fleet_integration",
+    "request_id": "live-unaffected",
+    "drone_id": "D050",
+    "task_id": "T050",
+    "hazard_assessment": {
+      "schema_version": "fleet-hazard-v1",
+      "drone_id": "D050",
+      "hazard_revision": 1,
+      "state": "clear",
+      "hazard_ids": [],
+      "intersections": [],
+      "reason": "Both proposed segments clear of currently reported 2D exclusions",
+      "path_signature": "8228a5a97570d2e2add8273a4587018b0f23ab82ac3782499e3f275097f975f3"
+    },
+    "path_signature": "8228a5a97570d2e2add8273a4587018b0f23ab82ac3782499e3f275097f975f3",
+    "battery_debit": 12.5,
+    "capture_action_debit": 1,
+    "state_transition_applied": true,
+    "numerical_mode": "wolfram_local",
+    "sim_time": 2,
+    "evidence": "Synthetic contract-fixture capture; no camera or Part 12 flight engine executed"
+  },
+  "request_counts": {
+    "local_kernel_calls": 3,
+    "cloud_requests": 0,
+    "alpha_calls": 0
+  },
+  "cloud_service_credit_consumption": "Not inferred; no account usage fetched"
+}

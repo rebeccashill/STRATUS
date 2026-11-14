@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "recorded_at_utc": "2026-11-14T11:30:06.665264+00:00",
+  "node_id": "ground-node-001",
+  "node_id_kind": "assigned_logical_id_not_hardware_serial",
+  "location": {
+    "status": "unknown",
+    "label": null,
+    "position": null,
+    "coordinate_frame": null
+  },
+  "bridge": {
+    "model": "MCP2221A",
+    "manufacturer": "Adafruit",
+    "product_id": "4471",
+    "hardware_serial": null,
+    "usb_connection": "verified_by_actual_sensor_reads",
+    "replacement_usb_cable_used": true,
+    "original_cable_failure_cause": "not_diagnosed"
+  },
+  "sensors": [
+    {
+      "sensor_id": "ground-node-001/bme280",
+      "model": "BME280",
+      "manufacturer": "SparkFun",
+      "product_id": "15440 / SEN-15440",
+      "i2c_address": "0x77",
+      "acquisition_status": "verified_individually_and_on_shared_bus",
+      "hardware_serial": null,
+      "calibration": "unknown",
+      "uncertainty": "unknown"
+    },
+    {
+      "sensor_id": "ground-node-001/pmsa003i",
+      "model": "PMSA003I",
+      "manufacturer": "Adafruit",
+      "product_id": "4632",
+      "i2c_address": "0x12",
+      "acquisition_status": "verified_individually_and_on_shared_bus",
+      "hardware_serial": null,
+      "calibration": "unknown",
+      "uncertainty": "unknown"
+    }
+  ],
+  "raw_sources": [
+    {
+      "path": "context/bme280-20261114T110000Z.csv",
+      "sha256": "77ecd7431a60754abcecfa27cc0dbeb50ae8585523a970552cbe5cfe5aeb35f9",
+      "raw_rows": 5,
+      "normalized_observations": 15
+    },
+    {
+      "path": "context/ground-measurements/pmsa-20261114T111234Z-0fe78b.csv",
+      "sha256": "e56cbed8ba0ed32b334c748efa4cc724606649426833658b4d37d2f49d764794",
+      "raw_rows": 15,
+      "normalized_observations": 15
+    },
+    {
+      "path": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+      "sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011",
+      "raw_rows": 30,
+      "normalized_observations": 30
+    }
+  ],
+  "normalized_source": {
+    "path": "context/ground-measurements/observations-20261114.jsonl",
+    "sha256": "9f20bce90e816431ac48915828abb301fb32174dd6dfa6484cf3d36640922bbc",
+    "observations": 60,
+    "source_mode": "recorded_measured"
+  },
+  "missing_source_fields": {
+    "bme280-20261114T110000Z.csv": "Receipt time not recorded; normalized receipt is null/unknown, never invented from conversion time."
+  },
+  "acquisition_blockers": [],
+  "quality_notes": [
+    "All PM channels reported zero in both short runs; values are unreviewed, not a calibrated zero-pollution claim.",
+    "Raw scan entries 0x00 and 0x78 retained in original summaries; not additional identified sensors.",
+    "Actual ground location, calibration and uncertainty have not been supplied or verified."
+  ],
+  "handoff": {
+    "deliverable_status": "saved",
+    "original_target_utc": "2026-11-14T05:00:00+00:00",
+    "recorded_at_utc": "2026-11-14T11:30:06.665264+00:00",
+    "original_deadline_met": false,
+    "note": "Handoff completed with its actual timestamp preserved. The original midnight target was missed, but Rebecca explicitly confirmed timing does not block H008 completion.",
+    "checklist_status": "complete",
+    "timing_blocks_completion": false,
+    "user_instruction": "H008 can be checked off regardless of timing"
+  },
+  "next_step": "Use H009/H010 to connect the local reader and recorded observations to one backend feed; preserve observation IDs, acquisition/receipt times and ground location. Remaining Part 4 Wolfram/inspection/save-reopen work is separate and pending.",
+  "aircraft_state_changed": false,
+  "image_findings_changed": false,
+  "historical_part3_decision": "context/sensor-decision.json remains unchanged as the prior skipped-acquisition record.",
+  "verification_evidence": "docs/evidence/inspection-0.0.1/hardware/handoff-verification.json"
+}

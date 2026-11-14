@@ -1,0 +1,39 @@
+{
+  "finished_at_utc": "2026-11-14T11:15:05.495290+00:00",
+  "mode": "both",
+  "requested_i2c_frequency_hz": 100000,
+  "detected_addresses": [
+    "0x0",
+    "0x12",
+    "0x77",
+    "0x78"
+  ],
+  "sensor_addresses": {
+    "PMSA003I": "0x12",
+    "BME280": "0x77"
+  },
+  "successful_reads": {
+    "PMSA003I": 5,
+    "BME280": 5
+  },
+  "expected_reads_per_sensor": 5,
+  "initialization_errors": {},
+  "result": "PASS",
+  "csv": "C:\\Users\\shill\\OneDrive\\Desktop\\STRATUS\\context\\ground-measurements\\both-20261114T111455Z-a371ef.csv",
+  "location": "not_supplied",
+  "quality": "unreviewed; calibration not verified",
+  "particulate_convention": "environmental mass concentration; ug/m3 means micrograms per cubic metre",
+  "pmsa_library_keys": {
+    "pm1_0": "pm10 env",
+    "pm2_5": "pm25 env",
+    "pm10": "pm100 env"
+  },
+  "package_versions": {
+    "hidapi": "0.15.0",
+    "adafruit-blinka": "10.2.0",
+    "adafruit-circuitpython-bme280": "2.6.32",
+    "adafruit-circuitpython-pm25": "2.1.24"
+  },
+  "real_flight": false,
+  "mission_state_changed": false
+}

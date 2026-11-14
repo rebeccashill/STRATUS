@@ -1,0 +1,2381 @@
+{
+  "schema_version": "fleet-hazard-v1",
+  "source": "newly authored synthetic contract fixture",
+  "paths": [
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D001",
+      "task_id": "T001",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "target": {
+        "x": 50,
+        "y": 0
+      },
+      "return_point": {
+        "x": 0,
+        "y": 0
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 50,
+          "y": 0
+        }
+      ],
+      "return": [
+        {
+          "x": 50,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D002",
+      "task_id": "T002",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 5
+      },
+      "target": {
+        "x": 50,
+        "y": 5
+      },
+      "return_point": {
+        "x": 0,
+        "y": 5
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": 50,
+          "y": 5
+        }
+      ],
+      "return": [
+        {
+          "x": 50,
+          "y": 5
+        },
+        {
+          "x": 0,
+          "y": 5
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D003",
+      "task_id": "T003",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 36
+      },
+      "target": {
+        "x": 15,
+        "y": 36
+      },
+      "return_point": {
+        "x": 0,
+        "y": 36
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 36
+        },
+        {
+          "x": 15,
+          "y": 36
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 36
+        },
+        {
+          "x": 0,
+          "y": 36
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D004",
+      "task_id": "T004",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 39
+      },
+      "target": {
+        "x": 15,
+        "y": 39
+      },
+      "return_point": {
+        "x": 0,
+        "y": 39
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 39
+        },
+        {
+          "x": 15,
+          "y": 39
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 39
+        },
+        {
+          "x": 0,
+          "y": 39
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D005",
+      "task_id": "T005",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 42
+      },
+      "target": {
+        "x": 15,
+        "y": 42
+      },
+      "return_point": {
+        "x": 0,
+        "y": 42
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 42
+        },
+        {
+          "x": 15,
+          "y": 42
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 42
+        },
+        {
+          "x": 0,
+          "y": 42
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D006",
+      "task_id": "T006",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 45
+      },
+      "target": {
+        "x": 15,
+        "y": 45
+      },
+      "return_point": {
+        "x": 0,
+        "y": 45
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 45
+        },
+        {
+          "x": 15,
+          "y": 45
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 45
+        },
+        {
+          "x": 0,
+          "y": 45
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D007",
+      "task_id": "T007",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 48
+      },
+      "target": {
+        "x": 15,
+        "y": 48
+      },
+      "return_point": {
+        "x": 0,
+        "y": 48
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 48
+        },
+        {
+          "x": 15,
+          "y": 48
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 48
+        },
+        {
+          "x": 0,
+          "y": 48
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D008",
+      "task_id": "T008",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 51
+      },
+      "target": {
+        "x": 15,
+        "y": 51
+      },
+      "return_point": {
+        "x": 0,
+        "y": 51
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 51
+        },
+        {
+          "x": 15,
+          "y": 51
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 51
+        },
+        {
+          "x": 0,
+          "y": 51
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D009",
+      "task_id": "T009",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 54
+      },
+      "target": {
+        "x": 15,
+        "y": 54
+      },
+      "return_point": {
+        "x": 0,
+        "y": 54
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 54
+        },
+        {
+          "x": 15,
+          "y": 54
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 54
+        },
+        {
+          "x": 0,
+          "y": 54
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D010",
+      "task_id": "T010",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 57
+      },
+      "target": {
+        "x": 15,
+        "y": 57
+      },
+      "return_point": {
+        "x": 0,
+        "y": 57
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 57
+        },
+        {
+          "x": 15,
+          "y": 57
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 57
+        },
+        {
+          "x": 0,
+          "y": 57
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D011",
+      "task_id": "T011",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 60
+      },
+      "target": {
+        "x": 15,
+        "y": 60
+      },
+      "return_point": {
+        "x": 0,
+        "y": 60
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 60
+        },
+        {
+          "x": 15,
+          "y": 60
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 60
+        },
+        {
+          "x": 0,
+          "y": 60
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D012",
+      "task_id": "T012",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 63
+      },
+      "target": {
+        "x": 15,
+        "y": 63
+      },
+      "return_point": {
+        "x": 0,
+        "y": 63
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 63
+        },
+        {
+          "x": 15,
+          "y": 63
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 63
+        },
+        {
+          "x": 0,
+          "y": 63
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D013",
+      "task_id": "T013",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 66
+      },
+      "target": {
+        "x": 15,
+        "y": 66
+      },
+      "return_point": {
+        "x": 0,
+        "y": 66
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 66
+        },
+        {
+          "x": 15,
+          "y": 66
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 66
+        },
+        {
+          "x": 0,
+          "y": 66
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D014",
+      "task_id": "T014",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 69
+      },
+      "target": {
+        "x": 15,
+        "y": 69
+      },
+      "return_point": {
+        "x": 0,
+        "y": 69
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 69
+        },
+        {
+          "x": 15,
+          "y": 69
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 69
+        },
+        {
+          "x": 0,
+          "y": 69
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D015",
+      "task_id": "T015",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 72
+      },
+      "target": {
+        "x": 15,
+        "y": 72
+      },
+      "return_point": {
+        "x": 0,
+        "y": 72
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 72
+        },
+        {
+          "x": 15,
+          "y": 72
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 72
+        },
+        {
+          "x": 0,
+          "y": 72
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D016",
+      "task_id": "T016",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 75
+      },
+      "target": {
+        "x": 15,
+        "y": 75
+      },
+      "return_point": {
+        "x": 0,
+        "y": 75
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 75
+        },
+        {
+          "x": 15,
+          "y": 75
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 75
+        },
+        {
+          "x": 0,
+          "y": 75
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D017",
+      "task_id": "T017",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 78
+      },
+      "target": {
+        "x": 15,
+        "y": 78
+      },
+      "return_point": {
+        "x": 0,
+        "y": 78
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 78
+        },
+        {
+          "x": 15,
+          "y": 78
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 78
+        },
+        {
+          "x": 0,
+          "y": 78
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D018",
+      "task_id": "T018",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 81
+      },
+      "target": {
+        "x": 15,
+        "y": 81
+      },
+      "return_point": {
+        "x": 0,
+        "y": 81
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 81
+        },
+        {
+          "x": 15,
+          "y": 81
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 81
+        },
+        {
+          "x": 0,
+          "y": 81
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D019",
+      "task_id": "T019",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 84
+      },
+      "target": {
+        "x": 15,
+        "y": 84
+      },
+      "return_point": {
+        "x": 0,
+        "y": 84
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 84
+        },
+        {
+          "x": 15,
+          "y": 84
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 84
+        },
+        {
+          "x": 0,
+          "y": 84
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D020",
+      "task_id": "T020",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 87
+      },
+      "target": {
+        "x": 15,
+        "y": 87
+      },
+      "return_point": {
+        "x": 0,
+        "y": 87
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 87
+        },
+        {
+          "x": 15,
+          "y": 87
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 87
+        },
+        {
+          "x": 0,
+          "y": 87
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D021",
+      "task_id": "T021",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 90
+      },
+      "target": {
+        "x": 15,
+        "y": 90
+      },
+      "return_point": {
+        "x": 0,
+        "y": 90
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 90
+        },
+        {
+          "x": 15,
+          "y": 90
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 90
+        },
+        {
+          "x": 0,
+          "y": 90
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D022",
+      "task_id": "T022",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 93
+      },
+      "target": {
+        "x": 15,
+        "y": 93
+      },
+      "return_point": {
+        "x": 0,
+        "y": 93
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 93
+        },
+        {
+          "x": 15,
+          "y": 93
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 93
+        },
+        {
+          "x": 0,
+          "y": 93
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D023",
+      "task_id": "T023",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 96
+      },
+      "target": {
+        "x": 15,
+        "y": 96
+      },
+      "return_point": {
+        "x": 0,
+        "y": 96
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 96
+        },
+        {
+          "x": 15,
+          "y": 96
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 96
+        },
+        {
+          "x": 0,
+          "y": 96
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D024",
+      "task_id": "T024",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 99
+      },
+      "target": {
+        "x": 15,
+        "y": 99
+      },
+      "return_point": {
+        "x": 0,
+        "y": 99
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 99
+        },
+        {
+          "x": 15,
+          "y": 99
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 99
+        },
+        {
+          "x": 0,
+          "y": 99
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D025",
+      "task_id": "T025",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 102
+      },
+      "target": {
+        "x": 15,
+        "y": 102
+      },
+      "return_point": {
+        "x": 0,
+        "y": 102
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 102
+        },
+        {
+          "x": 15,
+          "y": 102
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 102
+        },
+        {
+          "x": 0,
+          "y": 102
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D026",
+      "task_id": "T026",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 105
+      },
+      "target": {
+        "x": 15,
+        "y": 105
+      },
+      "return_point": {
+        "x": 0,
+        "y": 105
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 105
+        },
+        {
+          "x": 15,
+          "y": 105
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 105
+        },
+        {
+          "x": 0,
+          "y": 105
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D027",
+      "task_id": "T027",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 108
+      },
+      "target": {
+        "x": 15,
+        "y": 108
+      },
+      "return_point": {
+        "x": 0,
+        "y": 108
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 108
+        },
+        {
+          "x": 15,
+          "y": 108
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 108
+        },
+        {
+          "x": 0,
+          "y": 108
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D028",
+      "task_id": "T028",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 111
+      },
+      "target": {
+        "x": 15,
+        "y": 111
+      },
+      "return_point": {
+        "x": 0,
+        "y": 111
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 111
+        },
+        {
+          "x": 15,
+          "y": 111
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 111
+        },
+        {
+          "x": 0,
+          "y": 111
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D029",
+      "task_id": "T029",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 114
+      },
+      "target": {
+        "x": 15,
+        "y": 114
+      },
+      "return_point": {
+        "x": 0,
+        "y": 114
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 114
+        },
+        {
+          "x": 15,
+          "y": 114
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 114
+        },
+        {
+          "x": 0,
+          "y": 114
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D030",
+      "task_id": "T030",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 117
+      },
+      "target": {
+        "x": 15,
+        "y": 117
+      },
+      "return_point": {
+        "x": 0,
+        "y": 117
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 117
+        },
+        {
+          "x": 15,
+          "y": 117
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 117
+        },
+        {
+          "x": 0,
+          "y": 117
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D031",
+      "task_id": "T031",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 120
+      },
+      "target": {
+        "x": 15,
+        "y": 120
+      },
+      "return_point": {
+        "x": 0,
+        "y": 120
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 120
+        },
+        {
+          "x": 15,
+          "y": 120
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 120
+        },
+        {
+          "x": 0,
+          "y": 120
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D032",
+      "task_id": "T032",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 123
+      },
+      "target": {
+        "x": 15,
+        "y": 123
+      },
+      "return_point": {
+        "x": 0,
+        "y": 123
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 123
+        },
+        {
+          "x": 15,
+          "y": 123
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 123
+        },
+        {
+          "x": 0,
+          "y": 123
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D033",
+      "task_id": "T033",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 126
+      },
+      "target": {
+        "x": 15,
+        "y": 126
+      },
+      "return_point": {
+        "x": 0,
+        "y": 126
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 126
+        },
+        {
+          "x": 15,
+          "y": 126
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 126
+        },
+        {
+          "x": 0,
+          "y": 126
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D034",
+      "task_id": "T034",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 129
+      },
+      "target": {
+        "x": 15,
+        "y": 129
+      },
+      "return_point": {
+        "x": 0,
+        "y": 129
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 129
+        },
+        {
+          "x": 15,
+          "y": 129
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 129
+        },
+        {
+          "x": 0,
+          "y": 129
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D035",
+      "task_id": "T035",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 132
+      },
+      "target": {
+        "x": 15,
+        "y": 132
+      },
+      "return_point": {
+        "x": 0,
+        "y": 132
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 132
+        },
+        {
+          "x": 15,
+          "y": 132
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 132
+        },
+        {
+          "x": 0,
+          "y": 132
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D036",
+      "task_id": "T036",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 135
+      },
+      "target": {
+        "x": 15,
+        "y": 135
+      },
+      "return_point": {
+        "x": 0,
+        "y": 135
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 135
+        },
+        {
+          "x": 15,
+          "y": 135
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 135
+        },
+        {
+          "x": 0,
+          "y": 135
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D037",
+      "task_id": "T037",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 138
+      },
+      "target": {
+        "x": 15,
+        "y": 138
+      },
+      "return_point": {
+        "x": 0,
+        "y": 138
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 138
+        },
+        {
+          "x": 15,
+          "y": 138
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 138
+        },
+        {
+          "x": 0,
+          "y": 138
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D038",
+      "task_id": "T038",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 141
+      },
+      "target": {
+        "x": 15,
+        "y": 141
+      },
+      "return_point": {
+        "x": 0,
+        "y": 141
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 141
+        },
+        {
+          "x": 15,
+          "y": 141
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 141
+        },
+        {
+          "x": 0,
+          "y": 141
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D039",
+      "task_id": "T039",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 144
+      },
+      "target": {
+        "x": 15,
+        "y": 144
+      },
+      "return_point": {
+        "x": 0,
+        "y": 144
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 144
+        },
+        {
+          "x": 15,
+          "y": 144
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 144
+        },
+        {
+          "x": 0,
+          "y": 144
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D040",
+      "task_id": "T040",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 147
+      },
+      "target": {
+        "x": 15,
+        "y": 147
+      },
+      "return_point": {
+        "x": 0,
+        "y": 147
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 147
+        },
+        {
+          "x": 15,
+          "y": 147
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 147
+        },
+        {
+          "x": 0,
+          "y": 147
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D041",
+      "task_id": "T041",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 150
+      },
+      "target": {
+        "x": 15,
+        "y": 150
+      },
+      "return_point": {
+        "x": 0,
+        "y": 150
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 150
+        },
+        {
+          "x": 15,
+          "y": 150
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 150
+        },
+        {
+          "x": 0,
+          "y": 150
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D042",
+      "task_id": "T042",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 153
+      },
+      "target": {
+        "x": 15,
+        "y": 153
+      },
+      "return_point": {
+        "x": 0,
+        "y": 153
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 153
+        },
+        {
+          "x": 15,
+          "y": 153
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 153
+        },
+        {
+          "x": 0,
+          "y": 153
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D043",
+      "task_id": "T043",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 156
+      },
+      "target": {
+        "x": 15,
+        "y": 156
+      },
+      "return_point": {
+        "x": 0,
+        "y": 156
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 156
+        },
+        {
+          "x": 15,
+          "y": 156
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 156
+        },
+        {
+          "x": 0,
+          "y": 156
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D044",
+      "task_id": "T044",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 159
+      },
+      "target": {
+        "x": 15,
+        "y": 159
+      },
+      "return_point": {
+        "x": 0,
+        "y": 159
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 159
+        },
+        {
+          "x": 15,
+          "y": 159
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 159
+        },
+        {
+          "x": 0,
+          "y": 159
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D045",
+      "task_id": "T045",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 162
+      },
+      "target": {
+        "x": 15,
+        "y": 162
+      },
+      "return_point": {
+        "x": 0,
+        "y": 162
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 162
+        },
+        {
+          "x": 15,
+          "y": 162
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 162
+        },
+        {
+          "x": 0,
+          "y": 162
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D046",
+      "task_id": "T046",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 165
+      },
+      "target": {
+        "x": 15,
+        "y": 165
+      },
+      "return_point": {
+        "x": 0,
+        "y": 165
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 165
+        },
+        {
+          "x": 15,
+          "y": 165
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 165
+        },
+        {
+          "x": 0,
+          "y": 165
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D047",
+      "task_id": "T047",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 168
+      },
+      "target": {
+        "x": 15,
+        "y": 168
+      },
+      "return_point": {
+        "x": 0,
+        "y": 168
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 168
+        },
+        {
+          "x": 15,
+          "y": 168
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 168
+        },
+        {
+          "x": 0,
+          "y": 168
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D048",
+      "task_id": "T048",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 171
+      },
+      "target": {
+        "x": 15,
+        "y": 171
+      },
+      "return_point": {
+        "x": 0,
+        "y": 171
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 171
+        },
+        {
+          "x": 15,
+          "y": 171
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 171
+        },
+        {
+          "x": 0,
+          "y": 171
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D049",
+      "task_id": "T049",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 174
+      },
+      "target": {
+        "x": 15,
+        "y": 174
+      },
+      "return_point": {
+        "x": 0,
+        "y": 174
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 174
+        },
+        {
+          "x": 15,
+          "y": 174
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 174
+        },
+        {
+          "x": 0,
+          "y": 174
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D050",
+      "task_id": "T050",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 177
+      },
+      "target": {
+        "x": 15,
+        "y": 177
+      },
+      "return_point": {
+        "x": 0,
+        "y": 177
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 177
+        },
+        {
+          "x": 15,
+          "y": 177
+        }
+      ],
+      "return": [
+        {
+          "x": 15,
+          "y": 177
+        },
+        {
+          "x": 0,
+          "y": 177
+        }
+      ]
+    }
+  ],
+  "event": {
+    "schema_version": "fleet-hazard-v1",
+    "event_id": "crane-001-1-report",
+    "hazard_id": "crane-001",
+    "expected_revision": 0,
+    "revision": 1,
+    "action": "report",
+    "source": "synthetic_event",
+    "observed_at_utc": "2026-11-14T20:00:00+00:00",
+    "reported_at_utc": "2026-11-14T20:00:00+00:00",
+    "effective_sim_time": 1,
+    "notes": "Authored crane report after the initial simulated inspection",
+    "coordinate_frame": {
+      "name": "site_local_cartesian",
+      "unit": "m"
+    },
+    "rectangle": {
+      "x_min": 20,
+      "y_min": -5,
+      "x_max": 30,
+      "y_max": 5,
+      "buffer_m": 1
+    },
+    "review_after_sim_time": 31
+  }
+}

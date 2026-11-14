@@ -1,0 +1,90 @@
+{
+  "scope": "authored toy verification case, not the frozen site's geometry",
+  "outbound": 10,
+  "capture": 5,
+  "return": 20,
+  "reserve": 15,
+  "cases": [
+    {
+      "available": 100,
+      "decision": {
+        "allowed": true,
+        "code": "allowed",
+        "message": "Local constraints passed; no state change until explicit execution",
+        "state_revision": 0,
+        "proposal": {
+          "action_type": "inspect",
+          "asset_id": "P03",
+          "view_id": "overview",
+          "reason": "Toy boundary verification",
+          "alternative": "Return or stop"
+        },
+        "costs": {
+          "outbound": 10.0,
+          "capture": 5,
+          "return_cost": 20.0,
+          "reserve": 15,
+          "margin": 50.0,
+          "model_version": "toy-euclidean-energy-v1",
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "calculator_mode": "local_python_euclidean"
+        }
+      }
+    },
+    {
+      "available": 50,
+      "decision": {
+        "allowed": true,
+        "code": "allowed",
+        "message": "Local constraints passed; no state change until explicit execution",
+        "state_revision": 0,
+        "proposal": {
+          "action_type": "inspect",
+          "asset_id": "P03",
+          "view_id": "overview",
+          "reason": "Toy boundary verification",
+          "alternative": "Return or stop"
+        },
+        "costs": {
+          "outbound": 10.0,
+          "capture": 5,
+          "return_cost": 20.0,
+          "reserve": 15,
+          "margin": 0.0,
+          "model_version": "toy-euclidean-energy-v1",
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "calculator_mode": "local_python_euclidean"
+        }
+      }
+    },
+    {
+      "available": 49,
+      "decision": {
+        "allowed": false,
+        "code": "return_reserve_violation",
+        "message": "Available battery cannot protect travel, capture, return, and reserve",
+        "state_revision": 0,
+        "proposal": {
+          "action_type": "inspect",
+          "asset_id": "P03",
+          "view_id": "overview",
+          "reason": "Toy boundary verification",
+          "alternative": "Return or stop"
+        },
+        "costs": {
+          "outbound": 10.0,
+          "capture": 5,
+          "return_cost": 20.0,
+          "reserve": 15,
+          "margin": -1.0,
+          "model_version": "toy-euclidean-energy-v1",
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "calculator_mode": "local_python_euclidean"
+        }
+      }
+    }
+  ]
+}

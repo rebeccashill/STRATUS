@@ -1,0 +1,67 @@
+{
+  "path": {
+    "schema_version": "stratus-fleet-path-v1",
+    "scenario_id": "stratus-solar-200-v1",
+    "drone_id": "D001",
+    "task_id": "A001:overview",
+    "view_id": "overview",
+    "fleet_revision": 0,
+    "drone_revision": 0,
+    "task_revision": 0,
+    "hazard_revision": 0,
+    "model_version": "toy-euclidean-energy-v1",
+    "coordinate_frame": {
+      "name": "solar-site-local-v1",
+      "unit": "m"
+    },
+    "origin": {
+      "x": 10.0,
+      "y": 0.0
+    },
+    "current": {
+      "x": 10.0,
+      "y": 0.0
+    },
+    "target": {
+      "x": 2,
+      "y": 2
+    },
+    "return_point": {
+      "x": 10.0,
+      "y": 0.0
+    },
+    "segments": {
+      "outbound": [
+        {
+          "x": 10.0,
+          "y": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2
+        }
+      ],
+      "protected_return": [
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 10.0,
+          "y": 0.0
+        }
+      ]
+    }
+  },
+  "registry": {
+    "schema_version": "stratus-hazards-v1",
+    "revision": 0,
+    "coordinate_frame": {
+      "name": "solar-site-local-v1",
+      "unit": "m"
+    },
+    "hazards": [],
+    "events": []
+  },
+  "owner": "Part 12 owns fleet/gate; Part 13 supplies a pure assessor and reported hazard geometry; no Part 13 implementation claimed."
+}

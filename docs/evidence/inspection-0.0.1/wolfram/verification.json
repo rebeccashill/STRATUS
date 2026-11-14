@@ -1,0 +1,31 @@
+{
+  "verified_at_utc": "2026-11-14T12:04:51.426696+00:00",
+  "tests": 71,
+  "tests_passed": true,
+  "actual_local_wolfram_parity": "passed",
+  "wolfram_section": "7/7",
+  "model_version": "toy-euclidean-energy-v1",
+  "version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+  "candidate_batch_size": 12,
+  "boundary_margins": [
+    50,
+    0,
+    -1
+  ],
+  "exhausted_actions_rejected": true,
+  "equivalent_units": "passed",
+  "cache_reuse": "passed",
+  "local_cost_kernel_calls": 5,
+  "metadata_kernel_calls": 1,
+  "cloud_requests": 0,
+  "alpha_calls": 0,
+  "max_attempts_per_computation": 1,
+  "retries": 0,
+  "subprocess_timeout_seconds": 25,
+  "script_computation_timeout_seconds": 5,
+  "failure_tests": "Injected timeout/quota/access/invalid responses and numerical mismatch; not live cloud evidence",
+  "computation_state_unchanged": true,
+  "mission_evidence_ground_data_and_saved_runs_unchanged": true,
+  "real_flight": false,
+  "state_transitions_in_tests": "ephemeral only; no new saved inspection run"
+}

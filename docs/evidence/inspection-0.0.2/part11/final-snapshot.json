@@ -1,0 +1,13 @@
+{
+  "snapshot_at_utc": "2026-11-14T19:40:54.904398+00:00",
+  "checkpoint": "saved-runs/ui11-browser-final.json",
+  "source_checkpoint": "saved-runs/adaptive-e43ba3f0-cdedd7.json",
+  "sha256": "b1d1d7652c64993b3efc74771d6f2de12f1fed9ed6f2fe81a1465551642b1d8e",
+  "battery": 65.85786437626905,
+  "actions_remaining": 0,
+  "events": 3,
+  "feedback": 6,
+  "report_html": "saved-runs/reports/inspection-e43ba3f0-20261114T194054858165Z.html",
+  "report_json": "saved-runs/reports/inspection-e43ba3f0-20261114T194054858165Z.json",
+  "note": "The active run advanced after the original two-capture browser walkthrough. This is a later validated byte-copy snapshot; the earlier report remains unchanged. No aircraft action was executed to create this snapshot."
+}

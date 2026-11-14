@@ -1,0 +1,98 @@
+TAP version 13
+# PASS: proposal review and numerical permission control execution guidance
+# PASS: an exhausted run has a concrete save/review/restart path
+# PASS: actual, cached, local and unavailable Wolfram modes remain distinct
+# PASS: recorded zero, original time and unavailable dash are not conflated
+# PASS: rendering guidance, costs and source labels cannot execute a capture
+# PASS: initial and duplicate mission loads cannot race the saved-run selector
+# Subtest: tests\\frontend_clarity.test.cjs
+ok 1 - tests\\frontend_clarity.test.cjs
+  ---
+  duration_ms: 1294.652
+  type: 'test'
+  ...
+# Subtest: Save selects the newly written fleet instead of an older run
+ok 2 - Save selects the newly written fleet instead of an older run
+  ---
+  duration_ms: 3.4616
+  type: 'test'
+  ...
+# Subtest: refresh retains an explicit saved-run selection and handles an empty list
+ok 3 - refresh retains an explicit saved-run selection and handles an empty list
+  ---
+  duration_ms: 0.6373
+  type: 'test'
+  ...
+# Subtest: timer adapters never receive the fleet object as their native receiver
+ok 4 - timer adapters never receive the fleet object as their native receiver
+  ---
+  duration_ms: 0.7254
+  type: 'test'
+  ...
+# Subtest: paused startup does not send an event request
+ok 5 - paused startup does not send an event request
+  ---
+  duration_ms: 1.3666
+  type: 'test'
+  ...
+# Subtest: pause during in-flight work prevents a later automatic request
+ok 6 - pause during in-flight work prevents a later automatic request
+  ---
+  duration_ms: 0.7239
+  type: 'test'
+  ...
+# Subtest: failed request does not retry on the next timer
+ok 7 - failed request does not retry on the next timer
+  ---
+  duration_ms: 2.8822
+  type: 'test'
+  ...
+# Subtest: a completed fleet does not schedule more events
+ok 8 - a completed fleet does not schedule more events
+  ---
+  duration_ms: 0.6917
+  type: 'test'
+  ...
+# Subtest: one successful bounded tick schedules exactly one successor
+ok 9 - one successful bounded tick schedules exactly one successor
+  ---
+  duration_ms: 0.5996
+  type: 'test'
+  ...
+# Subtest: all 50 fixture records contribute to displayed accounting
+ok 10 - all 50 fixture records contribute to displayed accounting
+  ---
+  duration_ms: 4.2527
+  type: 'test'
+  ...
+# Subtest: missing proposal remains explicit rather than displaying a fresh authorization
+ok 11 - missing proposal remains explicit rather than displaying a fresh authorization
+  ---
+  duration_ms: 1.0345
+  type: 'test'
+  ...
+# Subtest: empty registry does not invent an assessment
+ok 12 - empty registry does not invent an assessment
+  ---
+  duration_ms: 0.6002
+  type: 'test'
+  ...
+# PASS: late evidence responses preserve the newest asset/view, finding and provenance
+# PASS: repeated execution clicks send one request while a workflow mutation is pending
+# PASS: a committed capture opens its returned asset/view instead of the previously selected image
+# PASS: a newly computed next plan needs explicit review before another capture can be sent
+# Subtest: tests\\frontend_races.test.cjs
+ok 4 - tests\\frontend_races.test.cjs
+  ---
+  duration_ms: 439.0508
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1423.7373

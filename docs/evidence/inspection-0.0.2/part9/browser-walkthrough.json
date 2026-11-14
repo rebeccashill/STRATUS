@@ -1,0 +1,526 @@
+{
+  "status": "passed",
+  "at_utc": "2026-11-14T22:31:01.880Z",
+  "single_checkpoint": "adaptive-465640c2-dca87f.json",
+  "single_report": "/api/report/view?name=inspection-465640c2-20261114T222335286219Z.html",
+  "two_drone_checkpoint": "fleet-8b7beb5eb6ae45d897d6de82f47650f1.json",
+  "fifty_drone_checkpoint": "fleet-c89be77ba8c8458bba4ce16d49679bbf.json",
+  "fifty_drone_report": "/api/report/view?name=fleet-c89be77b-20261114T222932296184Z.html",
+  "checks": [
+    {
+      "check": "restored initial mission and live ground",
+      "actions": "0 / 3",
+      "battery": "65.86",
+      "cost-mode": "Cached Wolfram",
+      "ground-mode-label": "Live",
+      "mission-meta": "solar-array-001 · 0.0.1-part2 · ui11-browser-final.json",
+      "position": "Position (20, 10) m",
+      "sensor-readings": "Atmosphere / BME280\nfresh / 2s old\nTemperature\n22.09\n°C\nHumidity\n39.30\n%RH\nAir pressure\n1009.10\nhPa\nAcquired UTC: 2026-11-14T22:21:11.092379+00:00\nParticulates / PMSA003I\nfresh / 2s old\nPM1.0\n0.00\nµg/m³\nPM2.5\n0.00\nµg/m³\nPM10\n0.00\nµg/m³\nAcquired UTC: 2026-11-14T22:21:11.112379+00:00"
+    },
+    {
+      "check": "P05 overview captured and unknown",
+      "actions": "2 / 3",
+      "battery": "80.86",
+      "evidence-title": "P05 / overview",
+      "finding": "Finding unknown",
+      "position": "Position (20, 20) m",
+      "quality": "Quality: unclear",
+      "queue": "P01 / overview\nPending human review · view evidence\npending\nResolve task\nRequest another view\nP02 / overview\nUnclear image - finding unknown · view evidence\npending\nResolve task\nRequest another view\nP05 / overview\nUnclear image - finding unknown · view evidence\npending\nResolve task\nRequest another view",
+      "view-review-status": "Review task: pending",
+      "workflow-message": "Capture committed once. Choose Review next action before another capture."
+    },
+    {
+      "check": "actual Wolfram what-if without debit",
+      "actions": "1 / 3",
+      "battery": "75.86",
+      "cost-mode": "Local Wolfram",
+      "evidence-title": "P05 / follow-up",
+      "finding": "No apparent concern · replay",
+      "ground-details": "",
+      "preview-result": "No capture fits the preview budget; return/hold for review.\nNo feasible capture · Local Wolfram\nActive battery 75.86 EU and 1 captures left - unchanged.",
+      "quality": "Quality: clear"
+    },
+    {
+      "check": "ground fallback Unavailable",
+      "actions": "1 / 3",
+      "battery": "75.86",
+      "ground-mode-label": "Unavailable",
+      "ground-source-help": "Unavailable: no usable measurements are supplied. Dashes mean missing data; you can continue the simulated inspection.",
+      "sensor-readings": "Atmosphere / BME280\nunavailable\nTemperature\n—\n°C\nHumidity\n—\n%RH\nAir pressure\n—\nhPa\nAcquisition time unavailable\n\nNo current sensor reading. Use Recorded data or continue without ground context.\n\nParticulates / PMSA003I\nunavailable\nPM1.0\n—\nµg/m³\nPM2.5\n—\nµg/m³\nPM10\n—\nµg/m³\nAcquisition time unavailable\n\nNo current sensor reading. Use Recorded data or continue without ground context."
+    },
+    {
+      "check": "ground fallback Synthetic example",
+      "actions": "1 / 3",
+      "battery": "75.86",
+      "ground-mode-label": "Synthetic example",
+      "ground-source-help": "Synthetic example: invented demonstration values, not physical measurements.",
+      "sensor-readings": "Atmosphere / BME280\nstale / 1344m old\nTemperature\n21.00\n°C\nHumidity\n45.00\n%RH\nAir pressure\n1013.00\nhPa\nAcquired UTC: 2026-11-14T00:00:00+00:00\n\nOld reading. Its original time is retained; it is not a current measurement.\n\nParticulates / PMSA003I\nstale / 1344m old\nPM1.0\n1.00\nµg/m³\nPM2.5\n2.00\nµg/m³\nPM10\n3.00\nµg/m³\nAcquired UTC: 2026-11-14T00:00:00+00:00\n\nOld reading. Its original time is retained; it is not a current measurement."
+    },
+    {
+      "check": "ground fallback Recorded measurement",
+      "actions": "1 / 3",
+      "battery": "75.86",
+      "ground-mode-label": "Recorded",
+      "ground-source-help": "Recorded: earlier real measurements, replayed with their original times. Refresh does not make them new readings.",
+      "sensor-readings": "Atmosphere / BME280\nstale / 668m old\nTemperature\n23.96\n°C\nHumidity\n38.38\n%RH\nAir pressure\n1005.62\nhPa\nAcquired UTC: 2026-11-14T11:15:05.460291+00:00\n\nOld reading. Its original time is retained; it is not a current measurement.\n\nParticulates / PMSA003I\nstale / 668m old\nPM1.0\n0.00\nµg/m³\nPM2.5\n0.00\nµg/m³\nPM10\n0.00\nµg/m³\nAcquired UTC: 2026-11-14T11:15:05.183760+00:00\n\nOld reading. Its original time is retained; it is not a current measurement."
+    },
+    {
+      "check": "saved inspected run",
+      "actions": "1 / 3",
+      "battery": "75.86",
+      "checkpoint": "adaptive-465640c2-dca87f.json",
+      "ground-details": "",
+      "mission-meta": "solar-array-001 · 0.0.1-part2 · adaptive-465640c2-dca87f.json",
+      "position": "Position (20, 20) m",
+      "workflow-message": "Run saved."
+    },
+    {
+      "check": "reopened inspected run",
+      "actions": "1 / 3",
+      "battery": "75.86",
+      "checkpoint": "adaptive-465640c2-dca87f.json",
+      "evidence-title": "P05 / follow-up",
+      "mission-meta": "solar-array-001 · 0.0.1-part2 · adaptive-465640c2-dca87f.json",
+      "position": "Position (20, 20) m",
+      "queue": "P01 / overview\nPending human review · view evidence\npending\nResolve task\nRequest another view\nP02 / overview\nUnclear image - finding unknown · view evidence\npending\nResolve task\nRequest another view\nP05 / overview\nUnclear image - finding unknown · view evidence\nfollow up captured review pending\nResolve task\nRequest another view"
+    },
+    {
+      "check": "portable report images",
+      "images": [
+        {
+          "alt": "P01 overview synthetic illustration",
+          "loaded": true
+        },
+        {
+          "alt": "P02 overview synthetic illustration",
+          "loaded": true
+        },
+        {
+          "alt": "P05 overview synthetic illustration",
+          "loaded": true
+        },
+        {
+          "alt": "P05 follow-up synthetic illustration",
+          "loaded": true
+        }
+      ],
+      "url": "http://127.0.0.1:8774/api/report/view?name=inspection-465640c2-20261114T222335286219Z.html"
+    },
+    {
+      "check": "report download",
+      "path": "C:\\Users\\shill\\Downloads\\inspection-465640c2-20261114T222335286219Z.html"
+    },
+    {
+      "check": "two-drone prepared",
+      "metrics": [
+        "HAZARD REVISION\n0",
+        "DRONES ASSESSED\n0",
+        "AFFECTED AT UPDATE\n0",
+        "SIMULATED FLEET CAPTURES\n0"
+      ],
+      "rows": [
+        "D001\tA006:overview\tassigned\tNot assessed\t100.00\t0",
+        "D002\tA015:overview\tassigned\tNot assessed\t100.00\t0"
+      ],
+      "size": "2",
+      "status": "Assignment prepared using the real fleet coordinator; no movement or capture executed."
+    },
+    {
+      "check": "two-drone stale plan rejected",
+      "metrics": [
+        "HAZARD REVISION\n1",
+        "DRONES ASSESSED\n2",
+        "AFFECTED AT UPDATE\n2",
+        "SIMULATED FLEET CAPTURES\n0"
+      ],
+      "rows": [
+        "D001\t\tidle\t1\t100.00\t0",
+        "D002\t\tidle\t1\t100.00\t0"
+      ],
+      "size": "2",
+      "status": "REJECTED: Prepared assignment is missing/stale; no movement or debit"
+    },
+    {
+      "check": "two-drone replan valid event and exact active reopen",
+      "checkpoint": "fleet-8b7beb5eb6ae45d897d6de82f47650f1.json",
+      "before": {
+        "metrics": [
+          "HAZARD REVISION\n1",
+          "DRONES ASSESSED\n2",
+          "AFFECTED AT UPDATE\n2",
+          "SIMULATED FLEET CAPTURES\n0"
+        ],
+        "rows": [
+          "D001\tA003:overview\ttraveling\t1\t100.00\t0",
+          "D002\tA017:overview\tassigned\t1\t100.00\t0"
+        ],
+        "size": "2",
+        "status": "EXECUTED: Advanced one globally ordered fleet event through the current guarded engine. Continue on Fleet desk for full playback."
+      },
+      "after": {
+        "metrics": [
+          "HAZARD REVISION\n1",
+          "DRONES ASSESSED\n2",
+          "AFFECTED AT UPDATE\n2",
+          "SIMULATED FLEET CAPTURES\n0"
+        ],
+        "rows": [
+          "D001\tA003:overview\ttraveling\t1\t100.00\t0",
+          "D002\tA017:overview\tassigned\t1\t100.00\t0"
+        ],
+        "size": "2",
+        "status": "Real fleet reopened paused with exact reported areas, budgets and original ground context."
+      },
+      "rowsExact": true
+    },
+    {
+      "check": "50-drone report and stale rejection",
+      "before": {
+        "metrics": [
+          "HAZARD REVISION\n0",
+          "DRONES ASSESSED\n0",
+          "AFFECTED AT UPDATE\n0",
+          "SIMULATED FLEET CAPTURES\n0"
+        ],
+        "rows": [
+          "D001\t\tidle\tNot assessed\t100.00\t0",
+          "D002\tA041:overview\tassigned\tNot assessed\t100.00\t0",
+          "D003\tA021:overview\tassigned\tNot assessed\t100.00\t0",
+          "D004\tA001:overview\tassigned\tNot assessed\t100.00\t0",
+          "D005\tA002:overview\tassigned\tNot assessed\t100.00\t0",
+          "D006\tA022:overview\tassigned\tNot assessed\t100.00\t0",
+          "D007\tA023:overview\tassigned\tNot assessed\t100.00\t0",
+          "D008\tA003:overview\tassigned\tNot assessed\t100.00\t0",
+          "D009\t\tidle\tNot assessed\t100.00\t0",
+          "D010\tA024:overview\tassigned\tNot assessed\t100.00\t0",
+          "D011\tA004:overview\tassigned\tNot assessed\t100.00\t0",
+          "D012\tA025:overview\tassigned\tNot assessed\t100.00\t0",
+          "D013\tA005:overview\tassigned\tNot assessed\t100.00\t0",
+          "D014\t\tidle\tNot assessed\t100.00\t0",
+          "D015\tA006:overview\tassigned\tNot assessed\t100.00\t0",
+          "D016\tA026:overview\tassigned\tNot assessed\t100.00\t0",
+          "D017\tA007:overview\tassigned\tNot assessed\t100.00\t0",
+          "D018\tA027:overview\tassigned\tNot assessed\t100.00\t0",
+          "D019\t\tidle\tNot assessed\t100.00\t0",
+          "D020\tA008:overview\tassigned\tNot assessed\t100.00\t0",
+          "D021\tA028:overview\tassigned\tNot assessed\t100.00\t0",
+          "D022\tA029:overview\tassigned\tNot assessed\t100.00\t0",
+          "D023\tA009:overview\tassigned\tNot assessed\t100.00\t0",
+          "D024\t\tidle\tNot assessed\t100.00\t0",
+          "D025\tA030:overview\tassigned\tNot assessed\t100.00\t0",
+          "D026\tA010:overview\tassigned\tNot assessed\t100.00\t0",
+          "D027\tA031:overview\tassigned\tNot assessed\t100.00\t0",
+          "D028\tA011:overview\tassigned\tNot assessed\t100.00\t0",
+          "D029\t\tidle\tNot assessed\t100.00\t0",
+          "D030\tA012:overview\tassigned\tNot assessed\t100.00\t0",
+          "D031\tA032:overview\tassigned\tNot assessed\t100.00\t0",
+          "D032\tA013:overview\tassigned\tNot assessed\t100.00\t0",
+          "D033\tA033:overview\tassigned\tNot assessed\t100.00\t0",
+          "D034\t\tidle\tNot assessed\t100.00\t0",
+          "D035\tA014:overview\tassigned\tNot assessed\t100.00\t0",
+          "D036\tA034:overview\tassigned\tNot assessed\t100.00\t0",
+          "D037\tA035:overview\tassigned\tNot assessed\t100.00\t0",
+          "D038\tA015:overview\tassigned\tNot assessed\t100.00\t0",
+          "D039\t\tidle\tNot assessed\t100.00\t0",
+          "D040\tA036:overview\tassigned\tNot assessed\t100.00\t0",
+          "D041\tA016:overview\tassigned\tNot assessed\t100.00\t0",
+          "D042\tA037:overview\tassigned\tNot assessed\t100.00\t0",
+          "D043\tA017:overview\tassigned\tNot assessed\t100.00\t0",
+          "D044\t\tidle\tNot assessed\t100.00\t0",
+          "D045\tA018:overview\tassigned\tNot assessed\t100.00\t0",
+          "D046\tA038:overview\tassigned\tNot assessed\t100.00\t0",
+          "D047\tA019:overview\tassigned\tNot assessed\t100.00\t0",
+          "D048\tA039:overview\tassigned\tNot assessed\t100.00\t0",
+          "D049\tA040:overview\tassigned\tNot assessed\t100.00\t0",
+          "D050\tA020:overview\tassigned\tNot assessed\t100.00\t0"
+        ],
+        "size": "50",
+        "status": "Assignment prepared using the real fleet coordinator; no movement or capture executed."
+      },
+      "after": {
+        "metrics": [
+          "HAZARD REVISION\n1",
+          "DRONES ASSESSED\n50",
+          "AFFECTED AT UPDATE\n20",
+          "SIMULATED FLEET CAPTURES\n0"
+        ],
+        "rows": [
+          "D001\t\tidle\t1\t100.00\t0",
+          "D002\t\tidle\t1\t100.00\t0",
+          "D003\t\tidle\t1\t100.00\t0",
+          "D004\t\tidle\t1\t100.00\t0",
+          "D005\t\tidle\t1\t100.00\t0",
+          "D006\t\tidle\t1\t100.00\t0",
+          "D007\t\tidle\t1\t100.00\t0",
+          "D008\t\tidle\t1\t100.00\t0",
+          "D009\t\tidle\t1\t100.00\t0",
+          "D010\t\tidle\t1\t100.00\t0",
+          "D011\t\tidle\t1\t100.00\t0",
+          "D012\t\tidle\t1\t100.00\t0",
+          "D013\t\tidle\t1\t100.00\t0",
+          "D014\t\tidle\t1\t100.00\t0",
+          "D015\t\tidle\t1\t100.00\t0",
+          "D016\t\tidle\t1\t100.00\t0",
+          "D017\t\tidle\t1\t100.00\t0",
+          "D018\t\tidle\t1\t100.00\t0",
+          "D019\t\tidle\t1\t100.00\t0",
+          "D020\t\tidle\t1\t100.00\t0",
+          "D021\t\tidle\t1\t100.00\t0",
+          "D022\t\tidle\t1\t100.00\t0",
+          "D023\t\tidle\t1\t100.00\t0",
+          "D024\t\tidle\t1\t100.00\t0",
+          "D025\t\tidle\t1\t100.00\t0",
+          "D026\t\tidle\t1\t100.00\t0",
+          "D027\t\tidle\t1\t100.00\t0",
+          "D028\t\tidle\t1\t100.00\t0",
+          "D029\t\tidle\t1\t100.00\t0",
+          "D030\t\tidle\t1\t100.00\t0",
+          "D031\t\tidle\t1\t100.00\t0",
+          "D032\t\tidle\t1\t100.00\t0",
+          "D033\t\tidle\t1\t100.00\t0",
+          "D034\t\tidle\t1\t100.00\t0",
+          "D035\t\tidle\t1\t100.00\t0",
+          "D036\t\tidle\t1\t100.00\t0",
+          "D037\t\tidle\t1\t100.00\t0",
+          "D038\t\tidle\t1\t100.00\t0",
+          "D039\t\tidle\t1\t100.00\t0",
+          "D040\t\tidle\t1\t100.00\t0",
+          "D041\t\tidle\t1\t100.00\t0",
+          "D042\t\tidle\t1\t100.00\t0",
+          "D043\t\tidle\t1\t100.00\t0",
+          "D044\t\tidle\t1\t100.00\t0",
+          "D045\t\tidle\t1\t100.00\t0",
+          "D046\t\tidle\t1\t100.00\t0",
+          "D047\t\tidle\t1\t100.00\t0",
+          "D048\t\tidle\t1\t100.00\t0",
+          "D049\t\tidle\t1\t100.00\t0",
+          "D050\t\tidle\t1\t100.00\t0"
+        ],
+        "size": "50",
+        "status": "REJECTED: Prepared assignment is missing/stale; no movement or debit"
+      },
+      "resourcesUnchanged": true
+    },
+    {
+      "check": "50-drone current reallocation",
+      "metrics": [
+        "HAZARD REVISION\n1",
+        "DRONES ASSESSED\n50",
+        "AFFECTED AT UPDATE\n20",
+        "SIMULATED FLEET CAPTURES\n0"
+      ],
+      "rows": [
+        "D001\t\tidle\t1\t100.00\t0",
+        "D002\tA041:overview\tassigned\t1\t100.00\t0",
+        "D003\tA021:overview\tassigned\t1\t100.00\t0",
+        "D004\tA001:overview\tassigned\t1\t100.00\t0",
+        "D005\tA002:overview\tassigned\t1\t100.00\t0",
+        "D006\tA022:overview\tassigned\t1\t100.00\t0",
+        "D007\tA023:overview\tassigned\t1\t100.00\t0",
+        "D008\tA003:overview\tassigned\t1\t100.00\t0",
+        "D009\tA006:overview\tassigned\t1\t100.00\t0",
+        "D010\tA024:overview\tassigned\t1\t100.00\t0",
+        "D011\tA004:overview\tassigned\t1\t100.00\t0",
+        "D012\tA025:overview\tassigned\t1\t100.00\t0",
+        "D013\tA005:overview\tassigned\t1\t100.00\t0",
+        "D014\t\tidle\t1\t100.00\t0",
+        "D015\t\tidle\t1\t100.00\t0",
+        "D016\t\tidle\t1\t100.00\t0",
+        "D017\t\tidle\t1\t100.00\t0",
+        "D018\t\tidle\t1\t100.00\t0",
+        "D019\t\tidle\t1\t100.00\t0",
+        "D020\t\tidle\t1\t100.00\t0",
+        "D021\t\tidle\t1\t100.00\t0",
+        "D022\t\tidle\t1\t100.00\t0",
+        "D023\t\tidle\t1\t100.00\t0",
+        "D024\t\tidle\t1\t100.00\t0",
+        "D025\t\tidle\t1\t100.00\t0",
+        "D026\t\tidle\t1\t100.00\t0",
+        "D027\t\tidle\t1\t100.00\t0",
+        "D028\t\tidle\t1\t100.00\t0",
+        "D029\t\tidle\t1\t100.00\t0",
+        "D030\t\tidle\t1\t100.00\t0",
+        "D031\t\tidle\t1\t100.00\t0",
+        "D032\t\tidle\t1\t100.00\t0",
+        "D033\t\tidle\t1\t100.00\t0",
+        "D034\t\tidle\t1\t100.00\t0",
+        "D035\t\tidle\t1\t100.00\t0",
+        "D036\t\tidle\t1\t100.00\t0",
+        "D037\t\tidle\t1\t100.00\t0",
+        "D038\t\tidle\t1\t100.00\t0",
+        "D039\tA035:overview\tassigned\t1\t100.00\t0",
+        "D040\tA015:overview\tassigned\t1\t100.00\t0",
+        "D041\tA036:overview\tassigned\t1\t100.00\t0",
+        "D042\tA016:overview\tassigned\t1\t100.00\t0",
+        "D043\tA017:overview\tassigned\t1\t100.00\t0",
+        "D044\tA037:overview\tassigned\t1\t100.00\t0",
+        "D045\tA018:overview\tassigned\t1\t100.00\t0",
+        "D046\tA038:overview\tassigned\t1\t100.00\t0",
+        "D047\tA019:overview\tassigned\t1\t100.00\t0",
+        "D048\tA039:overview\tassigned\t1\t100.00\t0",
+        "D049\tA040:overview\tassigned\t1\t100.00\t0",
+        "D050\tA020:overview\tassigned\t1\t100.00\t0"
+      ],
+      "size": "50",
+      "status": "Real coordinator prepared 24 current exclusive assignments; affected in-progress drones remain held for review. No capture executed."
+    },
+    {
+      "check": "50-drone exact active hazard recovery",
+      "checkpoint": "fleet-c89be77ba8c8458bba4ce16d49679bbf.json",
+      "rowsExact": true,
+      "before": {
+        "metrics": [
+          "HAZARD REVISION\n1",
+          "DRONES ASSESSED\n50",
+          "AFFECTED AT UPDATE\n20",
+          "SIMULATED FLEET CAPTURES\n0"
+        ],
+        "rows": [
+          "D001\t\tidle\t1\t100.00\t0",
+          "D002\tA041:overview\tassigned\t1\t100.00\t0",
+          "D003\tA021:overview\tassigned\t1\t100.00\t0",
+          "D004\tA001:overview\tassigned\t1\t100.00\t0",
+          "D005\tA002:overview\tassigned\t1\t100.00\t0",
+          "D006\tA022:overview\tassigned\t1\t100.00\t0",
+          "D007\tA023:overview\tassigned\t1\t100.00\t0",
+          "D008\tA003:overview\tassigned\t1\t100.00\t0",
+          "D009\tA006:overview\tassigned\t1\t100.00\t0",
+          "D010\tA024:overview\tassigned\t1\t100.00\t0",
+          "D011\tA004:overview\tassigned\t1\t100.00\t0",
+          "D012\tA025:overview\tassigned\t1\t100.00\t0",
+          "D013\tA005:overview\tassigned\t1\t100.00\t0",
+          "D014\t\tidle\t1\t100.00\t0",
+          "D015\t\tidle\t1\t100.00\t0",
+          "D016\t\tidle\t1\t100.00\t0",
+          "D017\t\tidle\t1\t100.00\t0",
+          "D018\t\tidle\t1\t100.00\t0",
+          "D019\t\tidle\t1\t100.00\t0",
+          "D020\t\tidle\t1\t100.00\t0",
+          "D021\t\tidle\t1\t100.00\t0",
+          "D022\t\tidle\t1\t100.00\t0",
+          "D023\t\tidle\t1\t100.00\t0",
+          "D024\t\tidle\t1\t100.00\t0",
+          "D025\t\tidle\t1\t100.00\t0",
+          "D026\t\tidle\t1\t100.00\t0",
+          "D027\t\tidle\t1\t100.00\t0",
+          "D028\t\tidle\t1\t100.00\t0",
+          "D029\t\tidle\t1\t100.00\t0",
+          "D030\t\tidle\t1\t100.00\t0",
+          "D031\t\tidle\t1\t100.00\t0",
+          "D032\t\tidle\t1\t100.00\t0",
+          "D033\t\tidle\t1\t100.00\t0",
+          "D034\t\tidle\t1\t100.00\t0",
+          "D035\t\tidle\t1\t100.00\t0",
+          "D036\t\tidle\t1\t100.00\t0",
+          "D037\t\tidle\t1\t100.00\t0",
+          "D038\t\tidle\t1\t100.00\t0",
+          "D039\tA035:overview\tassigned\t1\t100.00\t0",
+          "D040\tA015:overview\tassigned\t1\t100.00\t0",
+          "D041\tA036:overview\tassigned\t1\t100.00\t0",
+          "D042\tA016:overview\tassigned\t1\t100.00\t0",
+          "D043\tA017:overview\tassigned\t1\t100.00\t0",
+          "D044\tA037:overview\tassigned\t1\t100.00\t0",
+          "D045\tA018:overview\tassigned\t1\t100.00\t0",
+          "D046\tA038:overview\tassigned\t1\t100.00\t0",
+          "D047\tA019:overview\tassigned\t1\t100.00\t0",
+          "D048\tA039:overview\tassigned\t1\t100.00\t0",
+          "D049\tA040:overview\tassigned\t1\t100.00\t0",
+          "D050\tA020:overview\tassigned\t1\t100.00\t0"
+        ],
+        "size": "50",
+        "status": "Saved real fleet run: fleet-c89be77ba8c8458bba4ce16d49679bbf.json"
+      },
+      "after": {
+        "metrics": [
+          "HAZARD REVISION\n1",
+          "DRONES ASSESSED\n50",
+          "AFFECTED AT UPDATE\n20",
+          "SIMULATED FLEET CAPTURES\n0"
+        ],
+        "rows": [
+          "D001\t\tidle\t1\t100.00\t0",
+          "D002\tA041:overview\tassigned\t1\t100.00\t0",
+          "D003\tA021:overview\tassigned\t1\t100.00\t0",
+          "D004\tA001:overview\tassigned\t1\t100.00\t0",
+          "D005\tA002:overview\tassigned\t1\t100.00\t0",
+          "D006\tA022:overview\tassigned\t1\t100.00\t0",
+          "D007\tA023:overview\tassigned\t1\t100.00\t0",
+          "D008\tA003:overview\tassigned\t1\t100.00\t0",
+          "D009\tA006:overview\tassigned\t1\t100.00\t0",
+          "D010\tA024:overview\tassigned\t1\t100.00\t0",
+          "D011\tA004:overview\tassigned\t1\t100.00\t0",
+          "D012\tA025:overview\tassigned\t1\t100.00\t0",
+          "D013\tA005:overview\tassigned\t1\t100.00\t0",
+          "D014\t\tidle\t1\t100.00\t0",
+          "D015\t\tidle\t1\t100.00\t0",
+          "D016\t\tidle\t1\t100.00\t0",
+          "D017\t\tidle\t1\t100.00\t0",
+          "D018\t\tidle\t1\t100.00\t0",
+          "D019\t\tidle\t1\t100.00\t0",
+          "D020\t\tidle\t1\t100.00\t0",
+          "D021\t\tidle\t1\t100.00\t0",
+          "D022\t\tidle\t1\t100.00\t0",
+          "D023\t\tidle\t1\t100.00\t0",
+          "D024\t\tidle\t1\t100.00\t0",
+          "D025\t\tidle\t1\t100.00\t0",
+          "D026\t\tidle\t1\t100.00\t0",
+          "D027\t\tidle\t1\t100.00\t0",
+          "D028\t\tidle\t1\t100.00\t0",
+          "D029\t\tidle\t1\t100.00\t0",
+          "D030\t\tidle\t1\t100.00\t0",
+          "D031\t\tidle\t1\t100.00\t0",
+          "D032\t\tidle\t1\t100.00\t0",
+          "D033\t\tidle\t1\t100.00\t0",
+          "D034\t\tidle\t1\t100.00\t0",
+          "D035\t\tidle\t1\t100.00\t0",
+          "D036\t\tidle\t1\t100.00\t0",
+          "D037\t\tidle\t1\t100.00\t0",
+          "D038\t\tidle\t1\t100.00\t0",
+          "D039\tA035:overview\tassigned\t1\t100.00\t0",
+          "D040\tA015:overview\tassigned\t1\t100.00\t0",
+          "D041\tA036:overview\tassigned\t1\t100.00\t0",
+          "D042\tA016:overview\tassigned\t1\t100.00\t0",
+          "D043\tA017:overview\tassigned\t1\t100.00\t0",
+          "D044\tA037:overview\tassigned\t1\t100.00\t0",
+          "D045\tA018:overview\tassigned\t1\t100.00\t0",
+          "D046\tA038:overview\tassigned\t1\t100.00\t0",
+          "D047\tA019:overview\tassigned\t1\t100.00\t0",
+          "D048\tA039:overview\tassigned\t1\t100.00\t0",
+          "D049\tA040:overview\tassigned\t1\t100.00\t0",
+          "D050\tA020:overview\tassigned\t1\t100.00\t0"
+        ],
+        "size": "50",
+        "status": "Real fleet reopened paused with exact reported areas, budgets and original ground context."
+      }
+    },
+    {
+      "check": "50-drone hazard run completed",
+      "resources": "FLEET STATUS\ncomplete / 50\n33.84 logical seconds\nUSABLE ASSETS\n66 / 200\n134 assets still need usable evidence\nCAPTURES USED\n83 / 150\n28/50 drones participated\nTOTAL BATTERY\n4288.33\nsimulated EU; every drone protects 15 EU",
+      "D050": "D050\tcomplete\t—\t72.98 / 15.00\t0 / 3"
+    },
+    {
+      "check": "fleet report created",
+      "url": "/api/report/view?name=fleet-c89be77b-20261114T222932296184Z.html"
+    },
+    {
+      "check": "original user fleet restored",
+      "checkpoint": "fleet-11ff17177b6544a387f92f2c2869e31b.json",
+      "rowsExact": true,
+      "metrics": [
+        "HAZARD REVISION\n1",
+        "DRONES ASSESSED\n50",
+        "AFFECTED AT UPDATE\n15",
+        "SIMULATED FLEET CAPTURES\n150"
+      ]
+    },
+    {
+      "check": "original single-drone mission restored",
+      "ui": {
+        "actions": "0 / 3",
+        "battery": "65.86",
+        "ground-mode-label": "Live",
+        "mission-meta": "solar-array-001 · 0.0.1-part2 · ui11-browser-final.json"
+      }
+    }
+  ]
+}

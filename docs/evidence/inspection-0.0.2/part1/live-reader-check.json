@@ -1,0 +1,114 @@
+{
+  "status": "unavailable",
+  "mode": "live_measured",
+  "context_role": "ground_context_only",
+  "snapshot_at_utc": "2026-11-14T13:27:44.768037+00:00",
+  "node_id": "ground-node-001",
+  "location": {
+    "status": "unknown",
+    "label": null,
+    "position": null,
+    "coordinate_frame": null
+  },
+  "observations": [],
+  "source": null,
+  "reason": "no_valid_current_read",
+  "physical_acquisition_performed": false,
+  "sensor_states": {
+    "BME280": {
+      "status": "unavailable",
+      "technical_error": "RuntimeError: BLINKA_MCP2221 environment variable set, but no MCP2221 device found"
+    },
+    "PMSA003I": {
+      "status": "unavailable",
+      "technical_error": "RuntimeError: BLINKA_MCP2221 environment variable set, but no MCP2221 device found"
+    }
+  },
+  "sensors": [
+    {
+      "sensor_model": "BME280",
+      "sensor_id": "ground-node-001/bme280",
+      "status": "unavailable",
+      "age_seconds": null,
+      "source_label": "Live",
+      "channels": [
+        {
+          "variable": "temperature",
+          "unit": "degC",
+          "value": null,
+          "acquired_at_utc": null,
+          "quality": {
+            "status": "unavailable",
+            "flags": []
+          }
+        },
+        {
+          "variable": "relative_humidity",
+          "unit": "%RH",
+          "value": null,
+          "acquired_at_utc": null,
+          "quality": {
+            "status": "unavailable",
+            "flags": []
+          }
+        },
+        {
+          "variable": "pressure",
+          "unit": "hPa",
+          "value": null,
+          "acquired_at_utc": null,
+          "quality": {
+            "status": "unavailable",
+            "flags": []
+          }
+        }
+      ],
+      "technical_error": "RuntimeError: BLINKA_MCP2221 environment variable set, but no MCP2221 device found"
+    },
+    {
+      "sensor_model": "PMSA003I",
+      "sensor_id": "ground-node-001/pmsa003i",
+      "status": "unavailable",
+      "age_seconds": null,
+      "source_label": "Live",
+      "channels": [
+        {
+          "variable": "pm1_0",
+          "unit": "ug/m3",
+          "value": null,
+          "acquired_at_utc": null,
+          "quality": {
+            "status": "unavailable",
+            "flags": []
+          }
+        },
+        {
+          "variable": "pm2_5",
+          "unit": "ug/m3",
+          "value": null,
+          "acquired_at_utc": null,
+          "quality": {
+            "status": "unavailable",
+            "flags": []
+          }
+        },
+        {
+          "variable": "pm10",
+          "unit": "ug/m3",
+          "value": null,
+          "acquired_at_utc": null,
+          "quality": {
+            "status": "unavailable",
+            "flags": []
+          }
+        }
+      ],
+      "technical_error": "RuntimeError: BLINKA_MCP2221 environment variable set, but no MCP2221 device found"
+    }
+  ],
+  "source_label": "Live",
+  "polling_seconds": 5,
+  "stale_seconds": 20,
+  "pmsa_settle_seconds": 30,
+  "presented_at_utc": "2026-11-14T13:27:44.808041+00:00"
+}

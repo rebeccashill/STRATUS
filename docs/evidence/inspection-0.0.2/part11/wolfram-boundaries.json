@@ -1,0 +1,803 @@
+{
+  "evidence_kind": "actual local Wolfram runtime calls",
+  "status": "passed",
+  "boundaries": [
+    {
+      "name": "below",
+      "status": "passed",
+      "expected": {
+        "name": "below",
+        "battery": 29.999999,
+        "expected_margin": -1e-06,
+        "expected_feasible": false
+      },
+      "python": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": -1.0000000010279564e-06,
+        "feasible": false
+      },
+      "wolfram": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": -1.0000000010279564e-06,
+        "feasible": false
+      },
+      "latency_seconds": 2.8821624999982305,
+      "computation": {
+        "mode": "wolfram_local",
+        "execution_permitted": true,
+        "normalized_input": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "position": {
+            "point_id": "current",
+            "x": 0.0,
+            "y": 0.0
+          },
+          "launch": {
+            "point_id": "launch",
+            "x": 0.0,
+            "y": 0.0
+          },
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "battery_available": 29.999999,
+          "capture_cost": 5.0,
+          "travel_energy_per_distance": 0.5,
+          "return_reserve": 15.0,
+          "remaining_actions": 3,
+          "candidates": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "x": 6.0,
+              "y": 8.0
+            }
+          ]
+        },
+        "cache_key": "e90eb654d9677e4263c976280384a28210261591d3f3197a38f6bcb8601d41bb",
+        "model_version": "toy-euclidean-energy-v1",
+        "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+        "output": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "options": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "outbound": 5.0,
+              "capture": 5.0,
+              "return_cost": 5.0,
+              "reserve": 15.0,
+              "margin": -1.0000000010279564e-06,
+              "feasible": false
+            }
+          ],
+          "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+          "system_id": "Windows-x86-64"
+        },
+        "python_output": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "options": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "outbound": 5.0,
+              "capture": 5.0,
+              "return_cost": 5.0,
+              "reserve": 15.0,
+              "margin": -1.0000000010279564e-06,
+              "feasible": false
+            }
+          ]
+        },
+        "wolfram_output": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "options": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "outbound": 5.0,
+              "capture": 5.0,
+              "return_cost": 5.0,
+              "reserve": 15.0,
+              "margin": -1.0000000010279564e-06,
+              "feasible": false
+            }
+          ],
+          "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+          "system_id": "Windows-x86-64"
+        },
+        "failure": null,
+        "disagreements": [],
+        "tolerance": {
+          "absolute": 1e-08,
+          "relative": 1e-10,
+          "feasibility_sign": "strict; never relaxed by tolerance"
+        },
+        "request_counts": {
+          "local_kernel_calls": 1,
+          "cloud_requests": 0,
+          "alpha_calls": 0
+        },
+        "state_transition_applied": false
+      }
+    },
+    {
+      "name": "equal",
+      "status": "passed",
+      "expected": {
+        "name": "equal",
+        "battery": 30,
+        "expected_margin": 0,
+        "expected_feasible": true
+      },
+      "python": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": 0.0,
+        "feasible": true
+      },
+      "wolfram": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": 0.0,
+        "feasible": true
+      },
+      "latency_seconds": 2.0974828000034904,
+      "computation": {
+        "mode": "wolfram_local",
+        "execution_permitted": true,
+        "normalized_input": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "position": {
+            "point_id": "current",
+            "x": 0.0,
+            "y": 0.0
+          },
+          "launch": {
+            "point_id": "launch",
+            "x": 0.0,
+            "y": 0.0
+          },
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "battery_available": 30.0,
+          "capture_cost": 5.0,
+          "travel_energy_per_distance": 0.5,
+          "return_reserve": 15.0,
+          "remaining_actions": 3,
+          "candidates": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "x": 6.0,
+              "y": 8.0
+            }
+          ]
+        },
+        "cache_key": "66578bd75903fd22a98c4f5fb303c5dfbbad874cf8a96e5cc9af9373b277d631",
+        "model_version": "toy-euclidean-energy-v1",
+        "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+        "output": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "options": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "outbound": 5.0,
+              "capture": 5.0,
+              "return_cost": 5.0,
+              "reserve": 15.0,
+              "margin": 0.0,
+              "feasible": true
+            }
+          ],
+          "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+          "system_id": "Windows-x86-64"
+        },
+        "python_output": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "options": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "outbound": 5.0,
+              "capture": 5.0,
+              "return_cost": 5.0,
+              "reserve": 15.0,
+              "margin": 0.0,
+              "feasible": true
+            }
+          ]
+        },
+        "wolfram_output": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "options": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "outbound": 5.0,
+              "capture": 5.0,
+              "return_cost": 5.0,
+              "reserve": 15.0,
+              "margin": 0.0,
+              "feasible": true
+            }
+          ],
+          "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+          "system_id": "Windows-x86-64"
+        },
+        "failure": null,
+        "disagreements": [],
+        "tolerance": {
+          "absolute": 1e-08,
+          "relative": 1e-10,
+          "feasibility_sign": "strict; never relaxed by tolerance"
+        },
+        "request_counts": {
+          "local_kernel_calls": 2,
+          "cloud_requests": 0,
+          "alpha_calls": 0
+        },
+        "state_transition_applied": false
+      }
+    },
+    {
+      "name": "above",
+      "status": "passed",
+      "expected": {
+        "name": "above",
+        "battery": 30.000001,
+        "expected_margin": 1e-06,
+        "expected_feasible": true
+      },
+      "python": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": 1.0000000010279564e-06,
+        "feasible": true
+      },
+      "wolfram": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": 1.0000000010279564e-06,
+        "feasible": true
+      },
+      "latency_seconds": 2.0200276999967173,
+      "computation": {
+        "mode": "wolfram_local",
+        "execution_permitted": true,
+        "normalized_input": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "position": {
+            "point_id": "current",
+            "x": 0.0,
+            "y": 0.0
+          },
+          "launch": {
+            "point_id": "launch",
+            "x": 0.0,
+            "y": 0.0
+          },
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "battery_available": 30.000001,
+          "capture_cost": 5.0,
+          "travel_energy_per_distance": 0.5,
+          "return_reserve": 15.0,
+          "remaining_actions": 3,
+          "candidates": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "x": 6.0,
+              "y": 8.0
+            }
+          ]
+        },
+        "cache_key": "ce29f5ef54bad00db4cab2f4c61d809be9c0180ed5364e6993eb841824d7ef31",
+        "model_version": "toy-euclidean-energy-v1",
+        "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+        "output": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "options": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "outbound": 5.0,
+              "capture": 5.0,
+              "return_cost": 5.0,
+              "reserve": 15.0,
+              "margin": 1.0000000010279564e-06,
+              "feasible": true
+            }
+          ],
+          "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+          "system_id": "Windows-x86-64"
+        },
+        "python_output": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "options": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "outbound": 5.0,
+              "capture": 5.0,
+              "return_cost": 5.0,
+              "reserve": 15.0,
+              "margin": 1.0000000010279564e-06,
+              "feasible": true
+            }
+          ]
+        },
+        "wolfram_output": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "options": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "outbound": 5.0,
+              "capture": 5.0,
+              "return_cost": 5.0,
+              "reserve": 15.0,
+              "margin": 1.0000000010279564e-06,
+              "feasible": true
+            }
+          ],
+          "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+          "system_id": "Windows-x86-64"
+        },
+        "failure": null,
+        "disagreements": [],
+        "tolerance": {
+          "absolute": 1e-08,
+          "relative": 1e-10,
+          "feasibility_sign": "strict; never relaxed by tolerance"
+        },
+        "request_counts": {
+          "local_kernel_calls": 3,
+          "cloud_requests": 0,
+          "alpha_calls": 0
+        },
+        "state_transition_applied": false
+      }
+    },
+    {
+      "name": "exhausted",
+      "status": "passed",
+      "expected": {
+        "name": "exhausted",
+        "battery": 31,
+        "remaining_actions": 0,
+        "expected_margin": 1,
+        "expected_feasible": false
+      },
+      "python": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": 1.0,
+        "feasible": false
+      },
+      "wolfram": {
+        "asset_id": "boundary",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 5.0,
+        "reserve": 15.0,
+        "margin": 1.0,
+        "feasible": false
+      },
+      "latency_seconds": 2.0255107000120915,
+      "computation": {
+        "mode": "wolfram_local",
+        "execution_permitted": true,
+        "normalized_input": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "position": {
+            "point_id": "current",
+            "x": 0.0,
+            "y": 0.0
+          },
+          "launch": {
+            "point_id": "launch",
+            "x": 0.0,
+            "y": 0.0
+          },
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "battery_available": 31.0,
+          "capture_cost": 5.0,
+          "travel_energy_per_distance": 0.5,
+          "return_reserve": 15.0,
+          "remaining_actions": 0,
+          "candidates": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "x": 6.0,
+              "y": 8.0
+            }
+          ]
+        },
+        "cache_key": "9425fe09ba0bf1037e1b3faf265d8e5571b8b36e76ed78b6a202097793965763",
+        "model_version": "toy-euclidean-energy-v1",
+        "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+        "output": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "options": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "outbound": 5.0,
+              "capture": 5.0,
+              "return_cost": 5.0,
+              "reserve": 15.0,
+              "margin": 1.0,
+              "feasible": false
+            }
+          ],
+          "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+          "system_id": "Windows-x86-64"
+        },
+        "python_output": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "options": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "outbound": 5.0,
+              "capture": 5.0,
+              "return_cost": 5.0,
+              "reserve": 15.0,
+              "margin": 1.0,
+              "feasible": false
+            }
+          ]
+        },
+        "wolfram_output": {
+          "contract_version": "inspection-costs-v1",
+          "model_version": "toy-euclidean-energy-v1",
+          "mission_id": "part8-boundary",
+          "mission_revision": "predeclared-v1",
+          "state_revision": 0,
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "options": [
+            {
+              "asset_id": "boundary",
+              "view_id": "overview",
+              "outbound": 5.0,
+              "capture": 5.0,
+              "return_cost": 5.0,
+              "reserve": 15.0,
+              "margin": 1.0,
+              "feasible": false
+            }
+          ],
+          "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+          "system_id": "Windows-x86-64"
+        },
+        "failure": null,
+        "disagreements": [],
+        "tolerance": {
+          "absolute": 1e-08,
+          "relative": 1e-10,
+          "feasibility_sign": "strict; never relaxed by tolerance"
+        },
+        "request_counts": {
+          "local_kernel_calls": 4,
+          "cloud_requests": 0,
+          "alpha_calls": 0
+        },
+        "state_transition_applied": false
+      }
+    }
+  ],
+  "unit_conversion": {
+    "status": "passed",
+    "metre_input": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "part8-boundary",
+      "mission_revision": "predeclared-v1",
+      "state_revision": 0,
+      "position": {
+        "point_id": "current",
+        "x": 0,
+        "y": 0
+      },
+      "launch": {
+        "point_id": "launch",
+        "x": 0,
+        "y": 0
+      },
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "battery_available": 30,
+      "capture_cost": 5,
+      "travel_energy_per_distance": 0.5,
+      "return_reserve": 15,
+      "remaining_actions": 3,
+      "candidates": [
+        {
+          "asset_id": "boundary",
+          "view_id": "overview",
+          "x": 6,
+          "y": 8
+        }
+      ]
+    },
+    "kilometre_input": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "part8-boundary",
+      "mission_revision": "predeclared-v1",
+      "state_revision": 0,
+      "position": {
+        "point_id": "current",
+        "x": 0,
+        "y": 0
+      },
+      "launch": {
+        "point_id": "launch",
+        "x": 0,
+        "y": 0
+      },
+      "distance_unit": "km",
+      "energy_unit": "simulated_energy_unit",
+      "battery_available": 30,
+      "capture_cost": 5,
+      "travel_energy_per_distance": 500,
+      "return_reserve": 15,
+      "remaining_actions": 3,
+      "candidates": [
+        {
+          "asset_id": "boundary",
+          "view_id": "overview",
+          "x": 0.006,
+          "y": 0.008
+        }
+      ]
+    },
+    "identical_normalized_input": true,
+    "identical_python_output": true,
+    "computation": {
+      "mode": "cached_wolfram_local",
+      "execution_permitted": true,
+      "normalized_input": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part8-boundary",
+        "mission_revision": "predeclared-v1",
+        "state_revision": 0,
+        "position": {
+          "point_id": "current",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "launch": {
+          "point_id": "launch",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "battery_available": 30.0,
+        "capture_cost": 5.0,
+        "travel_energy_per_distance": 0.5,
+        "return_reserve": 15.0,
+        "remaining_actions": 3,
+        "candidates": [
+          {
+            "asset_id": "boundary",
+            "view_id": "overview",
+            "x": 6.0,
+            "y": 8.0
+          }
+        ]
+      },
+      "cache_key": "66578bd75903fd22a98c4f5fb303c5dfbbad874cf8a96e5cc9af9373b277d631",
+      "model_version": "toy-euclidean-energy-v1",
+      "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+      "output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part8-boundary",
+        "mission_revision": "predeclared-v1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "boundary",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 5.0,
+            "reserve": 15.0,
+            "margin": 0.0,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "python_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part8-boundary",
+        "mission_revision": "predeclared-v1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "boundary",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 5.0,
+            "reserve": 15.0,
+            "margin": 0.0,
+            "feasible": true
+          }
+        ]
+      },
+      "wolfram_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "part8-boundary",
+        "mission_revision": "predeclared-v1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "boundary",
+            "view_id": "overview",
+            "outbound": 5.0,
+            "capture": 5.0,
+            "return_cost": 5.0,
+            "reserve": 15.0,
+            "margin": 0.0,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "failure": null,
+      "disagreements": [],
+      "tolerance": {
+        "absolute": 1e-08,
+        "relative": 1e-10,
+        "feasibility_sign": "strict; never relaxed by tolerance"
+      },
+      "request_counts": {
+        "local_kernel_calls": 4,
+        "cloud_requests": 0,
+        "alpha_calls": 0
+      },
+      "state_transition_applied": false
+    },
+    "latency_seconds": 0.0003634000022429973
+  },
+  "request_counts": {
+    "local_kernel_calls": 4,
+    "cloud_requests": 0,
+    "alpha_calls": 0
+  },
+  "account_credit_consumption": "Unknown; no account usage data retrieved. Not inferred from request counts.",
+  "limits": "Arithmetic parity of the declared toy model only; not aircraft endurance or inspection accuracy."
+}

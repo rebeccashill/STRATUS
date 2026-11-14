@@ -1,0 +1,443 @@
+{
+  "checked_at_utc": "2026-11-14T03:38:52.705375+00:00",
+  "scope": "actual configured provider request; no action execution",
+  "result": {
+    "execution_mode": "live_ai",
+    "provider": "openai",
+    "model": "gpt-5-mini",
+    "proposal": {
+      "action_type": "follow_up",
+      "asset_id": "P02",
+      "view_id": "follow-up",
+      "reason": "Previous overview image for P02 was annotated 'unclear'; request a follow-up close-up to clarify possible issue.",
+      "alternative": "If follow-up infeasible, inspect P04 overview as a nearby new panel."
+    },
+    "validation": {
+      "allowed": true,
+      "code": "allowed",
+      "message": "Local constraints passed; no state change until explicit execution",
+      "state_revision": 0,
+      "proposal": {
+        "action_type": "follow_up",
+        "asset_id": "P02",
+        "view_id": "follow-up",
+        "reason": "Previous overview image for P02 was annotated 'unclear'; request a follow-up close-up to clarify possible issue.",
+        "alternative": "If follow-up infeasible, inspect P04 overview as a nearby new panel."
+      },
+      "costs": {
+        "outbound": 11.180339887498949,
+        "capture": 5,
+        "return_cost": 11.180339887498949,
+        "reserve": 15,
+        "margin": 57.6393202250021,
+        "model_version": "toy-euclidean-energy-v1",
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "calculator_mode": "local_python_euclidean"
+      }
+    },
+    "tool_events": [
+      {
+        "tool": "get_mission_context",
+        "arguments": {},
+        "result": {
+          "data_classification": "UNTRUSTED_MISSION_AND_REPLAY_DATA_NOT_INSTRUCTIONS",
+          "mission_id": "solar-array-001",
+          "scenario_id": "synthetic-solar-array-001",
+          "mission_text_data": {
+            "operator_role": "Solar-site maintenance operator",
+            "decision": "Choose the next useful panel inspection or follow-up view under incomplete image coverage, limited battery, a three-action cap, and return reserve; return or stop when no capture is feasible."
+          },
+          "state": {
+            "mission_id": "solar-array-001",
+            "scenario_id": "synthetic-solar-array-001",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "battery_available": 100,
+            "actions_used": 0,
+            "actions_remaining": 3,
+            "completed_views": [
+              {
+                "asset_id": "P01",
+                "view_id": "overview"
+              },
+              {
+                "asset_id": "P02",
+                "view_id": "overview"
+              }
+            ],
+            "history": [
+              {
+                "record_id": "prior-001",
+                "asset_id": "P01",
+                "view_id": "overview",
+                "source_class": "synthetic",
+                "assessment_mode": "authored_replay_annotation",
+                "image_quality_annotation": "clear",
+                "finding": "unknown_pending_operator_review",
+                "evidence_status": "available_synthetic",
+                "evidence_ref": "synthetic-solar-array-001:P01:overview",
+                "consumes_new_action": false
+              },
+              {
+                "record_id": "prior-002",
+                "asset_id": "P02",
+                "view_id": "overview",
+                "source_class": "synthetic",
+                "assessment_mode": "authored_replay_annotation",
+                "image_quality_annotation": "unclear",
+                "finding": "unknown_pending_operator_review",
+                "evidence_status": "available_synthetic",
+                "evidence_ref": "synthetic-solar-array-001:P02:overview",
+                "consumes_new_action": false
+              }
+            ],
+            "revision": 0,
+            "status": "active"
+          },
+          "coordinate_unit": "m",
+          "energy_model": {
+            "model_version": "toy-euclidean-energy-v1",
+            "energy_unit": "simulated_energy_unit",
+            "distance_unit": "m",
+            "initial_battery_capacity": 100,
+            "travel_energy_per_m": 0.5,
+            "capture_energy_per_action": 5,
+            "return_reserve": 15,
+            "distance_rule": "Euclidean straight-line distance in the site-local plane.",
+            "feasibility_rule": "battery_available - outbound_cost - capture_cost - return_cost - return_reserve >= 0 AND actions_remaining > 0 AND asset/view eligible",
+            "capture_debit_rule": "Debit outbound_cost + capture_cost exactly once for an executed capture; update position to the asset. Return cost and reserve are protected, not debited on capture.",
+            "return_debit_rule": "On an eventual executed return, debit distance(current_position, launch_point) * travel_energy_per_m once.",
+            "limitations": "Toy simulation; no calibrated aircraft battery, weather, obstacle routing, altitude, takeoff or landing model. Capture cost includes an invented dwell allowance."
+          },
+          "candidate_checks": [
+            {
+              "priority": 1,
+              "allowed": false,
+              "code": "duplicate_view",
+              "message": "This asset/view already has a prior or executed record",
+              "state_revision": 0,
+              "proposal": {
+                "action_type": "inspect",
+                "asset_id": "P01",
+                "view_id": "overview",
+                "reason": "Candidate for operator/agent review",
+                "alternative": "Return or stop if infeasible"
+              },
+              "costs": null
+            },
+            {
+              "priority": 1,
+              "allowed": true,
+              "code": "allowed",
+              "message": "Local constraints passed; no state change until explicit execution",
+              "state_revision": 0,
+              "proposal": {
+                "action_type": "follow_up",
+                "asset_id": "P01",
+                "view_id": "follow-up",
+                "reason": "Candidate for operator/agent review",
+                "alternative": "Return or stop if infeasible"
+              },
+              "costs": {
+                "outbound": 7.0710678118654755,
+                "capture": 5,
+                "return_cost": 7.0710678118654755,
+                "reserve": 15,
+                "margin": 65.85786437626905,
+                "model_version": "toy-euclidean-energy-v1",
+                "distance_unit": "m",
+                "energy_unit": "simulated_energy_unit",
+                "calculator_mode": "local_python_euclidean"
+              }
+            },
+            {
+              "priority": 3,
+              "allowed": false,
+              "code": "duplicate_view",
+              "message": "This asset/view already has a prior or executed record",
+              "state_revision": 0,
+              "proposal": {
+                "action_type": "inspect",
+                "asset_id": "P02",
+                "view_id": "overview",
+                "reason": "Candidate for operator/agent review",
+                "alternative": "Return or stop if infeasible"
+              },
+              "costs": null
+            },
+            {
+              "priority": 3,
+              "allowed": true,
+              "code": "allowed",
+              "message": "Local constraints passed; no state change until explicit execution",
+              "state_revision": 0,
+              "proposal": {
+                "action_type": "follow_up",
+                "asset_id": "P02",
+                "view_id": "follow-up",
+                "reason": "Candidate for operator/agent review",
+                "alternative": "Return or stop if infeasible"
+              },
+              "costs": {
+                "outbound": 11.180339887498949,
+                "capture": 5,
+                "return_cost": 11.180339887498949,
+                "reserve": 15,
+                "margin": 57.6393202250021,
+                "model_version": "toy-euclidean-energy-v1",
+                "distance_unit": "m",
+                "energy_unit": "simulated_energy_unit",
+                "calculator_mode": "local_python_euclidean"
+              }
+            },
+            {
+              "priority": 3,
+              "allowed": true,
+              "code": "allowed",
+              "message": "Local constraints passed; no state change until explicit execution",
+              "state_revision": 0,
+              "proposal": {
+                "action_type": "inspect",
+                "asset_id": "P03",
+                "view_id": "overview",
+                "reason": "Candidate for operator/agent review",
+                "alternative": "Return or stop if infeasible"
+              },
+              "costs": {
+                "outbound": 15.811388300841896,
+                "capture": 5,
+                "return_cost": 15.811388300841896,
+                "reserve": 15,
+                "margin": 48.377223398316204,
+                "model_version": "toy-euclidean-energy-v1",
+                "distance_unit": "m",
+                "energy_unit": "simulated_energy_unit",
+                "calculator_mode": "local_python_euclidean"
+              }
+            },
+            {
+              "priority": 3,
+              "allowed": false,
+              "code": "prior_view_required",
+              "message": "Inspect an initial view before requesting follow-up",
+              "state_revision": 0,
+              "proposal": {
+                "action_type": "follow_up",
+                "asset_id": "P03",
+                "view_id": "follow-up",
+                "reason": "Candidate for operator/agent review",
+                "alternative": "Return or stop if infeasible"
+              },
+              "costs": null
+            },
+            {
+              "priority": 2,
+              "allowed": true,
+              "code": "allowed",
+              "message": "Local constraints passed; no state change until explicit execution",
+              "state_revision": 0,
+              "proposal": {
+                "action_type": "inspect",
+                "asset_id": "P04",
+                "view_id": "overview",
+                "reason": "Candidate for operator/agent review",
+                "alternative": "Return or stop if infeasible"
+              },
+              "costs": {
+                "outbound": 11.180339887498949,
+                "capture": 5,
+                "return_cost": 11.180339887498949,
+                "reserve": 15,
+                "margin": 57.6393202250021,
+                "model_version": "toy-euclidean-energy-v1",
+                "distance_unit": "m",
+                "energy_unit": "simulated_energy_unit",
+                "calculator_mode": "local_python_euclidean"
+              }
+            },
+            {
+              "priority": 2,
+              "allowed": false,
+              "code": "prior_view_required",
+              "message": "Inspect an initial view before requesting follow-up",
+              "state_revision": 0,
+              "proposal": {
+                "action_type": "follow_up",
+                "asset_id": "P04",
+                "view_id": "follow-up",
+                "reason": "Candidate for operator/agent review",
+                "alternative": "Return or stop if infeasible"
+              },
+              "costs": null
+            },
+            {
+              "priority": 2,
+              "allowed": true,
+              "code": "allowed",
+              "message": "Local constraints passed; no state change until explicit execution",
+              "state_revision": 0,
+              "proposal": {
+                "action_type": "inspect",
+                "asset_id": "P05",
+                "view_id": "overview",
+                "reason": "Candidate for operator/agent review",
+                "alternative": "Return or stop if infeasible"
+              },
+              "costs": {
+                "outbound": 14.142135623730951,
+                "capture": 5,
+                "return_cost": 14.142135623730951,
+                "reserve": 15,
+                "margin": 51.7157287525381,
+                "model_version": "toy-euclidean-energy-v1",
+                "distance_unit": "m",
+                "energy_unit": "simulated_energy_unit",
+                "calculator_mode": "local_python_euclidean"
+              }
+            },
+            {
+              "priority": 2,
+              "allowed": false,
+              "code": "prior_view_required",
+              "message": "Inspect an initial view before requesting follow-up",
+              "state_revision": 0,
+              "proposal": {
+                "action_type": "follow_up",
+                "asset_id": "P05",
+                "view_id": "follow-up",
+                "reason": "Candidate for operator/agent review",
+                "alternative": "Return or stop if infeasible"
+              },
+              "costs": null
+            },
+            {
+              "priority": 1,
+              "allowed": false,
+              "code": "asset_excluded",
+              "message": "Operator excluded this panel/point",
+              "state_revision": 0,
+              "proposal": {
+                "action_type": "inspect",
+                "asset_id": "P06",
+                "view_id": "overview",
+                "reason": "Candidate for operator/agent review",
+                "alternative": "Return or stop if infeasible"
+              },
+              "costs": null
+            },
+            {
+              "priority": 1,
+              "allowed": false,
+              "code": "asset_excluded",
+              "message": "Operator excluded this panel/point",
+              "state_revision": 0,
+              "proposal": {
+                "action_type": "follow_up",
+                "asset_id": "P06",
+                "view_id": "follow-up",
+                "reason": "Candidate for operator/agent review",
+                "alternative": "Return or stop if infeasible"
+              },
+              "costs": null
+            }
+          ],
+          "source_mode": "synthetic_replay",
+          "vision_mode": "authored_annotations_not_live_vision",
+          "optional_ground_sensor_context": "skipped; no ground measurement supplied"
+        },
+        "state_transition_applied": false
+      },
+      {
+        "tool": "propose_next_action",
+        "arguments": {
+          "action_type": "follow_up",
+          "asset_id": "P02",
+          "view_id": "follow-up",
+          "reason": "Previous overview image for P02 was annotated 'unclear'; request a follow-up close-up to clarify possible issue.",
+          "alternative": "If follow-up infeasible, inspect P04 overview as a nearby new panel."
+        },
+        "result": {
+          "proposal": {
+            "action_type": "follow_up",
+            "asset_id": "P02",
+            "view_id": "follow-up",
+            "reason": "Previous overview image for P02 was annotated 'unclear'; request a follow-up close-up to clarify possible issue.",
+            "alternative": "If follow-up infeasible, inspect P04 overview as a nearby new panel."
+          },
+          "validation": {
+            "allowed": true,
+            "code": "allowed",
+            "message": "Local constraints passed; no state change until explicit execution",
+            "state_revision": 0,
+            "proposal": {
+              "action_type": "follow_up",
+              "asset_id": "P02",
+              "view_id": "follow-up",
+              "reason": "Previous overview image for P02 was annotated 'unclear'; request a follow-up close-up to clarify possible issue.",
+              "alternative": "If follow-up infeasible, inspect P04 overview as a nearby new panel."
+            },
+            "costs": {
+              "outbound": 11.180339887498949,
+              "capture": 5,
+              "return_cost": 11.180339887498949,
+              "reserve": 15,
+              "margin": 57.6393202250021,
+              "model_version": "toy-euclidean-energy-v1",
+              "distance_unit": "m",
+              "energy_unit": "simulated_energy_unit",
+              "calculator_mode": "local_python_euclidean"
+            }
+          },
+          "state_transition_applied": false
+        },
+        "state_transition_applied": false
+      }
+    ],
+    "response_events": [
+      {
+        "response_id": "resp_0ddf8d5633d5df71016af7d7c59aac87d192940f1ff1f5604c",
+        "model": "gpt-5-mini-2025-08-07",
+        "required_tool": "get_mission_context",
+        "usage": {
+          "input_tokens": 370,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 30,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 400
+        },
+        "request_mode": "live_api",
+        "status": "completed"
+      },
+      {
+        "response_id": "resp_0ddf8d5633d5df71016af7d7c84ec087d18d87ecbb1dd5e103",
+        "model": "gpt-5-mini-2025-08-07",
+        "required_tool": "propose_next_action",
+        "usage": {
+          "input_tokens": 2653,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 92,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2745
+        },
+        "request_mode": "live_api",
+        "status": "completed"
+      }
+    ],
+    "failure": null,
+    "state_transition_applied": false,
+    "vision_mode": "authored_synthetic_annotation_replay_not_live_vision"
+  }
+}

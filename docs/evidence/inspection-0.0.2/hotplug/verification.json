@@ -1,0 +1,30 @@
+{
+  "verified_at_utc": "2026-11-14T16:48:14.353162+00:00",
+  "python_tests": 180,
+  "python_tests_passed": true,
+  "frontend_regressions": 4,
+  "frontend_regressions_passed": true,
+  "physical_automatic_reconnect": "passed",
+  "aevaryn_styling": "passed",
+  "mission_and_frozen_inputs_unchanged": true,
+  "source_sha256": {
+    "stratus/inspection/dashboard.py": "c0823e95b7a17784e7f70bf2a6e6476baa33fe45d283ac7ea26d9b5639dbdf85",
+    "stratus/inspection/ground.py": "9b2cf24c3d207fe383c00410427640ccc96735c62cd63235a2622c28c05b4255",
+    "stratus/inspection/workflow.py": "dd0ed5c6dcabbc59625c1a404a4b9f55426e42fdf5163b0fc1782e1e43ae3650",
+    "stratus/inspection/review.py": "838ebb2722ae4ef8a191e611b25f50572f8a5078d2fe1ca6123796308de3f11d",
+    "stratus/inspection/persistence.py": "a1cec9cabd9f01216c2c734093adebf59a323f6abc75f6e9b4b056325252f6fe",
+    "stratus/inspection/computation.py": "e566f191ee456a8231f6375e8d42d27ecdde145487d502fc61691398c0822ce2",
+    "stratus/inspection/report.py": "c45f8a61761d3938d2feb693260da07b1182c2627aec4b4a4348181b35178069",
+    "stratus/inspection/engine.py": "9e265c67d88ceace49dbe01f81898c7ba2c4a1cd5f64f82465d490024f52b1da",
+    "stratus/inspection/agent.py": "fe8818e93e8951a2ba74f801f307cff712971ca61c8bf3f2227f1ca64f1f176a",
+    "stratus/inspection/web/app.js": "bbb6380b7f4bfffa46489302fa28d15c70872d3211e4ce50db283af6287becfd",
+    "stratus/inspection/web/index.html": "c62ad4a40e01128e78dfbe39eeab3b1ab139196b6f5168c9b63503b10b416d2d",
+    "stratus/inspection/web/style.css": "71f03338d49af4b4f9ab4ee33e793b407b168e453e7f9c615052fa4d8c1211fa",
+    "stratus/inspection/usb_reader.py": "8c2ef81e6ffc93be0f4548d8b0bce75869cb94ccf6a80f735b78eff5e2cf028d",
+    "stratus/inspection/sensor_worker.py": "6f0f24bd385a0f46e3a44b7d51b686acc2bbc0933be310d5d4a743de3d8a0aa3",
+    "scripts/start_stratus.py": "98ca8771b582768d15a409ea449eaa253ce5a251531cb35f7b58a5d483d110c7"
+  },
+  "protocol_tests": "failed worker replacement; timeout; partial sensor loss; warm-up; paused/replay; malformed replies; EOF cleanup; no aircraft-image dependency",
+  "actual_source_mode_at_completion": "Live",
+  "live_vision": "not run; authored replay"
+}

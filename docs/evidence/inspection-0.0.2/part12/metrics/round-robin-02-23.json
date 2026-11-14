@@ -1,0 +1,68 @@
+{
+  "fleet_size": 2,
+  "seed": 23,
+  "method": "round-robin",
+  "captures": 6,
+  "unique_usable_assets": 5,
+  "usable_priority": 10,
+  "total_priority": 399,
+  "unresolved_assets": 195,
+  "unclear_views": 1,
+  "human_review_pending": 6,
+  "total_energy_EU": 62.45991975844211,
+  "total_battery_EU": 137.5400802415579,
+  "remaining_captures": 0,
+  "travel_metres": 64.91983951688425,
+  "drone_participation": 2,
+  "rounds": 3,
+  "candidate_pairs": 57,
+  "event_count": 20,
+  "logical_seconds": 30.100746155,
+  "allocation_wall_seconds": [
+    0.008664900000439957,
+    0.008642700006021187,
+    0.011729399993782863
+  ],
+  "violations": 0,
+  "status_counts": {
+    "idle": 0,
+    "assigned": 0,
+    "traveling": 0,
+    "inspecting": 0,
+    "returning": 0,
+    "complete": 2,
+    "held": 0,
+    "unavailable": 0
+  },
+  "stop_reason": "No feasible shortlisted capture remains; completed returns or explicit holds retained. This is not a global infeasibility proof.",
+  "local_kernel_calls": 0,
+  "cloud_requests": 0,
+  "alpha_calls": 0,
+  "ai_requests": 0,
+  "case_id": "round-robin-02-23",
+  "total_wall_seconds": 0.13420939999923576,
+  "peak_process_memory_bytes": 26865664,
+  "memory_method": "Windows PeakWorkingSetSize; whole case process",
+  "max_pairs_in_round": 20,
+  "outcome_sha256": "181eee85d09bd71b9a31ff46aa453c861f8c36b62c5f131ac66e43e3481e0738",
+  "ground_snapshot_id": "ground-6763d6c03c57934df080e286edf6041a514d8ddb21c4fed9d3e88ac9c5cec894",
+  "ground_sha256": "e2731a59344d4ef4496a0ecb0043098489d290fd1b576678b65bb161470fb0a8",
+  "scenario_sha256": "763ff3769256b13d0f59d915e1542f55fd588b9c91bfcd222fff99e6b639803c",
+  "checkpoint": {
+    "checkpoint": "round-robin-02-23.json",
+    "sha256": "c589deab1394513ef7ea9a722f87974474cc0b092e98dd351a03ca55f9db6f01",
+    "size_bytes": 141298
+  },
+  "new_completed_actions_by_drone": {
+    "D001": 3,
+    "D002": 3
+  },
+  "minimum_battery_EU": 60.89925384467533,
+  "versions": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26100-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel"
+  },
+  "service_mode": "local_python_only; not a live latency measurement",
+  "invariant_status": "passed"
+}

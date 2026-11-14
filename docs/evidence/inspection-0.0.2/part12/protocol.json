@@ -1,0 +1,47 @@
+{
+  "version": "fleet-matrix-v1",
+  "sizes": [
+    2,
+    5,
+    10,
+    25,
+    50
+  ],
+  "seeds": [
+    11,
+    23,
+    47
+  ],
+  "scenario": "stratus-solar-200-v1",
+  "rules": {
+    "battery_EU": 100,
+    "reserve_EU": 15,
+    "capture_EU": 5,
+    "travel_EU_per_m": 0.5,
+    "capture_cap": 3,
+    "speed_m_per_sim_second": 2,
+    "capture_sim_seconds": 2,
+    "horizon_sim_seconds": 600,
+    "shortlist_nearest": 6,
+    "shortlist_priority": 4,
+    "max_pairs": 500,
+    "coordinator": "Bounded greedy: fewest captures first, descending priority/evidence need, travel+capture, drone/task IDs",
+    "baseline": "Cyclic drone order; first feasible task ID within the identical shortlist",
+    "tie_policy": "Stable drone ID and task ID; logical event time then insertion sequence",
+    "allocation_boundary": "Wave barrier after all assigned travel/captures; returning drones may finish independently",
+    "limits": "Simulated independent aircraft; unique task ownership is not trajectory separation or flight control"
+  },
+  "matrix_mode": "local_python",
+  "baseline_sizes": [
+    2,
+    50
+  ],
+  "baseline": "round-robin",
+  "common_ground_sha256": "e2731a59344d4ef4496a0ecb0043098489d290fd1b576678b65bb161470fb0a8",
+  "fifty_gate": "Each of all 50 independent drones must complete at least one new capture; no prior completed evidence",
+  "bounds": "600 simulated seconds; three captures and 100 EU per drone; 15 EU protected reserve; at most 500 candidate pairs per round",
+  "measurement": "Fresh process per case. Raw allocation durations, total run wall time including guards, process peak working set, deterministic event count and outcome hash.",
+  "interpretation": "Local software scaling is separate from live Wolfram/service latency. More drones add resources. Retain every comparison including regressions and ties.",
+  "registration_note": "Rules, sizes and seeds were authored before initial 2/50 smoke tests. This receipt freezes unchanged rules before the complete matrix; it is not a pre-smoke registration.",
+  "no_post_result_tuning": true
+}

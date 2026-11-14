@@ -1,0 +1,23 @@
+{
+  "verified_at_utc": "2026-11-14T13:10:54.346063+00:00",
+  "tests": 117,
+  "tests_passed": true,
+  "persistence_section": "6/6 deliverables",
+  "completion_gate": "passed",
+  "saved_run": "saved-runs\\first-inspection-20261114T131054Z-e8d85e.json",
+  "checkpoint_sha256": "41315a4a2b19ead874a00e45243e4467de914b30b898a3ab4b2f7cd3b3312d8b",
+  "battery_after": 79.1886116991581,
+  "actions_remaining": 2,
+  "same_run_identity": true,
+  "exact_state_and_ground_snapshot_retained": true,
+  "retry_after_reopen": "no second debit/finding",
+  "atomic_write_failure_and_stale_writer_tests": "passed",
+  "mission_evidence_and_ground_files_unchanged": true,
+  "preexisting_saved_runs_unchanged": true,
+  "computation": "local_python",
+  "assessment": "authored_replay_annotation",
+  "live_vision": "not run",
+  "physical_acquisition": "not performed",
+  "original_midnight_stop_met": false,
+  "platform": "win32"
+}

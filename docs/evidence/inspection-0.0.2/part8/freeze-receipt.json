@@ -1,0 +1,33 @@
+{
+  "frozen_at_utc": "2026-11-14T17:09:31.667389+00:00",
+  "input_sha256": {
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P01-overview-clear.png": "2cae61c5699c561b349e78d016f64eb9294eda664404cdfdfbf4ec5d30f7e9a5",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P01-follow-up-clear.png": "e3750045873041679978e0d82e28467ff3834acf66248ee915fc5adb60dccfcc",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P02-overview-clear.png": "1984a4d34c92471111f8ebac9caf658ae8b75201548d27e2f2fa322c496935c9",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P02-overview-blur.png": "4f4a5d3c96e0c58403190b597dc2f78e49e592ebc1d0b5b63204b0c6b58493e8",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P02-follow-up-clear.png": "a46523f1b453f4c280a7a83fa4d91bd75414db3f8f90685002d993a3a840c4b4",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P03-overview-clear.png": "18a2a385c6d987946ebcce3244176b5b52cd1f7ae18f6fea39c69c2e91624a94",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P03-overview-glare.png": "dc44009dc219d6d7e4d5fd7ce062162005bd13968ffbce5996994fead5bb92d7",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P03-follow-up-clear.png": "bcb11b90912fbd6182f278385145debf1bf5d62280f91c7e9f38e9c4ee4a2051",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P04-overview-clear.png": "258b7ea70039d37fc61d109b83ab4eea8546657ab2fe910f04e6ff30d9f808a6",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P04-follow-up-clear.png": "09fc269287b169ed03f5b179fd02be92375aede4814bf521b67ba1321777a6a5",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P05-overview-clear.png": "540321b09b15663b2497d3c3419b81f6b09d7939740113db9198de73d19a5387",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P05-follow-up-clear.png": "ecb7436a7647d5269d89c7d07188edb2cadf3364ce15caa1cc2ab4f86283c7e0",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P06-overview-clear.png": "d9b8683595db414baf488e5a5ffb6847d20949f2d87697c79df4e26ac67f5999",
+    "docs/evidence/inspection-0.0.2/part8/fixtures/P06-follow-up-clear.png": "e5211ed641572594b0b416cc54339fb9d30ff12e4e6d8ed9b7d7d8d63d2cf522",
+    "docs/evidence/inspection-0.0.2/part8/ground-input.json": "1fefa9e5ae70e366063855aebbd2e5a70c792f050a2059b47ce1978ec8263097",
+    "docs/evidence/inspection-0.0.2/part8/ground-context.json": "0a8f2f5c921ed2420e8b47cbe7c93c2ba5776bca5e3213c6315f2e9243c956f4",
+    "docs/evidence/inspection-0.0.2/part8/cases/clear/annotations.json": "ad6916ebb550df6b4975735e45e25bd1e3e2549c22a855e649f68a9e4c0835ec",
+    "docs/evidence/inspection-0.0.2/part8/cases/clear/manifest.json": "73b649a5e645676b9c902aa0aea1680431ebb3a1a471934401acb54ff9da2c87",
+    "docs/evidence/inspection-0.0.2/part8/cases/clear/mission.json": "cb762adc3df12af3e44e0836844332124f53e171214c730a237cd15010353755",
+    "docs/evidence/inspection-0.0.2/part8/cases/unclear/annotations.json": "35ca699e2e522c63e68385fc9cceeb43dd51fb14fc1f6be7efa9b99d02a83e1a",
+    "docs/evidence/inspection-0.0.2/part8/cases/unclear/manifest.json": "96811e3b2092db20d5a8f6d246db81f1ae8d599017b8cca8ea417ad6922f33a1",
+    "docs/evidence/inspection-0.0.2/part8/cases/unclear/mission.json": "78a8aebbb5678fb79fa1a1d8534a66bf36046b663cb6f8489ae708a6969484a0",
+    "docs/evidence/inspection-0.0.2/part8/cases/low-battery/annotations.json": "0e44eb6ba0b8ba7f11fa00f3591275440f43acf73ca0545e16cd0c7f027e442e",
+    "docs/evidence/inspection-0.0.2/part8/cases/low-battery/manifest.json": "ced3c00ba482ae8e765baa2cfb5bfd50e2310ee9919e145d5a5d766312989db0",
+    "docs/evidence/inspection-0.0.2/part8/cases/low-battery/mission.json": "6f8d3a4830edf12066036a7861e077792b210193fad51975c4156f3d92750b0a",
+    "docs/evidence/inspection-0.0.2/part8/comparison-spec.json": "8ca23cf01b431aba1e93a42cfa7c744f6d0eb8d020c19b90211957855d47060d"
+  },
+  "spec_sha256": "8ca23cf01b431aba1e93a42cfa7c744f6d0eb8d020c19b90211957855d47060d",
+  "note": "Written before any planner comparison score was calculated."
+}

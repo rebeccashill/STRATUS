@@ -1,0 +1,98 @@
+{
+  "contract_version": "inspection-costs-v1",
+  "model_version": "toy-euclidean-energy-v1",
+  "mission_id": "solar-array-001",
+  "mission_revision": "0.0.1-part2",
+  "state_revision": 0,
+  "position": {
+    "point_id": "current",
+    "x": 0.0,
+    "y": 0.0
+  },
+  "launch": {
+    "point_id": "launch",
+    "x": 0.0,
+    "y": 0.0
+  },
+  "distance_unit": "m",
+  "energy_unit": "simulated_energy_unit",
+  "battery_available": 100.0,
+  "capture_cost": 5.0,
+  "travel_energy_per_distance": 0.5,
+  "return_reserve": 15.0,
+  "remaining_actions": 3,
+  "candidates": [
+    {
+      "asset_id": "P01",
+      "view_id": "follow-up",
+      "x": 10.0,
+      "y": 10.0
+    },
+    {
+      "asset_id": "P01",
+      "view_id": "overview",
+      "x": 10.0,
+      "y": 10.0
+    },
+    {
+      "asset_id": "P02",
+      "view_id": "follow-up",
+      "x": 20.0,
+      "y": 10.0
+    },
+    {
+      "asset_id": "P02",
+      "view_id": "overview",
+      "x": 20.0,
+      "y": 10.0
+    },
+    {
+      "asset_id": "P03",
+      "view_id": "follow-up",
+      "x": 30.0,
+      "y": 10.0
+    },
+    {
+      "asset_id": "P03",
+      "view_id": "overview",
+      "x": 30.0,
+      "y": 10.0
+    },
+    {
+      "asset_id": "P04",
+      "view_id": "follow-up",
+      "x": 10.0,
+      "y": 20.0
+    },
+    {
+      "asset_id": "P04",
+      "view_id": "overview",
+      "x": 10.0,
+      "y": 20.0
+    },
+    {
+      "asset_id": "P05",
+      "view_id": "follow-up",
+      "x": 20.0,
+      "y": 20.0
+    },
+    {
+      "asset_id": "P05",
+      "view_id": "overview",
+      "x": 20.0,
+      "y": 20.0
+    },
+    {
+      "asset_id": "P06",
+      "view_id": "follow-up",
+      "x": 30.0,
+      "y": 20.0
+    },
+    {
+      "asset_id": "P06",
+      "view_id": "overview",
+      "x": 30.0,
+      "y": 20.0
+    }
+  ]
+}

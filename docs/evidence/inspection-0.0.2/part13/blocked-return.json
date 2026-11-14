@@ -1,0 +1,18 @@
+{
+  "schema_version": "fleet-hazard-v1",
+  "drone_id": "D001",
+  "hazard_revision": 1,
+  "state": "blocked",
+  "hazard_ids": [
+    "crane-001"
+  ],
+  "intersections": [
+    {
+      "hazard_id": "crane-001",
+      "leg": "return",
+      "hazard_state": "active"
+    }
+  ],
+  "reason": "Reported exclusion intersects return",
+  "path_signature": "42cd9c98b6aed18b343cdc5b8b61eb24ee5fc5d916833edc07beed7a1c8f0e5a"
+}

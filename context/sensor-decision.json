@@ -1,0 +1,15 @@
+{
+  "recorded_at_utc": "2026-11-14T03:20:55.978611+00:00",
+  "decision": "skipped",
+  "source_mode": "operator_scope_decision_no_measurement",
+  "scheduled_cutoff": "2026-11-13T22:00:00-05:00",
+  "recorded_after_cutoff": true,
+  "reason": "Optional sensor acquisition is outside the critical path; apply the passed cutoff and continue with local inspection fixtures.",
+  "hardware_attempted_in_this_part": false,
+  "electrical_or_driver_compatibility": "not_checked; no live-hardware compatibility claim",
+  "measurement_timestamp": null,
+  "measurements": [],
+  "units": null,
+  "ground_context_effect_on_aircraft_state": false,
+  "timing_note": "Decision recorded during Part 3 implementation after the scheduled cutoff; no on-time completion is claimed."
+}

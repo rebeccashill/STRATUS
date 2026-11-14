@@ -1,0 +1,22 @@
+{
+  "started_at_utc": "2026-11-14T15:16:29.498853+00:00",
+  "url": "http://127.0.0.1:8768",
+  "source_sha256": {
+    "stratus/inspection/agent.py": "fe8818e93e8951a2ba74f801f307cff712971ca61c8bf3f2227f1ca64f1f176a",
+    "stratus/inspection/dashboard.py": "097c0896e9bf81aad0828994d42c1f44624312140352cadf500c95481a0e630f",
+    "stratus/inspection/workflow.py": "44a1a4d5d56590f7f12e5b0a4f71120f0264a318975c41bc651ec457b81b3179",
+    "stratus/inspection/report.py": "c45f8a61761d3938d2feb693260da07b1182c2627aec4b4a4348181b35178069",
+    "stratus/inspection/operator.py": "c3c8b5527286469865668c1c48d3c9a4b421f12908c455763f2b3b9233a616b0",
+    "stratus/inspection/ground.py": "941841e0ddf64378d091aeba70e4013a807b9dbea19980ea0b1bdb065bdb0ce6",
+    "stratus/inspection/web/app.js": "3cd4827a60aa1a05b510fad15ae0db559541ce0f0620ff34de35b67a1031c3c5",
+    "stratus/inspection/web/index.html": "5349ccce8e86286457c7dcf3370946b6b8b3a079e4b3620c1f621af34ce363d1",
+    "stratus/inspection/web/style.css": "6e1c6504c98eaf6092dc145941c25da68cd8a1a292f03d260aecba074f40aadc"
+  },
+  "checkpoint": "adaptive-7f4e6503-1d398e.json",
+  "numerical_mode": "cached_wolfram_local",
+  "agent_mode": "live_ai",
+  "ai_failure": null,
+  "ground_context_id": "ground-94bcde96851fe51b75ef49eb6d0b07333c9ece8fe6c9543bb66c72a0901e8164",
+  "aircraft_revision": 1,
+  "state_transition_applied": false
+}

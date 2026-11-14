@@ -1,0 +1,67 @@
+{
+  "checked_at_utc": "2026-11-14T03:38:52.709380+00:00",
+  "workspace": "C:\\Users\\shill\\OneDrive\\Desktop\\STRATUS",
+  "python": "3.10.11",
+  "behavior_tests": 54,
+  "test_exit_code": 0,
+  "local_implementation_checks": "passed",
+  "part3_gate": "passed",
+  "completed_actions": [
+    "S021",
+    "S022",
+    "S023",
+    "S024",
+    "S025",
+    "S026",
+    "S027",
+    "S028",
+    "S029",
+    "S030",
+    "S031"
+  ],
+  "completed_count": 11,
+  "part3_total_actions": 11,
+  "pending_actions": [],
+  "live_ai_attempted": true,
+  "live_ai_verified": true,
+  "live_ai_failure": null,
+  "unit_test_provider_calls": "mocked; never counted as live AI",
+  "toy_reserve_margins": [
+    50,
+    0,
+    -1
+  ],
+  "toy_capture_allowed": [
+    true,
+    true,
+    false
+  ],
+  "fallback_mode": "deterministic_rule_based",
+  "fallback_proposal": {
+    "action_type": "follow_up",
+    "asset_id": "P02",
+    "view_id": "follow-up",
+    "reason": "Deterministic priority/observed-uncertainty/cost rule; no live AI inference",
+    "alternative": "Return to launch if the candidate becomes infeasible"
+  },
+  "input_and_image_hashes_unchanged": true,
+  "failed_or_proposed_actions_preserve_state": true,
+  "new_saved_inspection_runs": 0,
+  "live_vision": "not implemented; authored synthetic replay is explicit",
+  "sensor_decision": {
+    "recorded_at_utc": "2026-11-14T03:20:55.978611+00:00",
+    "decision": "skipped",
+    "source_mode": "operator_scope_decision_no_measurement",
+    "scheduled_cutoff": "2026-11-13T22:00:00-05:00",
+    "recorded_after_cutoff": true,
+    "reason": "Optional sensor acquisition is outside the critical path; apply the passed cutoff and continue with local inspection fixtures.",
+    "hardware_attempted_in_this_part": false,
+    "electrical_or_driver_compatibility": "not_checked; no live-hardware compatibility claim",
+    "measurement_timestamp": null,
+    "measurements": [],
+    "units": null,
+    "ground_context_effect_on_aircraft_state": false,
+    "timing_note": "Decision recorded during Part 3 implementation after the scheduled cutoff; no on-time completion is claimed."
+  },
+  "next_step": "Proceed to Part 4"
+}

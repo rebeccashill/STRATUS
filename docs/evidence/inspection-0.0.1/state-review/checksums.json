@@ -1,0 +1,14 @@
+{
+  "stratus\\inspection\\review.py": "4a1c384fdeddaf79a073833a449362eb631ec17b73fc352dd08b61b4c73cc3ed",
+  "stratus\\inspection\\__main__.py": "40d79a40763cee6a4221d3f62d00bdf1f065c47165cb5e4e16fae1d3579fe65d",
+  "tests\\test_review.py": "65640031c0c675e33f2507060cfc6c0b479d60fbf008720f8b45af507f98b2a7",
+  "scripts\\verify_state_review.py": "89d0383f58749ed6ec1d97fa991548e4fa23f09324be2bcb4b0fc92aee04d87c",
+  "docs\\evidence\\inspection-0.0.1\\state-review\\first-inspection.json": "352d53e03f1c558dcd61aa083bcaa966705d2ab7809efce1e86a61f8b293e4f3",
+  "docs\\evidence\\inspection-0.0.1\\state-review\\idempotence.json": "c52b64b6a6260b5223b8d7b416e3adc0f0949fb8cce5e9aacf6f70907cc1593b",
+  "docs\\evidence\\inspection-0.0.1\\state-review\\initial-run.json": "2a426f31ba1d11242716ee629e78ab45c1091f7c0498e3a75e6e454ef050d71c",
+  "docs\\evidence\\inspection-0.0.1\\state-review\\replay-review-cases.json": "0290064a8a8da235b193deb04858cb3893ab04dbc7c50e9416e3cb2249f1b359",
+  "docs\\evidence\\inspection-0.0.1\\state-review\\verification.json": "df8987a42a81639693bcda78d023d7e4bc09a42869df7bc9b7208383a728aeaa",
+  "docs\\evidence\\inspection-0.0.1\\state-review\\wolfram-fallback-execution.json": "682d68b533897aa0ac24e064e681215a0a982e860d47be9b016c6f08e37b4af3",
+  "docs\\evidence\\inspection-0.0.1\\state-review\\wolfram-initial-timeout.json": "103a79cd2f41cbb7166d06e9b81d5e58b6fa10e25718457d3c8e6b0ee37e68ea",
+  "docs\\evidence\\inspection-0.0.1\\state-review\\tests.txt": "53ba71ad29753a1c8de651fef84e4f85de4833dd0c21a8f98406fa4fb039429f"
+}

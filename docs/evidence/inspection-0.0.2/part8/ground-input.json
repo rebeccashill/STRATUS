@@ -1,0 +1,339 @@
+{
+  "status": "available",
+  "mode": "recorded_measured",
+  "context_role": "ground_context_only",
+  "snapshot_at_utc": "2026-11-14T16:32:21.446002+00:00",
+  "node_id": "ground-node-001",
+  "location": {
+    "status": "unknown",
+    "label": null,
+    "position": null,
+    "coordinate_frame": null
+  },
+  "observations": [
+    {
+      "schema_version": "1.0.0",
+      "observation_id": "obs_08689ff8b06b79265f884829",
+      "node_id": "ground-node-001",
+      "sensor_id": "ground-node-001/bme280",
+      "sensor_model": "BME280",
+      "variable": "temperature",
+      "value": 21.87421875,
+      "unit": "degC",
+      "acquired_at_utc": "2026-11-14T16:32:21.703118+00:00",
+      "received_at_utc": "2026-11-14T16:32:21.723511+00:00",
+      "receipt_time_status": "recorded",
+      "timestamp_basis": "host_read_completion",
+      "normalized_at_utc": "2026-11-14T16:32:21.723511+00:00",
+      "location": {
+        "status": "unknown",
+        "label": null,
+        "position": null,
+        "coordinate_frame": null
+      },
+      "source_mode": "recorded_measured",
+      "acquisition_source": "physical_sensor",
+      "quality": {
+        "status": "unreviewed",
+        "flags": [
+          "calibration_unknown",
+          "uncertainty_unknown"
+        ]
+      },
+      "calibration": {
+        "status": "unknown",
+        "reference": null
+      },
+      "uncertainty": {
+        "status": "unknown",
+        "value": null,
+        "unit": null,
+        "kind": null
+      },
+      "context_role": "ground_context_only",
+      "provenance": {
+        "source_file": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+        "source_sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461",
+        "source_row": 2,
+        "original_source_mode": "live_measured"
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "observation_id": "obs_e16fea2b6294ee8d6f1de721",
+      "node_id": "ground-node-001",
+      "sensor_id": "ground-node-001/bme280",
+      "sensor_model": "BME280",
+      "variable": "relative_humidity",
+      "value": 39.9773005292298,
+      "unit": "%RH",
+      "acquired_at_utc": "2026-11-14T16:32:21.703118+00:00",
+      "received_at_utc": "2026-11-14T16:32:21.723511+00:00",
+      "receipt_time_status": "recorded",
+      "timestamp_basis": "host_read_completion",
+      "normalized_at_utc": "2026-11-14T16:32:21.723511+00:00",
+      "location": {
+        "status": "unknown",
+        "label": null,
+        "position": null,
+        "coordinate_frame": null
+      },
+      "source_mode": "recorded_measured",
+      "acquisition_source": "physical_sensor",
+      "quality": {
+        "status": "unreviewed",
+        "flags": [
+          "calibration_unknown",
+          "uncertainty_unknown"
+        ]
+      },
+      "calibration": {
+        "status": "unknown",
+        "reference": null
+      },
+      "uncertainty": {
+        "status": "unknown",
+        "value": null,
+        "unit": null,
+        "kind": null
+      },
+      "context_role": "ground_context_only",
+      "provenance": {
+        "source_file": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+        "source_sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461",
+        "source_row": 3,
+        "original_source_mode": "live_measured"
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "observation_id": "obs_636262157d37c1e1f6124fe8",
+      "node_id": "ground-node-001",
+      "sensor_id": "ground-node-001/bme280",
+      "sensor_model": "BME280",
+      "variable": "pressure",
+      "value": 1006.8205522883696,
+      "unit": "hPa",
+      "acquired_at_utc": "2026-11-14T16:32:21.703118+00:00",
+      "received_at_utc": "2026-11-14T16:32:21.723511+00:00",
+      "receipt_time_status": "recorded",
+      "timestamp_basis": "host_read_completion",
+      "normalized_at_utc": "2026-11-14T16:32:21.723511+00:00",
+      "location": {
+        "status": "unknown",
+        "label": null,
+        "position": null,
+        "coordinate_frame": null
+      },
+      "source_mode": "recorded_measured",
+      "acquisition_source": "physical_sensor",
+      "quality": {
+        "status": "unreviewed",
+        "flags": [
+          "calibration_unknown",
+          "uncertainty_unknown"
+        ]
+      },
+      "calibration": {
+        "status": "unknown",
+        "reference": null
+      },
+      "uncertainty": {
+        "status": "unknown",
+        "value": null,
+        "unit": null,
+        "kind": null
+      },
+      "context_role": "ground_context_only",
+      "provenance": {
+        "source_file": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+        "source_sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461",
+        "source_row": 4,
+        "original_source_mode": "live_measured"
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "observation_id": "obs_7e09f269c0f884f0f6ae9028",
+      "node_id": "ground-node-001",
+      "sensor_id": "ground-node-001/pmsa003i",
+      "sensor_model": "PMSA003I",
+      "variable": "pm1_0",
+      "value": 0,
+      "unit": "ug/m3",
+      "acquired_at_utc": "2026-11-14T16:32:21.722476+00:00",
+      "received_at_utc": "2026-11-14T16:32:21.723511+00:00",
+      "receipt_time_status": "recorded",
+      "timestamp_basis": "host_read_completion",
+      "normalized_at_utc": "2026-11-14T16:32:21.723511+00:00",
+      "location": {
+        "status": "unknown",
+        "label": null,
+        "position": null,
+        "coordinate_frame": null
+      },
+      "source_mode": "recorded_measured",
+      "acquisition_source": "physical_sensor",
+      "quality": {
+        "status": "unreviewed",
+        "flags": [
+          "calibration_unknown",
+          "uncertainty_unknown"
+        ]
+      },
+      "calibration": {
+        "status": "unknown",
+        "reference": null
+      },
+      "uncertainty": {
+        "status": "unknown",
+        "value": null,
+        "unit": null,
+        "kind": null
+      },
+      "context_role": "ground_context_only",
+      "provenance": {
+        "source_file": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+        "source_sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461",
+        "source_row": 5,
+        "original_source_mode": "live_measured"
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "observation_id": "obs_032f58a4dc53fd0722a181d4",
+      "node_id": "ground-node-001",
+      "sensor_id": "ground-node-001/pmsa003i",
+      "sensor_model": "PMSA003I",
+      "variable": "pm2_5",
+      "value": 0,
+      "unit": "ug/m3",
+      "acquired_at_utc": "2026-11-14T16:32:21.722476+00:00",
+      "received_at_utc": "2026-11-14T16:32:21.723511+00:00",
+      "receipt_time_status": "recorded",
+      "timestamp_basis": "host_read_completion",
+      "normalized_at_utc": "2026-11-14T16:32:21.723511+00:00",
+      "location": {
+        "status": "unknown",
+        "label": null,
+        "position": null,
+        "coordinate_frame": null
+      },
+      "source_mode": "recorded_measured",
+      "acquisition_source": "physical_sensor",
+      "quality": {
+        "status": "unreviewed",
+        "flags": [
+          "calibration_unknown",
+          "uncertainty_unknown"
+        ]
+      },
+      "calibration": {
+        "status": "unknown",
+        "reference": null
+      },
+      "uncertainty": {
+        "status": "unknown",
+        "value": null,
+        "unit": null,
+        "kind": null
+      },
+      "context_role": "ground_context_only",
+      "provenance": {
+        "source_file": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+        "source_sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461",
+        "source_row": 6,
+        "original_source_mode": "live_measured"
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "observation_id": "obs_c1b5a6bed0f7d683ba2401a2",
+      "node_id": "ground-node-001",
+      "sensor_id": "ground-node-001/pmsa003i",
+      "sensor_model": "PMSA003I",
+      "variable": "pm10",
+      "value": 0,
+      "unit": "ug/m3",
+      "acquired_at_utc": "2026-11-14T16:32:21.722476+00:00",
+      "received_at_utc": "2026-11-14T16:32:21.723511+00:00",
+      "receipt_time_status": "recorded",
+      "timestamp_basis": "host_read_completion",
+      "normalized_at_utc": "2026-11-14T16:32:21.723511+00:00",
+      "location": {
+        "status": "unknown",
+        "label": null,
+        "position": null,
+        "coordinate_frame": null
+      },
+      "source_mode": "recorded_measured",
+      "acquisition_source": "physical_sensor",
+      "quality": {
+        "status": "unreviewed",
+        "flags": [
+          "calibration_unknown",
+          "uncertainty_unknown"
+        ]
+      },
+      "calibration": {
+        "status": "unknown",
+        "reference": null
+      },
+      "uncertainty": {
+        "status": "unknown",
+        "value": null,
+        "unit": null,
+        "kind": null
+      },
+      "context_role": "ground_context_only",
+      "provenance": {
+        "source_file": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+        "source_sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461",
+        "source_row": 7,
+        "original_source_mode": "live_measured"
+      }
+    }
+  ],
+  "source": {
+    "path": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+    "sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461"
+  },
+  "reason": null,
+  "physical_acquisition_performed": false,
+  "sensor_states": {
+    "BME280": {
+      "status": "fresh",
+      "technical_error": null
+    },
+    "PMSA003I": {
+      "status": "fresh",
+      "technical_error": null
+    }
+  },
+  "technical_details": {
+    "bridge": "Adafruit 4471 MCP2221A",
+    "frequency_hz": 100000,
+    "detected_addresses": [
+      "0x0",
+      "0x12",
+      "0x77",
+      "0x78"
+    ],
+    "BME280_product": "SparkFun SEN-15440",
+    "PMSA003I_product": "Adafruit 4632",
+    "pm_channel_convention": "environmental mass concentration",
+    "pmsa_keys": [
+      "pm10 env",
+      "pm25 env",
+      "pm100 env"
+    ],
+    "recovery": "automatic fresh USB worker",
+    "worker_starts": 8,
+    "read_timeout_seconds": 12
+  },
+  "source_label": "Recorded",
+  "polling_seconds": 5,
+  "stale_seconds": 20,
+  "pmsa_settle_seconds": 30,
+  "presented_at_utc": "2026-11-14T16:32:24.183821+00:00"
+}

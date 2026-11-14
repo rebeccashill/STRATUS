@@ -1,0 +1,37 @@
+{
+  "recorded_at_utc": "2026-11-14T12:04:51.425741+00:00",
+  "integration_mode": "wolfram_local",
+  "runtime": {
+    "version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+    "system_id": "Windows-x86-64",
+    "cloud_connected": false
+  },
+  "cloud_deployed": false,
+  "alpha_api_access": "unverified",
+  "resource_pools": [
+    {
+      "pool": "Cloud Credits",
+      "balance": 175000,
+      "verification": "user_confirmed",
+      "expiry": "unknown"
+    },
+    {
+      "pool": "Service Credits",
+      "balance": 500,
+      "verification": "user_confirmed",
+      "expiry": "unknown"
+    },
+    {
+      "pool": "Wolfram Alpha API calls",
+      "allocation": 6200,
+      "verification": "previously_reported; current balance not reconfirmed",
+      "expiry": "unknown"
+    }
+  ],
+  "usage_scope": "This verification only; no programmatic balance read or account-wide usage inference",
+  "cloud_requests": 0,
+  "alpha_calls": 0,
+  "cloud_or_service_credits_consumed": "not inferred from request counts",
+  "service_backed_ai_entitlement": "not assumed",
+  "local_runtime_blocker": null
+}

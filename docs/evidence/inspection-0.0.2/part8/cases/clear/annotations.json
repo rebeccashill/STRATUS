@@ -1,0 +1,138 @@
+{
+  "schema_version": "1",
+  "scenario_id": "comparison-part8-clear",
+  "annotations": [
+    {
+      "evidence_id": "comparison-part8-clear:P01:overview",
+      "scenario_id": "comparison-part8-clear",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "Scripted synthetic benchmark preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Authored visible grid; no real inspection accuracy claim."
+    },
+    {
+      "evidence_id": "comparison-part8-clear:P01:follow-up",
+      "scenario_id": "comparison-part8-clear",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "Scripted synthetic benchmark preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Authored visible grid; no real inspection accuracy claim."
+    },
+    {
+      "evidence_id": "comparison-part8-clear:P02:overview",
+      "scenario_id": "comparison-part8-clear",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "Scripted synthetic benchmark preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Authored visible grid; no real inspection accuracy claim."
+    },
+    {
+      "evidence_id": "comparison-part8-clear:P02:follow-up",
+      "scenario_id": "comparison-part8-clear",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "Scripted synthetic benchmark preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Authored visible grid; no real inspection accuracy claim."
+    },
+    {
+      "evidence_id": "comparison-part8-clear:P03:overview",
+      "scenario_id": "comparison-part8-clear",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "Scripted synthetic benchmark preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Authored visible grid; no real inspection accuracy claim."
+    },
+    {
+      "evidence_id": "comparison-part8-clear:P03:follow-up",
+      "scenario_id": "comparison-part8-clear",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "Scripted synthetic benchmark preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Authored visible grid; no real inspection accuracy claim."
+    },
+    {
+      "evidence_id": "comparison-part8-clear:P04:overview",
+      "scenario_id": "comparison-part8-clear",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "Scripted synthetic benchmark preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Authored visible grid; no real inspection accuracy claim."
+    },
+    {
+      "evidence_id": "comparison-part8-clear:P04:follow-up",
+      "scenario_id": "comparison-part8-clear",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "Scripted synthetic benchmark preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Authored visible grid; no real inspection accuracy claim."
+    },
+    {
+      "evidence_id": "comparison-part8-clear:P05:overview",
+      "scenario_id": "comparison-part8-clear",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "Scripted synthetic benchmark preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Authored visible grid; no real inspection accuracy claim."
+    },
+    {
+      "evidence_id": "comparison-part8-clear:P05:follow-up",
+      "scenario_id": "comparison-part8-clear",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "Scripted synthetic benchmark preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Authored visible grid; no real inspection accuracy claim."
+    },
+    {
+      "evidence_id": "comparison-part8-clear:P06:overview",
+      "scenario_id": "comparison-part8-clear",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "Scripted synthetic benchmark preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Authored visible grid; no real inspection accuracy claim."
+    },
+    {
+      "evidence_id": "comparison-part8-clear:P06:follow-up",
+      "scenario_id": "comparison-part8-clear",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "Scripted synthetic benchmark preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Authored visible grid; no real inspection accuracy claim."
+    }
+  ]
+}

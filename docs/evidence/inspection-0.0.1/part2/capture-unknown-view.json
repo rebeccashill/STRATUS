@@ -1,0 +1,20 @@
+{
+  "mission_id": "solar-array-001",
+  "scenario_id": "synthetic-solar-array-001",
+  "asset_id": "P01",
+  "view_id": "missing",
+  "timestamp": "2026-11-14T03:01:27.377835+00:00",
+  "timestamp_kind": "response_created_at_not_camera_capture",
+  "capture_mode": "simulated_local_fixture",
+  "real_flight": false,
+  "state_transition_applied": false,
+  "source_label": null,
+  "source_mode": null,
+  "assessment_mode": "unavailable_no_assessment",
+  "status": "unavailable",
+  "image_quality": "unknown",
+  "finding": "unknown",
+  "evidence_ref": null,
+  "annotation": null,
+  "reason": "unknown_view_id"
+}

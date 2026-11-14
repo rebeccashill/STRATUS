@@ -1,0 +1,16 @@
+{
+  "observed_at": "2026-11-14T12:31:42.349629+00:00",
+  "mode": "local_python_fallback",
+  "failure": {
+    "code": "timeout",
+    "message": "Local Wolfram exceeded its bounded execution time"
+  },
+  "observations": [
+    "Standalone PATH WolframScript launcher initially had no explicit kernel path",
+    "Installed kernel discovery added; timeout persisted",
+    "Installed companion launcher also timed out during bounded arithmetic probe"
+  ],
+  "root_cause": "not established",
+  "current_status": "unavailable in this session; explicit local Python path verified",
+  "prior_verification": "Earlier actual local Wolfram parity remains historical evidence; no new successful kernel call is claimed"
+}

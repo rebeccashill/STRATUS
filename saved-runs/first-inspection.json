@@ -1,0 +1,1948 @@
+{
+  "format": "stratus-run-1",
+  "payload": {
+    "mission_sha256": "35d9ebd820ec03b7583340fdebea4bc3e949078e0d4461ca8e33f7e38ed799e2",
+    "saved_at_utc": "2026-11-14T13:07:26.936994+00:00",
+    "run": {
+      "run_id": "run-7f4e6503cb044183b2d8f4b2305fca35",
+      "mission_revision": "0.0.1-part2",
+      "created_at_utc": "2026-11-14T13:07:26.881467+00:00",
+      "execution_mode": "simulated",
+      "real_flight": false,
+      "session_scope": "in_memory_session_with_optional_checkpoint",
+      "aircraft_state": {
+        "mission_id": "solar-array-001",
+        "scenario_id": "synthetic-solar-array-001",
+        "position": {
+          "x": 30,
+          "y": 10
+        },
+        "battery_available": 79.1886116991581,
+        "actions_used": 1,
+        "actions_remaining": 2,
+        "completed_views": [
+          {
+            "asset_id": "P01",
+            "view_id": "overview"
+          },
+          {
+            "asset_id": "P02",
+            "view_id": "overview"
+          },
+          {
+            "asset_id": "P03",
+            "view_id": "overview"
+          }
+        ],
+        "history": [
+          {
+            "record_id": "prior-001",
+            "asset_id": "P01",
+            "view_id": "overview",
+            "source_class": "synthetic",
+            "assessment_mode": "authored_replay_annotation",
+            "image_quality_annotation": "clear",
+            "finding": "unknown_pending_operator_review",
+            "evidence_status": "available_synthetic",
+            "evidence_ref": "synthetic-solar-array-001:P01:overview",
+            "consumes_new_action": false
+          },
+          {
+            "record_id": "prior-002",
+            "asset_id": "P02",
+            "view_id": "overview",
+            "source_class": "synthetic",
+            "assessment_mode": "authored_replay_annotation",
+            "image_quality_annotation": "unclear",
+            "finding": "unknown_pending_operator_review",
+            "evidence_status": "available_synthetic",
+            "evidence_ref": "synthetic-solar-array-001:P02:overview",
+            "consumes_new_action": false
+          },
+          {
+            "record_id": "simulated-001",
+            "asset_id": "P03",
+            "view_id": "overview",
+            "evidence": {
+              "mission_id": "solar-array-001",
+              "scenario_id": "synthetic-solar-array-001",
+              "asset_id": "P03",
+              "view_id": "overview",
+              "timestamp": "2026-11-14T13:07:26.927003+00:00",
+              "timestamp_kind": "response_created_at_not_camera_capture",
+              "capture_mode": "simulated_local_fixture",
+              "real_flight": false,
+              "state_transition_applied": false,
+              "source_label": "synthetic",
+              "source_mode": "procedural_synthetic",
+              "assessment_mode": "authored_replay_annotation",
+              "status": "available",
+              "image_quality": "clear",
+              "finding": "apparent_concern_review_required",
+              "evidence_ref": {
+                "evidence_id": "synthetic-solar-array-001:P03:overview",
+                "image_path": "evidence/inspection/images/P03-overview.png",
+                "sha256": "852fa3d18ee57ca90bb548853460e93d802a55a04b99071e9a8a3b820a333fe6",
+                "width": 480,
+                "height": 320,
+                "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+                "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+              },
+              "annotation": {
+                "evidence_id": "synthetic-solar-array-001:P03:overview",
+                "scenario_id": "synthetic-solar-array-001",
+                "assessment_mode": "authored_replay_annotation",
+                "annotation_author": "AI-assisted scenario preparation; human review pending",
+                "human_review_status": "pending",
+                "live_model_output": false,
+                "image_quality": "clear",
+                "finding": "apparent_concern_review_required",
+                "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+              },
+              "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+            },
+            "consumes_new_action": true
+          }
+        ],
+        "revision": 1,
+        "status": "active"
+      },
+      "ground_context": {
+        "status": "available",
+        "mode": "recorded_measured",
+        "context_role": "ground_context_only",
+        "snapshot_at_utc": "2026-11-14T13:07:26.881467+00:00",
+        "node_id": "ground-node-001",
+        "location": {
+          "status": "unknown",
+          "label": null,
+          "position": null,
+          "coordinate_frame": null
+        },
+        "observations": [
+          {
+            "acquired_at_utc": "2026-11-14T11:15:05.460291+00:00",
+            "acquisition_source": "physical_sensor",
+            "calibration": {
+              "reference": null,
+              "status": "unknown"
+            },
+            "context_role": "ground_context_only",
+            "location": {
+              "coordinate_frame": null,
+              "label": null,
+              "position": null,
+              "status": "unknown"
+            },
+            "node_id": "ground-node-001",
+            "normalized_at_utc": "2026-11-14T11:24:45.074062+00:00",
+            "observation_id": "obs_1a0103d11d1e489d8ae9ae8e",
+            "provenance": {
+              "original_source_mode": "live_measured",
+              "source_file": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+              "source_row": 31,
+              "source_sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011"
+            },
+            "quality": {
+              "flags": [
+                "location_unknown",
+                "calibration_unknown",
+                "uncertainty_unknown"
+              ],
+              "status": "unreviewed"
+            },
+            "receipt_time_status": "recorded",
+            "received_at_utc": "2026-11-14T11:15:05.460291+00:00",
+            "schema_version": "1.0.0",
+            "sensor_id": "ground-node-001/bme280",
+            "sensor_model": "BME280",
+            "source_mode": "recorded_measured",
+            "timestamp_basis": "host_read_completion",
+            "uncertainty": {
+              "kind": null,
+              "status": "unknown",
+              "unit": null,
+              "value": null
+            },
+            "unit": "hPa",
+            "value": 1005.6231286941569,
+            "variable": "pressure"
+          },
+          {
+            "acquired_at_utc": "2026-11-14T11:15:05.460291+00:00",
+            "acquisition_source": "physical_sensor",
+            "calibration": {
+              "reference": null,
+              "status": "unknown"
+            },
+            "context_role": "ground_context_only",
+            "location": {
+              "coordinate_frame": null,
+              "label": null,
+              "position": null,
+              "status": "unknown"
+            },
+            "node_id": "ground-node-001",
+            "normalized_at_utc": "2026-11-14T11:24:45.074062+00:00",
+            "observation_id": "obs_487874436b68bb962751f9d2",
+            "provenance": {
+              "original_source_mode": "live_measured",
+              "source_file": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+              "source_row": 30,
+              "source_sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011"
+            },
+            "quality": {
+              "flags": [
+                "location_unknown",
+                "calibration_unknown",
+                "uncertainty_unknown"
+              ],
+              "status": "unreviewed"
+            },
+            "receipt_time_status": "recorded",
+            "received_at_utc": "2026-11-14T11:15:05.460291+00:00",
+            "schema_version": "1.0.0",
+            "sensor_id": "ground-node-001/bme280",
+            "sensor_model": "BME280",
+            "source_mode": "recorded_measured",
+            "timestamp_basis": "host_read_completion",
+            "uncertainty": {
+              "kind": null,
+              "status": "unknown",
+              "unit": null,
+              "value": null
+            },
+            "unit": "%RH",
+            "value": 38.38328298366316,
+            "variable": "relative_humidity"
+          },
+          {
+            "acquired_at_utc": "2026-11-14T11:15:05.460291+00:00",
+            "acquisition_source": "physical_sensor",
+            "calibration": {
+              "reference": null,
+              "status": "unknown"
+            },
+            "context_role": "ground_context_only",
+            "location": {
+              "coordinate_frame": null,
+              "label": null,
+              "position": null,
+              "status": "unknown"
+            },
+            "node_id": "ground-node-001",
+            "normalized_at_utc": "2026-11-14T11:24:45.074062+00:00",
+            "observation_id": "obs_782b5885ccea240b0b4ae22a",
+            "provenance": {
+              "original_source_mode": "live_measured",
+              "source_file": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+              "source_row": 29,
+              "source_sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011"
+            },
+            "quality": {
+              "flags": [
+                "location_unknown",
+                "calibration_unknown",
+                "uncertainty_unknown"
+              ],
+              "status": "unreviewed"
+            },
+            "receipt_time_status": "recorded",
+            "received_at_utc": "2026-11-14T11:15:05.460291+00:00",
+            "schema_version": "1.0.0",
+            "sensor_id": "ground-node-001/bme280",
+            "sensor_model": "BME280",
+            "source_mode": "recorded_measured",
+            "timestamp_basis": "host_read_completion",
+            "uncertainty": {
+              "kind": null,
+              "status": "unknown",
+              "unit": null,
+              "value": null
+            },
+            "unit": "degC",
+            "value": 23.957421875,
+            "variable": "temperature"
+          },
+          {
+            "acquired_at_utc": "2026-11-14T11:15:05.183760+00:00",
+            "acquisition_source": "physical_sensor",
+            "calibration": {
+              "reference": null,
+              "status": "unknown"
+            },
+            "context_role": "ground_context_only",
+            "location": {
+              "coordinate_frame": null,
+              "label": null,
+              "position": null,
+              "status": "unknown"
+            },
+            "node_id": "ground-node-001",
+            "normalized_at_utc": "2026-11-14T11:24:45.074062+00:00",
+            "observation_id": "obs_f669a1b6a80064974b103f5b",
+            "provenance": {
+              "original_source_mode": "live_measured",
+              "source_file": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+              "source_row": 28,
+              "source_sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011"
+            },
+            "quality": {
+              "flags": [
+                "location_unknown",
+                "calibration_unknown",
+                "uncertainty_unknown",
+                "zero_reported_not_independently_validated"
+              ],
+              "status": "unreviewed"
+            },
+            "receipt_time_status": "recorded",
+            "received_at_utc": "2026-11-14T11:15:05.183760+00:00",
+            "schema_version": "1.0.0",
+            "sensor_id": "ground-node-001/pmsa003i",
+            "sensor_model": "PMSA003I",
+            "source_mode": "recorded_measured",
+            "timestamp_basis": "host_read_completion",
+            "uncertainty": {
+              "kind": null,
+              "status": "unknown",
+              "unit": null,
+              "value": null
+            },
+            "unit": "ug/m3",
+            "value": 0.0,
+            "variable": "pm10"
+          },
+          {
+            "acquired_at_utc": "2026-11-14T11:15:05.183760+00:00",
+            "acquisition_source": "physical_sensor",
+            "calibration": {
+              "reference": null,
+              "status": "unknown"
+            },
+            "context_role": "ground_context_only",
+            "location": {
+              "coordinate_frame": null,
+              "label": null,
+              "position": null,
+              "status": "unknown"
+            },
+            "node_id": "ground-node-001",
+            "normalized_at_utc": "2026-11-14T11:24:45.074062+00:00",
+            "observation_id": "obs_25e61fc3fbcdf8cb0a77dfdb",
+            "provenance": {
+              "original_source_mode": "live_measured",
+              "source_file": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+              "source_row": 26,
+              "source_sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011"
+            },
+            "quality": {
+              "flags": [
+                "location_unknown",
+                "calibration_unknown",
+                "uncertainty_unknown",
+                "zero_reported_not_independently_validated"
+              ],
+              "status": "unreviewed"
+            },
+            "receipt_time_status": "recorded",
+            "received_at_utc": "2026-11-14T11:15:05.183760+00:00",
+            "schema_version": "1.0.0",
+            "sensor_id": "ground-node-001/pmsa003i",
+            "sensor_model": "PMSA003I",
+            "source_mode": "recorded_measured",
+            "timestamp_basis": "host_read_completion",
+            "uncertainty": {
+              "kind": null,
+              "status": "unknown",
+              "unit": null,
+              "value": null
+            },
+            "unit": "ug/m3",
+            "value": 0.0,
+            "variable": "pm1_0"
+          },
+          {
+            "acquired_at_utc": "2026-11-14T11:15:05.183760+00:00",
+            "acquisition_source": "physical_sensor",
+            "calibration": {
+              "reference": null,
+              "status": "unknown"
+            },
+            "context_role": "ground_context_only",
+            "location": {
+              "coordinate_frame": null,
+              "label": null,
+              "position": null,
+              "status": "unknown"
+            },
+            "node_id": "ground-node-001",
+            "normalized_at_utc": "2026-11-14T11:24:45.074062+00:00",
+            "observation_id": "obs_060259c016126cbd7e25046d",
+            "provenance": {
+              "original_source_mode": "live_measured",
+              "source_file": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+              "source_row": 27,
+              "source_sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011"
+            },
+            "quality": {
+              "flags": [
+                "location_unknown",
+                "calibration_unknown",
+                "uncertainty_unknown",
+                "zero_reported_not_independently_validated"
+              ],
+              "status": "unreviewed"
+            },
+            "receipt_time_status": "recorded",
+            "received_at_utc": "2026-11-14T11:15:05.183760+00:00",
+            "schema_version": "1.0.0",
+            "sensor_id": "ground-node-001/pmsa003i",
+            "sensor_model": "PMSA003I",
+            "source_mode": "recorded_measured",
+            "timestamp_basis": "host_read_completion",
+            "uncertainty": {
+              "kind": null,
+              "status": "unknown",
+              "unit": null,
+              "value": null
+            },
+            "unit": "ug/m3",
+            "value": 0.0,
+            "variable": "pm2_5"
+          }
+        ],
+        "source": {
+          "path": "context/ground-measurements/observations-20261114.jsonl",
+          "sha256": "9f20bce90e816431ac48915828abb301fb32174dd6dfa6484cf3d36640922bbc",
+          "records_checked": 60,
+          "raw_source_verification": "not_rechecked_by_this_reader"
+        },
+        "reason": null,
+        "physical_acquisition_performed": false,
+        "age_seconds_at_snapshot": {
+          "youngest": 6741.421176,
+          "oldest": 6741.697707
+        },
+        "time_status": "recorded_original_times"
+      },
+      "assets": [
+        {
+          "asset_id": "P01",
+          "eligibility": "eligible",
+          "captured_views": [
+            "overview"
+          ],
+          "coverage_status": "captured_finding_unknown",
+          "latest_assessment_id": "prior-001",
+          "image_quality": "clear",
+          "finding": "unknown_pending_operator_review",
+          "unresolved": [
+            "human_review_pending",
+            "finding_unknown"
+          ]
+        },
+        {
+          "asset_id": "P02",
+          "eligibility": "eligible",
+          "captured_views": [
+            "overview"
+          ],
+          "coverage_status": "needs_distinct_follow_up",
+          "latest_assessment_id": "prior-002",
+          "image_quality": "unclear",
+          "finding": "unknown_pending_operator_review",
+          "unresolved": [
+            "human_review_pending",
+            "insufficient_image_detail",
+            "finding_unknown"
+          ]
+        },
+        {
+          "asset_id": "P03",
+          "eligibility": "eligible",
+          "captured_views": [
+            "overview"
+          ],
+          "coverage_status": "captured_concern_review_required",
+          "latest_assessment_id": "run-7f4e6503cb044183b2d8f4b2305fca35:first-inspection",
+          "image_quality": "clear",
+          "finding": "apparent_concern_review_required",
+          "unresolved": [
+            "human_review_pending",
+            "tentative_concern"
+          ]
+        },
+        {
+          "asset_id": "P04",
+          "eligibility": "eligible",
+          "captured_views": [],
+          "coverage_status": "uninspected",
+          "latest_assessment_id": null,
+          "image_quality": "unknown",
+          "finding": "unknown",
+          "unresolved": [
+            "initial_capture_required"
+          ]
+        },
+        {
+          "asset_id": "P05",
+          "eligibility": "eligible",
+          "captured_views": [],
+          "coverage_status": "uninspected",
+          "latest_assessment_id": null,
+          "image_quality": "unknown",
+          "finding": "unknown",
+          "unresolved": [
+            "initial_capture_required"
+          ]
+        },
+        {
+          "asset_id": "P06",
+          "eligibility": "excluded",
+          "captured_views": [],
+          "coverage_status": "excluded_uninspected",
+          "latest_assessment_id": null,
+          "image_quality": "unknown",
+          "finding": "unknown",
+          "unresolved": []
+        }
+      ],
+      "uninspected_assets": [
+        "P04",
+        "P05"
+      ],
+      "incomplete_assets": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "assessments": [
+        {
+          "assessment_id": "prior-001",
+          "asset_id": "P01",
+          "view_id": "overview",
+          "origin": "frozen_prior_record",
+          "state_revision": 0,
+          "assessment_mode": "authored_replay_annotation",
+          "source_label": "synthetic",
+          "model": null,
+          "live_model_output": false,
+          "human_review_status": "pending",
+          "image_quality": "clear",
+          "finding": "unknown_pending_operator_review",
+          "flags": [
+            "human_review_pending",
+            "finding_unknown"
+          ],
+          "evidence_ref": {
+            "evidence_id": "synthetic-solar-array-001:P01:overview",
+            "image_path": "evidence/inspection/images/P01-overview.png",
+            "sha256": "2cae61c5699c561b349e78d016f64eb9294eda664404cdfdfbf4ec5d30f7e9a5"
+          },
+          "note": "Original prior finding retained; no new assessment or capture is implied."
+        },
+        {
+          "assessment_id": "prior-002",
+          "asset_id": "P02",
+          "view_id": "overview",
+          "origin": "frozen_prior_record",
+          "state_revision": 0,
+          "assessment_mode": "authored_replay_annotation",
+          "source_label": "synthetic",
+          "model": null,
+          "live_model_output": false,
+          "human_review_status": "pending",
+          "image_quality": "unclear",
+          "finding": "unknown_pending_operator_review",
+          "flags": [
+            "human_review_pending",
+            "insufficient_image_detail",
+            "finding_unknown"
+          ],
+          "evidence_ref": {
+            "evidence_id": "synthetic-solar-array-001:P02:overview",
+            "image_path": "evidence/inspection/images/P02-overview.png",
+            "sha256": "4f4a5d3c96e0c58403190b597dc2f78e49e592ebc1d0b5b63204b0c6b58493e8"
+          },
+          "note": "Original prior finding retained; no new assessment or capture is implied."
+        },
+        {
+          "assessment_id": "run-7f4e6503cb044183b2d8f4b2305fca35:first-inspection",
+          "asset_id": "P03",
+          "view_id": "overview",
+          "origin": "executed_simulated_capture",
+          "state_revision": 1,
+          "assessment_mode": "authored_replay_annotation",
+          "source_label": "synthetic",
+          "model": null,
+          "live_model_output": false,
+          "human_review_status": "pending",
+          "image_quality": "clear",
+          "finding": "apparent_concern_review_required",
+          "flags": [
+            "human_review_pending",
+            "tentative_concern"
+          ],
+          "evidence_ref": {
+            "evidence_id": "synthetic-solar-array-001:P03:overview",
+            "image_path": "evidence/inspection/images/P03-overview.png",
+            "sha256": "852fa3d18ee57ca90bb548853460e93d802a55a04b99071e9a8a3b820a333fe6",
+            "width": 480,
+            "height": 320,
+            "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+            "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+          },
+          "assessed_at_utc": "2026-11-14T13:07:26.927003+00:00",
+          "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+        }
+      ],
+      "review_queue": [
+        {
+          "assessment_id": "prior-001",
+          "asset_id": "P01",
+          "view_id": "overview",
+          "origin": "frozen_prior_record",
+          "state_revision": 0,
+          "assessment_mode": "authored_replay_annotation",
+          "source_label": "synthetic",
+          "model": null,
+          "live_model_output": false,
+          "human_review_status": "pending",
+          "image_quality": "clear",
+          "finding": "unknown_pending_operator_review",
+          "flags": [
+            "human_review_pending",
+            "finding_unknown"
+          ],
+          "evidence_ref": {
+            "evidence_id": "synthetic-solar-array-001:P01:overview",
+            "image_path": "evidence/inspection/images/P01-overview.png",
+            "sha256": "2cae61c5699c561b349e78d016f64eb9294eda664404cdfdfbf4ec5d30f7e9a5"
+          },
+          "note": "Original prior finding retained; no new assessment or capture is implied."
+        },
+        {
+          "assessment_id": "prior-002",
+          "asset_id": "P02",
+          "view_id": "overview",
+          "origin": "frozen_prior_record",
+          "state_revision": 0,
+          "assessment_mode": "authored_replay_annotation",
+          "source_label": "synthetic",
+          "model": null,
+          "live_model_output": false,
+          "human_review_status": "pending",
+          "image_quality": "unclear",
+          "finding": "unknown_pending_operator_review",
+          "flags": [
+            "human_review_pending",
+            "insufficient_image_detail",
+            "finding_unknown"
+          ],
+          "evidence_ref": {
+            "evidence_id": "synthetic-solar-array-001:P02:overview",
+            "image_path": "evidence/inspection/images/P02-overview.png",
+            "sha256": "4f4a5d3c96e0c58403190b597dc2f78e49e592ebc1d0b5b63204b0c6b58493e8"
+          },
+          "note": "Original prior finding retained; no new assessment or capture is implied."
+        },
+        {
+          "assessment_id": "run-7f4e6503cb044183b2d8f4b2305fca35:first-inspection",
+          "asset_id": "P03",
+          "view_id": "overview",
+          "origin": "executed_simulated_capture",
+          "state_revision": 1,
+          "assessment_mode": "authored_replay_annotation",
+          "source_label": "synthetic",
+          "model": null,
+          "live_model_output": false,
+          "human_review_status": "pending",
+          "image_quality": "clear",
+          "finding": "apparent_concern_review_required",
+          "flags": [
+            "human_review_pending",
+            "tentative_concern"
+          ],
+          "evidence_ref": {
+            "evidence_id": "synthetic-solar-array-001:P03:overview",
+            "image_path": "evidence/inspection/images/P03-overview.png",
+            "sha256": "852fa3d18ee57ca90bb548853460e93d802a55a04b99071e9a8a3b820a333fe6",
+            "width": 480,
+            "height": 320,
+            "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+            "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+          },
+          "assessed_at_utc": "2026-11-14T13:07:26.927003+00:00",
+          "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+        }
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-14T13:07:26.901473+00:00",
+          "execution_mode": "simulated",
+          "real_flight": false,
+          "decision": {
+            "allowed": false,
+            "code": "asset_excluded",
+            "message": "Operator excluded this panel/point",
+            "state_revision": 0,
+            "proposal": {
+              "action_type": "inspect",
+              "asset_id": "P06",
+              "view_id": "overview",
+              "reason": "Checkpoint acceptance run",
+              "alternative": "Return or stop"
+            },
+            "costs": null
+          },
+          "status": "rejected",
+          "state_transition_applied": false,
+          "event_id": "run-7f4e6503cb044183b2d8f4b2305fca35:excluded",
+          "request_id": "excluded",
+          "proposal": {
+            "action_type": "inspect",
+            "asset_id": "P06",
+            "view_id": "overview",
+            "reason": "Checkpoint acceptance run",
+            "alternative": "Return or stop"
+          },
+          "expected_revision": 0,
+          "assessment_added": false
+        },
+        {
+          "timestamp": "2026-11-14T13:07:26.927003+00:00",
+          "execution_mode": "simulated",
+          "real_flight": false,
+          "decision": {
+            "allowed": true,
+            "code": "allowed",
+            "message": "Local constraints passed; no state change until explicit execution",
+            "state_revision": 0,
+            "proposal": {
+              "action_type": "inspect",
+              "asset_id": "P03",
+              "view_id": "overview",
+              "reason": "Checkpoint acceptance run",
+              "alternative": "Return or stop"
+            },
+            "costs": {
+              "outbound": 15.811388300841896,
+              "capture": 5,
+              "return_cost": 15.811388300841896,
+              "reserve": 15,
+              "margin": 48.377223398316204,
+              "model_version": "toy-euclidean-energy-v1",
+              "distance_unit": "m",
+              "energy_unit": "simulated_energy_unit",
+              "calculator_mode": "local_python_euclidean"
+            }
+          },
+          "status": "executed",
+          "state_transition_applied": true,
+          "evidence": {
+            "mission_id": "solar-array-001",
+            "scenario_id": "synthetic-solar-array-001",
+            "asset_id": "P03",
+            "view_id": "overview",
+            "timestamp": "2026-11-14T13:07:26.927003+00:00",
+            "timestamp_kind": "response_created_at_not_camera_capture",
+            "capture_mode": "simulated_local_fixture",
+            "real_flight": false,
+            "state_transition_applied": false,
+            "source_label": "synthetic",
+            "source_mode": "procedural_synthetic",
+            "assessment_mode": "authored_replay_annotation",
+            "status": "available",
+            "image_quality": "clear",
+            "finding": "apparent_concern_review_required",
+            "evidence_ref": {
+              "evidence_id": "synthetic-solar-array-001:P03:overview",
+              "image_path": "evidence/inspection/images/P03-overview.png",
+              "sha256": "852fa3d18ee57ca90bb548853460e93d802a55a04b99071e9a8a3b820a333fe6",
+              "width": 480,
+              "height": 320,
+              "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+              "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+            },
+            "annotation": {
+              "evidence_id": "synthetic-solar-array-001:P03:overview",
+              "scenario_id": "synthetic-solar-array-001",
+              "assessment_mode": "authored_replay_annotation",
+              "annotation_author": "AI-assisted scenario preparation; human review pending",
+              "human_review_status": "pending",
+              "live_model_output": false,
+              "image_quality": "clear",
+              "finding": "apparent_concern_review_required",
+              "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+            },
+            "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+          },
+          "battery_debit": 20.811388300841898,
+          "capture_action_debit": 1,
+          "state_before_revision": 0,
+          "state_after_revision": 1,
+          "computation": {
+            "mode": "local_python",
+            "execution_permitted": true,
+            "normalized_input": {
+              "contract_version": "inspection-costs-v1",
+              "model_version": "toy-euclidean-energy-v1",
+              "mission_id": "solar-array-001",
+              "mission_revision": "0.0.1-part2",
+              "state_revision": 0,
+              "position": {
+                "point_id": "current",
+                "x": 0.0,
+                "y": 0.0
+              },
+              "launch": {
+                "point_id": "launch",
+                "x": 0.0,
+                "y": 0.0
+              },
+              "distance_unit": "m",
+              "energy_unit": "simulated_energy_unit",
+              "battery_available": 100.0,
+              "capture_cost": 5.0,
+              "travel_energy_per_distance": 0.5,
+              "return_reserve": 15.0,
+              "remaining_actions": 3,
+              "candidates": [
+                {
+                  "asset_id": "P01",
+                  "view_id": "follow-up",
+                  "x": 10.0,
+                  "y": 10.0
+                },
+                {
+                  "asset_id": "P01",
+                  "view_id": "overview",
+                  "x": 10.0,
+                  "y": 10.0
+                },
+                {
+                  "asset_id": "P02",
+                  "view_id": "follow-up",
+                  "x": 20.0,
+                  "y": 10.0
+                },
+                {
+                  "asset_id": "P02",
+                  "view_id": "overview",
+                  "x": 20.0,
+                  "y": 10.0
+                },
+                {
+                  "asset_id": "P03",
+                  "view_id": "follow-up",
+                  "x": 30.0,
+                  "y": 10.0
+                },
+                {
+                  "asset_id": "P03",
+                  "view_id": "overview",
+                  "x": 30.0,
+                  "y": 10.0
+                },
+                {
+                  "asset_id": "P04",
+                  "view_id": "follow-up",
+                  "x": 10.0,
+                  "y": 20.0
+                },
+                {
+                  "asset_id": "P04",
+                  "view_id": "overview",
+                  "x": 10.0,
+                  "y": 20.0
+                },
+                {
+                  "asset_id": "P05",
+                  "view_id": "follow-up",
+                  "x": 20.0,
+                  "y": 20.0
+                },
+                {
+                  "asset_id": "P05",
+                  "view_id": "overview",
+                  "x": 20.0,
+                  "y": 20.0
+                },
+                {
+                  "asset_id": "P06",
+                  "view_id": "follow-up",
+                  "x": 30.0,
+                  "y": 20.0
+                },
+                {
+                  "asset_id": "P06",
+                  "view_id": "overview",
+                  "x": 30.0,
+                  "y": 20.0
+                }
+              ]
+            },
+            "cache_key": "a60854bd8209a7f6a1e6553b09e7a0d72d25d678407a6150ab675ef6b0e3172a",
+            "model_version": "toy-euclidean-energy-v1",
+            "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+            "output": {
+              "contract_version": "inspection-costs-v1",
+              "model_version": "toy-euclidean-energy-v1",
+              "mission_id": "solar-array-001",
+              "mission_revision": "0.0.1-part2",
+              "state_revision": 0,
+              "distance_unit": "m",
+              "energy_unit": "simulated_energy_unit",
+              "options": [
+                {
+                  "asset_id": "P01",
+                  "view_id": "follow-up",
+                  "outbound": 7.0710678118654755,
+                  "capture": 5.0,
+                  "return_cost": 7.0710678118654755,
+                  "reserve": 15.0,
+                  "margin": 65.85786437626905,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P01",
+                  "view_id": "overview",
+                  "outbound": 7.0710678118654755,
+                  "capture": 5.0,
+                  "return_cost": 7.0710678118654755,
+                  "reserve": 15.0,
+                  "margin": 65.85786437626905,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P02",
+                  "view_id": "follow-up",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P02",
+                  "view_id": "overview",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P03",
+                  "view_id": "follow-up",
+                  "outbound": 15.811388300841896,
+                  "capture": 5.0,
+                  "return_cost": 15.811388300841896,
+                  "reserve": 15.0,
+                  "margin": 48.377223398316204,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P03",
+                  "view_id": "overview",
+                  "outbound": 15.811388300841896,
+                  "capture": 5.0,
+                  "return_cost": 15.811388300841896,
+                  "reserve": 15.0,
+                  "margin": 48.377223398316204,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P04",
+                  "view_id": "follow-up",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P04",
+                  "view_id": "overview",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P05",
+                  "view_id": "follow-up",
+                  "outbound": 14.142135623730951,
+                  "capture": 5.0,
+                  "return_cost": 14.142135623730951,
+                  "reserve": 15.0,
+                  "margin": 51.7157287525381,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P05",
+                  "view_id": "overview",
+                  "outbound": 14.142135623730951,
+                  "capture": 5.0,
+                  "return_cost": 14.142135623730951,
+                  "reserve": 15.0,
+                  "margin": 51.7157287525381,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P06",
+                  "view_id": "follow-up",
+                  "outbound": 18.027756377319946,
+                  "capture": 5.0,
+                  "return_cost": 18.027756377319946,
+                  "reserve": 15.0,
+                  "margin": 43.94448724536011,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P06",
+                  "view_id": "overview",
+                  "outbound": 18.027756377319946,
+                  "capture": 5.0,
+                  "return_cost": 18.027756377319946,
+                  "reserve": 15.0,
+                  "margin": 43.94448724536011,
+                  "feasible": true
+                }
+              ]
+            },
+            "python_output": {
+              "contract_version": "inspection-costs-v1",
+              "model_version": "toy-euclidean-energy-v1",
+              "mission_id": "solar-array-001",
+              "mission_revision": "0.0.1-part2",
+              "state_revision": 0,
+              "distance_unit": "m",
+              "energy_unit": "simulated_energy_unit",
+              "options": [
+                {
+                  "asset_id": "P01",
+                  "view_id": "follow-up",
+                  "outbound": 7.0710678118654755,
+                  "capture": 5.0,
+                  "return_cost": 7.0710678118654755,
+                  "reserve": 15.0,
+                  "margin": 65.85786437626905,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P01",
+                  "view_id": "overview",
+                  "outbound": 7.0710678118654755,
+                  "capture": 5.0,
+                  "return_cost": 7.0710678118654755,
+                  "reserve": 15.0,
+                  "margin": 65.85786437626905,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P02",
+                  "view_id": "follow-up",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P02",
+                  "view_id": "overview",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P03",
+                  "view_id": "follow-up",
+                  "outbound": 15.811388300841896,
+                  "capture": 5.0,
+                  "return_cost": 15.811388300841896,
+                  "reserve": 15.0,
+                  "margin": 48.377223398316204,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P03",
+                  "view_id": "overview",
+                  "outbound": 15.811388300841896,
+                  "capture": 5.0,
+                  "return_cost": 15.811388300841896,
+                  "reserve": 15.0,
+                  "margin": 48.377223398316204,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P04",
+                  "view_id": "follow-up",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P04",
+                  "view_id": "overview",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P05",
+                  "view_id": "follow-up",
+                  "outbound": 14.142135623730951,
+                  "capture": 5.0,
+                  "return_cost": 14.142135623730951,
+                  "reserve": 15.0,
+                  "margin": 51.7157287525381,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P05",
+                  "view_id": "overview",
+                  "outbound": 14.142135623730951,
+                  "capture": 5.0,
+                  "return_cost": 14.142135623730951,
+                  "reserve": 15.0,
+                  "margin": 51.7157287525381,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P06",
+                  "view_id": "follow-up",
+                  "outbound": 18.027756377319946,
+                  "capture": 5.0,
+                  "return_cost": 18.027756377319946,
+                  "reserve": 15.0,
+                  "margin": 43.94448724536011,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P06",
+                  "view_id": "overview",
+                  "outbound": 18.027756377319946,
+                  "capture": 5.0,
+                  "return_cost": 18.027756377319946,
+                  "reserve": 15.0,
+                  "margin": 43.94448724536011,
+                  "feasible": true
+                }
+              ]
+            },
+            "wolfram_output": null,
+            "failure": null,
+            "disagreements": [],
+            "tolerance": {
+              "absolute": 1e-08,
+              "relative": 1e-10,
+              "feasibility_sign": "strict; never relaxed by tolerance"
+            },
+            "request_counts": {
+              "local_kernel_calls": 0,
+              "cloud_requests": 0,
+              "alpha_calls": 0
+            },
+            "state_transition_applied": false,
+            "action_checks": [
+              {
+                "asset_id": "P01",
+                "view_id": "follow-up",
+                "execution_allowed": true,
+                "code": "allowed"
+              },
+              {
+                "asset_id": "P01",
+                "view_id": "overview",
+                "execution_allowed": false,
+                "code": "duplicate_view"
+              },
+              {
+                "asset_id": "P02",
+                "view_id": "follow-up",
+                "execution_allowed": true,
+                "code": "allowed"
+              },
+              {
+                "asset_id": "P02",
+                "view_id": "overview",
+                "execution_allowed": false,
+                "code": "duplicate_view"
+              },
+              {
+                "asset_id": "P03",
+                "view_id": "follow-up",
+                "execution_allowed": false,
+                "code": "prior_view_required"
+              },
+              {
+                "asset_id": "P03",
+                "view_id": "overview",
+                "execution_allowed": true,
+                "code": "allowed"
+              },
+              {
+                "asset_id": "P04",
+                "view_id": "follow-up",
+                "execution_allowed": false,
+                "code": "prior_view_required"
+              },
+              {
+                "asset_id": "P04",
+                "view_id": "overview",
+                "execution_allowed": true,
+                "code": "allowed"
+              },
+              {
+                "asset_id": "P05",
+                "view_id": "follow-up",
+                "execution_allowed": false,
+                "code": "prior_view_required"
+              },
+              {
+                "asset_id": "P05",
+                "view_id": "overview",
+                "execution_allowed": true,
+                "code": "allowed"
+              },
+              {
+                "asset_id": "P06",
+                "view_id": "follow-up",
+                "execution_allowed": false,
+                "code": "asset_excluded"
+              },
+              {
+                "asset_id": "P06",
+                "view_id": "overview",
+                "execution_allowed": false,
+                "code": "asset_excluded"
+              }
+            ]
+          },
+          "event_id": "run-7f4e6503cb044183b2d8f4b2305fca35:first-inspection",
+          "request_id": "first-inspection",
+          "proposal": {
+            "action_type": "inspect",
+            "asset_id": "P03",
+            "view_id": "overview",
+            "reason": "Checkpoint acceptance run",
+            "alternative": "Return or stop"
+          },
+          "expected_revision": 0,
+          "assessment_added": true,
+          "assessment": {
+            "assessment_id": "run-7f4e6503cb044183b2d8f4b2305fca35:first-inspection",
+            "asset_id": "P03",
+            "view_id": "overview",
+            "origin": "executed_simulated_capture",
+            "state_revision": 1,
+            "assessment_mode": "authored_replay_annotation",
+            "source_label": "synthetic",
+            "model": null,
+            "live_model_output": false,
+            "human_review_status": "pending",
+            "image_quality": "clear",
+            "finding": "apparent_concern_review_required",
+            "flags": [
+              "human_review_pending",
+              "tentative_concern"
+            ],
+            "evidence_ref": {
+              "evidence_id": "synthetic-solar-array-001:P03:overview",
+              "image_path": "evidence/inspection/images/P03-overview.png",
+              "sha256": "852fa3d18ee57ca90bb548853460e93d802a55a04b99071e9a8a3b820a333fe6",
+              "width": 480,
+              "height": 320,
+              "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+              "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+            },
+            "assessed_at_utc": "2026-11-14T13:07:26.927003+00:00",
+            "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+          }
+        }
+      ],
+      "processed_request_count": 2,
+      "human_review_status": "pending",
+      "live_vision_status": "not_run"
+    },
+    "requests": {
+      "excluded": {
+        "fingerprint": "a8711c8ede6a130b5bd2d92f9d11810afad639f14071187cae54d9366d0ed855",
+        "event": {
+          "timestamp": "2026-11-14T13:07:26.901473+00:00",
+          "execution_mode": "simulated",
+          "real_flight": false,
+          "decision": {
+            "allowed": false,
+            "code": "asset_excluded",
+            "message": "Operator excluded this panel/point",
+            "state_revision": 0,
+            "proposal": {
+              "action_type": "inspect",
+              "asset_id": "P06",
+              "view_id": "overview",
+              "reason": "Checkpoint acceptance run",
+              "alternative": "Return or stop"
+            },
+            "costs": null
+          },
+          "status": "rejected",
+          "state_transition_applied": false,
+          "event_id": "run-7f4e6503cb044183b2d8f4b2305fca35:excluded",
+          "request_id": "excluded",
+          "proposal": {
+            "action_type": "inspect",
+            "asset_id": "P06",
+            "view_id": "overview",
+            "reason": "Checkpoint acceptance run",
+            "alternative": "Return or stop"
+          },
+          "expected_revision": 0,
+          "assessment_added": false
+        }
+      },
+      "first-inspection": {
+        "fingerprint": "45b37d5b897a4633b7f276fc4b2eacdd30f1be8175e2b6c08d2174519c2f0eb8",
+        "event": {
+          "timestamp": "2026-11-14T13:07:26.927003+00:00",
+          "execution_mode": "simulated",
+          "real_flight": false,
+          "decision": {
+            "allowed": true,
+            "code": "allowed",
+            "message": "Local constraints passed; no state change until explicit execution",
+            "state_revision": 0,
+            "proposal": {
+              "action_type": "inspect",
+              "asset_id": "P03",
+              "view_id": "overview",
+              "reason": "Checkpoint acceptance run",
+              "alternative": "Return or stop"
+            },
+            "costs": {
+              "outbound": 15.811388300841896,
+              "capture": 5,
+              "return_cost": 15.811388300841896,
+              "reserve": 15,
+              "margin": 48.377223398316204,
+              "model_version": "toy-euclidean-energy-v1",
+              "distance_unit": "m",
+              "energy_unit": "simulated_energy_unit",
+              "calculator_mode": "local_python_euclidean"
+            }
+          },
+          "status": "executed",
+          "state_transition_applied": true,
+          "evidence": {
+            "mission_id": "solar-array-001",
+            "scenario_id": "synthetic-solar-array-001",
+            "asset_id": "P03",
+            "view_id": "overview",
+            "timestamp": "2026-11-14T13:07:26.927003+00:00",
+            "timestamp_kind": "response_created_at_not_camera_capture",
+            "capture_mode": "simulated_local_fixture",
+            "real_flight": false,
+            "state_transition_applied": false,
+            "source_label": "synthetic",
+            "source_mode": "procedural_synthetic",
+            "assessment_mode": "authored_replay_annotation",
+            "status": "available",
+            "image_quality": "clear",
+            "finding": "apparent_concern_review_required",
+            "evidence_ref": {
+              "evidence_id": "synthetic-solar-array-001:P03:overview",
+              "image_path": "evidence/inspection/images/P03-overview.png",
+              "sha256": "852fa3d18ee57ca90bb548853460e93d802a55a04b99071e9a8a3b820a333fe6",
+              "width": 480,
+              "height": 320,
+              "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+              "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+            },
+            "annotation": {
+              "evidence_id": "synthetic-solar-array-001:P03:overview",
+              "scenario_id": "synthetic-solar-array-001",
+              "assessment_mode": "authored_replay_annotation",
+              "annotation_author": "AI-assisted scenario preparation; human review pending",
+              "human_review_status": "pending",
+              "live_model_output": false,
+              "image_quality": "clear",
+              "finding": "apparent_concern_review_required",
+              "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+            },
+            "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+          },
+          "battery_debit": 20.811388300841898,
+          "capture_action_debit": 1,
+          "state_before_revision": 0,
+          "state_after_revision": 1,
+          "computation": {
+            "mode": "local_python",
+            "execution_permitted": true,
+            "normalized_input": {
+              "contract_version": "inspection-costs-v1",
+              "model_version": "toy-euclidean-energy-v1",
+              "mission_id": "solar-array-001",
+              "mission_revision": "0.0.1-part2",
+              "state_revision": 0,
+              "position": {
+                "point_id": "current",
+                "x": 0.0,
+                "y": 0.0
+              },
+              "launch": {
+                "point_id": "launch",
+                "x": 0.0,
+                "y": 0.0
+              },
+              "distance_unit": "m",
+              "energy_unit": "simulated_energy_unit",
+              "battery_available": 100.0,
+              "capture_cost": 5.0,
+              "travel_energy_per_distance": 0.5,
+              "return_reserve": 15.0,
+              "remaining_actions": 3,
+              "candidates": [
+                {
+                  "asset_id": "P01",
+                  "view_id": "follow-up",
+                  "x": 10.0,
+                  "y": 10.0
+                },
+                {
+                  "asset_id": "P01",
+                  "view_id": "overview",
+                  "x": 10.0,
+                  "y": 10.0
+                },
+                {
+                  "asset_id": "P02",
+                  "view_id": "follow-up",
+                  "x": 20.0,
+                  "y": 10.0
+                },
+                {
+                  "asset_id": "P02",
+                  "view_id": "overview",
+                  "x": 20.0,
+                  "y": 10.0
+                },
+                {
+                  "asset_id": "P03",
+                  "view_id": "follow-up",
+                  "x": 30.0,
+                  "y": 10.0
+                },
+                {
+                  "asset_id": "P03",
+                  "view_id": "overview",
+                  "x": 30.0,
+                  "y": 10.0
+                },
+                {
+                  "asset_id": "P04",
+                  "view_id": "follow-up",
+                  "x": 10.0,
+                  "y": 20.0
+                },
+                {
+                  "asset_id": "P04",
+                  "view_id": "overview",
+                  "x": 10.0,
+                  "y": 20.0
+                },
+                {
+                  "asset_id": "P05",
+                  "view_id": "follow-up",
+                  "x": 20.0,
+                  "y": 20.0
+                },
+                {
+                  "asset_id": "P05",
+                  "view_id": "overview",
+                  "x": 20.0,
+                  "y": 20.0
+                },
+                {
+                  "asset_id": "P06",
+                  "view_id": "follow-up",
+                  "x": 30.0,
+                  "y": 20.0
+                },
+                {
+                  "asset_id": "P06",
+                  "view_id": "overview",
+                  "x": 30.0,
+                  "y": 20.0
+                }
+              ]
+            },
+            "cache_key": "a60854bd8209a7f6a1e6553b09e7a0d72d25d678407a6150ab675ef6b0e3172a",
+            "model_version": "toy-euclidean-energy-v1",
+            "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+            "output": {
+              "contract_version": "inspection-costs-v1",
+              "model_version": "toy-euclidean-energy-v1",
+              "mission_id": "solar-array-001",
+              "mission_revision": "0.0.1-part2",
+              "state_revision": 0,
+              "distance_unit": "m",
+              "energy_unit": "simulated_energy_unit",
+              "options": [
+                {
+                  "asset_id": "P01",
+                  "view_id": "follow-up",
+                  "outbound": 7.0710678118654755,
+                  "capture": 5.0,
+                  "return_cost": 7.0710678118654755,
+                  "reserve": 15.0,
+                  "margin": 65.85786437626905,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P01",
+                  "view_id": "overview",
+                  "outbound": 7.0710678118654755,
+                  "capture": 5.0,
+                  "return_cost": 7.0710678118654755,
+                  "reserve": 15.0,
+                  "margin": 65.85786437626905,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P02",
+                  "view_id": "follow-up",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P02",
+                  "view_id": "overview",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P03",
+                  "view_id": "follow-up",
+                  "outbound": 15.811388300841896,
+                  "capture": 5.0,
+                  "return_cost": 15.811388300841896,
+                  "reserve": 15.0,
+                  "margin": 48.377223398316204,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P03",
+                  "view_id": "overview",
+                  "outbound": 15.811388300841896,
+                  "capture": 5.0,
+                  "return_cost": 15.811388300841896,
+                  "reserve": 15.0,
+                  "margin": 48.377223398316204,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P04",
+                  "view_id": "follow-up",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P04",
+                  "view_id": "overview",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P05",
+                  "view_id": "follow-up",
+                  "outbound": 14.142135623730951,
+                  "capture": 5.0,
+                  "return_cost": 14.142135623730951,
+                  "reserve": 15.0,
+                  "margin": 51.7157287525381,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P05",
+                  "view_id": "overview",
+                  "outbound": 14.142135623730951,
+                  "capture": 5.0,
+                  "return_cost": 14.142135623730951,
+                  "reserve": 15.0,
+                  "margin": 51.7157287525381,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P06",
+                  "view_id": "follow-up",
+                  "outbound": 18.027756377319946,
+                  "capture": 5.0,
+                  "return_cost": 18.027756377319946,
+                  "reserve": 15.0,
+                  "margin": 43.94448724536011,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P06",
+                  "view_id": "overview",
+                  "outbound": 18.027756377319946,
+                  "capture": 5.0,
+                  "return_cost": 18.027756377319946,
+                  "reserve": 15.0,
+                  "margin": 43.94448724536011,
+                  "feasible": true
+                }
+              ]
+            },
+            "python_output": {
+              "contract_version": "inspection-costs-v1",
+              "model_version": "toy-euclidean-energy-v1",
+              "mission_id": "solar-array-001",
+              "mission_revision": "0.0.1-part2",
+              "state_revision": 0,
+              "distance_unit": "m",
+              "energy_unit": "simulated_energy_unit",
+              "options": [
+                {
+                  "asset_id": "P01",
+                  "view_id": "follow-up",
+                  "outbound": 7.0710678118654755,
+                  "capture": 5.0,
+                  "return_cost": 7.0710678118654755,
+                  "reserve": 15.0,
+                  "margin": 65.85786437626905,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P01",
+                  "view_id": "overview",
+                  "outbound": 7.0710678118654755,
+                  "capture": 5.0,
+                  "return_cost": 7.0710678118654755,
+                  "reserve": 15.0,
+                  "margin": 65.85786437626905,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P02",
+                  "view_id": "follow-up",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P02",
+                  "view_id": "overview",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P03",
+                  "view_id": "follow-up",
+                  "outbound": 15.811388300841896,
+                  "capture": 5.0,
+                  "return_cost": 15.811388300841896,
+                  "reserve": 15.0,
+                  "margin": 48.377223398316204,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P03",
+                  "view_id": "overview",
+                  "outbound": 15.811388300841896,
+                  "capture": 5.0,
+                  "return_cost": 15.811388300841896,
+                  "reserve": 15.0,
+                  "margin": 48.377223398316204,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P04",
+                  "view_id": "follow-up",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P04",
+                  "view_id": "overview",
+                  "outbound": 11.180339887498949,
+                  "capture": 5.0,
+                  "return_cost": 11.180339887498949,
+                  "reserve": 15.0,
+                  "margin": 57.6393202250021,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P05",
+                  "view_id": "follow-up",
+                  "outbound": 14.142135623730951,
+                  "capture": 5.0,
+                  "return_cost": 14.142135623730951,
+                  "reserve": 15.0,
+                  "margin": 51.7157287525381,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P05",
+                  "view_id": "overview",
+                  "outbound": 14.142135623730951,
+                  "capture": 5.0,
+                  "return_cost": 14.142135623730951,
+                  "reserve": 15.0,
+                  "margin": 51.7157287525381,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P06",
+                  "view_id": "follow-up",
+                  "outbound": 18.027756377319946,
+                  "capture": 5.0,
+                  "return_cost": 18.027756377319946,
+                  "reserve": 15.0,
+                  "margin": 43.94448724536011,
+                  "feasible": true
+                },
+                {
+                  "asset_id": "P06",
+                  "view_id": "overview",
+                  "outbound": 18.027756377319946,
+                  "capture": 5.0,
+                  "return_cost": 18.027756377319946,
+                  "reserve": 15.0,
+                  "margin": 43.94448724536011,
+                  "feasible": true
+                }
+              ]
+            },
+            "wolfram_output": null,
+            "failure": null,
+            "disagreements": [],
+            "tolerance": {
+              "absolute": 1e-08,
+              "relative": 1e-10,
+              "feasibility_sign": "strict; never relaxed by tolerance"
+            },
+            "request_counts": {
+              "local_kernel_calls": 0,
+              "cloud_requests": 0,
+              "alpha_calls": 0
+            },
+            "state_transition_applied": false,
+            "action_checks": [
+              {
+                "asset_id": "P01",
+                "view_id": "follow-up",
+                "execution_allowed": true,
+                "code": "allowed"
+              },
+              {
+                "asset_id": "P01",
+                "view_id": "overview",
+                "execution_allowed": false,
+                "code": "duplicate_view"
+              },
+              {
+                "asset_id": "P02",
+                "view_id": "follow-up",
+                "execution_allowed": true,
+                "code": "allowed"
+              },
+              {
+                "asset_id": "P02",
+                "view_id": "overview",
+                "execution_allowed": false,
+                "code": "duplicate_view"
+              },
+              {
+                "asset_id": "P03",
+                "view_id": "follow-up",
+                "execution_allowed": false,
+                "code": "prior_view_required"
+              },
+              {
+                "asset_id": "P03",
+                "view_id": "overview",
+                "execution_allowed": true,
+                "code": "allowed"
+              },
+              {
+                "asset_id": "P04",
+                "view_id": "follow-up",
+                "execution_allowed": false,
+                "code": "prior_view_required"
+              },
+              {
+                "asset_id": "P04",
+                "view_id": "overview",
+                "execution_allowed": true,
+                "code": "allowed"
+              },
+              {
+                "asset_id": "P05",
+                "view_id": "follow-up",
+                "execution_allowed": false,
+                "code": "prior_view_required"
+              },
+              {
+                "asset_id": "P05",
+                "view_id": "overview",
+                "execution_allowed": true,
+                "code": "allowed"
+              },
+              {
+                "asset_id": "P06",
+                "view_id": "follow-up",
+                "execution_allowed": false,
+                "code": "asset_excluded"
+              },
+              {
+                "asset_id": "P06",
+                "view_id": "overview",
+                "execution_allowed": false,
+                "code": "asset_excluded"
+              }
+            ]
+          },
+          "event_id": "run-7f4e6503cb044183b2d8f4b2305fca35:first-inspection",
+          "request_id": "first-inspection",
+          "proposal": {
+            "action_type": "inspect",
+            "asset_id": "P03",
+            "view_id": "overview",
+            "reason": "Checkpoint acceptance run",
+            "alternative": "Return or stop"
+          },
+          "expected_revision": 0,
+          "assessment_added": true,
+          "assessment": {
+            "assessment_id": "run-7f4e6503cb044183b2d8f4b2305fca35:first-inspection",
+            "asset_id": "P03",
+            "view_id": "overview",
+            "origin": "executed_simulated_capture",
+            "state_revision": 1,
+            "assessment_mode": "authored_replay_annotation",
+            "source_label": "synthetic",
+            "model": null,
+            "live_model_output": false,
+            "human_review_status": "pending",
+            "image_quality": "clear",
+            "finding": "apparent_concern_review_required",
+            "flags": [
+              "human_review_pending",
+              "tentative_concern"
+            ],
+            "evidence_ref": {
+              "evidence_id": "synthetic-solar-array-001:P03:overview",
+              "image_path": "evidence/inspection/images/P03-overview.png",
+              "sha256": "852fa3d18ee57ca90bb548853460e93d802a55a04b99071e9a8a3b820a333fe6",
+              "width": 480,
+              "height": 320,
+              "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+              "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+            },
+            "assessed_at_utc": "2026-11-14T13:07:26.927003+00:00",
+            "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+          }
+        }
+      }
+    },
+    "proposal_audit": [
+      {
+        "timestamp": "2026-11-14T13:07:26.885468+00:00",
+        "kind": "proposal",
+        "decision": {
+          "allowed": false,
+          "code": "asset_excluded",
+          "message": "Operator excluded this panel/point",
+          "state_revision": 0,
+          "proposal": {
+            "action_type": "inspect",
+            "asset_id": "P06",
+            "view_id": "overview",
+            "reason": "Checkpoint acceptance run",
+            "alternative": "Return or stop"
+          },
+          "costs": null
+        },
+        "state_transition_applied": false
+      },
+      {
+        "timestamp": "2026-11-14T13:07:26.887468+00:00",
+        "kind": "proposal",
+        "decision": {
+          "allowed": true,
+          "code": "allowed",
+          "message": "Local constraints passed; no state change until explicit execution",
+          "state_revision": 0,
+          "proposal": {
+            "action_type": "inspect",
+            "asset_id": "P03",
+            "view_id": "overview",
+            "reason": "Checkpoint acceptance run",
+            "alternative": "Return or stop"
+          },
+          "costs": {
+            "outbound": 15.811388300841896,
+            "capture": 5,
+            "return_cost": 15.811388300841896,
+            "reserve": 15,
+            "margin": 48.377223398316204,
+            "model_version": "toy-euclidean-energy-v1",
+            "distance_unit": "m",
+            "energy_unit": "simulated_energy_unit",
+            "calculator_mode": "local_python_euclidean"
+          }
+        },
+        "state_transition_applied": false
+      }
+    ]
+  },
+  "sha256": "77bcddbee34675443cadf52cdde017fabfc5a4ad1c06f036c58801be19a71181"
+}

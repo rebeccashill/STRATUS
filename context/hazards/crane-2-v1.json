@@ -1,0 +1,125 @@
+{
+  "schema_version": "fleet-hazard-v1",
+  "source": "newly authored synthetic contract fixture",
+  "paths": [
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D001",
+      "task_id": "T001",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "target": {
+        "x": 50,
+        "y": 0
+      },
+      "return_point": {
+        "x": 0,
+        "y": 0
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 50,
+          "y": 0
+        }
+      ],
+      "return": [
+        {
+          "x": 50,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "schema_version": "fleet-hazard-v1",
+      "coordinate_frame": {
+        "name": "site_local_cartesian",
+        "unit": "m"
+      },
+      "drone_id": "D002",
+      "task_id": "T002",
+      "view_id": "overview",
+      "model_version": "toy-euclidean-energy-v1",
+      "fleet_revision": 0,
+      "drone_revision": 0,
+      "task_revision": 0,
+      "hazard_revision": 0,
+      "position": {
+        "x": 0,
+        "y": 5
+      },
+      "target": {
+        "x": 50,
+        "y": 5
+      },
+      "return_point": {
+        "x": 0,
+        "y": 5
+      },
+      "outbound": [
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": 50,
+          "y": 5
+        }
+      ],
+      "return": [
+        {
+          "x": 50,
+          "y": 5
+        },
+        {
+          "x": 0,
+          "y": 5
+        }
+      ]
+    }
+  ],
+  "event": {
+    "schema_version": "fleet-hazard-v1",
+    "event_id": "crane-001-1-report",
+    "hazard_id": "crane-001",
+    "expected_revision": 0,
+    "revision": 1,
+    "action": "report",
+    "source": "synthetic_event",
+    "observed_at_utc": "2026-11-14T20:00:00+00:00",
+    "reported_at_utc": "2026-11-14T20:00:00+00:00",
+    "effective_sim_time": 1,
+    "notes": "Authored crane report after the initial simulated inspection",
+    "coordinate_frame": {
+      "name": "site_local_cartesian",
+      "unit": "m"
+    },
+    "rectangle": {
+      "x_min": 20,
+      "y_min": -5,
+      "x_max": 30,
+      "y_max": 5,
+      "buffer_m": 1
+    },
+    "review_after_sim_time": 31
+  }
+}

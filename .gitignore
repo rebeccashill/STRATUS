@@ -114,3 +114,7 @@ dist/
 /docs/evidence/inspection-0.0.2/part9/hazard-50-rejected.jpg
 /docs/evidence/inspection-0.0.2/part9/inspection-checkpoint.json
 /docs/evidence/inspection-0.0.2/part9/inspection-report.json
+
+# Browser screenshots remain local; only authored demo illustrations are published.
+/docs/evidence/**/*.jpg
+/docs/evidence/**/*.jpeg

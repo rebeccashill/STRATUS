@@ -1,0 +1,600 @@
+{
+  "scope": "Actual local Wolfram and independent Python; authored toy geometry",
+  "cases": [
+    {
+      "mode": "wolfram_local",
+      "execution_permitted": true,
+      "normalized_input": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "arithmetic-fixture",
+        "mission_revision": "fixture-1",
+        "state_revision": 0,
+        "position": {
+          "point_id": "current",
+          "x": 20.0,
+          "y": 0.0
+        },
+        "launch": {
+          "point_id": "launch",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "battery_available": 100.0,
+        "capture_cost": 5.0,
+        "travel_energy_per_distance": 0.5,
+        "return_reserve": 15.0,
+        "remaining_actions": 3,
+        "candidates": [
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "x": 40.0,
+            "y": 0.0
+          }
+        ]
+      },
+      "cache_key": "cd8d4ef0a6ad4b152e838c198a4654212c580b56ebc6ff52cb647f189740d8b5",
+      "model_version": "toy-euclidean-energy-v1",
+      "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+      "output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "arithmetic-fixture",
+        "mission_revision": "fixture-1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 10.0,
+            "capture": 5.0,
+            "return_cost": 20.0,
+            "reserve": 15.0,
+            "margin": 50.0,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "python_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "arithmetic-fixture",
+        "mission_revision": "fixture-1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 10.0,
+            "capture": 5.0,
+            "return_cost": 20.0,
+            "reserve": 15.0,
+            "margin": 50.0,
+            "feasible": true
+          }
+        ]
+      },
+      "wolfram_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "arithmetic-fixture",
+        "mission_revision": "fixture-1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 10.0,
+            "capture": 5.0,
+            "return_cost": 20.0,
+            "reserve": 15.0,
+            "margin": 50.0,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "failure": null,
+      "disagreements": [],
+      "tolerance": {
+        "absolute": 1e-08,
+        "relative": 1e-10,
+        "feasibility_sign": "strict; never relaxed by tolerance"
+      },
+      "request_counts": {
+        "local_kernel_calls": 2,
+        "cloud_requests": 0,
+        "alpha_calls": 0
+      },
+      "state_transition_applied": false
+    },
+    {
+      "mode": "wolfram_local",
+      "execution_permitted": true,
+      "normalized_input": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "arithmetic-fixture",
+        "mission_revision": "fixture-1",
+        "state_revision": 0,
+        "position": {
+          "point_id": "current",
+          "x": 20.0,
+          "y": 0.0
+        },
+        "launch": {
+          "point_id": "launch",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "battery_available": 50.0,
+        "capture_cost": 5.0,
+        "travel_energy_per_distance": 0.5,
+        "return_reserve": 15.0,
+        "remaining_actions": 3,
+        "candidates": [
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "x": 40.0,
+            "y": 0.0
+          }
+        ]
+      },
+      "cache_key": "48055d71f861fe0dd2f518dc059009964c4eb75c5e99377fd41ae1fe665dda0c",
+      "model_version": "toy-euclidean-energy-v1",
+      "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+      "output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "arithmetic-fixture",
+        "mission_revision": "fixture-1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 10.0,
+            "capture": 5.0,
+            "return_cost": 20.0,
+            "reserve": 15.0,
+            "margin": 0.0,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "python_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "arithmetic-fixture",
+        "mission_revision": "fixture-1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 10.0,
+            "capture": 5.0,
+            "return_cost": 20.0,
+            "reserve": 15.0,
+            "margin": 0.0,
+            "feasible": true
+          }
+        ]
+      },
+      "wolfram_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "arithmetic-fixture",
+        "mission_revision": "fixture-1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 10.0,
+            "capture": 5.0,
+            "return_cost": 20.0,
+            "reserve": 15.0,
+            "margin": 0.0,
+            "feasible": true
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "failure": null,
+      "disagreements": [],
+      "tolerance": {
+        "absolute": 1e-08,
+        "relative": 1e-10,
+        "feasibility_sign": "strict; never relaxed by tolerance"
+      },
+      "request_counts": {
+        "local_kernel_calls": 3,
+        "cloud_requests": 0,
+        "alpha_calls": 0
+      },
+      "state_transition_applied": false
+    },
+    {
+      "mode": "wolfram_local",
+      "execution_permitted": true,
+      "normalized_input": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "arithmetic-fixture",
+        "mission_revision": "fixture-1",
+        "state_revision": 0,
+        "position": {
+          "point_id": "current",
+          "x": 20.0,
+          "y": 0.0
+        },
+        "launch": {
+          "point_id": "launch",
+          "x": 0.0,
+          "y": 0.0
+        },
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "battery_available": 49.0,
+        "capture_cost": 5.0,
+        "travel_energy_per_distance": 0.5,
+        "return_reserve": 15.0,
+        "remaining_actions": 3,
+        "candidates": [
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "x": 40.0,
+            "y": 0.0
+          }
+        ]
+      },
+      "cache_key": "41a8d1935afe840bc54b007c0892394d2050129994afb23ddb929766873067b2",
+      "model_version": "toy-euclidean-energy-v1",
+      "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+      "output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "arithmetic-fixture",
+        "mission_revision": "fixture-1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 10.0,
+            "capture": 5.0,
+            "return_cost": 20.0,
+            "reserve": 15.0,
+            "margin": -1.0,
+            "feasible": false
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "python_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "arithmetic-fixture",
+        "mission_revision": "fixture-1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 10.0,
+            "capture": 5.0,
+            "return_cost": 20.0,
+            "reserve": 15.0,
+            "margin": -1.0,
+            "feasible": false
+          }
+        ]
+      },
+      "wolfram_output": {
+        "contract_version": "inspection-costs-v1",
+        "model_version": "toy-euclidean-energy-v1",
+        "mission_id": "arithmetic-fixture",
+        "mission_revision": "fixture-1",
+        "state_revision": 0,
+        "distance_unit": "m",
+        "energy_unit": "simulated_energy_unit",
+        "options": [
+          {
+            "asset_id": "P03",
+            "view_id": "overview",
+            "outbound": 10.0,
+            "capture": 5.0,
+            "return_cost": 20.0,
+            "reserve": 15.0,
+            "margin": -1.0,
+            "feasible": false
+          }
+        ],
+        "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+        "system_id": "Windows-x86-64"
+      },
+      "failure": null,
+      "disagreements": [],
+      "tolerance": {
+        "absolute": 1e-08,
+        "relative": 1e-10,
+        "feasibility_sign": "strict; never relaxed by tolerance"
+      },
+      "request_counts": {
+        "local_kernel_calls": 4,
+        "cloud_requests": 0,
+        "alpha_calls": 0
+      },
+      "state_transition_applied": false
+    }
+  ],
+  "exhausted": {
+    "mode": "wolfram_local",
+    "execution_permitted": true,
+    "normalized_input": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "arithmetic-fixture",
+      "mission_revision": "fixture-1",
+      "state_revision": 0,
+      "position": {
+        "point_id": "current",
+        "x": 20.0,
+        "y": 0.0
+      },
+      "launch": {
+        "point_id": "launch",
+        "x": 0.0,
+        "y": 0.0
+      },
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "battery_available": 100.0,
+      "capture_cost": 5.0,
+      "travel_energy_per_distance": 0.5,
+      "return_reserve": 15.0,
+      "remaining_actions": 0,
+      "candidates": [
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "x": 40.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "cache_key": "42447bf8b78118f6ace594c5ce964a79ac045a47bfdeede1ba4ef489a031d311",
+    "model_version": "toy-euclidean-energy-v1",
+    "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+    "output": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "arithmetic-fixture",
+      "mission_revision": "fixture-1",
+      "state_revision": 0,
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "options": [
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "outbound": 10.0,
+          "capture": 5.0,
+          "return_cost": 20.0,
+          "reserve": 15.0,
+          "margin": 50.0,
+          "feasible": false
+        }
+      ],
+      "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+      "system_id": "Windows-x86-64"
+    },
+    "python_output": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "arithmetic-fixture",
+      "mission_revision": "fixture-1",
+      "state_revision": 0,
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "options": [
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "outbound": 10.0,
+          "capture": 5.0,
+          "return_cost": 20.0,
+          "reserve": 15.0,
+          "margin": 50.0,
+          "feasible": false
+        }
+      ]
+    },
+    "wolfram_output": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "arithmetic-fixture",
+      "mission_revision": "fixture-1",
+      "state_revision": 0,
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "options": [
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "outbound": 10.0,
+          "capture": 5.0,
+          "return_cost": 20.0,
+          "reserve": 15.0,
+          "margin": 50.0,
+          "feasible": false
+        }
+      ],
+      "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+      "system_id": "Windows-x86-64"
+    },
+    "failure": null,
+    "disagreements": [],
+    "tolerance": {
+      "absolute": 1e-08,
+      "relative": 1e-10,
+      "feasibility_sign": "strict; never relaxed by tolerance"
+    },
+    "request_counts": {
+      "local_kernel_calls": 5,
+      "cloud_requests": 0,
+      "alpha_calls": 0
+    },
+    "state_transition_applied": false
+  },
+  "kilometre_equivalent": {
+    "mode": "cached_wolfram_local",
+    "execution_permitted": true,
+    "normalized_input": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "arithmetic-fixture",
+      "mission_revision": "fixture-1",
+      "state_revision": 0,
+      "position": {
+        "point_id": "current",
+        "x": 20.0,
+        "y": 0.0
+      },
+      "launch": {
+        "point_id": "launch",
+        "x": 0.0,
+        "y": 0.0
+      },
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "battery_available": 100.0,
+      "capture_cost": 5.0,
+      "travel_energy_per_distance": 0.5,
+      "return_reserve": 15.0,
+      "remaining_actions": 3,
+      "candidates": [
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "x": 40.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "cache_key": "cd8d4ef0a6ad4b152e838c198a4654212c580b56ebc6ff52cb647f189740d8b5",
+    "model_version": "toy-euclidean-energy-v1",
+    "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+    "output": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "arithmetic-fixture",
+      "mission_revision": "fixture-1",
+      "state_revision": 0,
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "options": [
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "outbound": 10.0,
+          "capture": 5.0,
+          "return_cost": 20.0,
+          "reserve": 15.0,
+          "margin": 50.0,
+          "feasible": true
+        }
+      ],
+      "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+      "system_id": "Windows-x86-64"
+    },
+    "python_output": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "arithmetic-fixture",
+      "mission_revision": "fixture-1",
+      "state_revision": 0,
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "options": [
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "outbound": 10.0,
+          "capture": 5.0,
+          "return_cost": 20.0,
+          "reserve": 15.0,
+          "margin": 50.0,
+          "feasible": true
+        }
+      ]
+    },
+    "wolfram_output": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "arithmetic-fixture",
+      "mission_revision": "fixture-1",
+      "state_revision": 0,
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "options": [
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "outbound": 10.0,
+          "capture": 5.0,
+          "return_cost": 20.0,
+          "reserve": 15.0,
+          "margin": 50.0,
+          "feasible": true
+        }
+      ],
+      "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+      "system_id": "Windows-x86-64"
+    },
+    "failure": null,
+    "disagreements": [],
+    "tolerance": {
+      "absolute": 1e-08,
+      "relative": 1e-10,
+      "feasibility_sign": "strict; never relaxed by tolerance"
+    },
+    "request_counts": {
+      "local_kernel_calls": 5,
+      "cloud_requests": 0,
+      "alpha_calls": 0
+    },
+    "state_transition_applied": false
+  }
+}

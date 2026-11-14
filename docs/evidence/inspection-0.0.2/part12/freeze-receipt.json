@@ -1,0 +1,30 @@
+{
+  "at_utc": "2026-11-14T20:28:53.979470+00:00",
+  "sha256": {
+    "context/fleet/solar-200-v1.json": "f573e0bb81aab743cbe6ea574d85af1a7cd2bca9cde66f96bd7196ed61b1efa1",
+    "docs/evidence/inspection-0.0.2/part12/ground-context.json": "604e01761a11fde03e56a19796463c0982b1fbd6aa28629bc9e23ad050cdad4d",
+    "docs/evidence/inspection-0.0.2/part12/protocol.json": "5cb6a3b0edce76402ecc2d5868f34157546b1e46d38f3f6ba8ad59dfdb915713",
+    "stratus/inspection/fleet_scenario.py": "9c8350d9ac7112052048c550349b4d4e6d4e7cdd15d22241af9b0840d31243ab",
+    "stratus/contracts/fleet_v1.py": "2dfa4184fdc5aa291710036e8e1a5254a92d7a0c2dfa763faf9d9affc6e26db4",
+    "stratus/inspection/fleet_costs.py": "1e24c0e7c76979f27f66c37dab3af3ef144849afd40482337b91d7ba35911909",
+    "stratus/inspection/wolfram/fleet_costs.wls": "043334ee71f0f394030d1d362da8745a93bbb5156be3b5b94716ef82fb024004"
+  },
+  "illustrations": [
+    {
+      "path": "evidence/inspection/images/P04-overview.png",
+      "sha256": "258b7ea70039d37fc61d109b83ab4eea8546657ab2fe910f04e6ff30d9f808a6",
+      "width": 480,
+      "height": 320,
+      "source": "reused authored synthetic illustration"
+    },
+    {
+      "path": "evidence/inspection/images/P04-follow-up.png",
+      "sha256": "09fc269287b169ed03f5b179fd02be92375aede4814bf521b67ba1321777a6a5",
+      "width": 480,
+      "height": 320,
+      "source": "reused authored synthetic illustration"
+    }
+  ],
+  "prior_implementation_smoke": true,
+  "full_matrix_started": false
+}

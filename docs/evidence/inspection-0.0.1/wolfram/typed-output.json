@@ -1,0 +1,133 @@
+{
+  "contract_version": "inspection-costs-v1",
+  "model_version": "toy-euclidean-energy-v1",
+  "mission_id": "solar-array-001",
+  "mission_revision": "0.0.1-part2",
+  "state_revision": 0,
+  "distance_unit": "m",
+  "energy_unit": "simulated_energy_unit",
+  "options": [
+    {
+      "asset_id": "P01",
+      "view_id": "follow-up",
+      "outbound": 7.0710678118654755,
+      "capture": 5.0,
+      "return_cost": 7.0710678118654755,
+      "reserve": 15.0,
+      "margin": 65.85786437626905,
+      "feasible": true
+    },
+    {
+      "asset_id": "P01",
+      "view_id": "overview",
+      "outbound": 7.0710678118654755,
+      "capture": 5.0,
+      "return_cost": 7.0710678118654755,
+      "reserve": 15.0,
+      "margin": 65.85786437626905,
+      "feasible": true
+    },
+    {
+      "asset_id": "P02",
+      "view_id": "follow-up",
+      "outbound": 11.180339887498949,
+      "capture": 5.0,
+      "return_cost": 11.180339887498949,
+      "reserve": 15.0,
+      "margin": 57.63932022500211,
+      "feasible": true
+    },
+    {
+      "asset_id": "P02",
+      "view_id": "overview",
+      "outbound": 11.180339887498949,
+      "capture": 5.0,
+      "return_cost": 11.180339887498949,
+      "reserve": 15.0,
+      "margin": 57.63932022500211,
+      "feasible": true
+    },
+    {
+      "asset_id": "P03",
+      "view_id": "follow-up",
+      "outbound": 15.811388300841898,
+      "capture": 5.0,
+      "return_cost": 15.811388300841898,
+      "reserve": 15.0,
+      "margin": 48.377223398316204,
+      "feasible": true
+    },
+    {
+      "asset_id": "P03",
+      "view_id": "overview",
+      "outbound": 15.811388300841898,
+      "capture": 5.0,
+      "return_cost": 15.811388300841898,
+      "reserve": 15.0,
+      "margin": 48.377223398316204,
+      "feasible": true
+    },
+    {
+      "asset_id": "P04",
+      "view_id": "follow-up",
+      "outbound": 11.180339887498949,
+      "capture": 5.0,
+      "return_cost": 11.180339887498949,
+      "reserve": 15.0,
+      "margin": 57.63932022500211,
+      "feasible": true
+    },
+    {
+      "asset_id": "P04",
+      "view_id": "overview",
+      "outbound": 11.180339887498949,
+      "capture": 5.0,
+      "return_cost": 11.180339887498949,
+      "reserve": 15.0,
+      "margin": 57.63932022500211,
+      "feasible": true
+    },
+    {
+      "asset_id": "P05",
+      "view_id": "follow-up",
+      "outbound": 14.142135623730951,
+      "capture": 5.0,
+      "return_cost": 14.142135623730951,
+      "reserve": 15.0,
+      "margin": 51.7157287525381,
+      "feasible": true
+    },
+    {
+      "asset_id": "P05",
+      "view_id": "overview",
+      "outbound": 14.142135623730951,
+      "capture": 5.0,
+      "return_cost": 14.142135623730951,
+      "reserve": 15.0,
+      "margin": 51.7157287525381,
+      "feasible": true
+    },
+    {
+      "asset_id": "P06",
+      "view_id": "follow-up",
+      "outbound": 18.027756377319946,
+      "capture": 5.0,
+      "return_cost": 18.027756377319946,
+      "reserve": 15.0,
+      "margin": 43.94448724536011,
+      "feasible": true
+    },
+    {
+      "asset_id": "P06",
+      "view_id": "overview",
+      "outbound": 18.027756377319946,
+      "capture": 5.0,
+      "return_cost": 18.027756377319946,
+      "reserve": 15.0,
+      "margin": 43.94448724536011,
+      "feasible": true
+    }
+  ],
+  "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+  "system_id": "Windows-x86-64"
+}

@@ -1,0 +1,50 @@
+TAP version 13
+# PASS: proposal review and numerical permission control execution guidance
+# PASS: an exhausted run has a concrete save/review/restart path
+# PASS: actual, cached, local and unavailable Wolfram modes remain distinct
+# PASS: recorded zero, original time and unavailable dash are not conflated
+# PASS: rendering guidance, costs and source labels cannot execute a capture
+# PASS: initial and duplicate mission loads cannot race the saved-run selector
+# Subtest: tests\\frontend_clarity.test.cjs
+ok 1 - tests\\frontend_clarity.test.cjs
+  ---
+  duration_ms: 854.7628
+  type: 'test'
+  ...
+# Subtest: all 50 fixture records contribute to displayed accounting
+ok 2 - all 50 fixture records contribute to displayed accounting
+  ---
+  duration_ms: 5.3614
+  type: 'test'
+  ...
+# Subtest: missing proposal remains explicit rather than displaying a fresh authorization
+ok 3 - missing proposal remains explicit rather than displaying a fresh authorization
+  ---
+  duration_ms: 0.6838
+  type: 'test'
+  ...
+# Subtest: empty registry does not invent an assessment
+ok 4 - empty registry does not invent an assessment
+  ---
+  duration_ms: 0.6196
+  type: 'test'
+  ...
+# PASS: late evidence responses preserve the newest asset/view, finding and provenance
+# PASS: repeated execution clicks send one request while a workflow mutation is pending
+# PASS: a committed capture opens its returned asset/view instead of the previously selected image
+# PASS: a newly computed next plan needs explicit review before another capture can be sent
+# Subtest: tests\\frontend_races.test.cjs
+ok 3 - tests\\frontend_races.test.cjs
+  ---
+  duration_ms: 358.5099
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 942.4946

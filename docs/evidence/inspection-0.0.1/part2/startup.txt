@@ -1,0 +1,14 @@
+STRATUS 0.0.1 | Part 2 validated local evidence
+Mission: solar-array-001 | revision: 0.0.1-part2 | scenario: synthetic-solar-array-001
+Mode: synthetic_evidence_replay | source: SYNTHETIC | live AI/vision: pending
+Layout: 6 reviewed panels | coordinates: m
+Launch/return: {'x': 0, 'y': 0} | position: {'x': 0, 'y': 0}
+Battery: 100 simulated_energy_unit | reserve: 15
+New capture actions: 3 remaining / 3 maximum
+Prior records: 2 | new actions consumed by prior records: 0
+Evidence: 12 PNG views validated, with separate authored replay annotations.
+  prior-001 P01/overview | clear | synthetic-solar-array-001:P01:overview
+  prior-002 P02/overview | unclear | synthetic-solar-array-001:P02:overview
+No real flight or live vision inference. Human review is pending.
+Fixture requests apply no state transition; action/energy execution is Part 3/4 work.
+AI tools, Wolfram access, reports, and saved-run reopen remain pending.

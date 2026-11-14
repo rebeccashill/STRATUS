@@ -1,0 +1,2431 @@
+{
+  "schema_version": "stratus-fleet-scenario-v1",
+  "scenario_id": "stratus-solar-200-v1",
+  "generator_version": "1",
+  "coordinate_frame": {
+    "name": "solar-site-local-v1",
+    "unit": "m"
+  },
+  "model_version": "toy-euclidean-energy-v1",
+  "rules": {
+    "battery_EU": 100,
+    "reserve_EU": 15,
+    "capture_EU": 5,
+    "travel_EU_per_m": 0.5,
+    "capture_cap": 3,
+    "speed_m_per_sim_second": 2,
+    "capture_sim_seconds": 2,
+    "horizon_sim_seconds": 600,
+    "shortlist_nearest": 6,
+    "shortlist_priority": 4,
+    "max_pairs": 500,
+    "coordinator": "Bounded greedy: fewest captures first, descending priority/evidence need, travel+capture, drone/task IDs",
+    "baseline": "Cyclic drone order; first feasible task ID within the identical shortlist",
+    "tie_policy": "Stable drone ID and task ID; logical event time then insertion sequence",
+    "allocation_boundary": "Wave barrier after all assigned travel/captures; returning drones may finish independently",
+    "limits": "Simulated independent aircraft; unique task ownership is not trajectory separation or flight control"
+  },
+  "assets": [
+    {
+      "asset_id": "A001",
+      "position": {
+        "x": 2,
+        "y": 2
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A002",
+      "position": {
+        "x": 4,
+        "y": 2
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A003",
+      "position": {
+        "x": 6,
+        "y": 2
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A004",
+      "position": {
+        "x": 8,
+        "y": 2
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A005",
+      "position": {
+        "x": 10,
+        "y": 2
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A006",
+      "position": {
+        "x": 12,
+        "y": 2
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A007",
+      "position": {
+        "x": 14,
+        "y": 2
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A008",
+      "position": {
+        "x": 16,
+        "y": 2
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A009",
+      "position": {
+        "x": 18,
+        "y": 2
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A010",
+      "position": {
+        "x": 20,
+        "y": 2
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A011",
+      "position": {
+        "x": 22,
+        "y": 2
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A012",
+      "position": {
+        "x": 24,
+        "y": 2
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A013",
+      "position": {
+        "x": 26,
+        "y": 2
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A014",
+      "position": {
+        "x": 28,
+        "y": 2
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A015",
+      "position": {
+        "x": 30,
+        "y": 2
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A016",
+      "position": {
+        "x": 32,
+        "y": 2
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A017",
+      "position": {
+        "x": 34,
+        "y": 2
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A018",
+      "position": {
+        "x": 36,
+        "y": 2
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A019",
+      "position": {
+        "x": 38,
+        "y": 2
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A020",
+      "position": {
+        "x": 40,
+        "y": 2
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A021",
+      "position": {
+        "x": 2,
+        "y": 4
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A022",
+      "position": {
+        "x": 4,
+        "y": 4
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A023",
+      "position": {
+        "x": 6,
+        "y": 4
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A024",
+      "position": {
+        "x": 8,
+        "y": 4
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A025",
+      "position": {
+        "x": 10,
+        "y": 4
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A026",
+      "position": {
+        "x": 12,
+        "y": 4
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A027",
+      "position": {
+        "x": 14,
+        "y": 4
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A028",
+      "position": {
+        "x": 16,
+        "y": 4
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A029",
+      "position": {
+        "x": 18,
+        "y": 4
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A030",
+      "position": {
+        "x": 20,
+        "y": 4
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A031",
+      "position": {
+        "x": 22,
+        "y": 4
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A032",
+      "position": {
+        "x": 24,
+        "y": 4
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A033",
+      "position": {
+        "x": 26,
+        "y": 4
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A034",
+      "position": {
+        "x": 28,
+        "y": 4
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A035",
+      "position": {
+        "x": 30,
+        "y": 4
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A036",
+      "position": {
+        "x": 32,
+        "y": 4
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A037",
+      "position": {
+        "x": 34,
+        "y": 4
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A038",
+      "position": {
+        "x": 36,
+        "y": 4
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A039",
+      "position": {
+        "x": 38,
+        "y": 4
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A040",
+      "position": {
+        "x": 40,
+        "y": 4
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A041",
+      "position": {
+        "x": 2,
+        "y": 6
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A042",
+      "position": {
+        "x": 4,
+        "y": 6
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A043",
+      "position": {
+        "x": 6,
+        "y": 6
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A044",
+      "position": {
+        "x": 8,
+        "y": 6
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A045",
+      "position": {
+        "x": 10,
+        "y": 6
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A046",
+      "position": {
+        "x": 12,
+        "y": 6
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A047",
+      "position": {
+        "x": 14,
+        "y": 6
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A048",
+      "position": {
+        "x": 16,
+        "y": 6
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A049",
+      "position": {
+        "x": 18,
+        "y": 6
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A050",
+      "position": {
+        "x": 20,
+        "y": 6
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A051",
+      "position": {
+        "x": 22,
+        "y": 6
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A052",
+      "position": {
+        "x": 24,
+        "y": 6
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A053",
+      "position": {
+        "x": 26,
+        "y": 6
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A054",
+      "position": {
+        "x": 28,
+        "y": 6
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A055",
+      "position": {
+        "x": 30,
+        "y": 6
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A056",
+      "position": {
+        "x": 32,
+        "y": 6
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A057",
+      "position": {
+        "x": 34,
+        "y": 6
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A058",
+      "position": {
+        "x": 36,
+        "y": 6
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A059",
+      "position": {
+        "x": 38,
+        "y": 6
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A060",
+      "position": {
+        "x": 40,
+        "y": 6
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A061",
+      "position": {
+        "x": 2,
+        "y": 8
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A062",
+      "position": {
+        "x": 4,
+        "y": 8
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A063",
+      "position": {
+        "x": 6,
+        "y": 8
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A064",
+      "position": {
+        "x": 8,
+        "y": 8
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A065",
+      "position": {
+        "x": 10,
+        "y": 8
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A066",
+      "position": {
+        "x": 12,
+        "y": 8
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A067",
+      "position": {
+        "x": 14,
+        "y": 8
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A068",
+      "position": {
+        "x": 16,
+        "y": 8
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A069",
+      "position": {
+        "x": 18,
+        "y": 8
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A070",
+      "position": {
+        "x": 20,
+        "y": 8
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A071",
+      "position": {
+        "x": 22,
+        "y": 8
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A072",
+      "position": {
+        "x": 24,
+        "y": 8
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A073",
+      "position": {
+        "x": 26,
+        "y": 8
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A074",
+      "position": {
+        "x": 28,
+        "y": 8
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A075",
+      "position": {
+        "x": 30,
+        "y": 8
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A076",
+      "position": {
+        "x": 32,
+        "y": 8
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A077",
+      "position": {
+        "x": 34,
+        "y": 8
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A078",
+      "position": {
+        "x": 36,
+        "y": 8
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A079",
+      "position": {
+        "x": 38,
+        "y": 8
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A080",
+      "position": {
+        "x": 40,
+        "y": 8
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A081",
+      "position": {
+        "x": 2,
+        "y": 10
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A082",
+      "position": {
+        "x": 4,
+        "y": 10
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A083",
+      "position": {
+        "x": 6,
+        "y": 10
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A084",
+      "position": {
+        "x": 8,
+        "y": 10
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A085",
+      "position": {
+        "x": 10,
+        "y": 10
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A086",
+      "position": {
+        "x": 12,
+        "y": 10
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A087",
+      "position": {
+        "x": 14,
+        "y": 10
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A088",
+      "position": {
+        "x": 16,
+        "y": 10
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A089",
+      "position": {
+        "x": 18,
+        "y": 10
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A090",
+      "position": {
+        "x": 20,
+        "y": 10
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A091",
+      "position": {
+        "x": 22,
+        "y": 10
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A092",
+      "position": {
+        "x": 24,
+        "y": 10
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A093",
+      "position": {
+        "x": 26,
+        "y": 10
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A094",
+      "position": {
+        "x": 28,
+        "y": 10
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A095",
+      "position": {
+        "x": 30,
+        "y": 10
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A096",
+      "position": {
+        "x": 32,
+        "y": 10
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A097",
+      "position": {
+        "x": 34,
+        "y": 10
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A098",
+      "position": {
+        "x": 36,
+        "y": 10
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A099",
+      "position": {
+        "x": 38,
+        "y": 10
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A100",
+      "position": {
+        "x": 40,
+        "y": 10
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A101",
+      "position": {
+        "x": 2,
+        "y": 12
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A102",
+      "position": {
+        "x": 4,
+        "y": 12
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A103",
+      "position": {
+        "x": 6,
+        "y": 12
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A104",
+      "position": {
+        "x": 8,
+        "y": 12
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A105",
+      "position": {
+        "x": 10,
+        "y": 12
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A106",
+      "position": {
+        "x": 12,
+        "y": 12
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A107",
+      "position": {
+        "x": 14,
+        "y": 12
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A108",
+      "position": {
+        "x": 16,
+        "y": 12
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A109",
+      "position": {
+        "x": 18,
+        "y": 12
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A110",
+      "position": {
+        "x": 20,
+        "y": 12
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A111",
+      "position": {
+        "x": 22,
+        "y": 12
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A112",
+      "position": {
+        "x": 24,
+        "y": 12
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A113",
+      "position": {
+        "x": 26,
+        "y": 12
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A114",
+      "position": {
+        "x": 28,
+        "y": 12
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A115",
+      "position": {
+        "x": 30,
+        "y": 12
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A116",
+      "position": {
+        "x": 32,
+        "y": 12
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A117",
+      "position": {
+        "x": 34,
+        "y": 12
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A118",
+      "position": {
+        "x": 36,
+        "y": 12
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A119",
+      "position": {
+        "x": 38,
+        "y": 12
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A120",
+      "position": {
+        "x": 40,
+        "y": 12
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A121",
+      "position": {
+        "x": 2,
+        "y": 14
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A122",
+      "position": {
+        "x": 4,
+        "y": 14
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A123",
+      "position": {
+        "x": 6,
+        "y": 14
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A124",
+      "position": {
+        "x": 8,
+        "y": 14
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A125",
+      "position": {
+        "x": 10,
+        "y": 14
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A126",
+      "position": {
+        "x": 12,
+        "y": 14
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A127",
+      "position": {
+        "x": 14,
+        "y": 14
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A128",
+      "position": {
+        "x": 16,
+        "y": 14
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A129",
+      "position": {
+        "x": 18,
+        "y": 14
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A130",
+      "position": {
+        "x": 20,
+        "y": 14
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A131",
+      "position": {
+        "x": 22,
+        "y": 14
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A132",
+      "position": {
+        "x": 24,
+        "y": 14
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A133",
+      "position": {
+        "x": 26,
+        "y": 14
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A134",
+      "position": {
+        "x": 28,
+        "y": 14
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A135",
+      "position": {
+        "x": 30,
+        "y": 14
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A136",
+      "position": {
+        "x": 32,
+        "y": 14
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A137",
+      "position": {
+        "x": 34,
+        "y": 14
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A138",
+      "position": {
+        "x": 36,
+        "y": 14
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A139",
+      "position": {
+        "x": 38,
+        "y": 14
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A140",
+      "position": {
+        "x": 40,
+        "y": 14
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A141",
+      "position": {
+        "x": 2,
+        "y": 16
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A142",
+      "position": {
+        "x": 4,
+        "y": 16
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A143",
+      "position": {
+        "x": 6,
+        "y": 16
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A144",
+      "position": {
+        "x": 8,
+        "y": 16
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A145",
+      "position": {
+        "x": 10,
+        "y": 16
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A146",
+      "position": {
+        "x": 12,
+        "y": 16
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A147",
+      "position": {
+        "x": 14,
+        "y": 16
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A148",
+      "position": {
+        "x": 16,
+        "y": 16
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A149",
+      "position": {
+        "x": 18,
+        "y": 16
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A150",
+      "position": {
+        "x": 20,
+        "y": 16
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A151",
+      "position": {
+        "x": 22,
+        "y": 16
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A152",
+      "position": {
+        "x": 24,
+        "y": 16
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A153",
+      "position": {
+        "x": 26,
+        "y": 16
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A154",
+      "position": {
+        "x": 28,
+        "y": 16
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A155",
+      "position": {
+        "x": 30,
+        "y": 16
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A156",
+      "position": {
+        "x": 32,
+        "y": 16
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A157",
+      "position": {
+        "x": 34,
+        "y": 16
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A158",
+      "position": {
+        "x": 36,
+        "y": 16
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A159",
+      "position": {
+        "x": 38,
+        "y": 16
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A160",
+      "position": {
+        "x": 40,
+        "y": 16
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A161",
+      "position": {
+        "x": 2,
+        "y": 18
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A162",
+      "position": {
+        "x": 4,
+        "y": 18
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A163",
+      "position": {
+        "x": 6,
+        "y": 18
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A164",
+      "position": {
+        "x": 8,
+        "y": 18
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A165",
+      "position": {
+        "x": 10,
+        "y": 18
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A166",
+      "position": {
+        "x": 12,
+        "y": 18
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A167",
+      "position": {
+        "x": 14,
+        "y": 18
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A168",
+      "position": {
+        "x": 16,
+        "y": 18
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A169",
+      "position": {
+        "x": 18,
+        "y": 18
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A170",
+      "position": {
+        "x": 20,
+        "y": 18
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A171",
+      "position": {
+        "x": 22,
+        "y": 18
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A172",
+      "position": {
+        "x": 24,
+        "y": 18
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A173",
+      "position": {
+        "x": 26,
+        "y": 18
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A174",
+      "position": {
+        "x": 28,
+        "y": 18
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A175",
+      "position": {
+        "x": 30,
+        "y": 18
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A176",
+      "position": {
+        "x": 32,
+        "y": 18
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A177",
+      "position": {
+        "x": 34,
+        "y": 18
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A178",
+      "position": {
+        "x": 36,
+        "y": 18
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A179",
+      "position": {
+        "x": 38,
+        "y": 18
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A180",
+      "position": {
+        "x": 40,
+        "y": 18
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A181",
+      "position": {
+        "x": 2,
+        "y": 20
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A182",
+      "position": {
+        "x": 4,
+        "y": 20
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A183",
+      "position": {
+        "x": 6,
+        "y": 20
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A184",
+      "position": {
+        "x": 8,
+        "y": 20
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A185",
+      "position": {
+        "x": 10,
+        "y": 20
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A186",
+      "position": {
+        "x": 12,
+        "y": 20
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A187",
+      "position": {
+        "x": 14,
+        "y": 20
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A188",
+      "position": {
+        "x": 16,
+        "y": 20
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A189",
+      "position": {
+        "x": 18,
+        "y": 20
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A190",
+      "position": {
+        "x": 20,
+        "y": 20
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A191",
+      "position": {
+        "x": 22,
+        "y": 20
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A192",
+      "position": {
+        "x": 24,
+        "y": 20
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A193",
+      "position": {
+        "x": 26,
+        "y": 20
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A194",
+      "position": {
+        "x": 28,
+        "y": 20
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A195",
+      "position": {
+        "x": 30,
+        "y": 20
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A196",
+      "position": {
+        "x": 32,
+        "y": 20
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A197",
+      "position": {
+        "x": 34,
+        "y": 20
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A198",
+      "position": {
+        "x": 36,
+        "y": 20
+      },
+      "priority": 3,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A199",
+      "position": {
+        "x": 38,
+        "y": 20
+      },
+      "priority": 1,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "A200",
+      "position": {
+        "x": 40,
+        "y": 20
+      },
+      "priority": 2,
+      "views": [
+        "overview",
+        "follow-up"
+      ]
+    }
+  ],
+  "evidence_disclosure": "200 unique synthetic asset coordinates; representative P04/P05 overview/follow-up illustrations are reused. These are not 200 independent photographs."
+}

@@ -1,0 +1,43 @@
+{
+  "execution_mode": "deterministic_rule_based",
+  "provider": null,
+  "model": null,
+  "requested_mode": "fallback",
+  "attempted_provider": null,
+  "proposal": {
+    "action_type": "follow_up",
+    "asset_id": "P02",
+    "view_id": "follow-up",
+    "reason": "Deterministic priority/observed-uncertainty/cost rule; no live AI inference",
+    "alternative": "Return to launch if the candidate becomes infeasible"
+  },
+  "validation": {
+    "allowed": true,
+    "code": "allowed",
+    "message": "Local constraints passed; no state change until explicit execution",
+    "state_revision": 0,
+    "proposal": {
+      "action_type": "follow_up",
+      "asset_id": "P02",
+      "view_id": "follow-up",
+      "reason": "Deterministic priority/observed-uncertainty/cost rule; no live AI inference",
+      "alternative": "Return to launch if the candidate becomes infeasible"
+    },
+    "costs": {
+      "outbound": 11.180339887498949,
+      "capture": 5,
+      "return_cost": 11.180339887498949,
+      "reserve": 15,
+      "margin": 57.6393202250021,
+      "model_version": "toy-euclidean-energy-v1",
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "calculator_mode": "local_python_euclidean"
+    }
+  },
+  "tool_events": [],
+  "response_events": [],
+  "failure": null,
+  "state_transition_applied": false,
+  "vision_mode": "authored_synthetic_annotation_replay_not_live_vision"
+}

@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-11-14T11:29:33.447587+00:00",
+  "checks": "all passed",
+  "observations": 60,
+  "unique_stable_ids": 60,
+  "raw_source_hashes_match": true,
+  "each_value_and_time_matches_raw_source": true,
+  "all_fields_present_and_no_aircraft_fields": true,
+  "units_and_sensor_mapping": "passed",
+  "utc_times": "passed",
+  "unknown_receipt_times_preserved": 15,
+  "quality_location_calibration_uncertainty_preserved": true,
+  "replay_source_label": "recorded_measured",
+  "json_schema_file_parses": true,
+  "validation_scope": "Field, unit, identity, numeric, UTC and provenance invariants checked with standard-library Python; no external JSON Schema validator or physical re-acquisition used.",
+  "handoff_original_midnight_target_met": false,
+  "h008_checklist_status": "complete",
+  "h008_timing_blocks_completion": false,
+  "h008_completion_basis": "Saved handoff deliverable; Rebecca explicitly waived timing as a completion condition."
+}

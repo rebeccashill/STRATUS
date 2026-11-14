@@ -1,0 +1,13 @@
+{
+  "source": "actual paused browser checkpoint; replay fork, no new captures acquired",
+  "source_run_id": "fleet-11ff17177b6544a387f92f2c2869e31b",
+  "new_run_id": "fleet-a77e4cb4580b44c0b0b8182bc12388ff",
+  "checkpoint": "fleet-a77e4cb4580b44c0b0b8182bc12388ff.json",
+  "outcome_digest_unchanged": true,
+  "captured_views": 78,
+  "saved": {
+    "checkpoint": "fleet-a77e4cb4580b44c0b0b8182bc12388ff.json",
+    "sha256": "2972d4b39371c3660cc4e57a3020f98a41bbc5ed5af516539755dc4e95b57d14",
+    "size_bytes": 1971708
+  }
+}

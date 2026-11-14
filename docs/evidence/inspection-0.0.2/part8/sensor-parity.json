@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "physical_sample_parity": "passed using earlier actual hotplug recovery sample",
+  "frozen_snapshot_id": "ground-38a7edecff1da9c7d1cbcf4797531ced82979c14b776193d861b6e349e04ac1e",
+  "source_mode": "Recorded",
+  "rows": [
+    {
+      "observation_id": "obs_08689ff8b06b79265f884829",
+      "variable": "temperature",
+      "unit": "degC",
+      "value": 21.87421875,
+      "raw_csv": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+      "sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461",
+      "raw_normalized_ui_report_equal": true
+    },
+    {
+      "observation_id": "obs_e16fea2b6294ee8d6f1de721",
+      "variable": "relative_humidity",
+      "unit": "%RH",
+      "value": 39.9773005292298,
+      "raw_csv": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+      "sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461",
+      "raw_normalized_ui_report_equal": true
+    },
+    {
+      "observation_id": "obs_636262157d37c1e1f6124fe8",
+      "variable": "pressure",
+      "unit": "hPa",
+      "value": 1006.8205522883696,
+      "raw_csv": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+      "sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461",
+      "raw_normalized_ui_report_equal": true
+    },
+    {
+      "observation_id": "obs_7e09f269c0f884f0f6ae9028",
+      "variable": "pm1_0",
+      "unit": "ug/m3",
+      "value": 0,
+      "raw_csv": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+      "sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461",
+      "raw_normalized_ui_report_equal": true
+    },
+    {
+      "observation_id": "obs_032f58a4dc53fd0722a181d4",
+      "variable": "pm2_5",
+      "unit": "ug/m3",
+      "value": 0,
+      "raw_csv": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+      "sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461",
+      "raw_normalized_ui_report_equal": true
+    },
+    {
+      "observation_id": "obs_c1b5a6bed0f7d683ba2401a2",
+      "variable": "pm10",
+      "unit": "ug/m3",
+      "value": 0,
+      "raw_csv": "context/ground-measurements/live/20261114T163043Z-8db49b/sample-00019.csv",
+      "sha256": "eb492a82b9195c6c3c21ed274c53395a5967425d200eb1937d734f5f1fe30461",
+      "raw_normalized_ui_report_equal": true
+    }
+  ],
+  "ui_sensor_states": [
+    {
+      "sensor_model": "BME280",
+      "status": "stale",
+      "age_seconds": 2680.136957
+    },
+    {
+      "sensor_model": "PMSA003I",
+      "status": "stale",
+      "age_seconds": 2680.117599
+    }
+  ],
+  "location": {
+    "status": "unknown",
+    "label": null,
+    "position": null,
+    "coordinate_frame": null
+  },
+  "new_hardware_read_performed": false,
+  "software_failure_evidence": "full test suite: GroundTests and USBReconnectTests; physical disconnect evidence in hotplug/physical-recovery.json",
+  "limits": "Software/source parity only; no sensor calibration, accuracy or defect-detection claim."
+}

@@ -1,0 +1,454 @@
+{
+  "scope": "in-memory verification only; not a Part 4 saved inspection run",
+  "execution_mode": "deterministic_rule_based",
+  "events": [
+    {
+      "timestamp": "2026-11-14T03:38:45.863471+00:00",
+      "execution_mode": "simulated",
+      "real_flight": false,
+      "decision": {
+        "allowed": true,
+        "code": "allowed",
+        "message": "Local constraints passed; no state change until explicit execution",
+        "state_revision": 0,
+        "proposal": {
+          "action_type": "follow_up",
+          "asset_id": "P02",
+          "view_id": "follow-up",
+          "reason": "Deterministic priority/observed-uncertainty/cost rule; no live AI inference",
+          "alternative": "Return to launch if the candidate becomes infeasible"
+        },
+        "costs": {
+          "outbound": 11.180339887498949,
+          "capture": 5,
+          "return_cost": 11.180339887498949,
+          "reserve": 15,
+          "margin": 57.6393202250021,
+          "model_version": "toy-euclidean-energy-v1",
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "calculator_mode": "local_python_euclidean"
+        }
+      },
+      "status": "executed",
+      "state_transition_applied": true,
+      "evidence": {
+        "mission_id": "solar-array-001",
+        "scenario_id": "synthetic-solar-array-001",
+        "asset_id": "P02",
+        "view_id": "follow-up",
+        "timestamp": "2026-11-14T03:38:45.863471+00:00",
+        "timestamp_kind": "response_created_at_not_camera_capture",
+        "capture_mode": "simulated_local_fixture",
+        "real_flight": false,
+        "state_transition_applied": false,
+        "source_label": "synthetic",
+        "source_mode": "procedural_synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "status": "available",
+        "image_quality": "clear",
+        "finding": "no_apparent_concern_in_synthetic_drawing",
+        "evidence_ref": {
+          "evidence_id": "synthetic-solar-array-001:P02:follow-up",
+          "image_path": "evidence/inspection/images/P02-follow-up.png",
+          "sha256": "a46523f1b453f4c280a7a83fa4d91bd75414db3f8f90685002d993a3a840c4b4",
+          "width": 480,
+          "height": 320,
+          "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+          "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+        },
+        "annotation": {
+          "evidence_id": "synthetic-solar-array-001:P02:follow-up",
+          "scenario_id": "synthetic-solar-array-001",
+          "assessment_mode": "authored_replay_annotation",
+          "annotation_author": "AI-assisted scenario preparation; human review pending",
+          "human_review_status": "pending",
+          "live_model_output": false,
+          "image_quality": "clear",
+          "finding": "no_apparent_concern_in_synthetic_drawing",
+          "note": "Grid visible in the authored illustration; this is not a defect diagnosis."
+        },
+        "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+      },
+      "battery_debit": 16.18033988749895,
+      "capture_action_debit": 1,
+      "state_before_revision": 0,
+      "state_after_revision": 1
+    },
+    {
+      "timestamp": "2026-11-14T03:38:45.879281+00:00",
+      "execution_mode": "simulated",
+      "real_flight": false,
+      "decision": {
+        "allowed": true,
+        "code": "allowed",
+        "message": "Local constraints passed; no state change until explicit execution",
+        "state_revision": 1,
+        "proposal": {
+          "action_type": "inspect",
+          "asset_id": "P03",
+          "view_id": "overview",
+          "reason": "Deterministic priority/observed-uncertainty/cost rule; no live AI inference",
+          "alternative": "Return to launch if the candidate becomes infeasible"
+        },
+        "costs": {
+          "outbound": 5.0,
+          "capture": 5,
+          "return_cost": 15.811388300841896,
+          "reserve": 15,
+          "margin": 43.00827181165916,
+          "model_version": "toy-euclidean-energy-v1",
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "calculator_mode": "local_python_euclidean"
+        }
+      },
+      "status": "executed",
+      "state_transition_applied": true,
+      "evidence": {
+        "mission_id": "solar-array-001",
+        "scenario_id": "synthetic-solar-array-001",
+        "asset_id": "P03",
+        "view_id": "overview",
+        "timestamp": "2026-11-14T03:38:45.879281+00:00",
+        "timestamp_kind": "response_created_at_not_camera_capture",
+        "capture_mode": "simulated_local_fixture",
+        "real_flight": false,
+        "state_transition_applied": false,
+        "source_label": "synthetic",
+        "source_mode": "procedural_synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "status": "available",
+        "image_quality": "clear",
+        "finding": "apparent_concern_review_required",
+        "evidence_ref": {
+          "evidence_id": "synthetic-solar-array-001:P03:overview",
+          "image_path": "evidence/inspection/images/P03-overview.png",
+          "sha256": "852fa3d18ee57ca90bb548853460e93d802a55a04b99071e9a8a3b820a333fe6",
+          "width": 480,
+          "height": 320,
+          "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+          "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+        },
+        "annotation": {
+          "evidence_id": "synthetic-solar-array-001:P03:overview",
+          "scenario_id": "synthetic-solar-array-001",
+          "assessment_mode": "authored_replay_annotation",
+          "annotation_author": "AI-assisted scenario preparation; human review pending",
+          "human_review_status": "pending",
+          "live_model_output": false,
+          "image_quality": "clear",
+          "finding": "apparent_concern_review_required",
+          "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+        },
+        "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+      },
+      "battery_debit": 10.0,
+      "capture_action_debit": 1,
+      "state_before_revision": 1,
+      "state_after_revision": 2
+    },
+    {
+      "timestamp": "2026-11-14T03:38:45.892942+00:00",
+      "execution_mode": "simulated",
+      "real_flight": false,
+      "decision": {
+        "allowed": true,
+        "code": "allowed",
+        "message": "Local constraints passed; no state change until explicit execution",
+        "state_revision": 2,
+        "proposal": {
+          "action_type": "follow_up",
+          "asset_id": "P03",
+          "view_id": "follow-up",
+          "reason": "Deterministic priority/observed-uncertainty/cost rule; no live AI inference",
+          "alternative": "Return to launch if the candidate becomes infeasible"
+        },
+        "costs": {
+          "outbound": 0.0,
+          "capture": 5,
+          "return_cost": 15.811388300841896,
+          "reserve": 15,
+          "margin": 38.00827181165916,
+          "model_version": "toy-euclidean-energy-v1",
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "calculator_mode": "local_python_euclidean"
+        }
+      },
+      "status": "executed",
+      "state_transition_applied": true,
+      "evidence": {
+        "mission_id": "solar-array-001",
+        "scenario_id": "synthetic-solar-array-001",
+        "asset_id": "P03",
+        "view_id": "follow-up",
+        "timestamp": "2026-11-14T03:38:45.892942+00:00",
+        "timestamp_kind": "response_created_at_not_camera_capture",
+        "capture_mode": "simulated_local_fixture",
+        "real_flight": false,
+        "state_transition_applied": false,
+        "source_label": "synthetic",
+        "source_mode": "procedural_synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "status": "available",
+        "image_quality": "clear",
+        "finding": "apparent_concern_review_required",
+        "evidence_ref": {
+          "evidence_id": "synthetic-solar-array-001:P03:follow-up",
+          "image_path": "evidence/inspection/images/P03-follow-up.png",
+          "sha256": "579c7e33e44e9665a954e80550c4db9eff2b1c602445ba482684a5f3ab15e69d",
+          "width": 480,
+          "height": 320,
+          "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+          "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+        },
+        "annotation": {
+          "evidence_id": "synthetic-solar-array-001:P03:follow-up",
+          "scenario_id": "synthetic-solar-array-001",
+          "assessment_mode": "authored_replay_annotation",
+          "annotation_author": "AI-assisted scenario preparation; human review pending",
+          "human_review_status": "pending",
+          "live_model_output": false,
+          "image_quality": "clear",
+          "finding": "apparent_concern_review_required",
+          "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+        },
+        "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+      },
+      "battery_debit": 5.0,
+      "capture_action_debit": 1,
+      "state_before_revision": 2,
+      "state_after_revision": 3
+    },
+    {
+      "timestamp": "2026-11-14T03:38:45.895941+00:00",
+      "execution_mode": "simulated",
+      "real_flight": false,
+      "decision": {
+        "allowed": true,
+        "code": "allowed",
+        "message": "Local constraints passed; no state change until explicit execution",
+        "state_revision": 3,
+        "proposal": {
+          "action_type": "return",
+          "asset_id": null,
+          "view_id": null,
+          "reason": "No feasible capture remains; protect modeled return reserve",
+          "alternative": "Stop simulation for operator review"
+        },
+        "costs": {
+          "outbound": 0.0,
+          "capture": 0.0,
+          "return_cost": 15.811388300841896,
+          "reserve": 15,
+          "margin": 38.00827181165916,
+          "model_version": "toy-euclidean-energy-v1",
+          "distance_unit": "m",
+          "energy_unit": "simulated_energy_unit",
+          "calculator_mode": "local_python_euclidean"
+        }
+      },
+      "status": "executed",
+      "state_transition_applied": true,
+      "battery_debit": 15.811388300841896,
+      "capture_action_debit": 0,
+      "state_before_revision": 3,
+      "state_after_revision": 4
+    }
+  ],
+  "state_after": {
+    "mission_id": "solar-array-001",
+    "scenario_id": "synthetic-solar-array-001",
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "battery_available": 53.00827181165916,
+    "actions_used": 3,
+    "actions_remaining": 0,
+    "completed_views": [
+      {
+        "asset_id": "P01",
+        "view_id": "overview"
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "follow-up"
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "overview"
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "follow-up"
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "overview"
+      }
+    ],
+    "history": [
+      {
+        "record_id": "prior-001",
+        "asset_id": "P01",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "clear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P01:overview",
+        "consumes_new_action": false
+      },
+      {
+        "record_id": "prior-002",
+        "asset_id": "P02",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "unclear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P02:overview",
+        "consumes_new_action": false
+      },
+      {
+        "record_id": "simulated-001",
+        "asset_id": "P02",
+        "view_id": "follow-up",
+        "evidence": {
+          "mission_id": "solar-array-001",
+          "scenario_id": "synthetic-solar-array-001",
+          "asset_id": "P02",
+          "view_id": "follow-up",
+          "timestamp": "2026-11-14T03:38:45.863471+00:00",
+          "timestamp_kind": "response_created_at_not_camera_capture",
+          "capture_mode": "simulated_local_fixture",
+          "real_flight": false,
+          "state_transition_applied": false,
+          "source_label": "synthetic",
+          "source_mode": "procedural_synthetic",
+          "assessment_mode": "authored_replay_annotation",
+          "status": "available",
+          "image_quality": "clear",
+          "finding": "no_apparent_concern_in_synthetic_drawing",
+          "evidence_ref": {
+            "evidence_id": "synthetic-solar-array-001:P02:follow-up",
+            "image_path": "evidence/inspection/images/P02-follow-up.png",
+            "sha256": "a46523f1b453f4c280a7a83fa4d91bd75414db3f8f90685002d993a3a840c4b4",
+            "width": 480,
+            "height": 320,
+            "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+            "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+          },
+          "annotation": {
+            "evidence_id": "synthetic-solar-array-001:P02:follow-up",
+            "scenario_id": "synthetic-solar-array-001",
+            "assessment_mode": "authored_replay_annotation",
+            "annotation_author": "AI-assisted scenario preparation; human review pending",
+            "human_review_status": "pending",
+            "live_model_output": false,
+            "image_quality": "clear",
+            "finding": "no_apparent_concern_in_synthetic_drawing",
+            "note": "Grid visible in the authored illustration; this is not a defect diagnosis."
+          },
+          "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+        },
+        "consumes_new_action": true
+      },
+      {
+        "record_id": "simulated-002",
+        "asset_id": "P03",
+        "view_id": "overview",
+        "evidence": {
+          "mission_id": "solar-array-001",
+          "scenario_id": "synthetic-solar-array-001",
+          "asset_id": "P03",
+          "view_id": "overview",
+          "timestamp": "2026-11-14T03:38:45.879281+00:00",
+          "timestamp_kind": "response_created_at_not_camera_capture",
+          "capture_mode": "simulated_local_fixture",
+          "real_flight": false,
+          "state_transition_applied": false,
+          "source_label": "synthetic",
+          "source_mode": "procedural_synthetic",
+          "assessment_mode": "authored_replay_annotation",
+          "status": "available",
+          "image_quality": "clear",
+          "finding": "apparent_concern_review_required",
+          "evidence_ref": {
+            "evidence_id": "synthetic-solar-array-001:P03:overview",
+            "image_path": "evidence/inspection/images/P03-overview.png",
+            "sha256": "852fa3d18ee57ca90bb548853460e93d802a55a04b99071e9a8a3b820a333fe6",
+            "width": 480,
+            "height": 320,
+            "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+            "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+          },
+          "annotation": {
+            "evidence_id": "synthetic-solar-array-001:P03:overview",
+            "scenario_id": "synthetic-solar-array-001",
+            "assessment_mode": "authored_replay_annotation",
+            "annotation_author": "AI-assisted scenario preparation; human review pending",
+            "human_review_status": "pending",
+            "live_model_output": false,
+            "image_quality": "clear",
+            "finding": "apparent_concern_review_required",
+            "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+          },
+          "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+        },
+        "consumes_new_action": true
+      },
+      {
+        "record_id": "simulated-003",
+        "asset_id": "P03",
+        "view_id": "follow-up",
+        "evidence": {
+          "mission_id": "solar-array-001",
+          "scenario_id": "synthetic-solar-array-001",
+          "asset_id": "P03",
+          "view_id": "follow-up",
+          "timestamp": "2026-11-14T03:38:45.892942+00:00",
+          "timestamp_kind": "response_created_at_not_camera_capture",
+          "capture_mode": "simulated_local_fixture",
+          "real_flight": false,
+          "state_transition_applied": false,
+          "source_label": "synthetic",
+          "source_mode": "procedural_synthetic",
+          "assessment_mode": "authored_replay_annotation",
+          "status": "available",
+          "image_quality": "clear",
+          "finding": "apparent_concern_review_required",
+          "evidence_ref": {
+            "evidence_id": "synthetic-solar-array-001:P03:follow-up",
+            "image_path": "evidence/inspection/images/P03-follow-up.png",
+            "sha256": "579c7e33e44e9665a954e80550c4db9eff2b1c602445ba482684a5f3ab15e69d",
+            "width": 480,
+            "height": 320,
+            "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+            "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+          },
+          "annotation": {
+            "evidence_id": "synthetic-solar-array-001:P03:follow-up",
+            "scenario_id": "synthetic-solar-array-001",
+            "assessment_mode": "authored_replay_annotation",
+            "annotation_author": "AI-assisted scenario preparation; human review pending",
+            "human_review_status": "pending",
+            "live_model_output": false,
+            "image_quality": "clear",
+            "finding": "apparent_concern_review_required",
+            "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+          },
+          "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+        },
+        "consumes_new_action": true
+      }
+    ],
+    "revision": 4,
+    "status": "returned"
+  },
+  "real_flight": false
+}

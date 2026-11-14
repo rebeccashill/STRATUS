@@ -1,0 +1,13 @@
+{
+  "verified_at_utc": "2026-11-14T22:34:30.279365+00:00",
+  "evidence": "User supplied Wolfram account screenshot and confirmed all credits remain available; not inferred from local counters",
+  "cloud_credits_available": 175000,
+  "service_credits_available": 500,
+  "alpha_api_calls_available": 6200,
+  "alpha_allowance_evidence": "Original 6200 allowance plus user confirmation that all credits remain available; the screenshot itself shows only Cloud and Service balances",
+  "stratus_cloud_requests": 0,
+  "stratus_alpha_calls": 0,
+  "local_kernel_calls": "Recorded separately in each typed calculation; local execution is verified and does not imply a cloud request",
+  "optional_alpha_feature": "skipped for this frozen demo",
+  "limits": "No account transaction ledger was read; unchanged available balances do not establish a complete historical usage ledger."
+}

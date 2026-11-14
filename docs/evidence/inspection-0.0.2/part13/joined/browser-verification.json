@@ -1,0 +1,18 @@
+{
+  "url": "http://127.0.0.1:8774/hazards",
+  "observed": [
+    "Shared hazard desk mounted on the existing dashboard origin with a Fleet desk link.",
+    "Actual two-drone state rendered, initially six completed captures.",
+    "Actual 50-drone state rendered with every row through D050.",
+    "Live operator report at registry revision 1 showed all 50 assessed, 15 affected and 150 existing captures retained.",
+    "Save fleet run succeeded and displayed fleet-11ff17177b6544a387f92f2c2869e31b.json.",
+    "Concurrent stale UI command was rejected and refreshed without resetting the current fleet."
+  ],
+  "screenshot": "browser-live-50.jpg",
+  "scope": "Actual mounted UI and successful save; real controller prepare/report/reject/replan/open sequence covered by test_joined_hazards.py.",
+  "limits": [
+    "A full two/50 prepare-report-reject-replan browser click-through was not completed while the live run was being changed concurrently.",
+    "The live 15 affected records are a different event placement from the fixed seed-11 comparison (20 affected).",
+    "The browser run was preserved; no test reset or restore was applied over concurrent user work."
+  ]
+}

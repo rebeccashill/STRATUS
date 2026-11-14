@@ -1,0 +1,30 @@
+{
+  "observed_at_utc": "2026-11-14T17:26:37.006768+00:00",
+  "report_url": "http://127.0.0.1:8769/api/report/view?name=comparison-part8.html",
+  "all_nine_rows_visible": true,
+  "illustrative_images_loaded": [
+    {
+      "view": "P03/overview",
+      "natural_width": 480
+    },
+    {
+      "view": "P03/follow-up",
+      "natural_width": 480
+    }
+  ],
+  "report_console_errors": [],
+  "layout": "Black/amber report visually checked; results table fits the observed desktop viewport",
+  "live_numerical_status": "not run; explicit local-only finish",
+  "main_mission": {
+    "checkpoint": "part6-browser-complete-20261114T155942Z-640e35.json",
+    "battery_display_EU": "65.86",
+    "remaining_capture_actions": 0,
+    "reserve_display_EU": "15.00",
+    "state_changed": false
+  },
+  "main_live_ground": "Both BME280 and PMSA003I visibly fresh; separate from fixed Recorded benchmark input",
+  "benchmark_new_hardware_reads": 0,
+  "recorded_label_fix": "Source/tests corrected; running server predates fix, loaded at next normal restart",
+  "accuracy_claim": null,
+  "report_sha256": "b8e6eafa49f24de119c1e334e364023846be6aef8debcad6e08623bd7cf523b6"
+}

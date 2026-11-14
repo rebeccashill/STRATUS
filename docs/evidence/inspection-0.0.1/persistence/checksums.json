@@ -1,0 +1,18 @@
+{
+  "stratus\\inspection\\review.py": "838ebb2722ae4ef8a191e611b25f50572f8a5078d2fe1ca6123796308de3f11d",
+  "stratus\\inspection\\persistence.py": "a1cec9cabd9f01216c2c734093adebf59a323f6abc75f6e9b4b056325252f6fe",
+  "stratus\\inspection\\operator.py": "16c0356b6fec4c7945d10d10fbd08feb9cde6b045f6038af4f46f5f0888bc09d",
+  "stratus\\inspection\\__main__.py": "bc7538e71055f4424bc377e22a34c3cb37806b1ee97f439e2bca772caeef4366",
+  "tests\\test_persistence.py": "b73da064e125a69faa1f00d710f161b1c874925de1e4d0dd0694f38fa7e3df4a",
+  "scripts\\verify_persistence.py": "2ff5c2107090f5eb5b9d71010239252092439020186592e66e0bca4447ad5cbb",
+  "docs\\PERSISTENCE_HANDOFF.md": "99cc66a1b1fdb61746d3f956c7d00f01ced262e11028f874c10fe45c44b6fd3d",
+  "docs\\CHECKPOINT.md": "9f6ff8f412b5466b2fa64408e099238735a82586986beade55721af33e0df195",
+  "docs\\evidence\\inspection-0.0.1\\persistence\\checkpoint.json": "10ad96f0c51c1b221b78c59b0b81bbb2447d3ee1a6be1569b2ae080cd1d8996b",
+  "docs\\evidence\\inspection-0.0.1\\persistence\\operator-summary.json": "64ab7d84abc51f2680dab1aeef7ddabfacc08166654f633a17556a20a5699bcd",
+  "docs\\evidence\\inspection-0.0.1\\persistence\\operator-summary.txt": "efb681d8f268a4c707d24e2ebb48844a97418fc2a65a5e50c3aa2b0fe56e98af",
+  "docs\\evidence\\inspection-0.0.1\\persistence\\save-reload.json": "7f447931bcd7bad5775246559b7a82112a9cba894b23bb62d25e6681ac6a0e06",
+  "docs\\evidence\\inspection-0.0.1\\persistence\\tests.txt": "7256bc2e1b41a0364e4d7b6247a4a3b6b4160748f2bf5fa3a0b059706ead1da2",
+  "docs\\evidence\\inspection-0.0.1\\persistence\\verification.json": "777cf766edc6152400297e77fa67022da53754b9f7f2e4557e289997cd1c25f5",
+  "saved-runs\\first-inspection-20261114T131054Z-e8d85e.json": "41315a4a2b19ead874a00e45243e4467de914b30b898a3ab4b2f7cd3b3312d8b",
+  "saved-runs\\first-inspection.json": "86fe2600fa85fc06406b423705caad301e0e7960354e1d10f13171755be8a568"
+}

@@ -1,0 +1,151 @@
+{
+  "same_request": {
+    "status": "already_processed",
+    "original_status": "executed",
+    "original_event_id": "run-3c1a98e42625490187f05b8a4149ebe7:first-inspection",
+    "request_id": "first-inspection",
+    "state_transition_applied": false,
+    "battery_debit": 0,
+    "capture_action_debit": 0,
+    "assessment_added": false,
+    "state_revision": 1
+  },
+  "different_request_same_view": {
+    "timestamp": "2026-11-14T12:33:56.710491+00:00",
+    "execution_mode": "simulated",
+    "real_flight": false,
+    "decision": {
+      "allowed": false,
+      "code": "duplicate_view",
+      "message": "This asset/view already has a prior or executed record",
+      "state_revision": 1,
+      "proposal": {
+        "action_type": "inspect",
+        "asset_id": "P03",
+        "view_id": "overview",
+        "reason": "State/review verification",
+        "alternative": "Return or stop"
+      },
+      "costs": null
+    },
+    "status": "rejected",
+    "state_transition_applied": false,
+    "event_id": "run-3c1a98e42625490187f05b8a4149ebe7:different-request-same-view",
+    "request_id": "different-request-same-view",
+    "expected_revision": 1,
+    "assessment_added": false
+  },
+  "stale_request": {
+    "status": "rejected",
+    "code": "stale_state_revision",
+    "request_id": "stale",
+    "state_transition_applied": false,
+    "state_revision": 1
+  },
+  "conflicting_request": {
+    "status": "rejected",
+    "code": "idempotency_key_conflict",
+    "request_id": "first-inspection",
+    "state_transition_applied": false,
+    "state_revision": 1
+  },
+  "aircraft_state_after": {
+    "mission_id": "solar-array-001",
+    "scenario_id": "synthetic-solar-array-001",
+    "position": {
+      "x": 30,
+      "y": 10
+    },
+    "battery_available": 79.1886116991581,
+    "actions_used": 1,
+    "actions_remaining": 2,
+    "completed_views": [
+      {
+        "asset_id": "P01",
+        "view_id": "overview"
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "overview"
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "overview"
+      }
+    ],
+    "history": [
+      {
+        "record_id": "prior-001",
+        "asset_id": "P01",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "clear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P01:overview",
+        "consumes_new_action": false
+      },
+      {
+        "record_id": "prior-002",
+        "asset_id": "P02",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "unclear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P02:overview",
+        "consumes_new_action": false
+      },
+      {
+        "record_id": "simulated-001",
+        "asset_id": "P03",
+        "view_id": "overview",
+        "evidence": {
+          "mission_id": "solar-array-001",
+          "scenario_id": "synthetic-solar-array-001",
+          "asset_id": "P03",
+          "view_id": "overview",
+          "timestamp": "2026-11-14T12:33:56.703472+00:00",
+          "timestamp_kind": "response_created_at_not_camera_capture",
+          "capture_mode": "simulated_local_fixture",
+          "real_flight": false,
+          "state_transition_applied": false,
+          "source_label": "synthetic",
+          "source_mode": "procedural_synthetic",
+          "assessment_mode": "authored_replay_annotation",
+          "status": "available",
+          "image_quality": "clear",
+          "finding": "apparent_concern_review_required",
+          "evidence_ref": {
+            "evidence_id": "synthetic-solar-array-001:P03:overview",
+            "image_path": "evidence/inspection/images/P03-overview.png",
+            "sha256": "852fa3d18ee57ca90bb548853460e93d802a55a04b99071e9a8a3b820a333fe6",
+            "width": 480,
+            "height": 320,
+            "source_note": "New STRATUS Part 2 procedural illustration; no source photograph or earlier project data.",
+            "rights_note": "Self-authored demo fixture; no third-party image, attribution, or site permission required. Not diagnostic evidence."
+          },
+          "annotation": {
+            "evidence_id": "synthetic-solar-array-001:P03:overview",
+            "scenario_id": "synthetic-solar-array-001",
+            "assessment_mode": "authored_replay_annotation",
+            "annotation_author": "AI-assisted scenario preparation; human review pending",
+            "human_review_status": "pending",
+            "live_model_output": false,
+            "image_quality": "clear",
+            "finding": "apparent_concern_review_required",
+            "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+          },
+          "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+        },
+        "consumes_new_action": true
+      }
+    ],
+    "revision": 1,
+    "status": "active"
+  },
+  "assessment_count": 3,
+  "computation_calls": 0
+}

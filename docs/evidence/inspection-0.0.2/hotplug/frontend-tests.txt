@@ -1,0 +1,4 @@
+PASS: late evidence responses preserve the newest asset/view, finding and provenance
+PASS: repeated execution clicks send one request while a workflow mutation is pending
+PASS: a committed capture opens its returned asset/view instead of the previously selected image
+PASS: a newly computed next plan needs explicit review before another capture can be sent

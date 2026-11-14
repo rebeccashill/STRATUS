@@ -1,0 +1,67 @@
+{
+  "checked_at_utc": "2026-11-14T03:01:27.388832+00:00",
+  "workspace": "C:\\Users\\shill\\OneDrive\\Desktop\\STRATUS",
+  "python": "3.10.11",
+  "source_checklist": "https://app.notion.com/p/4185b396b48e81c3b6e9c07502d50958",
+  "part2_actions": "S010-S020",
+  "gate": "passed",
+  "behavior_tests": 24,
+  "test_exit_code": 0,
+  "standard_library_only_startup_exit_code": 0,
+  "assets": 6,
+  "indexed_synthetic_png_views": 12,
+  "prior_records": 2,
+  "initial_actions_remaining": 3,
+  "initial_battery": 100,
+  "mission_file_unchanged_by_load_and_requests": true,
+  "saved_inspection_runs_created": 0,
+  "missing_unreadable_corrupt_or_changed_image": "unavailable + unknown; no annotation replayed (tests.txt)",
+  "case_reproducibility": "independent mission loads return identical fixture responses with an injected clock",
+  "visual_review": "clear, box-blurred, and apparent-concern PNGs inspected; SYNTHETIC watermark legible",
+  "capture_cases": {
+    "clear": {
+      "status": "available",
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+    },
+    "unclear": {
+      "status": "available",
+      "image_quality": "unclear",
+      "finding": "unknown",
+      "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+    },
+    "concern": {
+      "status": "available",
+      "image_quality": "clear",
+      "finding": "apparent_concern_review_required",
+      "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+    },
+    "follow-up": {
+      "status": "available",
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "reason": "fixed_synthetic_fixture_no_aircraft_state_change"
+    },
+    "unknown-view": {
+      "status": "unavailable",
+      "image_quality": "unknown",
+      "finding": "unknown",
+      "reason": "unknown_view_id"
+    },
+    "excluded": {
+      "status": "unavailable",
+      "image_quality": "unknown",
+      "finding": "unknown",
+      "reason": "asset_excluded_by_operator"
+    }
+  },
+  "pending": [
+    "human evidence review",
+    "live AI/vision",
+    "action/energy state execution",
+    "Wolfram access/integration",
+    "report",
+    "save/reopen"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "verified_at_utc": "2026-11-14T20:28:48.007705+00:00",
+  "contract": "fleet-hazard-v1",
+  "hazard_tests": {
+    "run": 47,
+    "failures": 0,
+    "errors": 0
+  },
+  "frontend_check_exit_code": 0,
+  "fixtures": [
+    {
+      "size": 2,
+      "mode": "fixture_host_not_part12_fleet_integration",
+      "part12_joined": false,
+      "report_present": false,
+      "assessed": 0,
+      "affected": 0,
+      "assessment_seconds": null,
+      "stale_rejections": 0,
+      "reassigned": 0,
+      "executed_receipts": 2,
+      "exact_reopen": true
+    },
+    {
+      "size": 2,
+      "mode": "fixture_host_not_part12_fleet_integration",
+      "part12_joined": false,
+      "report_present": true,
+      "assessed": 2,
+      "affected": 2,
+      "assessment_seconds": 0.00021949999791104347,
+      "stale_rejections": 2,
+      "reassigned": 2,
+      "executed_receipts": 2,
+      "exact_reopen": true
+    },
+    {
+      "size": 50,
+      "mode": "fixture_host_not_part12_fleet_integration",
+      "part12_joined": false,
+      "report_present": false,
+      "assessed": 0,
+      "affected": 0,
+      "assessment_seconds": null,
+      "stale_rejections": 0,
+      "reassigned": 0,
+      "executed_receipts": 3,
+      "exact_reopen": true
+    },
+    {
+      "size": 50,
+      "mode": "fixture_host_not_part12_fleet_integration",
+      "part12_joined": false,
+      "report_present": true,
+      "assessed": 50,
+      "affected": 2,
+      "assessment_seconds": 0.006884300004458055,
+      "stale_rejections": 2,
+      "reassigned": 2,
+      "executed_receipts": 3,
+      "exact_reopen": true
+    }
+  ],
+  "blocked_return": {
+    "schema_version": "fleet-hazard-v1",
+    "drone_id": "D001",
+    "hazard_revision": 1,
+    "state": "blocked",
+    "hazard_ids": [
+      "crane-001"
+    ],
+    "intersections": [
+      {
+        "hazard_id": "crane-001",
+        "leg": "return",
+        "hazard_state": "active"
+      }
+    ],
+    "reason": "Reported exclusion intersects return",
+    "path_signature": "42cd9c98b6aed18b343cdc5b8b61eb24ee5fc5d916833edc07beed7a1c8f0e5a"
+  },
+  "wolfram": {
+    "status": "passed",
+    "scope": "Three selected single-drone numerical batches inside explicit 2/50 fixture hosts; not the Part 12 fleet batch",
+    "request_counts": {
+      "local_kernel_calls": 3,
+      "cloud_requests": 0,
+      "alpha_calls": 0
+    },
+    "record_kind": "Previously captured actual calls in this task; not repeated in this verification"
+  },
+  "protected_source_sha256": {
+    "stratus/inspection/actions.py": "68e281574058097749c25c226223f24ee9ea5c70ab8ff9a49aa9dec1311dccd8",
+    "stratus/inspection/agent.py": "fe8818e93e8951a2ba74f801f307cff712971ca61c8bf3f2227f1ca64f1f176a",
+    "stratus/inspection/capture.py": "b3bc63186abd394d8aa5b0fce97b5e9279f55c2178c11570b71fe87912d3cded",
+    "stratus/inspection/comparison.py": "36ef56c01f601309698dcd5ec9309d59a512fe7798164b986a7b6ae2f817bbae",
+    "stratus/inspection/comparison_checks.py": "fe43e3cfcc4558a0c7e76b5026f3f355f72fc90207cc999b93887250b6dd7c98",
+    "stratus/inspection/comparison_report.py": "6d6923136f14a444d131c5ceb1c8ae098ee0b3be709d0f9b7ca27c4a4c16937a",
+    "stratus/inspection/computation.py": "e741247096bc63195398a853db728c0dde792fd4512592aabc8be5b1e29d6e3c",
+    "stratus/inspection/dashboard.py": "24fafdb77dd75eb41a9d7ef87c29eb7e1a9b74ef6ce2070634e3655bfab3d465",
+    "stratus/inspection/engine.py": "9e265c67d88ceace49dbe01f81898c7ba2c4a1cd5f64f82465d490024f52b1da",
+    "stratus/inspection/fleet.py": "55793164941e82016f979c0c59722449a0bcddd4ecc36e731b06cadfe25fcca3",
+    "stratus/inspection/fleet_costs.py": "1e24c0e7c76979f27f66c37dab3af3ef144849afd40482337b91d7ba35911909",
+    "stratus/inspection/fleet_report.py": "cc56f198acf2d97df20976b3d25f20a2f8819d59208b05550f70c298cdd2583c",
+    "stratus/inspection/fleet_scenario.py": "9c8350d9ac7112052048c550349b4d4e6d4e7cdd15d22241af9b0840d31243ab",
+    "stratus/inspection/fleet_service.py": "0394e70f8ffc9fd116ab1ffb9e12c27875107237cc86b8bee65d4ace9538df4f",
+    "stratus/inspection/ground.py": "e844354c0eab193fd772d210f178aff6f5fed9ae0a2168038e9bb71dc37ccf0f",
+    "stratus/inspection/loader.py": "ac5bed83fda08ea703a5d80abc6042e967d9706c7821c7003f80d8fcb3820d3e",
+    "stratus/inspection/operator.py": "c3c8b5527286469865668c1c48d3c9a4b421f12908c455763f2b3b9233a616b0",
+    "stratus/inspection/persistence.py": "a1cec9cabd9f01216c2c734093adebf59a323f6abc75f6e9b4b056325252f6fe",
+    "stratus/inspection/png.py": "3ed05bd6df86eaf98f0f6c24bb7c386e390f40f92704c0371b628fc9410d5884",
+    "stratus/inspection/report.py": "eba8c98f8a95a806afad3f8fa85b6530a6642ce05845b9dd0b331efc73a22726",
+    "stratus/inspection/review.py": "838ebb2722ae4ef8a191e611b25f50572f8a5078d2fe1ca6123796308de3f11d",
+    "stratus/inspection/sensor_worker.py": "6f0f24bd385a0f46e3a44b7d51b686acc2bbc0933be310d5d4a743de3d8a0aa3",
+    "stratus/inspection/usb_reader.py": "8c2ef81e6ffc93be0f4548d8b0bce75869cb94ccf6a80f735b78eff5e2cf028d",
+    "stratus/inspection/workflow.py": "dd0ed5c6dcabbc59625c1a404a4b9f55426e42fdf5163b0fc1782e1e43ae3650",
+    "stratus/inspection/__init__.py": "8b16b1f68257f21cc6500b0d7f9e62f2b6499a93c7c2e5687be9ad0567fb54cc",
+    "stratus/inspection/__main__.py": "bc7538e71055f4424bc377e22a34c3cb37806b1ee97f439e2bca772caeef4366",
+    "stratus/inspection/missions/solar-array-001.json": "5da1a5d44d51aa1df5ff839894ddeaf9ef21702be8020af2d8e4d26ddc634789"
+  },
+  "protected_sources_unchanged": true,
+  "part12_modules_available": false,
+  "part12_joined_app_verified": false,
+  "browser_preview_verified": false,
+  "network_test_blocker": "Windows socket PermissionError WinError 10013; localhost preview unreachable in both browsers",
+  "existing_suite_observation": {
+    "run": 242,
+    "errors": 10,
+    "failures": 0,
+    "note": "Earlier full-suite invocation: ten existing HTTP tests failed on blocked socket connections; not counted as passing"
+  },
+  "claim": "Independent hazard module and explicit fixture host only; joined fleet acceptance remains pending"
+}

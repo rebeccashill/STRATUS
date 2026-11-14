@@ -1,0 +1,13 @@
+{
+  "started_at_utc": "2026-11-14T14:15:34.118850+00:00",
+  "url": "http://127.0.0.1:8767",
+  "computation_mode": "wolfram_local",
+  "live_wolfram_integration_complete": true,
+  "source_sha256": {
+    "stratus/inspection/ground.py": "941841e0ddf64378d091aeba70e4013a807b9dbea19980ea0b1bdb065bdb0ce6",
+    "stratus/inspection/dashboard.py": "dc7ea84dcf8812f71a3eb85a96098e57e76213e568c4bf44e198e4f5008193f3",
+    "stratus/inspection/web/app.js": "ab7d68f6bd06a1c44c3895153440c993b30326901861ee3daa637c385be0df83"
+  },
+  "ground_default": "recorded_measured",
+  "checkpoint": "saved-runs/first-inspection.json"
+}

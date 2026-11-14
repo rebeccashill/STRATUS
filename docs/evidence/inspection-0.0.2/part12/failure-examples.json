@@ -1,0 +1,172 @@
+{
+  "status": "passed",
+  "scope": "controlled injected failures and authored replay, not physical disconnects or actual provider failures",
+  "cases": [
+    {
+      "case": "one drone unavailable",
+      "injected": true,
+      "before": {
+        "D001": {
+          "battery": 92.17157287525382,
+          "actions_used": 1,
+          "position": {
+            "x": 14,
+            "y": 4
+          }
+        },
+        "D002": {
+          "battery": 94.0,
+          "actions_used": 1,
+          "position": {
+            "x": 30,
+            "y": 2
+          }
+        }
+      },
+      "after_injection": {
+        "D001": {
+          "battery": 92.17157287525382,
+          "actions_used": 1,
+          "position": {
+            "x": 14,
+            "y": 4
+          }
+        },
+        "D002": {
+          "battery": 94.0,
+          "actions_used": 1,
+          "position": {
+            "x": 30,
+            "y": 2
+          }
+        }
+      },
+      "completed_evidence_preserved": true,
+      "healthy_drone_actions": 3,
+      "saved": {
+        "checkpoint": "injected-unavailable.json",
+        "sha256": "4db6df892eec2d229191e1e149d8392d20756e9d7bc03574c7ef0d0832a23d0c",
+        "size_bytes": 140602
+      }
+    },
+    {
+      "case": "simultaneous task contention",
+      "injected": true,
+      "rejection": "ownership_conflict",
+      "accounts_unchanged": true,
+      "exclusive_tasks": [
+        "A015:overview",
+        "A006:overview"
+      ]
+    },
+    {
+      "case": "unclear authored replay followed by distinct view",
+      "injected": true,
+      "saved": {
+        "checkpoint": "injected-follow-up.json",
+        "sha256": "bd8a20976f474b299059e8ca9db8c1c39dbaea70d98b8876482d02ef684ce3d0",
+        "size_bytes": 68750
+      },
+      "metrics": {
+        "fleet_size": 2,
+        "seed": 11,
+        "method": "coordinator",
+        "captures": 2,
+        "unique_usable_assets": 1,
+        "usable_priority": 1,
+        "total_priority": 399,
+        "unresolved_assets": 199,
+        "unclear_views": 1,
+        "human_review_pending": 2,
+        "total_energy_EU": 34.91914915912071,
+        "total_battery_EU": 165.0808508408793,
+        "remaining_captures": 4,
+        "travel_metres": 49.83829831824143,
+        "drone_participation": 2,
+        "rounds": 3,
+        "candidate_pairs": 4,
+        "event_count": 8,
+        "logical_seconds": 27.504935596,
+        "allocation_wall_seconds": [
+          0.0015235000028042123,
+          0.0016127999988384545,
+          5.3499999921768904e-05
+        ],
+        "violations": 0,
+        "status_counts": {
+          "idle": 0,
+          "assigned": 0,
+          "traveling": 0,
+          "inspecting": 0,
+          "returning": 0,
+          "complete": 2,
+          "held": 0,
+          "unavailable": 0
+        },
+        "stop_reason": "No feasible shortlisted capture remains; completed returns or explicit holds retained. This is not a global infeasibility proof.",
+        "local_kernel_calls": 0,
+        "cloud_requests": 0,
+        "alpha_calls": 0,
+        "ai_requests": 0
+      }
+    },
+    {
+      "case": "Wolfram timeout",
+      "injected": true,
+      "attempts": 1,
+      "actual_external_requests": 0,
+      "mode": "local_python_fallback",
+      "execution_permitted": true
+    },
+    {
+      "case": "Wolfram malformed",
+      "injected": true,
+      "attempts": 1,
+      "actual_external_requests": 0,
+      "mode": "wolfram_disagreement",
+      "execution_permitted": false
+    },
+    {
+      "case": "Wolfram mismatch",
+      "injected": true,
+      "attempts": 1,
+      "actual_external_requests": 0,
+      "mode": "wolfram_disagreement",
+      "execution_permitted": false
+    },
+    {
+      "case": "Wolfram missing",
+      "injected": true,
+      "attempts": 1,
+      "actual_external_requests": 0,
+      "mode": "wolfram_disagreement",
+      "execution_permitted": false
+    },
+    {
+      "case": "AI outage",
+      "injected": true,
+      "actual_external_requests": 0,
+      "result": {
+        "mode": "local_rule_fallback",
+        "text": "0/2 drones have captured evidence. 0/200 assets have a usable replay view; 200 still need evidence. Assignments use exclusive ownership and per-drone reserve/capture checks; the heuristic is not globally optimal.",
+        "failure": "AI unavailable or response invalid; no retry and no action executed",
+        "state_transition_applied": false,
+        "model": null
+      },
+      "aircraft_unchanged": true
+    },
+    {
+      "case": "ground loss",
+      "injected": true,
+      "old_ground_retained": true,
+      "aircraft_unchanged_at_loss": true,
+      "healthy_drone_actions": 6,
+      "saved": {
+        "checkpoint": "injected-ground-loss.json",
+        "sha256": "61960d134799b102a65a8c1b36d3bcccce44c6f8fad12947f048e90d0f6797a1",
+        "size_bytes": 136941
+      }
+    }
+  ],
+  "actual_external_requests": 0
+}

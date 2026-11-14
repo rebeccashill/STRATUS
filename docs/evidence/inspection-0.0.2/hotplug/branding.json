@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "reference_url": "https://www.aevaryn.co/",
+  "reference_stylesheet": "https://www.aevaryn.co/static/landing.css",
+  "reference_observed_from_live_rendered_page": true,
+  "palette": {
+    "background": "#000000",
+    "panel": "#030303",
+    "raised": "#09090b",
+    "text": "#f4f4f7",
+    "subtle": "#c4c4cc",
+    "muted": "#8e909a",
+    "border": "#3d3f47",
+    "accent": "#ffb21a",
+    "accent_hover": "#ffc247"
+  },
+  "body_and_heading_font": "\"IBM Plex Sans\", \"Segoe UI\", Arial, Helvetica, sans-serif",
+  "control_and_label_font": "\"IBM Plex Mono\", \"Cascadia Mono\", Consolas, \"Liberation Mono\", monospace",
+  "computed_styles_match_reference": true,
+  "horizontal_overflow": false,
+  "full_page_visually_reviewed": true,
+  "controls_map_sensor_readings_review_queue_verified": true,
+  "console_errors": [],
+  "original_images_unchanged": true
+}

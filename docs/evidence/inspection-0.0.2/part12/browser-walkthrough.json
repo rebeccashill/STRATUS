@@ -1,0 +1,152 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-11-14T21:51:53.591Z",
+  "url": "http://127.0.0.1:8774/fleet",
+  "final_report": "/api/report/view?name=fleet-11ff1717-20261114T215045957375Z.html",
+  "final_checkpoint": "fleet-11ff17177b6544a387f92f2c2869e31b.json",
+  "checks": [
+    {
+      "check": "two-drone cached preview",
+      "captures": "0 / 6",
+      "battery": "200.00",
+      "mode": "cached checked Wolfram",
+      "passed": true
+    },
+    {
+      "check": "two-drone Run/stop",
+      "battery": "153.00",
+      "captures": "6 / 6",
+      "rows": "D001\tcomplete\t—\t75.81 / 15.00\t0 / 3\nD002\tcomplete\t—\t77.19 / 15.00\t0 / 3",
+      "status": "complete / 2"
+    },
+    {
+      "check": "fresh 50 independent records",
+      "battery": "5000.00",
+      "budget": "100.00 EU remaining / 15.00 EU reserve / 3 captures left",
+      "captures": "0 / 150",
+      "mapDrones": 50,
+      "rows": 50,
+      "selected": "D050",
+      "status": "paused / 50"
+    },
+    {
+      "check": "50-drone paused",
+      "battery": "4464.60",
+      "captures": "78 / 150",
+      "clock": "12.41 logical seconds",
+      "rows": "D001\tinspecting\tA063:follow-up\t89.61 / 15.00\t2 / 3\nD002\ttraveling\tA102:overview\t84.97 / 15.00\t1 / 3\nD003\ttraveling\tA101:overview\t86.00 / 15.00\t1 / 3\nD004\ttraveling\tA082:overview\t93.92 / 15.00\t2 / 3\nD005\ttraveling\tA083:overview\t93.98 / 15.00\t2 / 3\nD006\tidle\t—\t86.58 / 15.00\t1 / 3\nD007\tinspecting\tA064:overview\t84.96 / 15.00\t1 / 3\nD008\ttraveling\tA044:follow-up\t94.00 / 15.00\t2 / 3\nD009\ttraveling\tA084:overview\t91.69 / 15.00\t2 / 3\nD010\tidle\t—\t86.99 / 15.00\t1 / 3\nD011\tidle\t—\t88.98 / 15.00\t1 / 3\nD012\tinspecting\tA085:overview\t84.96 / 15.00\t1 / 3\nD013\ttraveling\tA065:follow-up\t94.00 / 15.00\t2 / 3\nD014\tinspecting\tA045:follow-up\t91.97 / 15.00\t2 / 3\nD015\tidle\t—\t86.98 / 15.00\t1 / 3\nD016\tinspecting\tA086:overview\t84.99 / 15.00\t1 / 3\nD017\ttraveling\tA046:follow-up\t93.92 / 15.00\t2 / 3\nD018\tidle\t—\t87.00 / 15.00\t1 / 3\nD019\ttraveling\tA087:overview\t91.94 / 15.00\t2 / 3\nD020\ttraveling\tA067:overview\t93.98 / 15.00\t2 / 3\nD021\ttraveling\tA108:overview\t85.99 / 15.00\t1 / 3\nD022\tinspecting\tA089:overview\t84.96 / 15.00\t1 / 3\nD023\ttraveling\tA088:overview\t87.00 / 15.00\t1 / 3\nD024\ttraveling\tA070:overview\t93.11 / 15.00\t2 / 3\nD025\tidle\t—\t86.99 / 15.00\t1 / 3\nD026\ttraveling\tA090:overview\t93.98 / 15.00\t2 / 3\nD027\tinspecting\tA091:overview\t84.96 / 15.00\t1 / 3\nD028\ttraveling\tA073:overview\t94.00 / 15.00\t2 / 3\nD029\ttraveling\tA072:follow-up\t91.97 / 15.00\t2 / 3\nD030\tidle\t—\t86.98 / 15.00\t1 / 3\nD031\tinspecting\tA092:overview\t84.99 / 15.00\t1 / 3\nD032\ttraveling\tA093:overview\t93.92 / 15.00\t2 / 3\nD033\tidle\t—\t87.00 / 15.00\t1 / 3\nD034\tinspecting\tA053:follow-up\t90.94 / 15.00\t2 / 3\nD035\ttraveling\tA055:follow-up\t93.98 / 15.00\t2 / 3\nD036\tinspecting\tA094:overview\t84.99 / 15.00\t1 / 3\nD037\tinspecting\tA095:overview\t84.96 / 15.00\t1 / 3\nD038\tidle\t—\t87.00 / 15.00\t1 / 3\nD039\ttraveling\tA060:follow-up\t90.88 / 15.00\t2 / 3\nD040\ttraveling\tA076:overview\t86.99 / 15.00\t1 / 3\nD041\ttraveling\tA096:overview\t93.98 / 15.00\t2 / 3\nD042\ttraveling\tA097:overview\t86.96 / 15.00\t1 / 3\nD043\tidle\t—\t88.00 / 15.00\t1 / 3\nD044\ttraveling\tA078:overview\t93.83 / 15.00\t2 / 3\nD045\ttraveling\tA077:overview\t93.98 / 15.00\t2 / 3\nD046\ttraveling\tA098:overview\t86.99 / 15.00\t1 / 3\nD047\ttraveling\tA099:overview\t93.92 / 15.00\t2 / 3\nD048\ttraveling\tA079:overview\t87.00 / 15.00\t1 / 3\nD049\ttraveling\tA100:overview\t86.91 / 15.00\t1 / 3\nD050\ttraveling\tA120:overview\t85.98 / 15.00\t1 / 3",
+      "status": "paused / 50"
+    },
+    {
+      "check": "50-drone Save selects its own checkpoint",
+      "checkpoint": "fleet-11ff17177b6544a387f92f2c2869e31b.json",
+      "battery": "4464.60",
+      "captures": "78 / 150",
+      "clock": "12.41 logical seconds",
+      "status": "paused / 50"
+    },
+    {
+      "check": "fresh-page 50-drone reopen",
+      "checkpoint": "fleet-11ff17177b6544a387f92f2c2869e31b.json",
+      "exact_rows": true,
+      "battery": "4464.60",
+      "captures": "78 / 150",
+      "clock": "12.41 logical seconds",
+      "rows": "D001\tinspecting\tA063:follow-up\t89.61 / 15.00\t2 / 3\nD002\ttraveling\tA102:overview\t84.97 / 15.00\t1 / 3\nD003\ttraveling\tA101:overview\t86.00 / 15.00\t1 / 3\nD004\ttraveling\tA082:overview\t93.92 / 15.00\t2 / 3\nD005\ttraveling\tA083:overview\t93.98 / 15.00\t2 / 3\nD006\tidle\t—\t86.58 / 15.00\t1 / 3\nD007\tinspecting\tA064:overview\t84.96 / 15.00\t1 / 3\nD008\ttraveling\tA044:follow-up\t94.00 / 15.00\t2 / 3\nD009\ttraveling\tA084:overview\t91.69 / 15.00\t2 / 3\nD010\tidle\t—\t86.99 / 15.00\t1 / 3\nD011\tidle\t—\t88.98 / 15.00\t1 / 3\nD012\tinspecting\tA085:overview\t84.96 / 15.00\t1 / 3\nD013\ttraveling\tA065:follow-up\t94.00 / 15.00\t2 / 3\nD014\tinspecting\tA045:follow-up\t91.97 / 15.00\t2 / 3\nD015\tidle\t—\t86.98 / 15.00\t1 / 3\nD016\tinspecting\tA086:overview\t84.99 / 15.00\t1 / 3\nD017\ttraveling\tA046:follow-up\t93.92 / 15.00\t2 / 3\nD018\tidle\t—\t87.00 / 15.00\t1 / 3\nD019\ttraveling\tA087:overview\t91.94 / 15.00\t2 / 3\nD020\ttraveling\tA067:overview\t93.98 / 15.00\t2 / 3\nD021\ttraveling\tA108:overview\t85.99 / 15.00\t1 / 3\nD022\tinspecting\tA089:overview\t84.96 / 15.00\t1 / 3\nD023\ttraveling\tA088:overview\t87.00 / 15.00\t1 / 3\nD024\ttraveling\tA070:overview\t93.11 / 15.00\t2 / 3\nD025\tidle\t—\t86.99 / 15.00\t1 / 3\nD026\ttraveling\tA090:overview\t93.98 / 15.00\t2 / 3\nD027\tinspecting\tA091:overview\t84.96 / 15.00\t1 / 3\nD028\ttraveling\tA073:overview\t94.00 / 15.00\t2 / 3\nD029\ttraveling\tA072:follow-up\t91.97 / 15.00\t2 / 3\nD030\tidle\t—\t86.98 / 15.00\t1 / 3\nD031\tinspecting\tA092:overview\t84.99 / 15.00\t1 / 3\nD032\ttraveling\tA093:overview\t93.92 / 15.00\t2 / 3\nD033\tidle\t—\t87.00 / 15.00\t1 / 3\nD034\tinspecting\tA053:follow-up\t90.94 / 15.00\t2 / 3\nD035\ttraveling\tA055:follow-up\t93.98 / 15.00\t2 / 3\nD036\tinspecting\tA094:overview\t84.99 / 15.00\t1 / 3\nD037\tinspecting\tA095:overview\t84.96 / 15.00\t1 / 3\nD038\tidle\t—\t87.00 / 15.00\t1 / 3\nD039\ttraveling\tA060:follow-up\t90.88 / 15.00\t2 / 3\nD040\ttraveling\tA076:overview\t86.99 / 15.00\t1 / 3\nD041\ttraveling\tA096:overview\t93.98 / 15.00\t2 / 3\nD042\ttraveling\tA097:overview\t86.96 / 15.00\t1 / 3\nD043\tidle\t—\t88.00 / 15.00\t1 / 3\nD044\ttraveling\tA078:overview\t93.83 / 15.00\t2 / 3\nD045\ttraveling\tA077:overview\t93.98 / 15.00\t2 / 3\nD046\ttraveling\tA098:overview\t86.99 / 15.00\t1 / 3\nD047\ttraveling\tA099:overview\t93.92 / 15.00\t2 / 3\nD048\ttraveling\tA079:overview\t87.00 / 15.00\t1 / 3\nD049\ttraveling\tA100:overview\t86.91 / 15.00\t1 / 3\nD050\ttraveling\tA120:overview\t85.98 / 15.00\t1 / 3",
+      "status": "paused / 50"
+    },
+    {
+      "check": "50-drone nominal resumed to completion",
+      "allComplete": true,
+      "battery": "3632.98",
+      "captures": "150 / 150",
+      "coverage": "129 / 200",
+      "participation": "50/50 drones participated",
+      "rows": 50,
+      "status": "complete / 50"
+    },
+    {
+      "check": "50-drone portable report",
+      "href": "/api/report/view?name=fleet-11ff1717-20261114T212320438155Z.html"
+    },
+    {
+      "check": "two-drone partial save/reopen after selector fix",
+      "checkpoint": "fleet-ab9aa6cabea84b07b058e77ed85ae412.json",
+      "exact": true,
+      "battery": "187.59",
+      "captures": "2 / 6",
+      "rows": "D001\tidle\t—\t93.59 / 15.00\t2 / 3\nD002\tidle\t—\t94.00 / 15.00\t2 / 3"
+    },
+    {
+      "check": "two-drone healthy executor continued after injected loss",
+      "battery": "158.93",
+      "captures": "4 / 6",
+      "rows": "D001\tunavailable\t—\t93.59 / 15.00\t2 / 3\nD002\tcomplete\t—\t65.34 / 15.00\t0 / 3",
+      "status": "complete / 2"
+    },
+    {
+      "check": "ground unavailable remains separate",
+      "battery": "158.93",
+      "captures": "4 / 6",
+      "ground": "Frozen Unavailable / Ground node / Location not supplied"
+    },
+    {
+      "check": "50-drone replay fork injected unavailability",
+      "before": {
+        "battery": "4464.60",
+        "budget": "84.97 EU remaining / 15.00 EU reserve / 1 captures left",
+        "captures": "78 / 150",
+        "drone": "D002"
+      },
+      "after": {
+        "battery": "4464.60",
+        "budget": "84.97 EU remaining / 15.00 EU reserve / 1 captures left",
+        "captures": "78 / 150",
+        "drone": "D002"
+      },
+      "unchanged_budget": true,
+      "unchanged_total": true
+    },
+    {
+      "check": "50-drone replay recovery complete",
+      "captures": "149 / 150",
+      "healthy_complete": 49,
+      "unavailable": "D002",
+      "retained_battery": "84.97",
+      "retained_captures_left": 1,
+      "report": "/api/report/view?name=fleet-a77e4cb4-20261114T213556514197Z.html"
+    },
+    {
+      "check": "one live shared station attached without aircraft changes",
+      "battery": "3632.98",
+      "captures": "150 / 150",
+      "label": "Frozen Live / ground-node-001 / Location not supplied",
+      "values": "BME280 / temperature: 22.05 degC\nAcquired UTC 2026-11-14T21:42:43.007026+00:00 / unreviewed\n\nBME280 / relative_humidity: 39.67 %RH\nAcquired UTC 2026-11-14T21:42:43.007026+00:00 / unreviewed\n\nBME280 / pressure: 1008.40 hPa\nAcquired UTC 2026-11-14T21:42:43.007026+00:00 / unreviewed\n\nPMSA003I / pm1_0: 0.00 ug/m3\nAcquired UTC 2026-11-14T21:42:43.030150+00:00 / unreviewed\n\nPMSA003I / pm2_5: 0.00 ug/m3\nAcquired UTC 2026-11-14T21:42:43.030150+00:00 / unreviewed\n\nPMSA003I / pm10: 0.00 ug/m3\nAcquired UTC 2026-11-14T21:42:43.030150+00:00 / unreviewed"
+    },
+    {
+      "check": "AI numerical guard",
+      "shown": "AI numeric claims set aside. Verified summary: 50/50 drones have captured evidence; 129/200 assets have a usable replay view and 71 remain unresolved. Modeled energy used: 1367.02 EU. Battery remaining: 3632.98 EU. Exclusive ownership, capture caps and return reserves govern execution; the heuristic is not globally optimal."
+    },
+    {
+      "check": "viewport observation",
+      "documentWidth": 1265,
+      "width": 1280
+    },
+    {
+      "check": "map selection",
+      "selected": "D050"
+    }
+  ],
+  "initial_issues_fixed": [
+    "Native browser timer receiver caused Illegal invocation; timer adapters now call unbound functions.",
+    "Save retained a previous run selection; it now selects the checkpoint just written.",
+    "AI numerical restatement mixed used and remaining battery; live numeric AI claims are set aside for verified totals."
+  ],
+  "console_errors_after_final_reload": [],
+  "limitations": [
+    "The viewport override did not change the observed 1280-pixel desktop width; a 390-pixel browser layout is not claimed.",
+    "Repeated DOM wait deadlines and one stale-state rejection were observed during automation; current-state retries preserved resources.",
+    "Recovery fork explicitly replays the earlier paused 78-capture browser state."
+  ],
+  "screenshot": "ui12-fleet-final.jpg"
+}

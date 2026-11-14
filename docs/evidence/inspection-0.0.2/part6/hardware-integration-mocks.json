@@ -1,0 +1,46 @@
+{
+  "evidence_kind": "injected hardware integration mocks only",
+  "physical_acquisition_evidence": false,
+  "cases": [
+    {
+      "case": "one_sensor_lost",
+      "statuses": {
+        "BME280": "fresh",
+        "PMSA003I": "unavailable"
+      },
+      "observation_count": 3,
+      "values": {
+        "temperature": 22.5,
+        "relative_humidity": 41.0,
+        "pressure": 1005.7
+      }
+    },
+    {
+      "case": "both_lost",
+      "statuses": {
+        "BME280": "unavailable",
+        "PMSA003I": "unavailable"
+      },
+      "observation_count": 0,
+      "values": {}
+    },
+    {
+      "case": "both_recovered",
+      "statuses": {
+        "BME280": "fresh",
+        "PMSA003I": "fresh"
+      },
+      "observation_count": 6,
+      "values": {
+        "temperature": 22.5,
+        "relative_humidity": 41.0,
+        "pressure": 1005.7,
+        "pm1_0": 1,
+        "pm2_5": 2,
+        "pm10": 3
+      }
+    }
+  ],
+  "no_fabricated_zeros": true,
+  "actual_physical_evidence": "physical-recovery.json"
+}

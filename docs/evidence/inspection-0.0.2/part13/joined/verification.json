@@ -1,0 +1,321 @@
+{
+  "created_at_utc": "2026-11-14T21:20:57.679978+00:00",
+  "status": "passed",
+  "implementation": "actual Part 12 FleetSession and LiveFleetHazards, not the fixture host",
+  "runs": [
+    {
+      "fleet_size": 2,
+      "reported": false,
+      "initial_state_sha256": "b10f11756790d0ab23929dff745ee841d3a0ccdbdcc38e07c28f16c58d7c8114",
+      "exact_active_save_reopen": true,
+      "resumed_outcome_exact": true,
+      "affected_drone_ids": [],
+      "reassigned_task_count": 0,
+      "held_drone_ids": [],
+      "metrics": {
+        "fleet_size": 2,
+        "seed": 11,
+        "method": "coordinator",
+        "captures": 6,
+        "unique_usable_assets": 5,
+        "usable_priority": 15,
+        "total_priority": 399,
+        "unresolved_assets": 195,
+        "unclear_views": 1,
+        "human_review_pending": 6,
+        "total_energy_EU": 47.00015992790489,
+        "total_battery_EU": 152.9998400720951,
+        "remaining_captures": 0,
+        "travel_metres": 34.000319855809806,
+        "drone_participation": 2,
+        "rounds": 3,
+        "candidate_pairs": 58,
+        "event_count": 20,
+        "logical_seconds": 15.187600727,
+        "allocation_wall_seconds": [
+          0.010450999994645827,
+          0.012542300013592467,
+          0.0069306999939726666
+        ],
+        "violations": 0,
+        "status_counts": {
+          "idle": 0,
+          "assigned": 0,
+          "traveling": 0,
+          "inspecting": 0,
+          "returning": 0,
+          "complete": 2,
+          "held": 0,
+          "unavailable": 0
+        },
+        "stop_reason": "No feasible shortlisted capture remains; completed returns or explicit holds retained. This is not a global infeasibility proof.",
+        "local_kernel_calls": 0,
+        "cloud_requests": 0,
+        "alpha_calls": 0,
+        "ai_requests": 0
+      },
+      "calculation_modes": [
+        "local_python"
+      ]
+    },
+    {
+      "fleet_size": 2,
+      "reported": true,
+      "initial_state_sha256": "b10f11756790d0ab23929dff745ee841d3a0ccdbdcc38e07c28f16c58d7c8114",
+      "exact_active_save_reopen": true,
+      "resumed_outcome_exact": true,
+      "affected_drone_ids": [
+        "D001",
+        "D002"
+      ],
+      "reassigned_task_count": 2,
+      "held_drone_ids": [],
+      "metrics": {
+        "fleet_size": 2,
+        "seed": 11,
+        "method": "coordinator",
+        "captures": 6,
+        "unique_usable_assets": 5,
+        "usable_priority": 13,
+        "total_priority": 399,
+        "unresolved_assets": 195,
+        "unclear_views": 1,
+        "human_review_pending": 6,
+        "total_energy_EU": 43.877054302287235,
+        "total_battery_EU": 156.12294569771277,
+        "remaining_captures": 0,
+        "travel_metres": 27.75410860457449,
+        "drone_participation": 2,
+        "rounds": 4,
+        "candidate_pairs": 47,
+        "event_count": 21,
+        "logical_seconds": 13.812559199,
+        "allocation_wall_seconds": [
+          0.01348629999847617,
+          0.01273139999830164,
+          0.0159879999991972,
+          0.02083729999139905
+        ],
+        "violations": 0,
+        "status_counts": {
+          "idle": 0,
+          "assigned": 0,
+          "traveling": 0,
+          "inspecting": 0,
+          "returning": 0,
+          "complete": 2,
+          "held": 0,
+          "unavailable": 0
+        },
+        "stop_reason": "No feasible shortlisted capture remains; completed returns or explicit holds retained. This is not a global infeasibility proof.",
+        "local_kernel_calls": 0,
+        "cloud_requests": 0,
+        "alpha_calls": 0,
+        "ai_requests": 0
+      },
+      "calculation_modes": [
+        "local_python"
+      ]
+    },
+    {
+      "fleet_size": 50,
+      "reported": false,
+      "initial_state_sha256": "bcf28aff645fcfc5de35a8c918df2083d45362a306c627db066f1b6811abe771",
+      "exact_active_save_reopen": true,
+      "resumed_outcome_exact": true,
+      "affected_drone_ids": [],
+      "reassigned_task_count": 0,
+      "held_drone_ids": [],
+      "metrics": {
+        "fleet_size": 50,
+        "seed": 11,
+        "method": "coordinator",
+        "captures": 150,
+        "unique_usable_assets": 129,
+        "usable_priority": 264,
+        "total_priority": 399,
+        "unresolved_assets": 71,
+        "unclear_views": 21,
+        "human_review_pending": 150,
+        "total_energy_EU": 1367.02012719929,
+        "total_battery_EU": 3632.9798728007095,
+        "remaining_captures": 0,
+        "travel_metres": 1234.0402543985815,
+        "drone_participation": 50,
+        "rounds": 5,
+        "candidate_pairs": 1691,
+        "event_count": 500,
+        "logical_seconds": 42.495415187,
+        "allocation_wall_seconds": [
+          0.28009439999004826,
+          0.19911579998733941,
+          0.40185399999609217,
+          0.19801999999617692,
+          0.0475902999896789
+        ],
+        "violations": 0,
+        "status_counts": {
+          "idle": 0,
+          "assigned": 0,
+          "traveling": 0,
+          "inspecting": 0,
+          "returning": 0,
+          "complete": 50,
+          "held": 0,
+          "unavailable": 0
+        },
+        "stop_reason": "No feasible shortlisted capture remains; completed returns or explicit holds retained. This is not a global infeasibility proof.",
+        "local_kernel_calls": 0,
+        "cloud_requests": 0,
+        "alpha_calls": 0,
+        "ai_requests": 0
+      },
+      "calculation_modes": [
+        "local_python"
+      ]
+    },
+    {
+      "fleet_size": 50,
+      "reported": true,
+      "initial_state_sha256": "bcf28aff645fcfc5de35a8c918df2083d45362a306c627db066f1b6811abe771",
+      "exact_active_save_reopen": true,
+      "resumed_outcome_exact": true,
+      "affected_drone_ids": [
+        "D015",
+        "D016",
+        "D017",
+        "D018",
+        "D020",
+        "D021",
+        "D022",
+        "D023",
+        "D025",
+        "D026",
+        "D027",
+        "D028",
+        "D030",
+        "D031",
+        "D032",
+        "D033",
+        "D035",
+        "D036",
+        "D037",
+        "D038"
+      ],
+      "reassigned_task_count": 6,
+      "held_drone_ids": [],
+      "metrics": {
+        "fleet_size": 50,
+        "seed": 11,
+        "method": "coordinator",
+        "captures": 83,
+        "unique_usable_assets": 66,
+        "usable_priority": 139,
+        "total_priority": 399,
+        "unresolved_assets": 134,
+        "unclear_views": 17,
+        "human_review_pending": 83,
+        "total_energy_EU": 711.6729961907951,
+        "total_battery_EU": 4288.327003809204,
+        "remaining_captures": 67,
+        "travel_metres": 593.3459923815903,
+        "drone_participation": 28,
+        "rounds": 7,
+        "candidate_pairs": 1007,
+        "event_count": 279,
+        "logical_seconds": 33.843416611,
+        "allocation_wall_seconds": [
+          0.4847031999961473,
+          0.7253073999891058,
+          0.4359342999960063,
+          0.43482439999934286,
+          0.4105971000099089,
+          0.23515789999510162,
+          0.3846198999963235
+        ],
+        "violations": 0,
+        "status_counts": {
+          "idle": 0,
+          "assigned": 0,
+          "traveling": 0,
+          "inspecting": 0,
+          "returning": 0,
+          "complete": 50,
+          "held": 0,
+          "unavailable": 0
+        },
+        "stop_reason": "No feasible shortlisted capture remains; completed returns or explicit holds retained. This is not a global infeasibility proof.",
+        "local_kernel_calls": 0,
+        "cloud_requests": 0,
+        "alpha_calls": 0,
+        "ai_requests": 0
+      },
+      "calculation_modes": [
+        "local_python"
+      ]
+    }
+  ],
+  "live_numerical_status": [
+    {
+      "fleet_size": 2,
+      "status": "passed",
+      "calls": 2
+    },
+    {
+      "fleet_size": 50,
+      "status": "passed",
+      "calls": 2
+    }
+  ],
+  "cloud_requests": 0,
+  "alpha_calls": 0,
+  "source_checksums": {
+    "stratus/contracts/fleet_v1.py": "2dfa4184fdc5aa291710036e8e1a5254a92d7a0c2dfa763faf9d9affc6e26db4",
+    "stratus/hazards/core.py": "e43e709402a7e178fcdafc57cb71fbcb428edd460b0b9999908837e2fadd4f55",
+    "stratus/hazards/fleet_adapter.py": "3fab893d95ef33b5a4bbcc8ae061a45332e87644d9b6e2518a04a4f45e4cccfd",
+    "stratus/hazards/integration.py": "487b6ea05b9a0a2dae810f52413fe86af663a99060002f915a3c6c2779c406bf",
+    "stratus/inspection/fleet.py": "213e54a3a724abcdaff0ea3ab4338cc7e85374ec7f65d03368e9b4747b736c7a",
+    "stratus/inspection/fleet_costs.py": "1e24c0e7c76979f27f66c37dab3af3ef144849afd40482337b91d7ba35911909",
+    "stratus/inspection/fleet_service.py": "33d6fe13a2042728567aeb645ccb940b331a0d6dc21bdedd1c55f044de25e7cf",
+    "stratus/inspection/fleet_report.py": "2c07355d495a8105864ce239f1b356ba692726186392e6848e6859670efbe9ff",
+    "stratus/inspection/dashboard.py": "da4d87ad3d2a82f0368746c293b684119276568b60844d13007dba11e9d28db4",
+    "stratus/inspection/web/hazards.js": "82a782d71f0793197bf27c470c27d10d291d68b5bdc718be82a78add72f6cbf7",
+    "stratus/inspection/web/hazards.css": "1796ecb7d06d7ff9d7d740689dd6559c9b2992ca0e0e461059e8c448043b0a77",
+    "stratus/inspection/web/fleet.js": "2a39a12d3908aebe3ab38e585828459f20b43d5ebdf0c1ae061e727016e278d1",
+    "stratus/inspection/web/fleet.html": "a025d1c78875b7bf0660e2bef6f23a2c6ff3588d228bedc819749c3bcd607ada",
+    "stratus/inspection/wolfram/fleet_costs.wls": "043334ee71f0f394030d1d362da8745a93bbb5156be3b5b94716ef82fb024004",
+    "tests/test_joined_hazards.py": "a95221a128412eab9c50d470ff23f0bdc24802885c4f545da8eda9baa524c825",
+    "scripts/verify_joined_hazards.py": "06753cc07e9e7454637a9db0ffcb12a14846b159972eb53b9900369448d570f4"
+  },
+  "limits": [
+    "This command does not run Part 12 scaling/baselines or the full regression suite.",
+    "Browser verification is recorded separately.",
+    "No physical station was polled; the original ground snapshot was reused."
+  ],
+  "checks": {
+    "joined_python": 18,
+    "independent_python": 47,
+    "selected_existing_python": 15,
+    "frontend_node_entries": 13,
+    "final_js_syntax": "passed"
+  },
+  "browser": {
+    "url": "http://127.0.0.1:8774/hazards",
+    "observed": [
+      "Shared hazard desk mounted on the existing dashboard origin with a Fleet desk link.",
+      "Actual two-drone state rendered, initially six completed captures.",
+      "Actual 50-drone state rendered with every row through D050.",
+      "Live operator report at registry revision 1 showed all 50 assessed, 15 affected and 150 existing captures retained.",
+      "Save fleet run succeeded and displayed fleet-11ff17177b6544a387f92f2c2869e31b.json.",
+      "Concurrent stale UI command was rejected and refreshed without resetting the current fleet."
+    ],
+    "screenshot": "browser-live-50.jpg",
+    "scope": "Actual mounted UI and successful save; real controller prepare/report/reject/replan/open sequence covered by test_joined_hazards.py.",
+    "limits": [
+      "A full two/50 prepare-report-reject-replan browser click-through was not completed while the live run was being changed concurrently.",
+      "The live 15 affected records are a different event placement from the fixed seed-11 comparison (20 affected).",
+      "The browser run was preserved; no test reset or restore was applied over concurrent user work."
+    ]
+  },
+  "acceptance_scope": "Actual engine/service integration and mounted UI verified; full browser action walkthrough remains for Part 9."
+}

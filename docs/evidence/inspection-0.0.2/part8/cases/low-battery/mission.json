@@ -1,0 +1,215 @@
+{
+  "schema_version": "0.0.1",
+  "mission_id": "solar-array-001",
+  "revision": "comparison-v1-low-battery",
+  "scenario_id": "comparison-part8-low-battery",
+  "source_class": "self_authored_synthetic_scenario",
+  "readiness": "local_evidence_validated",
+  "execution_mode": "synthetic_evidence_replay",
+  "operator_role": "Solar-site maintenance operator",
+  "decision": "Choose the next useful panel inspection or follow-up view under incomplete image coverage, limited battery, a three-action cap, and return reserve; return or stop when no capture is feasible.",
+  "coordinate_frame": {
+    "name": "site_local_cartesian",
+    "unit": "m",
+    "x_axis": "east",
+    "y_axis": "north",
+    "origin": "launch_and_return_point",
+    "geographic_reference": null
+  },
+  "launch_point": {
+    "x": 0,
+    "y": 0
+  },
+  "initial_state": {
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "battery_available": 20,
+    "actions_used": 0,
+    "actions_remaining": 3,
+    "battery_reference": "Remaining simulated battery at this handoff; prior records are historical inputs."
+  },
+  "action_rules": {
+    "max_new_capture_actions": 3,
+    "new_inspection_action_cost": 1,
+    "follow_up_view_action_cost": 1,
+    "prior_records_consume_new_actions": false,
+    "duplicate_asset_view_allowed": false,
+    "follow_up_requires_distinct_view_id": true,
+    "return_or_stop_capture_action_cost": 0,
+    "proposal_and_review_action_cost": 0
+  },
+  "energy_model": {
+    "model_version": "toy-euclidean-energy-v1",
+    "energy_unit": "simulated_energy_unit",
+    "distance_unit": "m",
+    "initial_battery_capacity": 100,
+    "travel_energy_per_m": 0.5,
+    "capture_energy_per_action": 5,
+    "return_reserve": 15,
+    "distance_rule": "Euclidean straight-line distance in the site-local plane.",
+    "feasibility_rule": "battery_available - outbound_cost - capture_cost - return_cost - return_reserve >= 0 AND actions_remaining > 0 AND asset/view eligible",
+    "capture_debit_rule": "Debit outbound_cost + capture_cost exactly once for an executed capture; update position to the asset. Return cost and reserve are protected, not debited on capture.",
+    "return_debit_rule": "On an eventual executed return, debit distance(current_position, launch_point) * travel_energy_per_m once.",
+    "limitations": "Toy simulation; no calibrated aircraft battery, weather, obstacle routing, altitude, takeoff or landing model. Capture cost includes an invented dwell allowance."
+  },
+  "eligibility_review": {
+    "mode": "synthetic_scope_review",
+    "scope": "All six panel/point states reviewed against this authored scenario; no real-site access or flight permission is implied.",
+    "priority_scale": {
+      "3": "high",
+      "2": "medium",
+      "1": "low"
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "P01",
+      "position": {
+        "x": 10,
+        "y": 10
+      },
+      "priority": 1,
+      "eligibility": {
+        "state": "eligible",
+        "reviewed": true,
+        "reason": "Included synthetic inspection point."
+      },
+      "coverage_state": "prior_clear_authored_annotation",
+      "planned_view_ids": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "P02",
+      "position": {
+        "x": 20,
+        "y": 10
+      },
+      "priority": 3,
+      "eligibility": {
+        "state": "eligible",
+        "reviewed": true,
+        "reason": "Included; prior unclear view needs review."
+      },
+      "coverage_state": "prior_unclear_authored_annotation_follow_up_needed",
+      "planned_view_ids": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "P03",
+      "position": {
+        "x": 30,
+        "y": 10
+      },
+      "priority": 3,
+      "eligibility": {
+        "state": "eligible",
+        "reviewed": true,
+        "reason": "Included synthetic inspection point."
+      },
+      "coverage_state": "uninspected",
+      "planned_view_ids": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "P04",
+      "position": {
+        "x": 10,
+        "y": 20
+      },
+      "priority": 2,
+      "eligibility": {
+        "state": "eligible",
+        "reviewed": true,
+        "reason": "Included synthetic inspection point."
+      },
+      "coverage_state": "uninspected",
+      "planned_view_ids": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "P05",
+      "position": {
+        "x": 20,
+        "y": 20
+      },
+      "priority": 2,
+      "eligibility": {
+        "state": "eligible",
+        "reviewed": true,
+        "reason": "Included synthetic inspection point."
+      },
+      "coverage_state": "uninspected",
+      "planned_view_ids": [
+        "overview",
+        "follow-up"
+      ]
+    },
+    {
+      "asset_id": "P06",
+      "position": {
+        "x": 30,
+        "y": 20
+      },
+      "priority": 1,
+      "eligibility": {
+        "state": "excluded",
+        "reviewed": true,
+        "reason": "Operator exclusion of this panel/point for the synthetic demo."
+      },
+      "coverage_state": "excluded_uninspected",
+      "planned_view_ids": [
+        "overview",
+        "follow-up"
+      ]
+    }
+  ],
+  "prior_records": [
+    {
+      "record_id": "prior-001",
+      "asset_id": "P01",
+      "view_id": "overview",
+      "source_class": "synthetic",
+      "assessment_mode": "authored_replay_annotation",
+      "image_quality_annotation": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "evidence_status": "available_synthetic",
+      "evidence_ref": "comparison-part8-low-battery:P01:overview",
+      "consumes_new_action": false
+    },
+    {
+      "record_id": "prior-002",
+      "asset_id": "P02",
+      "view_id": "overview",
+      "source_class": "synthetic",
+      "assessment_mode": "authored_replay_annotation",
+      "image_quality_annotation": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "evidence_status": "available_synthetic",
+      "evidence_ref": "comparison-part8-low-battery:P02:overview",
+      "consumes_new_action": false
+    }
+  ],
+  "evidence_manifest": "docs/evidence/inspection-0.0.2/part8/cases/low-battery/manifest.json",
+  "optional_sensor_context_ref": null,
+  "required_later_outputs": [
+    "inspection_report",
+    "saved_run",
+    "reopen_saved_run"
+  ],
+  "out_of_scope": [
+    "real_flight",
+    "additional_sites",
+    "proprietary_property_data_services",
+    "validated_defect_diagnosis"
+  ]
+}

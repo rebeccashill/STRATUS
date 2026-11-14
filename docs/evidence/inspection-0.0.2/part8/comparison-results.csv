@@ -1,0 +1,10 @@
+case,method,usable_priority,eligible_priority,new_usable_priority_gain,captures,distinct_new_assets,total_energy_including_return,travel_metres_including_return,open_scripted_review_tasks,violations,final_status
+clear,adaptive,11,11,7,3,3,54.06279600020632,78.12559200041264,0,0,returned
+clear,fixed-order,11,11,7,3,3,61.133863812071795,92.26772762414359,0,0,returned
+clear,nearest-feasible,11,11,7,3,3,54.06279600020632,78.12559200041264,0,0,returned
+low-battery,adaptive,4,11,0,0,0,0.0,0.0,0,0,returned
+low-battery,fixed-order,4,11,0,0,0,0.0,0.0,0,0,returned
+low-battery,nearest-feasible,4,11,0,0,0,0.0,0.0,0,0,returned
+unclear,adaptive,7,11,6,3,2,46.99172818834084,63.98345637668169,2,0,returned
+unclear,fixed-order,6,11,5,3,3,53.54101966249685,77.0820393249937,2,0,returned
+unclear,nearest-feasible,7,11,6,3,2,46.99172818834084,63.98345637668169,2,0,returned

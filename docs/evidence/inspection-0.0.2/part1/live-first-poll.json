@@ -1,0 +1,27 @@
+{
+  "status": "unavailable",
+  "mode": "live_measured",
+  "context_role": "ground_context_only",
+  "snapshot_at_utc": "2026-11-14T13:27:44.768037+00:00",
+  "node_id": "ground-node-001",
+  "location": {
+    "status": "unknown",
+    "label": null,
+    "position": null,
+    "coordinate_frame": null
+  },
+  "observations": [],
+  "source": null,
+  "reason": "no_valid_current_read",
+  "physical_acquisition_performed": false,
+  "sensor_states": {
+    "BME280": {
+      "status": "unavailable",
+      "technical_error": "RuntimeError: BLINKA_MCP2221 environment variable set, but no MCP2221 device found"
+    },
+    "PMSA003I": {
+      "status": "unavailable",
+      "technical_error": "RuntimeError: BLINKA_MCP2221 environment variable set, but no MCP2221 device found"
+    }
+  }
+}

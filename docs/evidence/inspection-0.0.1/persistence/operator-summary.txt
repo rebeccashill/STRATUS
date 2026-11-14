@@ -1,0 +1,7 @@
+Captured P03/overview; used 20.81 simulated energy units.
+Battery: 79.19 simulated units | Capture actions remaining: 2
+Computation: local Python
+Next: Review the tentative concern on P03. The replay flag awaits human review; it is not a confirmed defect.
+Ground conditions: Recorded; oldest reading 115.8 minutes old. pressure 1005.62 hPa; relative_humidity 38.38 %RH; temperature 23.96 degC; pm10 0.00 ug/m3; pm1_0 0.00 ug/m3; pm2_5 0.00 ug/m3
+Image assessment: annotated replay; human review pending.
+Ground readings remain unreviewed; location/calibration metadata is retained with the saved observations.

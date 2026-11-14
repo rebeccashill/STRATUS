@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-11-14T19:42:14.628713+00:00",
+  "url": "http://127.0.0.1:8769/",
+  "original_walkthrough_checkpoint": "saved-runs/adaptive-e43ba3f0-cdedd7.json",
+  "original_report": "saved-runs/reports/inspection-e43ba3f0-20261114T192313934149Z.html",
+  "explicit_capture_controls": true,
+  "captured_views": [
+    "P05/overview",
+    "P05/follow-up"
+  ],
+  "feedback": [
+    "request P05 follow-up",
+    "resolve P05 follow-up task"
+  ],
+  "original_overview_remains_unknown": true,
+  "what_if": "actual Wolfram 50/20 -> no feasible capture; no state debit",
+  "calculation_modes_checked": [
+    "local_python",
+    "wolfram_local",
+    "cached_wolfram_local"
+  ],
+  "ground_modes_checked": [
+    "Live with both sensors physically fresh",
+    "Recorded with original times",
+    "Synthetic with disabled measured export",
+    "Unavailable with six dashes"
+  ],
+  "data_parity": "browser-data-parity.json: six actual raw CSV/normalized/presentation/report rows agree",
+  "report_download_byte_equal": true,
+  "report_images_loaded": 4,
+  "save_reopen": "Actual original case restored 75.86 EU, one action, saved feedback and original ground times. File hash was checked unchanged at that reopen; the active run later advanced.",
+  "original_browser_budget": {
+    "battery": 75.85786437626905,
+    "actions_remaining": 1
+  },
+  "later_snapshot": {
+    "snapshot_at_utc": "2026-11-14T19:40:54.904398+00:00",
+    "checkpoint": "saved-runs/ui11-browser-final.json",
+    "source_checkpoint": "saved-runs/adaptive-e43ba3f0-cdedd7.json",
+    "sha256": "b1d1d7652c64993b3efc74771d6f2de12f1fed9ed6f2fe81a1465551642b1d8e",
+    "battery": 65.85786437626905,
+    "actions_remaining": 0,
+    "events": 3,
+    "feedback": 6,
+    "report_html": "saved-runs/reports/inspection-e43ba3f0-20261114T194054858165Z.html",
+    "report_json": "saved-runs/reports/inspection-e43ba3f0-20261114T194054858165Z.json",
+    "note": "The active run advanced after the original two-capture browser walkthrough. This is a later validated byte-copy snapshot; the earlier report remains unchanged. No aircraft action was executed to create this snapshot."
+  },
+  "desktop": {
+    "content_width": 1265,
+    "scroll_width": 1265
+  },
+  "narrow": {
+    "override_width": 390,
+    "content_width": 375,
+    "scroll_width": 375,
+    "overflowing_controls": []
+  },
+  "keyboard": "Enter on P04 opened correct view without capture; focus labels and skip link checked",
+  "console_errors": [],
+  "startup_issue_fixed": "Load disabled until selector ready and while operations run; duplicate-load regression passes; browser reopen passed after fix",
+  "final_ui_copy": "Create report and Review next action verified after static reload",
+  "final_live_sensor_observation": "Both fresh at 19:33:30 UTC; current live values are separate from frozen report context",
+  "source_sha256": {
+    "stratus/inspection/dashboard.py": "de78bcc2e386d826b35da16047ffebc8fc39b660a5289867ec4c5fa500085134",
+    "stratus/inspection/report.py": "eba8c98f8a95a806afad3f8fa85b6530a6642ce05845b9dd0b331efc73a22726",
+    "stratus/inspection/ground.py": "e844354c0eab193fd772d210f178aff6f5fed9ae0a2168038e9bb71dc37ccf0f",
+    "stratus/inspection/computation.py": "e566f191ee456a8231f6375e8d42d27ecdde145487d502fc61691398c0822ce2",
+    "stratus/inspection/workflow.py": "dd0ed5c6dcabbc59625c1a404a4b9f55426e42fdf5163b0fc1782e1e43ae3650",
+    "stratus/inspection/web/index.html": "b58b472477718298d85bb7baaea7552f7bf1270280d680745c2ea9372e423abe",
+    "stratus/inspection/web/style.css": "b39601c73a684f614a3fc52a73675f370bab283de21178b6e88b11716921f60a",
+    "stratus/inspection/web/app.js": "772f696861e579af351ad13bf7a728071972e3d015928ad9472a67632701c112",
+    "scripts/finish_part11.py": "8edfdc34af379eb8537fe66e48aa32170a9931aecc2c2eb0fac190f6696ba336",
+    "scripts/verify_ui_clarity.py": "dcde1b9bd54129c666f6a239a42df369f0ca1cce13cbd6be13d55309c1a55090",
+    "tests/test_ui_clarity.py": "1c81d7ff99b0b18a062f6d8723f6200e56215ad860216905139266297d7bf5db",
+    "tests/frontend_clarity.test.cjs": "d21b1672858ddb200ebbeac3a4ceb436d877f106e4cda4440d009bd5e7f1aa35"
+  },
+  "cleanup_blocker": "Automatic approval review rejected stopping temporary restricted test server due to an external Visual Studio telemetry endpoint. No workaround attempted."
+}

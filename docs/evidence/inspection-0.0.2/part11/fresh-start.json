@@ -1,0 +1,669 @@
+{
+  "started_at_utc": "2026-11-14T19:14:22.877400+00:00",
+  "url": "http://127.0.0.1:8769/",
+  "checkpoint": "ui11-start-20261114T191420742355Z.json",
+  "aircraft_state": {
+    "mission_id": "solar-array-001",
+    "scenario_id": "synthetic-solar-array-001",
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "battery_available": 100,
+    "actions_used": 0,
+    "actions_remaining": 3,
+    "completed_views": [
+      {
+        "asset_id": "P01",
+        "view_id": "overview"
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "overview"
+      }
+    ],
+    "history": [
+      {
+        "record_id": "prior-001",
+        "asset_id": "P01",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "clear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P01:overview",
+        "consumes_new_action": false
+      },
+      {
+        "record_id": "prior-002",
+        "asset_id": "P02",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "unclear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P02:overview",
+        "consumes_new_action": false
+      }
+    ],
+    "revision": 0,
+    "status": "active"
+  },
+  "ground_source": "Recorded",
+  "computation": {
+    "mode": "wolfram_local",
+    "execution_permitted": true,
+    "normalized_input": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "solar-array-001",
+      "mission_revision": "0.0.1-part2",
+      "state_revision": 0,
+      "position": {
+        "point_id": "current",
+        "x": 0.0,
+        "y": 0.0
+      },
+      "launch": {
+        "point_id": "launch",
+        "x": 0.0,
+        "y": 0.0
+      },
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "battery_available": 100.0,
+      "capture_cost": 5.0,
+      "travel_energy_per_distance": 0.5,
+      "return_reserve": 15.0,
+      "remaining_actions": 3,
+      "candidates": [
+        {
+          "asset_id": "P01",
+          "view_id": "follow-up",
+          "x": 10.0,
+          "y": 10.0
+        },
+        {
+          "asset_id": "P01",
+          "view_id": "overview",
+          "x": 10.0,
+          "y": 10.0
+        },
+        {
+          "asset_id": "P02",
+          "view_id": "follow-up",
+          "x": 20.0,
+          "y": 10.0
+        },
+        {
+          "asset_id": "P02",
+          "view_id": "overview",
+          "x": 20.0,
+          "y": 10.0
+        },
+        {
+          "asset_id": "P03",
+          "view_id": "follow-up",
+          "x": 30.0,
+          "y": 10.0
+        },
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "x": 30.0,
+          "y": 10.0
+        },
+        {
+          "asset_id": "P04",
+          "view_id": "follow-up",
+          "x": 10.0,
+          "y": 20.0
+        },
+        {
+          "asset_id": "P04",
+          "view_id": "overview",
+          "x": 10.0,
+          "y": 20.0
+        },
+        {
+          "asset_id": "P05",
+          "view_id": "follow-up",
+          "x": 20.0,
+          "y": 20.0
+        },
+        {
+          "asset_id": "P05",
+          "view_id": "overview",
+          "x": 20.0,
+          "y": 20.0
+        },
+        {
+          "asset_id": "P06",
+          "view_id": "follow-up",
+          "x": 30.0,
+          "y": 20.0
+        },
+        {
+          "asset_id": "P06",
+          "view_id": "overview",
+          "x": 30.0,
+          "y": 20.0
+        }
+      ]
+    },
+    "cache_key": "a60854bd8209a7f6a1e6553b09e7a0d72d25d678407a6150ab675ef6b0e3172a",
+    "model_version": "toy-euclidean-energy-v1",
+    "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+    "output": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "solar-array-001",
+      "mission_revision": "0.0.1-part2",
+      "state_revision": 0,
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "options": [
+        {
+          "asset_id": "P01",
+          "view_id": "follow-up",
+          "outbound": 7.0710678118654755,
+          "capture": 5.0,
+          "return_cost": 7.0710678118654755,
+          "reserve": 15.0,
+          "margin": 65.85786437626905,
+          "feasible": true
+        },
+        {
+          "asset_id": "P01",
+          "view_id": "overview",
+          "outbound": 7.0710678118654755,
+          "capture": 5.0,
+          "return_cost": 7.0710678118654755,
+          "reserve": 15.0,
+          "margin": 65.85786437626905,
+          "feasible": true
+        },
+        {
+          "asset_id": "P02",
+          "view_id": "follow-up",
+          "outbound": 11.180339887498949,
+          "capture": 5.0,
+          "return_cost": 11.180339887498949,
+          "reserve": 15.0,
+          "margin": 57.63932022500211,
+          "feasible": true
+        },
+        {
+          "asset_id": "P02",
+          "view_id": "overview",
+          "outbound": 11.180339887498949,
+          "capture": 5.0,
+          "return_cost": 11.180339887498949,
+          "reserve": 15.0,
+          "margin": 57.63932022500211,
+          "feasible": true
+        },
+        {
+          "asset_id": "P03",
+          "view_id": "follow-up",
+          "outbound": 15.811388300841898,
+          "capture": 5.0,
+          "return_cost": 15.811388300841898,
+          "reserve": 15.0,
+          "margin": 48.377223398316204,
+          "feasible": true
+        },
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "outbound": 15.811388300841898,
+          "capture": 5.0,
+          "return_cost": 15.811388300841898,
+          "reserve": 15.0,
+          "margin": 48.377223398316204,
+          "feasible": true
+        },
+        {
+          "asset_id": "P04",
+          "view_id": "follow-up",
+          "outbound": 11.180339887498949,
+          "capture": 5.0,
+          "return_cost": 11.180339887498949,
+          "reserve": 15.0,
+          "margin": 57.63932022500211,
+          "feasible": true
+        },
+        {
+          "asset_id": "P04",
+          "view_id": "overview",
+          "outbound": 11.180339887498949,
+          "capture": 5.0,
+          "return_cost": 11.180339887498949,
+          "reserve": 15.0,
+          "margin": 57.63932022500211,
+          "feasible": true
+        },
+        {
+          "asset_id": "P05",
+          "view_id": "follow-up",
+          "outbound": 14.142135623730951,
+          "capture": 5.0,
+          "return_cost": 14.142135623730951,
+          "reserve": 15.0,
+          "margin": 51.7157287525381,
+          "feasible": true
+        },
+        {
+          "asset_id": "P05",
+          "view_id": "overview",
+          "outbound": 14.142135623730951,
+          "capture": 5.0,
+          "return_cost": 14.142135623730951,
+          "reserve": 15.0,
+          "margin": 51.7157287525381,
+          "feasible": true
+        },
+        {
+          "asset_id": "P06",
+          "view_id": "follow-up",
+          "outbound": 18.027756377319946,
+          "capture": 5.0,
+          "return_cost": 18.027756377319946,
+          "reserve": 15.0,
+          "margin": 43.94448724536011,
+          "feasible": true
+        },
+        {
+          "asset_id": "P06",
+          "view_id": "overview",
+          "outbound": 18.027756377319946,
+          "capture": 5.0,
+          "return_cost": 18.027756377319946,
+          "reserve": 15.0,
+          "margin": 43.94448724536011,
+          "feasible": true
+        }
+      ],
+      "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+      "system_id": "Windows-x86-64"
+    },
+    "python_output": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "solar-array-001",
+      "mission_revision": "0.0.1-part2",
+      "state_revision": 0,
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "options": [
+        {
+          "asset_id": "P01",
+          "view_id": "follow-up",
+          "outbound": 7.0710678118654755,
+          "capture": 5.0,
+          "return_cost": 7.0710678118654755,
+          "reserve": 15.0,
+          "margin": 65.85786437626905,
+          "feasible": true
+        },
+        {
+          "asset_id": "P01",
+          "view_id": "overview",
+          "outbound": 7.0710678118654755,
+          "capture": 5.0,
+          "return_cost": 7.0710678118654755,
+          "reserve": 15.0,
+          "margin": 65.85786437626905,
+          "feasible": true
+        },
+        {
+          "asset_id": "P02",
+          "view_id": "follow-up",
+          "outbound": 11.180339887498949,
+          "capture": 5.0,
+          "return_cost": 11.180339887498949,
+          "reserve": 15.0,
+          "margin": 57.6393202250021,
+          "feasible": true
+        },
+        {
+          "asset_id": "P02",
+          "view_id": "overview",
+          "outbound": 11.180339887498949,
+          "capture": 5.0,
+          "return_cost": 11.180339887498949,
+          "reserve": 15.0,
+          "margin": 57.6393202250021,
+          "feasible": true
+        },
+        {
+          "asset_id": "P03",
+          "view_id": "follow-up",
+          "outbound": 15.811388300841896,
+          "capture": 5.0,
+          "return_cost": 15.811388300841896,
+          "reserve": 15.0,
+          "margin": 48.377223398316204,
+          "feasible": true
+        },
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "outbound": 15.811388300841896,
+          "capture": 5.0,
+          "return_cost": 15.811388300841896,
+          "reserve": 15.0,
+          "margin": 48.377223398316204,
+          "feasible": true
+        },
+        {
+          "asset_id": "P04",
+          "view_id": "follow-up",
+          "outbound": 11.180339887498949,
+          "capture": 5.0,
+          "return_cost": 11.180339887498949,
+          "reserve": 15.0,
+          "margin": 57.6393202250021,
+          "feasible": true
+        },
+        {
+          "asset_id": "P04",
+          "view_id": "overview",
+          "outbound": 11.180339887498949,
+          "capture": 5.0,
+          "return_cost": 11.180339887498949,
+          "reserve": 15.0,
+          "margin": 57.6393202250021,
+          "feasible": true
+        },
+        {
+          "asset_id": "P05",
+          "view_id": "follow-up",
+          "outbound": 14.142135623730951,
+          "capture": 5.0,
+          "return_cost": 14.142135623730951,
+          "reserve": 15.0,
+          "margin": 51.7157287525381,
+          "feasible": true
+        },
+        {
+          "asset_id": "P05",
+          "view_id": "overview",
+          "outbound": 14.142135623730951,
+          "capture": 5.0,
+          "return_cost": 14.142135623730951,
+          "reserve": 15.0,
+          "margin": 51.7157287525381,
+          "feasible": true
+        },
+        {
+          "asset_id": "P06",
+          "view_id": "follow-up",
+          "outbound": 18.027756377319946,
+          "capture": 5.0,
+          "return_cost": 18.027756377319946,
+          "reserve": 15.0,
+          "margin": 43.94448724536011,
+          "feasible": true
+        },
+        {
+          "asset_id": "P06",
+          "view_id": "overview",
+          "outbound": 18.027756377319946,
+          "capture": 5.0,
+          "return_cost": 18.027756377319946,
+          "reserve": 15.0,
+          "margin": 43.94448724536011,
+          "feasible": true
+        }
+      ]
+    },
+    "wolfram_output": {
+      "contract_version": "inspection-costs-v1",
+      "model_version": "toy-euclidean-energy-v1",
+      "mission_id": "solar-array-001",
+      "mission_revision": "0.0.1-part2",
+      "state_revision": 0,
+      "distance_unit": "m",
+      "energy_unit": "simulated_energy_unit",
+      "options": [
+        {
+          "asset_id": "P01",
+          "view_id": "follow-up",
+          "outbound": 7.0710678118654755,
+          "capture": 5.0,
+          "return_cost": 7.0710678118654755,
+          "reserve": 15.0,
+          "margin": 65.85786437626905,
+          "feasible": true
+        },
+        {
+          "asset_id": "P01",
+          "view_id": "overview",
+          "outbound": 7.0710678118654755,
+          "capture": 5.0,
+          "return_cost": 7.0710678118654755,
+          "reserve": 15.0,
+          "margin": 65.85786437626905,
+          "feasible": true
+        },
+        {
+          "asset_id": "P02",
+          "view_id": "follow-up",
+          "outbound": 11.180339887498949,
+          "capture": 5.0,
+          "return_cost": 11.180339887498949,
+          "reserve": 15.0,
+          "margin": 57.63932022500211,
+          "feasible": true
+        },
+        {
+          "asset_id": "P02",
+          "view_id": "overview",
+          "outbound": 11.180339887498949,
+          "capture": 5.0,
+          "return_cost": 11.180339887498949,
+          "reserve": 15.0,
+          "margin": 57.63932022500211,
+          "feasible": true
+        },
+        {
+          "asset_id": "P03",
+          "view_id": "follow-up",
+          "outbound": 15.811388300841898,
+          "capture": 5.0,
+          "return_cost": 15.811388300841898,
+          "reserve": 15.0,
+          "margin": 48.377223398316204,
+          "feasible": true
+        },
+        {
+          "asset_id": "P03",
+          "view_id": "overview",
+          "outbound": 15.811388300841898,
+          "capture": 5.0,
+          "return_cost": 15.811388300841898,
+          "reserve": 15.0,
+          "margin": 48.377223398316204,
+          "feasible": true
+        },
+        {
+          "asset_id": "P04",
+          "view_id": "follow-up",
+          "outbound": 11.180339887498949,
+          "capture": 5.0,
+          "return_cost": 11.180339887498949,
+          "reserve": 15.0,
+          "margin": 57.63932022500211,
+          "feasible": true
+        },
+        {
+          "asset_id": "P04",
+          "view_id": "overview",
+          "outbound": 11.180339887498949,
+          "capture": 5.0,
+          "return_cost": 11.180339887498949,
+          "reserve": 15.0,
+          "margin": 57.63932022500211,
+          "feasible": true
+        },
+        {
+          "asset_id": "P05",
+          "view_id": "follow-up",
+          "outbound": 14.142135623730951,
+          "capture": 5.0,
+          "return_cost": 14.142135623730951,
+          "reserve": 15.0,
+          "margin": 51.7157287525381,
+          "feasible": true
+        },
+        {
+          "asset_id": "P05",
+          "view_id": "overview",
+          "outbound": 14.142135623730951,
+          "capture": 5.0,
+          "return_cost": 14.142135623730951,
+          "reserve": 15.0,
+          "margin": 51.7157287525381,
+          "feasible": true
+        },
+        {
+          "asset_id": "P06",
+          "view_id": "follow-up",
+          "outbound": 18.027756377319946,
+          "capture": 5.0,
+          "return_cost": 18.027756377319946,
+          "reserve": 15.0,
+          "margin": 43.94448724536011,
+          "feasible": true
+        },
+        {
+          "asset_id": "P06",
+          "view_id": "overview",
+          "outbound": 18.027756377319946,
+          "capture": 5.0,
+          "return_cost": 18.027756377319946,
+          "reserve": 15.0,
+          "margin": 43.94448724536011,
+          "feasible": true
+        }
+      ],
+      "wolfram_version": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+      "system_id": "Windows-x86-64"
+    },
+    "failure": null,
+    "disagreements": [],
+    "tolerance": {
+      "absolute": 1e-08,
+      "relative": 1e-10,
+      "feasibility_sign": "strict; never relaxed by tolerance"
+    },
+    "request_counts": {
+      "local_kernel_calls": 1,
+      "cloud_requests": 0,
+      "alpha_calls": 0
+    },
+    "state_transition_applied": false,
+    "action_checks": [
+      {
+        "asset_id": "P01",
+        "view_id": "follow-up",
+        "execution_allowed": true,
+        "code": "allowed"
+      },
+      {
+        "asset_id": "P01",
+        "view_id": "overview",
+        "execution_allowed": false,
+        "code": "duplicate_view"
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "follow-up",
+        "execution_allowed": true,
+        "code": "allowed"
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "overview",
+        "execution_allowed": false,
+        "code": "duplicate_view"
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "follow-up",
+        "execution_allowed": false,
+        "code": "prior_view_required"
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "overview",
+        "execution_allowed": true,
+        "code": "allowed"
+      },
+      {
+        "asset_id": "P04",
+        "view_id": "follow-up",
+        "execution_allowed": false,
+        "code": "prior_view_required"
+      },
+      {
+        "asset_id": "P04",
+        "view_id": "overview",
+        "execution_allowed": true,
+        "code": "allowed"
+      },
+      {
+        "asset_id": "P05",
+        "view_id": "follow-up",
+        "execution_allowed": false,
+        "code": "prior_view_required"
+      },
+      {
+        "asset_id": "P05",
+        "view_id": "overview",
+        "execution_allowed": true,
+        "code": "allowed"
+      },
+      {
+        "asset_id": "P06",
+        "view_id": "follow-up",
+        "execution_allowed": false,
+        "code": "asset_excluded"
+      },
+      {
+        "asset_id": "P06",
+        "view_id": "overview",
+        "execution_allowed": false,
+        "code": "asset_excluded"
+      }
+    ]
+  },
+  "boundary_request_counts": {
+    "local_kernel_calls": 4,
+    "cloud_requests": 0,
+    "alpha_calls": 0
+  },
+  "dependency_versions": {
+    "hidapi": "0.15.0",
+    "adafruit-blinka": "10.2.0",
+    "adafruit-circuitpython-bme280": "2.6.32",
+    "adafruit-circuitpython-pm25": "2.1.24"
+  },
+  "source_sha256": {
+    "stratus/inspection/dashboard.py": "de78bcc2e386d826b35da16047ffebc8fc39b660a5289867ec4c5fa500085134",
+    "stratus/inspection/report.py": "eba8c98f8a95a806afad3f8fa85b6530a6642ce05845b9dd0b331efc73a22726",
+    "stratus/inspection/ground.py": "e844354c0eab193fd772d210f178aff6f5fed9ae0a2168038e9bb71dc37ccf0f",
+    "stratus/inspection/computation.py": "e566f191ee456a8231f6375e8d42d27ecdde145487d502fc61691398c0822ce2",
+    "stratus/inspection/workflow.py": "dd0ed5c6dcabbc59625c1a404a4b9f55426e42fdf5163b0fc1782e1e43ae3650",
+    "stratus/inspection/web/index.html": "bdadc4cd87993889fdd449ca2e080c77ec0a4b3330110a22847fbc16a202047e",
+    "stratus/inspection/web/style.css": "b39601c73a684f614a3fc52a73675f370bab283de21178b6e88b11716921f60a",
+    "stratus/inspection/web/app.js": "3a9adb8a5a1143179d6ff63420b4490d0ec12f70c1888e51fc3b3ecb51513bc6"
+  },
+  "state_transition_applied": false,
+  "hardware_automatically_polled": false,
+  "credits_consumed": "Unknown; no account usage retrieved",
+  "live_ai_or_vision_run": false
+}

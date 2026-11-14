@@ -1,0 +1,139 @@
+{
+  "schema_version": "1",
+  "scenario_id": "synthetic-solar-array-001",
+  "notice": "Prepared replay annotations, not live vision inference or confirmed human review.",
+  "annotations": [
+    {
+      "evidence_id": "synthetic-solar-array-001:P01:overview",
+      "scenario_id": "synthetic-solar-array-001",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "AI-assisted scenario preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Grid visible in the authored illustration; this is not a defect diagnosis."
+    },
+    {
+      "evidence_id": "synthetic-solar-array-001:P01:follow-up",
+      "scenario_id": "synthetic-solar-array-001",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "AI-assisted scenario preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Grid visible in the authored illustration; this is not a defect diagnosis."
+    },
+    {
+      "evidence_id": "synthetic-solar-array-001:P02:overview",
+      "scenario_id": "synthetic-solar-array-001",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "AI-assisted scenario preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "unclear",
+      "finding": "unknown",
+      "note": "Authored box-blurred overview; insufficient detail; request a distinct follow-up."
+    },
+    {
+      "evidence_id": "synthetic-solar-array-001:P02:follow-up",
+      "scenario_id": "synthetic-solar-array-001",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "AI-assisted scenario preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Grid visible in the authored illustration; this is not a defect diagnosis."
+    },
+    {
+      "evidence_id": "synthetic-solar-array-001:P03:overview",
+      "scenario_id": "synthetic-solar-array-001",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "AI-assisted scenario preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "apparent_concern_review_required",
+      "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+    },
+    {
+      "evidence_id": "synthetic-solar-array-001:P03:follow-up",
+      "scenario_id": "synthetic-solar-array-001",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "AI-assisted scenario preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "apparent_concern_review_required",
+      "note": "Authored scratch-like mark; tentative review flag only, not a verified defect."
+    },
+    {
+      "evidence_id": "synthetic-solar-array-001:P04:overview",
+      "scenario_id": "synthetic-solar-array-001",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "AI-assisted scenario preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Grid visible in the authored illustration; this is not a defect diagnosis."
+    },
+    {
+      "evidence_id": "synthetic-solar-array-001:P04:follow-up",
+      "scenario_id": "synthetic-solar-array-001",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "AI-assisted scenario preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Grid visible in the authored illustration; this is not a defect diagnosis."
+    },
+    {
+      "evidence_id": "synthetic-solar-array-001:P05:overview",
+      "scenario_id": "synthetic-solar-array-001",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "AI-assisted scenario preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "unclear",
+      "finding": "unknown",
+      "note": "Authored bright occlusion; hidden cells remain unknown."
+    },
+    {
+      "evidence_id": "synthetic-solar-array-001:P05:follow-up",
+      "scenario_id": "synthetic-solar-array-001",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "AI-assisted scenario preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Grid visible in the authored illustration; this is not a defect diagnosis."
+    },
+    {
+      "evidence_id": "synthetic-solar-array-001:P06:overview",
+      "scenario_id": "synthetic-solar-array-001",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "AI-assisted scenario preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Grid visible in the authored illustration; this is not a defect diagnosis."
+    },
+    {
+      "evidence_id": "synthetic-solar-array-001:P06:follow-up",
+      "scenario_id": "synthetic-solar-array-001",
+      "assessment_mode": "authored_replay_annotation",
+      "annotation_author": "AI-assisted scenario preparation; human review pending",
+      "human_review_status": "pending",
+      "live_model_output": false,
+      "image_quality": "clear",
+      "finding": "no_apparent_concern_in_synthetic_drawing",
+      "note": "Grid visible in the authored illustration; this is not a defect diagnosis."
+    }
+  ]
+}

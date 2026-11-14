@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "observed_at_utc": "2026-11-14T15:32:03.000871+00:00",
+  "url": "http://127.0.0.1:8768",
+  "source_sha256": {
+    "stratus/inspection/agent.py": "fe8818e93e8951a2ba74f801f307cff712971ca61c8bf3f2227f1ca64f1f176a",
+    "stratus/inspection/dashboard.py": "097c0896e9bf81aad0828994d42c1f44624312140352cadf500c95481a0e630f",
+    "stratus/inspection/workflow.py": "44a1a4d5d56590f7f12e5b0a4f71120f0264a318975c41bc651ec457b81b3179",
+    "stratus/inspection/report.py": "c45f8a61761d3938d2feb693260da07b1182c2627aec4b4a4348181b35178069",
+    "stratus/inspection/operator.py": "c3c8b5527286469865668c1c48d3c9a4b421f12908c455763f2b3b9233a616b0",
+    "stratus/inspection/ground.py": "941841e0ddf64378d091aeba70e4013a807b9dbea19980ea0b1bdb065bdb0ce6",
+    "stratus/inspection/web/app.js": "aac254e98326b7b922ae58ec48d9d33d63cfba9cc5732df4a5b06ce918b6a385",
+    "stratus/inspection/web/index.html": "c62ad4a40e01128e78dfbe39eeab3b1ab139196b6f5168c9b63503b10b416d2d",
+    "stratus/inspection/web/style.css": "6e1c6504c98eaf6092dc145941c25da68cd8a1a292f03d260aecba074f40aadc"
+  },
+  "normal_host_startup": "2026-11-14T15:16:29.498853+00:00",
+  "backend_source_matches_startup": true,
+  "static_changes_reloaded_and_tested": true,
+  "explicit_capture_controls": true,
+  "next_capture_disabled_until_explicit_plan_review": true,
+  "feedback_replanning": true,
+  "feedback_only_case": {
+    "before_battery": 79.1886116991581,
+    "after_battery": 79.1886116991581,
+    "actions_remaining": 2,
+    "before": "hold on P03 concern",
+    "after": "P02/follow-up eligible"
+  },
+  "unclear_example": {
+    "asset": "P05",
+    "first_view": "overview",
+    "follow_up_view": "follow-up",
+    "compared_asset": "P02",
+    "original_finding_after_resolve": "unknown",
+    "review_status": "resolved"
+  },
+  "final_budget": {
+    "battery_available": 75.85786437626905,
+    "actions_remaining": 1,
+    "actions_used": 2,
+    "revision": 2
+  },
+  "actual_ai": {
+    "mode": "live_ai",
+    "failure": null,
+    "response_events": 2,
+    "tools": [
+      "get_mission_context",
+      "propose_next_action"
+    ],
+    "ground_snapshot_id": "ground-bc3cb774a93b3919d594989e1bc04bc9430a3c129ddacdf9cfa791c98361f12c",
+    "state_transition_applied": false
+  },
+  "shared_context_equality_verified": true,
+  "ground_source": "Recorded",
+  "live_vision": false,
+  "new_physical_sensor_success": false,
+  "what_if": {
+    "reserve": 50,
+    "capture_cost": 20,
+    "mode": "cached_wolfram_local",
+    "no_feasible_capture": true,
+    "aircraft_budget_unchanged": true
+  },
+  "saved_checkpoint": "saved-runs/adaptive-17885b96-0f0a2b.json",
+  "checkpoint_sha256": "6c7a93de68c3816d5fa270611895342793e8cbd0ed9e71a85e2eeab1ab5bb0b8",
+  "save_reopen_verified": true,
+  "report_html": "saved-runs/reports/inspection-17885b96-20261114T152535216742Z.html",
+  "report_json": "saved-runs/reports/inspection-17885b96-20261114T152535216742Z.json",
+  "downloaded_report": "C:\\Users\\shill\\Downloads\\inspection-17885b96-20261114T152535216742Z.html",
+  "report_download_verified": true,
+  "report_sha256": "a9140dbbb1373939d23daf0c3bef9516e3fb648d057f6fd9205648d0a9526d8e",
+  "report_has_one_group_of_identical_ground_measurements": true,
+  "report_unknown_and_feedback_verified": true,
+  "console_errors": []
+}

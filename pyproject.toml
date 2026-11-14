@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stratus-inspection-prototype"
+version = "0.0.1"
+description = "Standalone simulated solar-inspection foundation."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = []
+
+[project.scripts]
+stratus-inspection = "stratus.inspection.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["stratus*"]
+
+[tool.setuptools.package-data]
+"stratus.inspection" = ["missions/*.json", "wolfram/*.wls", "web/*.html", "web/*.css", "web/*.js"]

@@ -1,0 +1,129 @@
+{
+  "run_id": "run-af3c79aadce7441b918c2b7f3656a0e7",
+  "rendered_at_utc": "2026-11-14T13:10:54.323054+00:00",
+  "what_changed": "Captured P03/overview; used 20.81 simulated energy units.",
+  "computation_mode": "local_python",
+  "battery_available": 79.1886116991581,
+  "actions_remaining": 2,
+  "next_action": {
+    "type": "hold",
+    "label": "Review the tentative concern on P03",
+    "reason": "The replay flag awaits human review; it is not a confirmed defect."
+  },
+  "ground": {
+    "availability": "Recorded",
+    "source": "recorded_measured",
+    "location": {
+      "status": "unknown",
+      "label": null,
+      "position": null,
+      "coordinate_frame": null
+    },
+    "oldest_age_seconds": 6949.139294,
+    "acquired_at_utc": [
+      "2026-11-14T11:15:05.183760+00:00",
+      "2026-11-14T11:15:05.460291+00:00"
+    ],
+    "measurements": [
+      {
+        "sensor_id": "ground-node-001/bme280",
+        "variable": "pressure",
+        "value": 1005.6231286941569,
+        "unit": "hPa",
+        "acquired_at_utc": "2026-11-14T11:15:05.460291+00:00",
+        "quality": {
+          "flags": [
+            "location_unknown",
+            "calibration_unknown",
+            "uncertainty_unknown"
+          ],
+          "status": "unreviewed"
+        }
+      },
+      {
+        "sensor_id": "ground-node-001/bme280",
+        "variable": "relative_humidity",
+        "value": 38.38328298366316,
+        "unit": "%RH",
+        "acquired_at_utc": "2026-11-14T11:15:05.460291+00:00",
+        "quality": {
+          "flags": [
+            "location_unknown",
+            "calibration_unknown",
+            "uncertainty_unknown"
+          ],
+          "status": "unreviewed"
+        }
+      },
+      {
+        "sensor_id": "ground-node-001/bme280",
+        "variable": "temperature",
+        "value": 23.957421875,
+        "unit": "degC",
+        "acquired_at_utc": "2026-11-14T11:15:05.460291+00:00",
+        "quality": {
+          "flags": [
+            "location_unknown",
+            "calibration_unknown",
+            "uncertainty_unknown"
+          ],
+          "status": "unreviewed"
+        }
+      },
+      {
+        "sensor_id": "ground-node-001/pmsa003i",
+        "variable": "pm10",
+        "value": 0.0,
+        "unit": "ug/m3",
+        "acquired_at_utc": "2026-11-14T11:15:05.183760+00:00",
+        "quality": {
+          "flags": [
+            "location_unknown",
+            "calibration_unknown",
+            "uncertainty_unknown",
+            "zero_reported_not_independently_validated"
+          ],
+          "status": "unreviewed"
+        }
+      },
+      {
+        "sensor_id": "ground-node-001/pmsa003i",
+        "variable": "pm1_0",
+        "value": 0.0,
+        "unit": "ug/m3",
+        "acquired_at_utc": "2026-11-14T11:15:05.183760+00:00",
+        "quality": {
+          "flags": [
+            "location_unknown",
+            "calibration_unknown",
+            "uncertainty_unknown",
+            "zero_reported_not_independently_validated"
+          ],
+          "status": "unreviewed"
+        }
+      },
+      {
+        "sensor_id": "ground-node-001/pmsa003i",
+        "variable": "pm2_5",
+        "value": 0.0,
+        "unit": "ug/m3",
+        "acquired_at_utc": "2026-11-14T11:15:05.183760+00:00",
+        "quality": {
+          "flags": [
+            "location_unknown",
+            "calibration_unknown",
+            "uncertainty_unknown",
+            "zero_reported_not_independently_validated"
+          ],
+          "status": "unreviewed"
+        }
+      }
+    ]
+  },
+  "pending_review_count": 3,
+  "assessment_mode": "authored_replay_annotation; human review pending",
+  "technical_details": {
+    "ground": null,
+    "ground_reason": null
+  }
+}

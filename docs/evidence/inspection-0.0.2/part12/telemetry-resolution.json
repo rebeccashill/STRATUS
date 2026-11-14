@@ -1,0 +1,15 @@
+{
+  "status": "identified and suppressed for the test processes",
+  "component": "Bundled PowerShell Core 7.6.9, Microsoft.ApplicationInsights InMemoryChannel",
+  "auto_review_reported_destination": "dc.services.visualstudio.com",
+  "queued_event_observed": "ConsoleHostStartup",
+  "observed_property_names_only": ["RuntimeIdentifier", "UUID", "StartMode", "OSDescription", "SessionId", "OSChannel", "GitCommitID"],
+  "property_values_exported": false,
+  "packet_capture_performed": false,
+  "scope": "Testing shell startup diagnostics; not STRATUS fleet measurement or OpenAI API traffic",
+  "before": {"telemetry_optout_environment": null, "actual_shell_client_disabled": false},
+  "mitigation": {"actual_shell_client_disabled": true, "diagnostic_channel_endpoint": "http://127.0.0.1:0/", "child_process_telemetry_optout": true, "persistent_system_settings_changed": false},
+  "verification": {"python_tests_passed": 276, "completed_benchmark_cases": 21, "same_approval_rejection_after_mitigation": false},
+  "limits": "The queued event type and field names were inspected, not transmitted packet contents. No assertion about earlier telemetry already sent is made.",
+  "references": ["https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_telemetry", "https://github.com/PowerShell/PowerShell/blob/master/src/System.Management.Automation/utils/Telemetry.cs"]
+}

@@ -1,0 +1,52 @@
+test_current_proposal_commits_once (test_hazard_contract.HostContractTests) ... ok
+test_delayed_clear_or_amend_invalidates_old_result (test_hazard_contract.HostContractTests) ... ok
+test_fifty_impact_unaffected_work_continues (test_hazard_contract.HostContractTests) ... ok
+test_forged_numerical_input_rejected (test_hazard_contract.HostContractTests) ... ok
+test_future_task_claim_must_match_current_assignment (test_hazard_contract.HostContractTests) ... ok
+test_in_progress_is_paused_for_review_without_teleport (test_hazard_contract.HostContractTests) ... ok
+test_independent_objects_and_ground_loss (test_hazard_contract.HostContractTests) ... ok
+test_numerical_mismatch_does_not_override_hazard (test_hazard_contract.HostContractTests) ... ok
+test_old_run_extension_can_be_empty (test_hazard_contract.HostContractTests) ... ok
+test_part12_contract_unknown_frame_and_forged_history_rejected (test_hazard_contract.HostContractTests) ... ok
+test_real_part12_contract_empty_and_blocked_registry (test_hazard_contract.HostContractTests) ... ok
+test_reallocation_passes_hazard_and_budget_gates (test_hazard_contract.HostContractTests) ... ok
+test_report_between_prepare_and_commit_rejects_without_debit (test_hazard_contract.HostContractTests) ... ok
+test_save_reopen_fifty_with_active_hazard (test_hazard_contract.HostContractTests) ... ok
+test_tampered_budget_save_rejected (test_hazard_contract.HostContractTests) ... ok
+test_timeout_fallback_still_checks_hazard (test_hazard_contract.HostContractTests) ... ok
+test_two_simultaneous_commits_cannot_both_spend_same_revision (test_hazard_contract.HostContractTests) ... ok
+test_direct_controller_prepare_report_reject_replan_reopen (test_hazard_contract.PreviewControllerTests) ... ok
+test_invalid_operator_rectangle_does_not_replace_registry (test_hazard_contract.PreviewControllerTests) ... ok
+test_report_html_escapes_operator_notes (test_hazard_contract.PreviewControllerTests) ... ok
+test_route_origin_rejection_without_opening_a_socket (test_hazard_contract.PreviewControllerTests) ... ok
+test_assessment_is_pure (test_hazards.AssessmentTests) ... ok
+test_checks_both_legs (test_hazards.AssessmentTests) ... ok
+test_clear_target_but_return_blocked (test_hazards.AssessmentTests) ... ok
+test_duplicate_drone_not_silently_skipped (test_hazards.AssessmentTests) ... ok
+test_fifty_assessed_two_affected (test_hazards.AssessmentTests) ... ok
+test_malformed_registry_never_clear (test_hazards.AssessmentTests) ... ok
+test_mismatched_segment_endpoints (test_hazards.AssessmentTests) ... ok
+test_stale_and_invalid_are_never_clear (test_hazards.AssessmentTests) ... ok
+test_backward_segment (test_hazards.GeometryTests) ... ok
+test_crossing (test_hazards.GeometryTests) ... ok
+test_endpoint_inside (test_hazards.GeometryTests) ... ok
+test_invalid_shapes (test_hazards.GeometryTests) ... ok
+test_outside (test_hazards.GeometryTests) ... ok
+test_touching_buffered_boundary (test_hazards.GeometryTests) ... ok
+test_zero_length_inside (test_hazards.GeometryTests) ... ok
+test_zero_length_outside (test_hazards.GeometryTests) ... ok
+test_amend_clear_and_replay (test_hazards.RegistryTests) ... ok
+test_backward_time_rejected (test_hazards.RegistryTests) ... ok
+test_bad_frame_rejected_atomically (test_hazards.RegistryTests) ... ok
+test_duplicate_and_old_revision_do_not_mutate (test_hazards.RegistryTests) ... ok
+test_empty_registry_clear (test_hazards.RegistryTests) ... ok
+test_expiry_is_not_clearance (test_hazards.RegistryTests) ... ok
+test_forged_saved_registry_rejected (test_hazards.RegistryTests) ... ok
+test_observation_must_not_follow_report (test_hazards.RegistryTests) ... ok
+test_report_and_immutable_snapshot (test_hazards.RegistryTests) ... ok
+test_unknown_source_is_not_detection (test_hazards.RegistryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 0.998s
+
+OK

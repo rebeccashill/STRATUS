@@ -1,0 +1,573 @@
+{
+  "run_id": "run-3c1a98e42625490187f05b8a4149ebe7",
+  "mission_revision": "0.0.1-part2",
+  "created_at_utc": "2026-11-14T12:33:56.675506+00:00",
+  "execution_mode": "simulated",
+  "real_flight": false,
+  "session_scope": "ephemeral_in_memory_no_saved_run_or_resume",
+  "aircraft_state": {
+    "mission_id": "solar-array-001",
+    "scenario_id": "synthetic-solar-array-001",
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "battery_available": 100,
+    "actions_used": 0,
+    "actions_remaining": 3,
+    "completed_views": [
+      {
+        "asset_id": "P01",
+        "view_id": "overview"
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "overview"
+      }
+    ],
+    "history": [
+      {
+        "record_id": "prior-001",
+        "asset_id": "P01",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "clear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P01:overview",
+        "consumes_new_action": false
+      },
+      {
+        "record_id": "prior-002",
+        "asset_id": "P02",
+        "view_id": "overview",
+        "source_class": "synthetic",
+        "assessment_mode": "authored_replay_annotation",
+        "image_quality_annotation": "unclear",
+        "finding": "unknown_pending_operator_review",
+        "evidence_status": "available_synthetic",
+        "evidence_ref": "synthetic-solar-array-001:P02:overview",
+        "consumes_new_action": false
+      }
+    ],
+    "revision": 0,
+    "status": "active"
+  },
+  "ground_context": {
+    "status": "available",
+    "mode": "recorded_measured",
+    "context_role": "ground_context_only",
+    "snapshot_at_utc": "2026-11-14T12:33:56.675506+00:00",
+    "node_id": "ground-node-001",
+    "location": {
+      "status": "unknown",
+      "label": null,
+      "position": null,
+      "coordinate_frame": null
+    },
+    "observations": [
+      {
+        "acquired_at_utc": "2026-11-14T11:15:05.460291+00:00",
+        "acquisition_source": "physical_sensor",
+        "calibration": {
+          "reference": null,
+          "status": "unknown"
+        },
+        "context_role": "ground_context_only",
+        "location": {
+          "coordinate_frame": null,
+          "label": null,
+          "position": null,
+          "status": "unknown"
+        },
+        "node_id": "ground-node-001",
+        "normalized_at_utc": "2026-11-14T11:24:45.074062+00:00",
+        "observation_id": "obs_1a0103d11d1e489d8ae9ae8e",
+        "provenance": {
+          "original_source_mode": "live_measured",
+          "source_file": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+          "source_row": 31,
+          "source_sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011"
+        },
+        "quality": {
+          "flags": [
+            "location_unknown",
+            "calibration_unknown",
+            "uncertainty_unknown"
+          ],
+          "status": "unreviewed"
+        },
+        "receipt_time_status": "recorded",
+        "received_at_utc": "2026-11-14T11:15:05.460291+00:00",
+        "schema_version": "1.0.0",
+        "sensor_id": "ground-node-001/bme280",
+        "sensor_model": "BME280",
+        "source_mode": "recorded_measured",
+        "timestamp_basis": "host_read_completion",
+        "uncertainty": {
+          "kind": null,
+          "status": "unknown",
+          "unit": null,
+          "value": null
+        },
+        "unit": "hPa",
+        "value": 1005.6231286941569,
+        "variable": "pressure"
+      },
+      {
+        "acquired_at_utc": "2026-11-14T11:15:05.460291+00:00",
+        "acquisition_source": "physical_sensor",
+        "calibration": {
+          "reference": null,
+          "status": "unknown"
+        },
+        "context_role": "ground_context_only",
+        "location": {
+          "coordinate_frame": null,
+          "label": null,
+          "position": null,
+          "status": "unknown"
+        },
+        "node_id": "ground-node-001",
+        "normalized_at_utc": "2026-11-14T11:24:45.074062+00:00",
+        "observation_id": "obs_487874436b68bb962751f9d2",
+        "provenance": {
+          "original_source_mode": "live_measured",
+          "source_file": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+          "source_row": 30,
+          "source_sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011"
+        },
+        "quality": {
+          "flags": [
+            "location_unknown",
+            "calibration_unknown",
+            "uncertainty_unknown"
+          ],
+          "status": "unreviewed"
+        },
+        "receipt_time_status": "recorded",
+        "received_at_utc": "2026-11-14T11:15:05.460291+00:00",
+        "schema_version": "1.0.0",
+        "sensor_id": "ground-node-001/bme280",
+        "sensor_model": "BME280",
+        "source_mode": "recorded_measured",
+        "timestamp_basis": "host_read_completion",
+        "uncertainty": {
+          "kind": null,
+          "status": "unknown",
+          "unit": null,
+          "value": null
+        },
+        "unit": "%RH",
+        "value": 38.38328298366316,
+        "variable": "relative_humidity"
+      },
+      {
+        "acquired_at_utc": "2026-11-14T11:15:05.460291+00:00",
+        "acquisition_source": "physical_sensor",
+        "calibration": {
+          "reference": null,
+          "status": "unknown"
+        },
+        "context_role": "ground_context_only",
+        "location": {
+          "coordinate_frame": null,
+          "label": null,
+          "position": null,
+          "status": "unknown"
+        },
+        "node_id": "ground-node-001",
+        "normalized_at_utc": "2026-11-14T11:24:45.074062+00:00",
+        "observation_id": "obs_782b5885ccea240b0b4ae22a",
+        "provenance": {
+          "original_source_mode": "live_measured",
+          "source_file": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+          "source_row": 29,
+          "source_sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011"
+        },
+        "quality": {
+          "flags": [
+            "location_unknown",
+            "calibration_unknown",
+            "uncertainty_unknown"
+          ],
+          "status": "unreviewed"
+        },
+        "receipt_time_status": "recorded",
+        "received_at_utc": "2026-11-14T11:15:05.460291+00:00",
+        "schema_version": "1.0.0",
+        "sensor_id": "ground-node-001/bme280",
+        "sensor_model": "BME280",
+        "source_mode": "recorded_measured",
+        "timestamp_basis": "host_read_completion",
+        "uncertainty": {
+          "kind": null,
+          "status": "unknown",
+          "unit": null,
+          "value": null
+        },
+        "unit": "degC",
+        "value": 23.957421875,
+        "variable": "temperature"
+      },
+      {
+        "acquired_at_utc": "2026-11-14T11:15:05.183760+00:00",
+        "acquisition_source": "physical_sensor",
+        "calibration": {
+          "reference": null,
+          "status": "unknown"
+        },
+        "context_role": "ground_context_only",
+        "location": {
+          "coordinate_frame": null,
+          "label": null,
+          "position": null,
+          "status": "unknown"
+        },
+        "node_id": "ground-node-001",
+        "normalized_at_utc": "2026-11-14T11:24:45.074062+00:00",
+        "observation_id": "obs_f669a1b6a80064974b103f5b",
+        "provenance": {
+          "original_source_mode": "live_measured",
+          "source_file": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+          "source_row": 28,
+          "source_sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011"
+        },
+        "quality": {
+          "flags": [
+            "location_unknown",
+            "calibration_unknown",
+            "uncertainty_unknown",
+            "zero_reported_not_independently_validated"
+          ],
+          "status": "unreviewed"
+        },
+        "receipt_time_status": "recorded",
+        "received_at_utc": "2026-11-14T11:15:05.183760+00:00",
+        "schema_version": "1.0.0",
+        "sensor_id": "ground-node-001/pmsa003i",
+        "sensor_model": "PMSA003I",
+        "source_mode": "recorded_measured",
+        "timestamp_basis": "host_read_completion",
+        "uncertainty": {
+          "kind": null,
+          "status": "unknown",
+          "unit": null,
+          "value": null
+        },
+        "unit": "ug/m3",
+        "value": 0.0,
+        "variable": "pm10"
+      },
+      {
+        "acquired_at_utc": "2026-11-14T11:15:05.183760+00:00",
+        "acquisition_source": "physical_sensor",
+        "calibration": {
+          "reference": null,
+          "status": "unknown"
+        },
+        "context_role": "ground_context_only",
+        "location": {
+          "coordinate_frame": null,
+          "label": null,
+          "position": null,
+          "status": "unknown"
+        },
+        "node_id": "ground-node-001",
+        "normalized_at_utc": "2026-11-14T11:24:45.074062+00:00",
+        "observation_id": "obs_25e61fc3fbcdf8cb0a77dfdb",
+        "provenance": {
+          "original_source_mode": "live_measured",
+          "source_file": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+          "source_row": 26,
+          "source_sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011"
+        },
+        "quality": {
+          "flags": [
+            "location_unknown",
+            "calibration_unknown",
+            "uncertainty_unknown",
+            "zero_reported_not_independently_validated"
+          ],
+          "status": "unreviewed"
+        },
+        "receipt_time_status": "recorded",
+        "received_at_utc": "2026-11-14T11:15:05.183760+00:00",
+        "schema_version": "1.0.0",
+        "sensor_id": "ground-node-001/pmsa003i",
+        "sensor_model": "PMSA003I",
+        "source_mode": "recorded_measured",
+        "timestamp_basis": "host_read_completion",
+        "uncertainty": {
+          "kind": null,
+          "status": "unknown",
+          "unit": null,
+          "value": null
+        },
+        "unit": "ug/m3",
+        "value": 0.0,
+        "variable": "pm1_0"
+      },
+      {
+        "acquired_at_utc": "2026-11-14T11:15:05.183760+00:00",
+        "acquisition_source": "physical_sensor",
+        "calibration": {
+          "reference": null,
+          "status": "unknown"
+        },
+        "context_role": "ground_context_only",
+        "location": {
+          "coordinate_frame": null,
+          "label": null,
+          "position": null,
+          "status": "unknown"
+        },
+        "node_id": "ground-node-001",
+        "normalized_at_utc": "2026-11-14T11:24:45.074062+00:00",
+        "observation_id": "obs_060259c016126cbd7e25046d",
+        "provenance": {
+          "original_source_mode": "live_measured",
+          "source_file": "context/ground-measurements/both-20261114T111455Z-a371ef.csv",
+          "source_row": 27,
+          "source_sha256": "180e052e8ecc12a0f1a958527fe93a5b2174a5bfc75d95f2af6493a15e369011"
+        },
+        "quality": {
+          "flags": [
+            "location_unknown",
+            "calibration_unknown",
+            "uncertainty_unknown",
+            "zero_reported_not_independently_validated"
+          ],
+          "status": "unreviewed"
+        },
+        "receipt_time_status": "recorded",
+        "received_at_utc": "2026-11-14T11:15:05.183760+00:00",
+        "schema_version": "1.0.0",
+        "sensor_id": "ground-node-001/pmsa003i",
+        "sensor_model": "PMSA003I",
+        "source_mode": "recorded_measured",
+        "timestamp_basis": "host_read_completion",
+        "uncertainty": {
+          "kind": null,
+          "status": "unknown",
+          "unit": null,
+          "value": null
+        },
+        "unit": "ug/m3",
+        "value": 0.0,
+        "variable": "pm2_5"
+      }
+    ],
+    "source": {
+      "path": "context/ground-measurements/observations-20261114.jsonl",
+      "sha256": "9f20bce90e816431ac48915828abb301fb32174dd6dfa6484cf3d36640922bbc",
+      "records_checked": 60,
+      "raw_source_verification": "not_rechecked_by_this_reader"
+    },
+    "reason": null,
+    "physical_acquisition_performed": false,
+    "age_seconds_at_snapshot": {
+      "youngest": 4731.215215,
+      "oldest": 4731.491746
+    },
+    "time_status": "recorded_original_times"
+  },
+  "assets": [
+    {
+      "asset_id": "P01",
+      "eligibility": "eligible",
+      "captured_views": [
+        "overview"
+      ],
+      "coverage_status": "captured_finding_unknown",
+      "latest_assessment_id": "prior-001",
+      "image_quality": "clear",
+      "finding": "unknown_pending_operator_review",
+      "unresolved": [
+        "human_review_pending",
+        "finding_unknown"
+      ]
+    },
+    {
+      "asset_id": "P02",
+      "eligibility": "eligible",
+      "captured_views": [
+        "overview"
+      ],
+      "coverage_status": "needs_distinct_follow_up",
+      "latest_assessment_id": "prior-002",
+      "image_quality": "unclear",
+      "finding": "unknown_pending_operator_review",
+      "unresolved": [
+        "human_review_pending",
+        "insufficient_image_detail",
+        "finding_unknown"
+      ]
+    },
+    {
+      "asset_id": "P03",
+      "eligibility": "eligible",
+      "captured_views": [],
+      "coverage_status": "uninspected",
+      "latest_assessment_id": null,
+      "image_quality": "unknown",
+      "finding": "unknown",
+      "unresolved": [
+        "initial_capture_required"
+      ]
+    },
+    {
+      "asset_id": "P04",
+      "eligibility": "eligible",
+      "captured_views": [],
+      "coverage_status": "uninspected",
+      "latest_assessment_id": null,
+      "image_quality": "unknown",
+      "finding": "unknown",
+      "unresolved": [
+        "initial_capture_required"
+      ]
+    },
+    {
+      "asset_id": "P05",
+      "eligibility": "eligible",
+      "captured_views": [],
+      "coverage_status": "uninspected",
+      "latest_assessment_id": null,
+      "image_quality": "unknown",
+      "finding": "unknown",
+      "unresolved": [
+        "initial_capture_required"
+      ]
+    },
+    {
+      "asset_id": "P06",
+      "eligibility": "excluded",
+      "captured_views": [],
+      "coverage_status": "excluded_uninspected",
+      "latest_assessment_id": null,
+      "image_quality": "unknown",
+      "finding": "unknown",
+      "unresolved": []
+    }
+  ],
+  "uninspected_assets": [
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "incomplete_assets": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "assessments": [
+    {
+      "assessment_id": "prior-001",
+      "asset_id": "P01",
+      "view_id": "overview",
+      "origin": "frozen_prior_record",
+      "state_revision": 0,
+      "assessment_mode": "authored_replay_annotation",
+      "source_label": "synthetic",
+      "model": null,
+      "live_model_output": false,
+      "human_review_status": "pending",
+      "image_quality": "clear",
+      "finding": "unknown_pending_operator_review",
+      "flags": [
+        "human_review_pending",
+        "finding_unknown"
+      ],
+      "evidence_ref": {
+        "evidence_id": "synthetic-solar-array-001:P01:overview",
+        "image_path": "evidence/inspection/images/P01-overview.png",
+        "sha256": "2cae61c5699c561b349e78d016f64eb9294eda664404cdfdfbf4ec5d30f7e9a5"
+      },
+      "note": "Original prior finding retained; no new assessment or capture is implied."
+    },
+    {
+      "assessment_id": "prior-002",
+      "asset_id": "P02",
+      "view_id": "overview",
+      "origin": "frozen_prior_record",
+      "state_revision": 0,
+      "assessment_mode": "authored_replay_annotation",
+      "source_label": "synthetic",
+      "model": null,
+      "live_model_output": false,
+      "human_review_status": "pending",
+      "image_quality": "unclear",
+      "finding": "unknown_pending_operator_review",
+      "flags": [
+        "human_review_pending",
+        "insufficient_image_detail",
+        "finding_unknown"
+      ],
+      "evidence_ref": {
+        "evidence_id": "synthetic-solar-array-001:P02:overview",
+        "image_path": "evidence/inspection/images/P02-overview.png",
+        "sha256": "4f4a5d3c96e0c58403190b597dc2f78e49e592ebc1d0b5b63204b0c6b58493e8"
+      },
+      "note": "Original prior finding retained; no new assessment or capture is implied."
+    }
+  ],
+  "review_queue": [
+    {
+      "assessment_id": "prior-001",
+      "asset_id": "P01",
+      "view_id": "overview",
+      "origin": "frozen_prior_record",
+      "state_revision": 0,
+      "assessment_mode": "authored_replay_annotation",
+      "source_label": "synthetic",
+      "model": null,
+      "live_model_output": false,
+      "human_review_status": "pending",
+      "image_quality": "clear",
+      "finding": "unknown_pending_operator_review",
+      "flags": [
+        "human_review_pending",
+        "finding_unknown"
+      ],
+      "evidence_ref": {
+        "evidence_id": "synthetic-solar-array-001:P01:overview",
+        "image_path": "evidence/inspection/images/P01-overview.png",
+        "sha256": "2cae61c5699c561b349e78d016f64eb9294eda664404cdfdfbf4ec5d30f7e9a5"
+      },
+      "note": "Original prior finding retained; no new assessment or capture is implied."
+    },
+    {
+      "assessment_id": "prior-002",
+      "asset_id": "P02",
+      "view_id": "overview",
+      "origin": "frozen_prior_record",
+      "state_revision": 0,
+      "assessment_mode": "authored_replay_annotation",
+      "source_label": "synthetic",
+      "model": null,
+      "live_model_output": false,
+      "human_review_status": "pending",
+      "image_quality": "unclear",
+      "finding": "unknown_pending_operator_review",
+      "flags": [
+        "human_review_pending",
+        "insufficient_image_detail",
+        "finding_unknown"
+      ],
+      "evidence_ref": {
+        "evidence_id": "synthetic-solar-array-001:P02:overview",
+        "image_path": "evidence/inspection/images/P02-overview.png",
+        "sha256": "4f4a5d3c96e0c58403190b597dc2f78e49e592ebc1d0b5b63204b0c6b58493e8"
+      },
+      "note": "Original prior finding retained; no new assessment or capture is implied."
+    }
+  ],
+  "events": [],
+  "processed_request_count": 0,
+  "human_review_status": "pending",
+  "live_vision_status": "not_run"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "case": "malformed-json",
+    "result": "rejected",
+    "message": "mission: cannot read valid JSON at invalid.json: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+  },
+  {
+    "case": "invalid-battery",
+    "result": "rejected",
+    "message": "initial_state.battery_available: must be nonnegative"
+  },
+  {
+    "case": "missing-units",
+    "result": "rejected",
+    "message": "coordinate_frame.unit: required and must be m (metres)"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "observations": [
+    {
+      "id": "obs_d322084445c0b578f9e876ed",
+      "variable": "temperature",
+      "value": 22.088671875,
+      "unit": "degC",
+      "acquired_at_utc": "2026-11-14T22:21:16.417716+00:00",
+      "source_file": "context/ground-measurements/live/20261114T220849Z-9ae6c0/sample-00141.csv",
+      "raw_parity": true
+    },
+    {
+      "id": "obs_e83c09391dd5f68bc091fb33",
+      "variable": "relative_humidity",
+      "value": 39.217375982670866,
+      "unit": "%RH",
+      "acquired_at_utc": "2026-11-14T22:21:16.417716+00:00",
+      "source_file": "context/ground-measurements/live/20261114T220849Z-9ae6c0/sample-00141.csv",
+      "raw_parity": true
+    },
+    {
+      "id": "obs_d494754d928ac5bbc27618b5",
+      "variable": "pressure",
+      "value": 1009.0937761954982,
+      "unit": "hPa",
+      "acquired_at_utc": "2026-11-14T22:21:16.417716+00:00",
+      "source_file": "context/ground-measurements/live/20261114T220849Z-9ae6c0/sample-00141.csv",
+      "raw_parity": true
+    },
+    {
+      "id": "obs_bd94a64c3e131f37ea7e21e2",
+      "variable": "pm1_0",
+      "value": 0,
+      "unit": "ug/m3",
+      "acquired_at_utc": "2026-11-14T22:21:16.439364+00:00",
+      "source_file": "context/ground-measurements/live/20261114T220849Z-9ae6c0/sample-00141.csv",
+      "raw_parity": true
+    },
+    {
+      "id": "obs_9ebeb695976d8d2d1c7d9236",
+      "variable": "pm2_5",
+      "value": 0,
+      "unit": "ug/m3",
+      "acquired_at_utc": "2026-11-14T22:21:16.439364+00:00",
+      "source_file": "context/ground-measurements/live/20261114T220849Z-9ae6c0/sample-00141.csv",
+      "raw_parity": true
+    },
+    {
+      "id": "obs_d51ef3b39ab3334b85402924",
+      "variable": "pm10",
+      "value": 0,
+      "unit": "ug/m3",
+      "acquired_at_utc": "2026-11-14T22:21:16.439364+00:00",
+      "source_file": "context/ground-measurements/live/20261114T220849Z-9ae6c0/sample-00141.csv",
+      "raw_parity": true
+    }
+  ]
+}

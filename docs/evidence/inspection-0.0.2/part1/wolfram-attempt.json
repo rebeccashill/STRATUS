@@ -1,0 +1,384 @@
+{
+  "mode": "local_python_fallback",
+  "execution_permitted": true,
+  "normalized_input": {
+    "contract_version": "inspection-costs-v1",
+    "model_version": "toy-euclidean-energy-v1",
+    "mission_id": "solar-array-001",
+    "mission_revision": "0.0.1-part2",
+    "state_revision": 1,
+    "position": {
+      "point_id": "current",
+      "x": 30.0,
+      "y": 10.0
+    },
+    "launch": {
+      "point_id": "launch",
+      "x": 0.0,
+      "y": 0.0
+    },
+    "distance_unit": "m",
+    "energy_unit": "simulated_energy_unit",
+    "battery_available": 79.1886116991581,
+    "capture_cost": 5.0,
+    "travel_energy_per_distance": 0.5,
+    "return_reserve": 15.0,
+    "remaining_actions": 2,
+    "candidates": [
+      {
+        "asset_id": "P01",
+        "view_id": "follow-up",
+        "x": 10.0,
+        "y": 10.0
+      },
+      {
+        "asset_id": "P01",
+        "view_id": "overview",
+        "x": 10.0,
+        "y": 10.0
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "follow-up",
+        "x": 20.0,
+        "y": 10.0
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "overview",
+        "x": 20.0,
+        "y": 10.0
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "follow-up",
+        "x": 30.0,
+        "y": 10.0
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "overview",
+        "x": 30.0,
+        "y": 10.0
+      },
+      {
+        "asset_id": "P04",
+        "view_id": "follow-up",
+        "x": 10.0,
+        "y": 20.0
+      },
+      {
+        "asset_id": "P04",
+        "view_id": "overview",
+        "x": 10.0,
+        "y": 20.0
+      },
+      {
+        "asset_id": "P05",
+        "view_id": "follow-up",
+        "x": 20.0,
+        "y": 20.0
+      },
+      {
+        "asset_id": "P05",
+        "view_id": "overview",
+        "x": 20.0,
+        "y": 20.0
+      },
+      {
+        "asset_id": "P06",
+        "view_id": "follow-up",
+        "x": 30.0,
+        "y": 20.0
+      },
+      {
+        "asset_id": "P06",
+        "view_id": "overview",
+        "x": 30.0,
+        "y": 20.0
+      }
+    ]
+  },
+  "cache_key": "4e4f4162468346cdaa328cc81956f89cf6bd6990034643ab63cee3e4e08627d7",
+  "model_version": "toy-euclidean-energy-v1",
+  "script_sha256": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+  "output": {
+    "contract_version": "inspection-costs-v1",
+    "model_version": "toy-euclidean-energy-v1",
+    "mission_id": "solar-array-001",
+    "mission_revision": "0.0.1-part2",
+    "state_revision": 1,
+    "distance_unit": "m",
+    "energy_unit": "simulated_energy_unit",
+    "options": [
+      {
+        "asset_id": "P01",
+        "view_id": "follow-up",
+        "outbound": 10.0,
+        "capture": 5.0,
+        "return_cost": 7.0710678118654755,
+        "reserve": 15.0,
+        "margin": 42.117543887292626,
+        "feasible": true
+      },
+      {
+        "asset_id": "P01",
+        "view_id": "overview",
+        "outbound": 10.0,
+        "capture": 5.0,
+        "return_cost": 7.0710678118654755,
+        "reserve": 15.0,
+        "margin": 42.117543887292626,
+        "feasible": true
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "follow-up",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 11.180339887498949,
+        "reserve": 15.0,
+        "margin": 43.00827181165916,
+        "feasible": true
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 11.180339887498949,
+        "reserve": 15.0,
+        "margin": 43.00827181165916,
+        "feasible": true
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "follow-up",
+        "outbound": 0.0,
+        "capture": 5.0,
+        "return_cost": 15.811388300841896,
+        "reserve": 15.0,
+        "margin": 43.377223398316204,
+        "feasible": true
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "overview",
+        "outbound": 0.0,
+        "capture": 5.0,
+        "return_cost": 15.811388300841896,
+        "reserve": 15.0,
+        "margin": 43.377223398316204,
+        "feasible": true
+      },
+      {
+        "asset_id": "P04",
+        "view_id": "follow-up",
+        "outbound": 11.180339887498949,
+        "capture": 5.0,
+        "return_cost": 11.180339887498949,
+        "reserve": 15.0,
+        "margin": 36.827931924160204,
+        "feasible": true
+      },
+      {
+        "asset_id": "P04",
+        "view_id": "overview",
+        "outbound": 11.180339887498949,
+        "capture": 5.0,
+        "return_cost": 11.180339887498949,
+        "reserve": 15.0,
+        "margin": 36.827931924160204,
+        "feasible": true
+      },
+      {
+        "asset_id": "P05",
+        "view_id": "follow-up",
+        "outbound": 7.0710678118654755,
+        "capture": 5.0,
+        "return_cost": 14.142135623730951,
+        "reserve": 15.0,
+        "margin": 37.975408263561675,
+        "feasible": true
+      },
+      {
+        "asset_id": "P05",
+        "view_id": "overview",
+        "outbound": 7.0710678118654755,
+        "capture": 5.0,
+        "return_cost": 14.142135623730951,
+        "reserve": 15.0,
+        "margin": 37.975408263561675,
+        "feasible": true
+      },
+      {
+        "asset_id": "P06",
+        "view_id": "follow-up",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 18.027756377319946,
+        "reserve": 15.0,
+        "margin": 36.160855321838156,
+        "feasible": true
+      },
+      {
+        "asset_id": "P06",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 18.027756377319946,
+        "reserve": 15.0,
+        "margin": 36.160855321838156,
+        "feasible": true
+      }
+    ]
+  },
+  "python_output": {
+    "contract_version": "inspection-costs-v1",
+    "model_version": "toy-euclidean-energy-v1",
+    "mission_id": "solar-array-001",
+    "mission_revision": "0.0.1-part2",
+    "state_revision": 1,
+    "distance_unit": "m",
+    "energy_unit": "simulated_energy_unit",
+    "options": [
+      {
+        "asset_id": "P01",
+        "view_id": "follow-up",
+        "outbound": 10.0,
+        "capture": 5.0,
+        "return_cost": 7.0710678118654755,
+        "reserve": 15.0,
+        "margin": 42.117543887292626,
+        "feasible": true
+      },
+      {
+        "asset_id": "P01",
+        "view_id": "overview",
+        "outbound": 10.0,
+        "capture": 5.0,
+        "return_cost": 7.0710678118654755,
+        "reserve": 15.0,
+        "margin": 42.117543887292626,
+        "feasible": true
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "follow-up",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 11.180339887498949,
+        "reserve": 15.0,
+        "margin": 43.00827181165916,
+        "feasible": true
+      },
+      {
+        "asset_id": "P02",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 11.180339887498949,
+        "reserve": 15.0,
+        "margin": 43.00827181165916,
+        "feasible": true
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "follow-up",
+        "outbound": 0.0,
+        "capture": 5.0,
+        "return_cost": 15.811388300841896,
+        "reserve": 15.0,
+        "margin": 43.377223398316204,
+        "feasible": true
+      },
+      {
+        "asset_id": "P03",
+        "view_id": "overview",
+        "outbound": 0.0,
+        "capture": 5.0,
+        "return_cost": 15.811388300841896,
+        "reserve": 15.0,
+        "margin": 43.377223398316204,
+        "feasible": true
+      },
+      {
+        "asset_id": "P04",
+        "view_id": "follow-up",
+        "outbound": 11.180339887498949,
+        "capture": 5.0,
+        "return_cost": 11.180339887498949,
+        "reserve": 15.0,
+        "margin": 36.827931924160204,
+        "feasible": true
+      },
+      {
+        "asset_id": "P04",
+        "view_id": "overview",
+        "outbound": 11.180339887498949,
+        "capture": 5.0,
+        "return_cost": 11.180339887498949,
+        "reserve": 15.0,
+        "margin": 36.827931924160204,
+        "feasible": true
+      },
+      {
+        "asset_id": "P05",
+        "view_id": "follow-up",
+        "outbound": 7.0710678118654755,
+        "capture": 5.0,
+        "return_cost": 14.142135623730951,
+        "reserve": 15.0,
+        "margin": 37.975408263561675,
+        "feasible": true
+      },
+      {
+        "asset_id": "P05",
+        "view_id": "overview",
+        "outbound": 7.0710678118654755,
+        "capture": 5.0,
+        "return_cost": 14.142135623730951,
+        "reserve": 15.0,
+        "margin": 37.975408263561675,
+        "feasible": true
+      },
+      {
+        "asset_id": "P06",
+        "view_id": "follow-up",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 18.027756377319946,
+        "reserve": 15.0,
+        "margin": 36.160855321838156,
+        "feasible": true
+      },
+      {
+        "asset_id": "P06",
+        "view_id": "overview",
+        "outbound": 5.0,
+        "capture": 5.0,
+        "return_cost": 18.027756377319946,
+        "reserve": 15.0,
+        "margin": 36.160855321838156,
+        "feasible": true
+      }
+    ]
+  },
+  "wolfram_output": null,
+  "failure": {
+    "code": "timeout",
+    "message": "Local Wolfram exceeded its bounded execution time"
+  },
+  "disagreements": [],
+  "tolerance": {
+    "absolute": 1e-08,
+    "relative": 1e-10,
+    "feasibility_sign": "strict; never relaxed by tolerance"
+  },
+  "request_counts": {
+    "local_kernel_calls": 1,
+    "cloud_requests": 0,
+    "alpha_calls": 0
+  },
+  "state_transition_applied": false
+}

@@ -1,0 +1,8 @@
+{
+  "tests": 20,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "external_python_network": "denied by audit hook",
+  "scope": "test_fleet.py"
+}

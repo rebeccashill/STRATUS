@@ -1,0 +1,7 @@
+Captured P05/follow-up; used 5.00 simulated energy units.
+Battery: 75.86 simulated units | Capture actions remaining: 1
+Computation: local Python
+Next: Capture P02/follow-up. Feedback-aware priority/uncertainty/cost rule; explicit execution required
+Ground conditions: Recorded; oldest reading 295.4 minutes old. pressure 1005.62 hPa; relative_humidity 38.38 %RH; temperature 23.96 degC; pm10 0.00 ug/m3; pm1_0 0.00 ug/m3; pm2_5 0.00 ug/m3
+Image assessment: annotated replay; human review pending.
+Ground readings remain unreviewed; location/calibration metadata is retained with the saved observations.
