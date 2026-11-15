@@ -1,0 +1,32 @@
+{
+  "completed": [
+    "S120",
+    "S121",
+    "S122",
+    "S123",
+    "S124",
+    "S125",
+    "S126",
+    "W020",
+    "W021",
+    "S128",
+    "H022",
+    "H023",
+    "H024"
+  ],
+  "requested_sections_complete": "13/14",
+  "overall_complete": "13/24",
+  "pending_in_requested_sections": [
+    "S127"
+  ],
+  "notion_url": "https://app.notion.com/p/4185b396b48e81dd9c58da242980d887",
+  "evidence": [
+    "frozen-verification.json",
+    "browser-current-checks.json",
+    "reconnected-recorded-ground.json",
+    "final-browser-state.txt",
+    "live-hardware.jpg"
+  ],
+  "regression_limit": "18 frontend checks passed; 294 Python tests attempted, 0 failures, 11 socket-permission errors",
+  "hardware_absence_scope": "Recorded fallback observed before user reconnected hardware; new offline check denies hardware imports/process/socket access without physically unplugging again"
+}

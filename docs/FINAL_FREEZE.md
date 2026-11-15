@@ -1,8 +1,10 @@
-# STRATUS final product freeze — Part 9
+# STRATUS verified demonstration and limits
 
-Part 9 is complete: **14/14**. The application code is frozen before the
-November 14, 2026 10pm America/New_York deadline. Part 10 can document, record
-and package this exact version; no new feature work is included.
+This records the Part 9 release walkthrough and its frozen inputs. Later UI
+clarity changes and final hardware checks are recorded separately under
+`docs/evidence/inspection-0.0.3/`. The historical hashes below identify the
+original checkpoint; they do not identify every later presentation change.
+Use [the demo guide](FLEET_DEMO.md) to reproduce the current judging workflow.
 
 Source identity: `sha256:a2188440b1fe8068410054e5b78f82462a8f8f30f3d6197f38251f6a4141468f`. The complete path/hash list, exact mission and
 checkpoint IDs, model/configuration, Python and package versions are in

@@ -1,5 +1,74 @@
 # Ground hardware handoff
 
+## Combined fleet app quick-start
+
+| Purchased product | Quantity | Identifier |
+| --- | --- | --- |
+| BME280 atmospheric board | 1 | SparkFun 15440 / SEN-15440 |
+| Qwiic cable, 100 mm | 2 | SparkFun 17259 |
+| MCP2221A USB-to-I2C bridge | 1 | Adafruit 4471 |
+| USB C-to-A cable | 1 | Adafruit 6324 |
+| PMSA003I particulate breakout | 1 | Adafruit 4632 |
+
+Disconnect USB before changing wiring. Connection A joins laptop USB-A to the
+bridge's USB-C connector. Connection B joins the bridge STEMMA QT port to the
+BME280 Qwiic port with the first 100 mm cable. Connection C joins the BME280's
+other port to the PMSA003I with the second cable. Use the keyed connectors;
+the loose pin-header strip is not needed for this connection.
+
+In PowerShell from the standalone STRATUS folder, the device-independent demo is:
+
+```powershell
+.\.venv\Scripts\python.exe -B scripts\finish_part12.py --port 8774 --local
+```
+
+Keep that terminal open. Use `/fleet`, `/hazards` and `/` on
+http://127.0.0.1:8774 through this one server. Startup uses Recorded context,
+two paused drones and Local Python; it requires no USB bridge, API key or
+Wolfram. Do not start another server if the existing app is already running.
+For environment creation and installation use the project README.
+
+For the optional physical reader, install the recorded package versions in the
+same environment and set the bridge variable before starting the app:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r context\hardware-packages.txt
+$env:BLINKA_MCP2221 = '1'
+```
+
+The recorded versions include Adafruit-Blinka 10.2.0, hidapi 0.15.0,
+adafruit-circuitpython-bme280 2.6.32 and adafruit-circuitpython-pm25 2.1.24.
+Only run this separate diagnostic when the app is not reading the USB bridge:
+
+```powershell
+.\.venv\Scripts\python.exe -B scripts\check_ground_sensors.py --mode both
+```
+
+Successful reads identify both sensors and six finite values with their units.
+The diagnostic and combined launcher accept the documented arguments; their
+`--help` entry points were checked again during Part 10. Earlier actual reads
+and later unavailable-device observations are separate evidence. No new live
+acquisition is claimed by these instructions.
+
+In the fleet app choose a Station feed, then **Use current station snapshot**.
+One station snapshot is frozen for the whole fleet. Live is a new physical
+read; Recorded is a prior physical read with its original time; Synthetic example
+is authored input; Unavailable has no usable observation. Read freshness and
+per-sensor status independently. A saved observation remains recorded history
+on reopen. Actual location is unknown; it is not a simulated drone coordinate.
+
+If the bridge is absent, check the data-capable USB cable, environment setting
+and competing readers. Keep the working sensor if only one fails. Allow the
+PMSA003I's 30-second settling period after reconnection. Continue with Recorded
+or Unavailable if acquisition fails; do not add drivers or change wiring during
+the final verification. The Part 10 recorded/unavailable/reopen browser check
+retained 100 EU and three captures on each of two drones. Its exact report,
+snapshot and source references are retained in
+`docs/evidence/inspection-0.0.2/part10/package-verification.json` and
+`docs/evidence/inspection-0.0.3/frozen-verification.json`.
+
+## Earlier acquisition record
+
 H006, H007 and H008 are complete: actual samples are preserved, the shared
 live/replay record format is saved, and the hardware handoff is recorded.
 Rebecca confirmed that timing does not block H008 completion. The actual
@@ -87,9 +156,10 @@ mass concentration, not the standard-concentration fields or particle counts.
 - Ground context does not change simulated position, energy, action count,
   coverage or image findings.
 
-## Unknowns and next step
+## Acquisition unknowns and later integration
 
-No current acquisition blocker is recorded. Actual location, hardware serials,
+The original acquisition session had no blocker. Later app sessions reported
+an unavailable bridge; the final backup uses Recorded measurements. Actual location, hardware serials,
 calibration and uncertainty remain unknown. The PM channels reported zero in
 both short tests; keep those values unreviewed without claiming zero particles,
 calibrated accuracy or response under other conditions.
@@ -98,11 +168,8 @@ Raw scans also contained reserved-address entries 0x00 and 0x78. Their cause
 remains undiagnosed; they are not extra inventoried sensors. The historical
 Part 3 skipped decision in `context/sensor-decision.json` is unchanged.
 
-H009/H010 are next for hardware application integration: feed live readings and
-these recorded observations through one backend interface, then connect the
-Ground conditions panel and report. Preserve source, time, identity and real
-location. Acquisition and a record specification alone do not complete that UI.
-
-Remaining Part 4 Wolfram work, the first saved inspection and save/reopen remain
-separate pending work. Preparing this handoff required no API calls, physical
-re-acquisition or simulated inspection actions.
+H009-H019 application integration and Parts 9, 12 and 13 subsequently completed.
+The shared ground snapshot now persists through fleet reports and save/reopen.
+Its loss cannot erase a reported hazard or change aircraft budgets. The current
+Part 10 handoff supersedes the earlier integration TODOs while preserving the
+original acquisition files, channel convention and unknowns above.

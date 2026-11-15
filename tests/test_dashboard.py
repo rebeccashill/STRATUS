@@ -19,6 +19,7 @@ from stratus.inspection.dashboard import Dashboard, make_server
 from stratus.inspection.ground import GroundFeed, HardwareReader, present_snapshot, validate_observation
 from stratus.inspection.loader import load_mission
 from stratus.inspection.review import ground_snapshot, utc_time
+from http_test_support import connection_for
 
 
 class GroundTests(unittest.TestCase):
@@ -249,7 +250,7 @@ class DashboardHttpTests(unittest.TestCase):
         cls.server.shutdown(); cls.server.server_close(); cls.app.close()
 
     def request(self, path, data=None, **headers):
-        conn = http.client.HTTPConnection("127.0.0.1",self.server.server_port,timeout=3)
+        conn = connection_for(self.server, timeout=3)
         try:
             if data is not None:
                 headers.setdefault("Content-Type","application/json")
@@ -258,7 +259,7 @@ class DashboardHttpTests(unittest.TestCase):
             response = conn.getresponse(); return response.status,response.read(),dict(response.getheaders())
         finally: conn.close()
 
-    def test_real_http_serves_one_page_script_style_and_exact_image(self):
+    def test_http_serves_one_page_script_style_and_exact_image(self):
         for path,kind in (("/","text/html"),("/app.js","text/javascript"),("/style.css","text/css"),("/image?asset=P03&view=overview","image/png")):
             with self.subTest(path=path):
                 status,body,headers = self.request(path)

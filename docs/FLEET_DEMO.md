@@ -1,48 +1,68 @@
-# STRATUS fleet demo and recorded walkthrough
+# STRATUS judging demo
 
-The verified preview is http://127.0.0.1:8774/fleet. Aircraft and imagery are
-simulated/authored replay. The physical BME280/PMSA003I is one separate node.
+## Start
 
-1. Choose two drones, seed 11. Preview allocation: battery and captures stay
-   unchanged. Step through independent assignments and travel/capture events.
-   Select each drone to compare its own budget, margin and alternative.
-2. Save and reopen. The verified partial two-drone state retained two captures
-   and 187.59 EU exactly. Changing a priority/requesting a distinct follow-up
-   proposes work; it does not execute it.
-3. Choose 50 and confirm New simulation. One map and table contain all 50 records.
-   Select D050. Run, pause and save. The recorded paused state had 78 captures,
-   4464.60 EU and 12.41289163 logical seconds. A fresh page reopened it exactly.
-4. Resume. The nominal run completed 150 captures, all 50 participated, and
-   129/200 assets had a usable replay view. Battery remaining was 3632.98 EU;
-   1367.02 EU was used. Unclear views and human review remain visible.
-5. Demonstrate recovery using the explicitly labeled paused-run replay fork:
-   scripts/prepare_fleet_recovery.py prints a new saved checkpoint to open.
-   In the recorded demonstration D002 became unavailable with 84.97 EU and one
-   capture left. These amounts stayed unchanged; the other 49 completed, for
-   149 captures. This is an injected event, not a real lost aircraft.
-6. Show one frozen Live ground snapshot and original UTC times. Attaching it
-   changed no aircraft budget. The actual PMSA003I zero readings remain valid
-   unreviewed measurements, not clean-air certification.
-7. Open the report. It embeds illustrations and lists every drone, captured view,
-   unresolved work and source/numerical modes. Save/Open never acquires a new
-   sensor sample or duplicates a capture.
+Follow [the README](../README.md) to create the Python environment, then run:
 
-## Saved browser checkpoints
+```powershell
+.\.venv\Scripts\python.exe -B scripts\finish_part12.py --port 8774 --local
+```
 
-| File in saved-runs/fleet | Recorded role |
-| --- | --- |
-| fleet-11ff17177b6544a387f92f2c2869e31b.json | Final nominal 50-drone run, Live ground context, 150 captures |
-| fleet-ab9aa6cabea84b07b058e77ed85ae412.json | Two-drone feedback/recovery, four captures, D001 unavailable |
-| fleet-a77e4cb4580b44c0b0b8182bc12388ff.json | 50-drone replay/recovery, 149 captures, D002 unavailable |
+Open http://127.0.0.1:8774/fleet. The launcher uses recorded ground data and
+Local Python, so the walkthrough needs no API key, hardware or Wolfram.
+Use the running server if it is already available.
 
-The initial paused snapshots are preserved separately in the Part 12 evidence
-folder. The replay fork keeps its provenance and starts with a new run ID so
-the completed nominal checkpoint is not overwritten.
+## Fleet overview
 
-Actual startup Wolfram proof covers two and 50 drones plus reserve boundaries;
-the large nominal UI playback used Local Python. One live AI explanation was
-retained as raw evidence but its incorrect numeric restatement was set aside in
-the UI. Verified numerical summaries remain authoritative.
+1. Start with two drones and seed 11. Preview allocation and inspect each
+   drone's battery, protected return reserve and three-picture allowance.
+   Previewing spends no aircraft resources.
+2. Use Step one event or explicitly Run. The map, inspection evidence and
+   per-drone table update together. Save and reopen to demonstrate preserved
+   progress; reopening pauses playback.
+3. To demonstrate scale, choose 50 drones and explicitly confirm a new
+   simulation. Run the nominal seed-11 case without a reported obstacle.
+   The recorded reference result is 150 captures, all 50 drones participating,
+   129 usable assets of 200 and 71 still needing usable evidence.
 
-This document records the observed walkthrough and provides a short demo script;
-it is not a claim that a video or real flight demonstration was recorded.
+## Reported crane scenario
+
+1. Begin a new paused fleet and open http://127.0.0.1:8774/hazards.
+   Both desks refer to the same authoritative fleet run.
+2. Choose Prepare selected action, then Report example crane. The dashboard
+   assesses every drone and marks paths affected by the reported exclusion.
+3. Choose Try prepared simulation. The old assignment is rejected because
+   its hazard revision is stale, without charging battery or recording a capture.
+4. Choose Replan clear work. Eligible inspections are reassigned; work requiring
+   operator review stays held. Completed work and prior costs remain recorded.
+5. Save or create a fleet report. Review the decisions, independent budgets,
+   evidence, reported areas and unfinished work.
+
+The crane case and nominal case are separate runs. Do not present the nominal
+150-capture result as the outcome after reporting the crane. A reported exclusion
+can reduce the amount of eligible work.
+
+## Ground context and fallback
+
+Show the separate ground panel and the readings' original collection times.
+The BME280 provides temperature, humidity and pressure; the PMSA003I provides
+particle measurements. Recorded mode retains the original timestamps.
+Changing or attaching ground context does not spend aircraft resources.
+
+The station does not detect the crane or measure conditions at every drone.
+An operator reports obstacles. Use Recorded or Unavailable if hardware is absent;
+see [the hardware guide](HARDWARE_HANDOFF.md) for the optional physical setup.
+Keep playback paused while reviewing hazard reports.
+
+## What the demo establishes
+
+This is a local software prototype with simulated aircraft movement, toy energy
+units and authored replay illustrations. It demonstrates shared task ownership,
+resource guards, updated hazard checks and preserved decision records.
+It does not establish real flight clearance, collision avoidance or image-based
+fault diagnosis. OpenAI explanations are optional and never authorize execution;
+Wolfram is an optional independent cost calculation path.
+
+For additional controls, use [the fleet guide](FLEET_GUIDE.md) or
+[the single-drone operator guide](OPERATOR_GUIDE.md). Dated release observations
+are retained in [the verified demonstration](FINAL_FREEZE.md).

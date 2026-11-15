@@ -1,0 +1,8 @@
+{
+  "tests": 294,
+  "passed": false,
+  "failures": 0,
+  "errors": 11,
+  "external_python_network": "denied by audit hook",
+  "scope": "test_*.py"
+}

@@ -1,0 +1,300 @@
+{
+  "verified_at_utc": "2026-11-15T04:18:46.970177+00:00",
+  "status": "passed",
+  "product_identity": "sha256:41b190c364df848c149bbdd6fa365d5f800b9b05a2ef0c1b6265cf0446fbd716",
+  "all_product_and_immutable_input_hashes_match": true,
+  "hardware": {
+    "channels": [
+      {
+        "sensor_model": "BME280",
+        "variable": "temperature",
+        "value": 21.9763671875,
+        "unit": "degC",
+        "acquired_at_utc": "2026-11-15T04:13:11.559411+00:00"
+      },
+      {
+        "sensor_model": "BME280",
+        "variable": "relative_humidity",
+        "value": 39.24583288662071,
+        "unit": "%RH",
+        "acquired_at_utc": "2026-11-15T04:13:11.559411+00:00"
+      },
+      {
+        "sensor_model": "BME280",
+        "variable": "pressure",
+        "value": 1011.6433687966407,
+        "unit": "hPa",
+        "acquired_at_utc": "2026-11-15T04:13:11.559411+00:00"
+      },
+      {
+        "sensor_model": "PMSA003I",
+        "variable": "pm1_0",
+        "value": 0,
+        "unit": "ug/m3",
+        "acquired_at_utc": "2026-11-15T04:13:11.582980+00:00"
+      },
+      {
+        "sensor_model": "PMSA003I",
+        "variable": "pm2_5",
+        "value": 0,
+        "unit": "ug/m3",
+        "acquired_at_utc": "2026-11-15T04:13:11.582980+00:00"
+      },
+      {
+        "sensor_model": "PMSA003I",
+        "variable": "pm10",
+        "value": 0,
+        "unit": "ug/m3",
+        "acquired_at_utc": "2026-11-15T04:13:11.582980+00:00"
+      }
+    ],
+    "exact_raw_csv_values_units_times_hashes_match": true,
+    "export_is_recorded_history": true,
+    "raw_csv": {
+      "source_file": "context/ground-measurements/live/20261115T040952Z-67ef3e/sample-00038.csv",
+      "source_sha256": "745f859b649e93ff68a2963adf6d5726722ae08533aa0b1d06684ba743a1d27c",
+      "source_row": 2,
+      "original_source_mode": "live_measured"
+    },
+    "live_browser_observation": "Both sensors fresh after reconnection; six channels, unknown location, unreviewed quality"
+  },
+  "offline": {
+    "hardware_imports_prohibited": true,
+    "hardware_import_attempts": [],
+    "usb_worker_starts": 0,
+    "new_processes_and_sockets_prohibited": true,
+    "recorded_unavailable_recorded_preserved_aircraft_state": true,
+    "original_times_preserved": true,
+    "local_python_worked": true,
+    "physical_unplug_performed_this_turn": false
+  },
+  "reports": [
+    {
+      "checkpoint": "saved-runs/fleet/fleet-c89be77ba8c8458bba4ce16d49679bbf.json",
+      "report": "saved-runs/reports/fleet-c89be77b-20261114T222932296184Z.json",
+      "metrics": {
+        "fleet_size": 50,
+        "seed": 11,
+        "method": "coordinator",
+        "captures": 83,
+        "unique_usable_assets": 66,
+        "usable_priority": 139,
+        "total_priority": 399,
+        "unresolved_assets": 134,
+        "unclear_views": 17,
+        "human_review_pending": 83,
+        "total_energy_EU": 711.6729961907951,
+        "total_battery_EU": 4288.327003809204,
+        "remaining_captures": 67,
+        "travel_metres": 593.3459923815903,
+        "drone_participation": 28,
+        "rounds": 7,
+        "candidate_pairs": 1007,
+        "event_count": 278,
+        "logical_seconds": 33.843416611,
+        "allocation_wall_seconds": [
+          0.2427043999923626,
+          0.5657943999976851,
+          0.485811399994418,
+          0.38900130000547506,
+          0.337160800001584,
+          0.25524360001145396,
+          0.16978360000939574
+        ],
+        "violations": 0,
+        "status_counts": {
+          "idle": 0,
+          "assigned": 0,
+          "traveling": 0,
+          "inspecting": 0,
+          "returning": 0,
+          "complete": 50,
+          "held": 0,
+          "unavailable": 0
+        },
+        "stop_reason": "No feasible shortlisted capture remains; completed returns or explicit holds retained. This is not a global infeasibility proof.",
+        "local_kernel_calls": 0,
+        "cloud_requests": 0,
+        "alpha_calls": 0,
+        "ai_requests": 0
+      },
+      "offline_images": 2
+    },
+    {
+      "checkpoint": "saved-runs/fleet/fleet-8a74ac5e339e4cd5be482d22e1a78eb4.json",
+      "report": "saved-runs/reports/fleet-8a74ac5e-20261115T005613146515Z.json",
+      "metrics": {
+        "fleet_size": 50,
+        "seed": 11,
+        "method": "coordinator",
+        "captures": 79,
+        "unique_usable_assets": 63,
+        "usable_priority": 136,
+        "total_priority": 399,
+        "unresolved_assets": 137,
+        "unclear_views": 16,
+        "human_review_pending": 79,
+        "total_energy_EU": 676.804783632755,
+        "total_battery_EU": 4323.195216367245,
+        "remaining_captures": 71,
+        "travel_metres": 563.6095672655099,
+        "drone_participation": 27,
+        "rounds": 16,
+        "candidate_pairs": 990,
+        "event_count": 285,
+        "logical_seconds": 35.975773534,
+        "allocation_wall_seconds": [
+          0.5099200000113342,
+          0.6766386000090279,
+          0.6997713000164367,
+          0.4903667999897152,
+          0.2721286999876611,
+          0.14777340000728145,
+          3.4199998481199145e-05,
+          3.6299985367804766e-05,
+          5.3499999921768904e-05,
+          4.73999825771898e-05,
+          3.649998689070344e-05,
+          4.2800005758181214e-05,
+          4.320000880397856e-05,
+          5.319999763742089e-05,
+          5.490001058205962e-05,
+          2.8300011763349175e-05
+        ],
+        "violations": 0,
+        "status_counts": {
+          "idle": 0,
+          "assigned": 0,
+          "traveling": 0,
+          "inspecting": 0,
+          "returning": 0,
+          "complete": 40,
+          "held": 10,
+          "unavailable": 0
+        },
+        "stop_reason": "No feasible shortlisted capture remains; completed returns or explicit holds retained. This is not a global infeasibility proof.",
+        "local_kernel_calls": 0,
+        "cloud_requests": 0,
+        "alpha_calls": 0,
+        "ai_requests": 0
+      },
+      "offline_images": 2
+    },
+    {
+      "checkpoint": "saved-runs/fleet/fleet-98456d08a90749958c566a37cd6be7fe.json",
+      "report": "saved-runs/reports/fleet-98456d08-20261115T033427620553Z.json",
+      "metrics": {
+        "fleet_size": 2,
+        "seed": 11,
+        "method": "coordinator",
+        "captures": 0,
+        "unique_usable_assets": 0,
+        "usable_priority": 0,
+        "total_priority": 399,
+        "unresolved_assets": 200,
+        "unclear_views": 0,
+        "human_review_pending": 0,
+        "total_energy_EU": 0.0,
+        "total_battery_EU": 200.0,
+        "remaining_captures": 6,
+        "travel_metres": 0,
+        "drone_participation": 0,
+        "rounds": 0,
+        "candidate_pairs": 0,
+        "event_count": 0,
+        "logical_seconds": 0.0,
+        "allocation_wall_seconds": [],
+        "violations": 0,
+        "status_counts": {
+          "idle": 2,
+          "assigned": 0,
+          "traveling": 0,
+          "inspecting": 0,
+          "returning": 0,
+          "complete": 0,
+          "held": 0,
+          "unavailable": 0
+        },
+        "stop_reason": null,
+        "local_kernel_calls": 0,
+        "cloud_requests": 0,
+        "alpha_calls": 0,
+        "ai_requests": 0
+      },
+      "offline_images": 2
+    }
+  ],
+  "nominal": {
+    "fleet_size": 50,
+    "seed": 11,
+    "method": "coordinator",
+    "captures": 150,
+    "unique_usable_assets": 129,
+    "usable_priority": 264,
+    "total_priority": 399,
+    "unresolved_assets": 71,
+    "unclear_views": 21,
+    "human_review_pending": 150,
+    "total_energy_EU": 1367.02012719929,
+    "total_battery_EU": 3632.9798728007095,
+    "remaining_captures": 0,
+    "travel_metres": 1234.0402543985815,
+    "drone_participation": 50,
+    "rounds": 5,
+    "candidate_pairs": 1691,
+    "event_count": 500,
+    "logical_seconds": 42.495415187,
+    "allocation_wall_seconds": [
+      0.49785639997571707,
+      0.5014278999879025,
+      0.47778250000556,
+      0.2767605999833904,
+      0.04181270001572557
+    ],
+    "violations": 0,
+    "status_counts": {
+      "idle": 0,
+      "assigned": 0,
+      "traveling": 0,
+      "inspecting": 0,
+      "returning": 0,
+      "complete": 50,
+      "held": 0,
+      "unavailable": 0
+    },
+    "stop_reason": "No feasible shortlisted capture remains; completed returns or explicit holds retained. This is not a global infeasibility proof.",
+    "local_kernel_calls": 0,
+    "cloud_requests": 0,
+    "alpha_calls": 0,
+    "ai_requests": 0
+  },
+  "single_report": {
+    "aircraft_state_matches_checkpoint": true,
+    "embedded_images": 4
+  },
+  "comparisons": {
+    "single_methods": [
+      "fixed-order",
+      "nearest-feasible",
+      "adaptive"
+    ],
+    "matrix_cases": 15,
+    "baselines": 6,
+    "regression_retained": "129 coordinator vs 130 round-robin usable"
+  },
+  "saved_actual_wolfram": {
+    "file": "docs/evidence/inspection-0.0.2/part12/wolfram-fleet-latest.json",
+    "status": "passed",
+    "calls": 3
+  },
+  "backup_video": {
+    "sha256_matches": true,
+    "duration_seconds": 120,
+    "public_final_submission_link_verified": false
+  },
+  "regression_limit": "Current 294-test attempt: 0 failures, 11 socket-permission errors; not a green full regression run",
+  "pending": [
+    "S127: chosen submission video playback on presentation computer and final public/unlisted viewer link not confirmed"
+  ],
+  "changes": "Evidence only; no product, driver, firmware, wiring or integration changes"
+}

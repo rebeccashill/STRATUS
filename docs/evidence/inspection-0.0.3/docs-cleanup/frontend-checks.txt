@@ -1,0 +1,128 @@
+TAP version 13
+# PASS: proposal review and numerical permission control execution guidance
+# PASS: an exhausted run has a concrete save/review/restart path
+# PASS: actual, cached, local and unavailable Wolfram modes remain distinct
+# PASS: recorded zero, original time and unavailable dash are not conflated
+# PASS: rendering guidance, costs and source labels cannot execute a capture
+# PASS: initial and duplicate mission loads cannot race the saved-run selector
+# Subtest: C:\\Users\\shill\\OneDrive\\Desktop\\STRATUS\\tests\\frontend_clarity.test.cjs
+ok 1 - C:\\Users\\shill\\OneDrive\\Desktop\\STRATUS\\tests\\frontend_clarity.test.cjs
+  ---
+  duration_ms: 1664.829
+  type: 'test'
+  ...
+# Subtest: unverified AI numerical restatements cannot replace energy accounting
+ok 2 - unverified AI numerical restatements cannot replace energy accounting
+  ---
+  duration_ms: 2.139
+  type: 'test'
+  ...
+# Subtest: qualitative AI explanation stays optional and local fallback uses current totals
+ok 3 - qualitative AI explanation stays optional and local fallback uses current totals
+  ---
+  duration_ms: 0.3972
+  type: 'test'
+  ...
+# Subtest: Save selects the newly written fleet instead of an older run
+ok 4 - Save selects the newly written fleet instead of an older run
+  ---
+  duration_ms: 0.2138
+  type: 'test'
+  ...
+# Subtest: refresh retains an explicit saved-run selection and handles an empty list
+ok 5 - refresh retains an explicit saved-run selection and handles an empty list
+  ---
+  duration_ms: 0.3492
+  type: 'test'
+  ...
+# Subtest: timer adapters never receive the fleet object as their native receiver
+ok 6 - timer adapters never receive the fleet object as their native receiver
+  ---
+  duration_ms: 0.8271
+  type: 'test'
+  ...
+# Subtest: paused startup does not send an event request
+ok 7 - paused startup does not send an event request
+  ---
+  duration_ms: 0.5864
+  type: 'test'
+  ...
+# Subtest: pause during in-flight work prevents a later automatic request
+ok 8 - pause during in-flight work prevents a later automatic request
+  ---
+  duration_ms: 0.5836
+  type: 'test'
+  ...
+# Subtest: failed request does not retry on the next timer
+ok 9 - failed request does not retry on the next timer
+  ---
+  duration_ms: 0.3332
+  type: 'test'
+  ...
+# Subtest: a completed fleet does not schedule more events
+ok 10 - a completed fleet does not schedule more events
+  ---
+  duration_ms: 0.7751
+  type: 'test'
+  ...
+# Subtest: one successful bounded tick schedules exactly one successor
+ok 11 - one successful bounded tick schedules exactly one successor
+  ---
+  duration_ms: 1.1932
+  type: 'test'
+  ...
+# Subtest: a post-mission hazard keeps returned drones visible with distinct markers and optional hiding
+ok 12 - a post-mission hazard keeps returned drones visible with distinct markers and optional hiding
+  ---
+  duration_ms: 9.1275
+  type: 'test'
+  ...
+# Subtest: hiding returned markers keeps held and in-mission drones inside a hazard visible
+ok 13 - hiding returned markers keeps held and in-mission drones inside a hazard visible
+  ---
+  duration_ms: 22.6671
+  type: 'test'
+  ...
+# Subtest: a completed record away from launch is kept visible and never labeled returned
+ok 14 - a completed record away from launch is kept visible and never labeled returned
+  ---
+  duration_ms: 2.2936
+  type: 'test'
+  ...
+# Subtest: all 50 fixture records contribute to displayed accounting
+ok 15 - all 50 fixture records contribute to displayed accounting
+  ---
+  duration_ms: 4.0428
+  type: 'test'
+  ...
+# Subtest: missing proposal remains explicit rather than displaying a fresh authorization
+ok 16 - missing proposal remains explicit rather than displaying a fresh authorization
+  ---
+  duration_ms: 0.4905
+  type: 'test'
+  ...
+# Subtest: empty registry does not invent an assessment
+ok 17 - empty registry does not invent an assessment
+  ---
+  duration_ms: 0.3395
+  type: 'test'
+  ...
+# PASS: late evidence responses preserve the newest asset/view, finding and provenance
+# PASS: repeated execution clicks send one request while a workflow mutation is pending
+# PASS: a committed capture opens its returned asset/view instead of the previously selected image
+# PASS: a newly computed next plan needs explicit review before another capture can be sent
+# Subtest: C:\\Users\\shill\\OneDrive\\Desktop\\STRATUS\\tests\\frontend_races.test.cjs
+ok 5 - C:\\Users\\shill\\OneDrive\\Desktop\\STRATUS\\tests\\frontend_races.test.cjs
+  ---
+  duration_ms: 404.8512
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1772.9817

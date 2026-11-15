@@ -55,6 +55,9 @@ unplug-before-rewiring guidance in [HARDWARE_HANDOFF.md](docs/HARDWARE_HANDOFF.m
 One laptop ground node is separate from simulated aircraft. Recorded mode works
 without the USB kit. Do not expose this development HTTP server to the public internet.
 
+For a short judging walkthrough, use [the demo guide](docs/FLEET_DEMO.md).
+It covers the fleet, shared hazard updates, recorded ground readings and reports.
+
 ## Verified results
 
 The frozen product source passed 276 Python tests plus the frontend checks.
@@ -74,11 +77,14 @@ regressions are retained in [the comparison evidence](docs/FLEET_GUIDE.md).
 
 ```powershell
 .\.venv\Scripts\python.exe -B scripts\offline_checks.py
-node --test tests/frontend_hazards.test.cjs tests/frontend_fleet.test.cjs tests/frontend_clarity.test.cjs tests/frontend_races.test.cjs
+node --test tests/frontend_hazards.test.cjs tests/frontend_fleet.test.cjs tests/frontend_fleet_map.test.cjs tests/frontend_clarity.test.cjs tests/frontend_races.test.cjs
 ```
 
 Tests inject service failures and numerical providers unless actual runtime proof
-is explicitly labeled. Local socket checks may require an ordinary host terminal.
+is explicitly labeled. HTTP tests prefer an actual localhost socket. If the host
+denies the connection, they exercise the unchanged app handlers with serialized
+HTTP requests and parsed responses in process. The Python report records which
+transport ran; in-process checks do not establish OS socket connectivity.
 
 - `stratus/inspection/`: operator workflow, fleet engine, dashboard, numerical adapter.
 - `stratus/hazards/`: registry, geometry, lifecycle and real fleet integration.
@@ -88,9 +94,12 @@ is explicitly labeled. Local socket checks may require an ordinary host terminal
 - `docs/evidence/`: retained measurements and verification outputs.
 - `saved-runs/`: starter checkpoints; new runs and streamed samples remain local.
 
-Read [the final freeze](docs/FINAL_FREEZE.md), [operator guide](docs/OPERATOR_GUIDE.md),
-[fleet guide](docs/FLEET_GUIDE.md) and [Part 13 integration](docs/part13/INTEGRATION.md).
-[Build history](docs/BUILD_HISTORY.md) preserves earlier handoffs and their dated limits.
+Read [the verified demonstration and limits](docs/FINAL_FREEZE.md),
+[operator guide](docs/OPERATOR_GUIDE.md), [fleet guide](docs/FLEET_GUIDE.md),
+[planner comparisons](docs/COMPARISON_GUIDE.md),
+[Wolfram setup](docs/WOLFRAM_HANDOFF.md) and
+[fleet/hazard contracts](docs/FLEET_CONTRACT.md).
+The [documentation index](docs/CHECKPOINT.md) maps these guides to retained evidence.
 
 The motivating crane scenario is incident-inspired; the authored grid is not a
 reconstruction of Amazon's flight paths. The source is the

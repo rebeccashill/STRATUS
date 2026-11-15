@@ -3,7 +3,8 @@
 The local Wolfram 15.0.1 kernel is working. The inspection adapter sends a
 validated JSON batch to a fixed Wolfram Language script and independently
 checks every returned cost in Python. Computation itself is read-only.
-This completes W001–W007 using W003's local-adapter option.
+The dashboard supports this adapter alongside explicitly labeled Local Python
+and fallback modes.
 
 ## Run it yourself
 
@@ -32,7 +33,8 @@ To rerun the behavior tests and actual local Wolfram parity checks:
 
 This updates the technical verification files below. It makes no cloud or
 Alpha requests. Tests exercise simulated transitions in memory; no inspection
-run is saved. Saved-run/reload and live vision are still separate pending work.
+run is saved. The current dashboard's save/reopen workflow is documented in
+[the operator guide](OPERATOR_GUIDE.md); image assessments use authored replay.
 
 An explicitly requested ephemeral action can also use the checked adapter:
 
@@ -60,7 +62,7 @@ standard library and needs neither Wolfram nor sensor packages.
 See `docs/evidence/inspection-0.0.1/wolfram/verification.json` and `tests.txt`
 for the exact test count and run time. Actual local evidence is in
 `typed-input.json`, `typed-output.json`, `mission-computation.json` and
-`arithmetic-parity.json`. `resource-access.json` records access and balances.
+`arithmetic-parity.json`.
 
 ## Typed contract and model
 
@@ -120,23 +122,5 @@ The installed runtime is discovered automatically under
 overrides are `STRATUS_WOLFRAMSCRIPT` and `STRATUS_WOLFRAM_KERNEL`.
 The Wolfram adapter does not read `.env` files and requires no API secret.
 
-## Resource/access record
-
-| Pool | Recorded amount | Verification |
-| --- | --- | --- |
-| Cloud Credits | 175,000 | Rebecca confirmed the balance. |
-| Service Credits | 500 | Rebecca confirmed the balance. |
-| Wolfram Alpha API calls | 6,200 reported allocation | Previously reported; current remaining balance/API access not reconfirmed. |
-
-Expiry dates are unknown. The local session reports `$CloudConnected=False`;
-no cloud endpoint was deployed and Alpha API access was not tested. Local
-Wolfram computation is verified independently of those optional services.
-This verification used zero cloud requests and zero Alpha calls. Those
-counts do not establish account-wide credit consumption or an AI entitlement.
-
-## Next implementation step
-
-Use this adapter and its cost/model/mode records in the first saved inspection
-and later what-if UI. Persistence and the ground-context backend/panel remain
-pending. Reference measured ground records with their original provenance;
-keep them separate from simulated position, energy, actions and findings.
+The app uses local computation; no Wolfram Cloud endpoint or Alpha API is
+required. For the current dashboard controls, see [the operator guide](OPERATOR_GUIDE.md).

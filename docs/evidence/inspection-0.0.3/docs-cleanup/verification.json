@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "documentation": {
+    "markdown_files_before": 22,
+    "markdown_files_after": 9,
+    "archived_outside_source": 13,
+    "local_links_checked": 31,
+    "broken_links": 0
+  },
+  "python": {
+    "tests": 300,
+    "passed": true,
+    "failures": 0,
+    "errors": 0,
+    "external_python_network": "denied by audit hook",
+    "scope": "test_*.py",
+    "http_test_transports": {
+      "in_process_http": 41
+    },
+    "http_scope": "Real HTTP serialization, app handlers and response parsing; OS loopback sockets only where permitted"
+  },
+  "frontend": {
+    "passed": true,
+    "tests": 18,
+    "failures": 0,
+    "test_files": 5
+  },
+  "http_fix": {
+    "permission_only_in_process_fallback": true,
+    "existing_http_assertions_preserved": true,
+    "regression_tests": 6,
+    "application_http_handlers_unchanged": true,
+    "socket_connectivity_verified": false
+  },
+  "cli": {
+    "fresh_recorded_run_summary": "passed",
+    "documented_launcher_help": "passed"
+  },
+  "application_source_unchanged": true,
+  "limitations": [
+    "In-process HTTP checks validate request serialization, app handlers and response parsing, not OS loopback connectivity.",
+    "Hardware and live OpenAI/Wolfram availability were not revalidated by this documentation and test-harness change."
+  ]
+}

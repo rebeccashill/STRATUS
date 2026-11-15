@@ -1,0 +1,12 @@
+{
+  "tests": 300,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "external_python_network": "denied by audit hook",
+  "scope": "test_*.py",
+  "http_test_transports": {
+    "in_process_http": 41
+  },
+  "http_scope": "Real HTTP serialization, app handlers and response parsing; OS loopback sockets only where permitted"
+}

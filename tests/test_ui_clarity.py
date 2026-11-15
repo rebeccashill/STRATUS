@@ -14,6 +14,7 @@ from stratus.inspection.dashboard import Dashboard, make_server
 from stratus.inspection.report import build_report, render_html
 from stratus.inspection.review import InspectionSession
 from stratus.inspection.loader import load_mission
+from http_test_support import connection_for
 
 
 class CalculationChoiceTests(unittest.TestCase):
@@ -71,11 +72,11 @@ class CalculationChoiceTests(unittest.TestCase):
         self.assertIs(self.app.calculator,calculator)
         self.assertEqual(self.app.workflow.data,before)
 
-    def test_real_http_choice_uses_same_origin_and_preserves_flight(self):
+    def test_http_choice_uses_same_origin_and_preserves_flight(self):
         server=make_server(self.app,0);thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
         self.addCleanup(server.server_close);self.addCleanup(server.shutdown)
         for origin,expected in ((None,200),('https://foreign.example',403)):
-            connection=http.client.HTTPConnection('127.0.0.1',server.server_port,timeout=5)
+            connection=connection_for(server, timeout=5)
             headers={'Content-Type':'application/json'}
             if origin:headers['Origin']=origin
             connection.request('POST','/api/computation',json.dumps({'mode':'local'}),headers)

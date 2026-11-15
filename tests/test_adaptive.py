@@ -15,6 +15,7 @@ from unittest.mock import patch
 from stratus.inspection.agent import BoundedTools
 from stratus.inspection.computation import CostCalculator, ComputationUnavailable
 from stratus.inspection.dashboard import Dashboard,make_server
+from http_test_support import connection_for
 from stratus.inspection.loader import load_mission
 from stratus.inspection.persistence import digest
 from stratus.inspection.report import build_report,render_html,save_report
@@ -225,7 +226,7 @@ class AdaptiveHttpTests(unittest.TestCase):
         self.addCleanup(self.server.server_close);self.addCleanup(self.server.shutdown)
 
     def request(self,path,data=None,**headers):
-        c=http.client.HTTPConnection('127.0.0.1',self.server.server_port,timeout=4)
+        c=connection_for(self.server, timeout=4)
         try:
             if data is None:c.request('GET',path,headers=headers)
             else:c.request('POST',path,json.dumps(data),{'Content-Type':'application/json',**headers})
@@ -235,7 +236,7 @@ class AdaptiveHttpTests(unittest.TestCase):
     def post(self,path,data):
         status,raw,_=self.request(path,data);self.assertEqual(status,200,raw);return json.loads(raw)
 
-    def test_real_http_feedback_capture_follow_up_report_and_download(self):
+    def test_http_feedback_capture_follow_up_report_and_download(self):
         concern=next(a for a in self.app.session.snapshot()['assessments'] if a['asset_id']=='P03')
         self.post('/api/feedback',dict(assessment_id=concern['assessment_id'],action='accept_concern',request_id='review',review_revision=0))
         p=self.post('/api/plan',dict(asset='P05',view='overview',mode='fallback'))['plan']

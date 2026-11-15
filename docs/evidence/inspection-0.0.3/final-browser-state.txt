@@ -1,0 +1,304 @@
+Browser tab: 13, Title: "STRATUS | Solar Inspection Desk", URL: "http://127.0.0.1:8774/".
+1 AXWebArea STRATUS | Solar Inspection Desk, URL: 127.0.0.1:8774/
+	2 link Description: Skip to next action, Value: 127.0.0.1:8774/#next-decision
+	3 container STRATUS
+		4 container
+			5 text S ↗
+		6 text STRATUS
+		7 link Description: Next inspection decision, Value: 127.0.0.1:8774/#next-decision
+		8 text 0.0.2
+	9 container
+		10 container Inspection mode
+			11 link Description: Single-drone desk, Value: 127.0.0.1:8774/
+			12 text  / 
+			13 link Description: Fleet simulation (2-50 drones), Value: 127.0.0.1:8774/fleet
+		14 text AEVARYN / STRATUS
+		15 heading Solar Inspection Desk, Value: 1
+			16 text Solar Inspection Desk
+		17 text Choose solar-array inspections and follow-up views within a simulated battery and capture budget.
+		495 text Solar array / Saved mission - budgets and review history restored
+		19 text Mission / saved run
+		20 pop up button (collapsed, settable) Mission / saved run, Value: adaptive-94ad6ca1-05b658.json, ID: checkpoint, Secondary Actions: Expand
+			148 menu
+				496 adaptive-17885b96-0f0a2b.json
+				497 adaptive-465640c2-dca87f.json
+				498 adaptive-7f4e6503-1d398e.json
+				499 adaptive-7f4e6503-d60559.json
+				500 adaptive-88b2ed2d-5be68a.json
+				501 (selected) adaptive-94ad6ca1-05b658.json
+				502 adaptive-aa217607-5830a4.json
+				503 adaptive-acceptance-20261114T150055Z-2a179c.json
+				504 adaptive-acceptance-20261114T153227Z-fcd9b8.json
+				505 adaptive-b32b92f8-d81f0d.json
+				506 adaptive-e43ba3f0-cdedd7.json
+				507 adaptive-ecdf0ab0-8b8a28.json
+				508 first-inspection-20261114T131054Z-e8d85e.json
+				509 first-inspection.json
+				510 part6-browser-complete-20261114T155942Z-640e35.json
+				511 part6-browser-partial-20261114T155942Z-640e35.json
+				512 part6-final-20261114T155942Z-640e35.json
+				513 part6-final-20261114T161029Z-77fa65.json
+				514 part6-partial-20261114T155942Z-640e35.json
+				515 part6-partial-20261114T161029Z-77fa65.json
+				516 ui11-browser-final.json
+				517 ui11-start-20261114T191029903238Z.json
+				518 ui11-start-20261114T191420742355Z.json
+				519 Fresh mission
+		21 button Load mission, ID: load
+		22 text Choose Fresh mission to start, or reopen saved work.
+		23 button (collapsed) Run details, Secondary Actions: Expand
+			24 text Run details
+		25 container Inspection steps
+			26 content list
+				27 text 1. Load mission
+				28 text 2. Review next action
+				29 text 3. Run simulation
+				30 text 4. Review image
+				31 text 5. Report & save
+			520 text The captured image is open. Review its quality and any tentative concern before continuing.
+		33 container Simulated mission resources
+			34 container
+				35 text SIMULATED BATTERY
+				521 text 83.82
+				37 text energy units (EU), not a real battery
+			38 container
+				39 text CAPTURES LEFT
+				522 text 2 / 3
+				41 text each new view uses one action
+			42 container
+				43 text RETURN RESERVE
+				523 text 15.00
+				45 text EU kept after the trip back to launch
+			46 container
+				47 text COST CALCULATION
+				524 text Local Python
+				525 text Calculated locally in Python; Wolfram has not run for this result.
+		50 container next-decision
+			51 text YOUR NEXT STEP
+			526 text NEXT INSPECTION
+			53 heading Capture P03/overview, Value: 2, ID: next-title
+				527 text Capture P03/overview
+			528 text This is the highest-priority view that passes the review and budget checks.
+			529 text Choose Review next action to prepare a proposal. Selecting images and previewing budgets never executes it.
+			55 button Review next action, ID: plan-next
+			56 button (disabled) Run simulated inspection, ID: execute-plan
+			530 text Local planning rule; no live AI image assessment.
+			58 button (collapsed) Other planning options, Secondary Actions: Expand
+				59 text Other planning options
+			60 heading Next view versus alternative, Value: 3
+				61 text Next view versus alternative
+			62 text simulated EU
+			63 table
+				64 row
+					65 cell
+						66 text Cost
+					67 cell selected-head
+						531 text P03/overview
+					69 cell alternative-head
+						532 text P05/overview
+				186 container cost-table
+					533 row
+						534 cell
+							535 text Travel to view
+						536 cell
+							537 text 5.00
+						538 cell
+							539 text 5.00
+					540 row
+						541 cell
+							542 text Take image
+						543 cell
+							544 text 5.00
+						545 cell
+							546 text 5.00
+					547 row
+						548 cell
+							549 text Return to launch
+						550 cell
+							551 text 15.81
+						552 cell
+							553 text 14.14
+					554 row
+						555 cell
+							556 text Protected reserve
+						557 cell
+							558 text 15.00
+						559 cell
+							560 text 15.00
+					561 row
+						562 cell
+							563 text Energy after reserve
+						564 cell
+							565 text 43.01
+						566 cell
+							567 text 44.68
+			568 text Next view priority 3. Travel, one image and the return trip fit the battery, leaving 43.01 EU after the protected reserve. Alternative: P05/overview, priority 2.
+			303 container
+				304 button (expanded) How costs are checked, Secondary Actions: Collapse
+					305 text How costs are checked
+				306 text Travel, capture and the return trip must fit the battery while preserving the reserve. Energy after reserve must be zero or greater. No real aircraft endurance is modeled. Calculation method
+				307 pop up button (collapsed, settable) Calculation method, Value: Local Python only, ID: computation-mode, Secondary Actions: Expand
+					308 menu
+						309 Wolfram + Python check
+						310 (selected) Local Python only
+				311 button Recalculate, ID: apply-computation
+				312 text Wolfram runs on this computer. If unavailable, an explicit Python fallback keeps the demo usable. A disagreement blocks execution.
+				569 text {
+  "mode": "local_python",
+  "failure": null,
+  "requests": {
+    "local_kernel_calls": 0,
+    "cloud_requests": 0,
+    "alpha_calls": 0
+  },
+  "model": "toy-euclidean-energy-v1"
+}
+		73 container
+			74 text SITE / SIMULATED POSITION
+			75 heading Array map, Value: 2
+				76 text Array map
+			570 text Position (20, 10) m
+			78 text Select a panel to review its image. Looking at an image spends no battery.
+			79 container Description: Site layout in local metres, ID: map
+				571 image
+					572 text 0
+					573 text 10
+					574 text 20
+					575 text 30
+					576 text 0
+					577 text 10
+					578 text 20
+					579 text Launch / return
+					580 button Select P01: needs review
+						581 text P01
+						582 text PRIORITY 1
+					583 button Select P02: needs review
+						584 text P02
+						585 text PRIORITY 3
+					586 button Select P03: not inspected
+						587 text P03
+						588 text PRIORITY 3
+					589 button Select P04: not inspected
+						590 text P04
+						591 text PRIORITY 2
+					592 button Select P05: not inspected
+						593 text P05
+						594 text PRIORITY 2
+					595 button Select P06: excluded
+						596 text P06 ⊗
+						597 text PRIORITY 1
+					598 text x / m east
+					599 text y / m north
+			80 text Usable image Needs review No new inspection Excluded
+			600 text P03: Not inspected in this run
+			81 text Site-local metres; priorities 1-3. No real flight.
+		82 container image-review
+			83 text IMAGE REVIEW
+			84 heading P03 / overview, Value: 2, ID: evidence-title
+				601 text P03 / overview
+			86 pop up button (collapsed, settable) Description: Evidence view, Value: Overview, ID: view, Secondary Actions: Expand
+				87 menu
+					88 (selected) Overview
+					89 Follow-up
+			90 container
+				91 image Description: P03 overview — self-authored synthetic illustration, ID: evidence-image
+				92 text SYNTHETIC ILLUSTRATION
+			602 text Quality: clear
+			603 text Tentative concern
+			604 text Authored scratch-like mark; tentative review flag only, not a verified defect.
+			605 text Not inspected in this run. This is a read-only reference image; selecting it does not capture it.
+			95 text Annotated replay; live vision has not run. A concern is tentative, not a confirmed fault.
+			96 button (collapsed) Image source & identifiers, Secondary Actions: Expand
+				97 text Image source & identifiers
+		98 container
+			99 text SEPARATE GROUND MEASUREMENTS
+			100 heading Ground conditions, Value: 2
+				101 text Ground conditions
+			606 text Live
+			103 text Reading source
+			104 pop up button (collapsed, settable) Reading source, Value: Live sensors on this computer, ID: ground-mode, Secondary Actions: Expand
+				105 menu
+					106 Recorded measurement
+					107 (selected) Live sensors on this computer
+					108 Synthetic example
+					109 Unavailable
+			110 button Refresh readings, ID: refresh-ground
+			111 button Save measured sample, ID: export-ground
+			607 text Live: actual readings acquired by sensors on this computer. The connection retries automatically after USB is reconnected.
+			261 container sensor-readings
+				608 text Atmosphere / BME280 fresh / 5s old
+				609 text Temperature
+				610 text 21.97
+				611 text °C
+				612 text Humidity
+				613 text 39.30
+				614 text %RH
+				615 text Air pressure
+				616 text 1011.73
+				617 text hPa Acquired UTC: 2026-11-15T04:16:54.432913+00:00 Particulates / PMSA003I fresh / 5s old
+				618 text PM1.0
+				619 text 0.00
+				620 text µg/m³
+				621 text PM2.5
+				622 text 0.00
+				623 text µg/m³
+				624 text PM10
+				625 text 0.00
+				626 text µg/m³ Acquired UTC: 2026-11-15T04:16:54.455228+00:00
+			627 text ground-node-001 / Location not supplied / Unreviewed; calibration and uncertainty not verified.
+			112 text Humidity is water vapor in air; pressure is atmospheric pressure. PM values are particle mass per cubic metre of air for the stated size range. Zero is a valid reading, not clean-air certification. These readings describe the ground node. They do not establish wind, airborne conditions, flight clearance or panel faults. Refreshing never spends mission battery or captures.
+			113 button (collapsed) Connection & original measurement details, Secondary Actions: Expand
+				114 text Connection & original measurement details
+		115 container
+			116 text TRY A BUDGET CHANGE
+			117 heading Budget preview, Value: 2
+				118 text Budget preview
+			119 text Preview only See which views would fit a different budget. This changes no active setting and executes no capture. Return reserve
+			492 text 15
+			121 text EU
+			122 slider (settable, integer) Return reserve EU, Value: 15, ID: preview-reserve
+			123 text Energy kept after the return trip.
+			124 text Energy for one capture
+			493 text 5
+			126 text EU
+			127 slider (settable, integer) Energy for one capture EU, Value: 5, ID: preview-capture
+			128 button Preview budget change, ID: preview
+			129 button Reset preview, ID: reset-preview
+			494 text Preview candidate feasibility without changing the saved mission.
+			131 text Uses the selected Wolfram/Python calculation method. The result states which actually ran.
+		132 container review-queue
+			133 text REVIEW / SAVE YOUR WORK
+			134 heading Needs human review 3, Value: 2
+				135 text Needs human review 
+				628 text 3
+			137 button Save run, ID: save-run
+			138 button Create report, ID: export-report
+			139 text Unresolved means an image or concern still needs attention. Accept for review acknowledges a tentative flag. Resolve task closes that task without changing the image finding. Request another view proposes a distinct follow-up; it does not capture automatically.
+			629 text Calculation method updated. Review the new proposal before executing; battery and captures are unchanged.
+			283 container queue
+				630 button P01 / overview Pending human review · view evidence
+					631 text P01 / overview
+					632 text Pending human review · view evidence
+				633 text pending
+				634 button Resolve task
+				635 button Request another view
+				636 button P02 / overview Unclear image - finding unknown · view evidence
+					637 text P02 / overview
+					638 text Unclear image - finding unknown · view evidence
+				639 text pending
+				640 button Resolve task
+				641 button (disabled) Request another view
+				642 button P02 / follow-up Pending human review · view evidence
+					643 text P02 / follow-up
+					644 text Pending human review · view evidence
+				645 text pending
+				646 button Resolve task
+				647 button (disabled) Request another view
+			141 button (collapsed) Plan & feedback history, Secondary Actions: Expand
+				142 text Plan & feedback history
+			143 button (collapsed) Recent simulated actions, Secondary Actions: Expand
+				144 text Recent simulated actions
+		648 text solar-array-001 · 0.0.1-part2 · adaptive-94ad6ca1-05b658.json
+		146 text Simulated mission / synthetic images / independently labeled ground data
+
+The focused UI element is 110 button Refresh readings, ID: refresh-ground

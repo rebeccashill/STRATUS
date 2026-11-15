@@ -1,0 +1,292 @@
+EE..................................................EEE...........................................E...................................................................................................................................................................................E..............
+======================================================================
+ERROR: test_http_mutations_keep_same_origin_shape_and_stale_guards (test_adaptive.AdaptiveHttpTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_adaptive.py", line 261, in test_http_mutations_keep_same_origin_shape_and_stale_guards
+    self.assertEqual(self.request(path,data)[0],400)
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_adaptive.py", line 231, in request
+    else:c.request('POST',path,json.dumps(data),{'Content-Type':'application/json',**headers})
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1038, in _send_output
+    self.send(msg)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 976, in send
+    self.connect()
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_real_http_feedback_capture_follow_up_report_and_download (test_adaptive.AdaptiveHttpTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_adaptive.py", line 240, in test_real_http_feedback_capture_follow_up_report_and_download
+    self.post('/api/feedback',dict(assessment_id=concern['assessment_id'],action='accept_concern',request_id='review',review_revision=0))
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_adaptive.py", line 236, in post
+    status,raw,_=self.request(path,data);self.assertEqual(status,200,raw);return json.loads(raw)
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_adaptive.py", line 231, in request
+    else:c.request('POST',path,json.dumps(data),{'Content-Type':'application/json',**headers})
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1038, in _send_output
+    self.send(msg)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 976, in send
+    self.connect()
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_http_forbids_foreign_origin_and_host (test_dashboard.DashboardHttpTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 279, in test_http_forbids_foreign_origin_and_host
+    status,_,_ = self.request("/api/preview",{"reserve":15,"capture":5},**headers)
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 256, in request
+    conn.request("POST",path,json.dumps(data),headers)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1038, in _send_output
+    self.send(msg)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 976, in send
+    self.connect()
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_http_preview_refresh_and_export_preserve_state (test_dashboard.DashboardHttpTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 272, in test_http_preview_refresh_and_export_preserve_state
+    status,raw,_ = self.request(path,data); self.assertEqual(status,200)
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 257, in request
+    else: conn.request("GET",path,headers=headers)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1038, in _send_output
+    self.send(msg)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 976, in send
+    self.connect()
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_http_rejects_unknown_operation_extra_fields_bad_units_and_traversal (test_dashboard.DashboardHttpTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 287, in test_http_rejects_unknown_operation_extra_fields_bad_units_and_traversal
+    self.assertIn(self.request(path,data)[0],(400,404))
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 256, in request
+    conn.request("POST",path,json.dumps(data),headers)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1038, in _send_output
+    self.send(msg)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 976, in send
+    self.connect()
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_real_http_serves_one_page_script_style_and_exact_image (test_dashboard.DashboardHttpTests) (path='/')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 264, in test_real_http_serves_one_page_script_style_and_exact_image
+    status,body,headers = self.request(path)
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 257, in request
+    else: conn.request("GET",path,headers=headers)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1038, in _send_output
+    self.send(msg)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 976, in send
+    self.connect()
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_real_http_serves_one_page_script_style_and_exact_image (test_dashboard.DashboardHttpTests) (path='/app.js')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 264, in test_real_http_serves_one_page_script_style_and_exact_image
+    status,body,headers = self.request(path)
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 257, in request
+    else: conn.request("GET",path,headers=headers)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1038, in _send_output
+    self.send(msg)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 976, in send
+    self.connect()
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_real_http_serves_one_page_script_style_and_exact_image (test_dashboard.DashboardHttpTests) (path='/style.css')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 264, in test_real_http_serves_one_page_script_style_and_exact_image
+    status,body,headers = self.request(path)
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 257, in request
+    else: conn.request("GET",path,headers=headers)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1038, in _send_output
+    self.send(msg)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 976, in send
+    self.connect()
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_real_http_serves_one_page_script_style_and_exact_image (test_dashboard.DashboardHttpTests) (path='/image?asset=P03&view=overview')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 264, in test_real_http_serves_one_page_script_style_and_exact_image
+    status,body,headers = self.request(path)
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_dashboard.py", line 257, in request
+    else: conn.request("GET",path,headers=headers)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1038, in _send_output
+    self.send(msg)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 976, in send
+    self.connect()
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_real_HTTP_origin_bounds_static_and_report_download_match (test_fleet_service.FleetServiceTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_fleet_service.py", line 74, in test_real_HTTP_origin_bounds_static_and_report_download_match
+    state=json.loads(request('/api/fleet')[1]);body=dict(action='step',run_id=state['run_id'],state_revision=state['state_revision'])
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_fleet_service.py", line 73, in request
+    c.request('POST' if data is not None else 'GET',path,json.dumps(data) if data is not None else None,headers);r=c.getresponse();body=r.read();status=r.status;c.close();return status,body
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1038, in _send_output
+    self.send(msg)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 976, in send
+    self.connect()
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_real_http_choice_uses_same_origin_and_preserves_flight (test_ui_clarity.CalculationChoiceTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\shill\OneDrive\Desktop\STRATUS\tests\test_ui_clarity.py", line 81, in test_real_http_choice_uses_same_origin_and_preserves_flight
+    connection.request('POST','/api/computation',json.dumps({'mode':'local'}),headers)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1038, in _send_output
+    self.send(msg)
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 976, in send
+    self.connect()
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\shill\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+----------------------------------------------------------------------
+Ran 294 tests in 261.542s
+
+FAILED (errors=11)
+{"tests": 294, "passed": false, "failures": 0, "errors": 11, "external_python_network": "denied by audit hook", "scope": "test_*.py"}

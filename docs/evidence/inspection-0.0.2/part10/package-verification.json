@@ -1,0 +1,271 @@
+{
+  "at_utc": "2026-11-15T03:45:13.255395+00:00",
+  "status": "passed",
+  "published_app_commit": "d5dbcc54e18c14ba87d35a12ed0ff725010d3e9a",
+  "historical_part9_source_identity": "sha256:a2188440b1fe8068410054e5b78f82462a8f8f30f3d6197f38251f6a4141468f",
+  "current_product_identity": "sha256:41b190c364df848c149bbdd6fa365d5f800b9b05a2ef0c1b6265cf0446fbd716",
+  "current_product_sha256": {
+    "pyproject.toml": "49a65fa154baddad3435809ed245adbac2100c94bf0d913dd9c2ad289b34b9df",
+    "stratus/__init__.py": "c539dacd2b2a858ebe7e3255fbf732346f97227a11ebb9a7945202f59c3eaa2f",
+    "stratus/contracts/__init__.py": "8cf6bfabf396d14d363901a85f6bb63cdb357d2d1034b4298edc41d16a9dc443",
+    "stratus/contracts/fleet_v1.py": "2dfa4184fdc5aa291710036e8e1a5254a92d7a0c2dfa763faf9d9affc6e26db4",
+    "stratus/hazards/__init__.py": "e62a519594eacc410faa2b56b219054b8c54772cbd3c842f111d496c3783f81a",
+    "stratus/hazards/bridge.py": "8ba1b6ea775d7f067ac81176ab4c591df95264e243cab5b2bd5a6ab825601b91",
+    "stratus/hazards/core.py": "e43e709402a7e178fcdafc57cb71fbcb428edd460b0b9999908837e2fadd4f55",
+    "stratus/hazards/fixtures.py": "d974f4e5607181e7ded4131564d9f86f9fbf5c1a337ac38adeabdcb9b41e9032",
+    "stratus/hazards/fleet_adapter.py": "3fab893d95ef33b5a4bbcc8ae061a45332e87644d9b6e2518a04a4f45e4cccfd",
+    "stratus/hazards/harness.py": "f902f9e76b2676f09f96053e48aa1b736f44508d66fcc41bc870861279186bc8",
+    "stratus/hazards/integration.py": "487b6ea05b9a0a2dae810f52413fe86af663a99060002f915a3c6c2779c406bf",
+    "stratus/hazards/preview.py": "7688a52fbb23c14920957473d0236320437815e7408ce6b8dc30cd94755ea8fc",
+    "stratus/inspection/__init__.py": "8b16b1f68257f21cc6500b0d7f9e62f2b6499a93c7c2e5687be9ad0567fb54cc",
+    "stratus/inspection/__main__.py": "bc7538e71055f4424bc377e22a34c3cb37806b1ee97f439e2bca772caeef4366",
+    "stratus/inspection/actions.py": "68e281574058097749c25c226223f24ee9ea5c70ab8ff9a49aa9dec1311dccd8",
+    "stratus/inspection/agent.py": "fe8818e93e8951a2ba74f801f307cff712971ca61c8bf3f2227f1ca64f1f176a",
+    "stratus/inspection/capture.py": "b3bc63186abd394d8aa5b0fce97b5e9279f55c2178c11570b71fe87912d3cded",
+    "stratus/inspection/comparison.py": "36ef56c01f601309698dcd5ec9309d59a512fe7798164b986a7b6ae2f817bbae",
+    "stratus/inspection/comparison_checks.py": "fe43e3cfcc4558a0c7e76b5026f3f355f72fc90207cc999b93887250b6dd7c98",
+    "stratus/inspection/comparison_report.py": "6d6923136f14a444d131c5ceb1c8ae098ee0b3be709d0f9b7ca27c4a4c16937a",
+    "stratus/inspection/computation.py": "e741247096bc63195398a853db728c0dde792fd4512592aabc8be5b1e29d6e3c",
+    "stratus/inspection/dashboard.py": "da4d87ad3d2a82f0368746c293b684119276568b60844d13007dba11e9d28db4",
+    "stratus/inspection/engine.py": "9e265c67d88ceace49dbe01f81898c7ba2c4a1cd5f64f82465d490024f52b1da",
+    "stratus/inspection/fleet.py": "213e54a3a724abcdaff0ea3ab4338cc7e85374ec7f65d03368e9b4747b736c7a",
+    "stratus/inspection/fleet_costs.py": "1e24c0e7c76979f27f66c37dab3af3ef144849afd40482337b91d7ba35911909",
+    "stratus/inspection/fleet_report.py": "2c07355d495a8105864ce239f1b356ba692726186392e6848e6859670efbe9ff",
+    "stratus/inspection/fleet_scenario.py": "9c8350d9ac7112052048c550349b4d4e6d4e7cdd15d22241af9b0840d31243ab",
+    "stratus/inspection/fleet_service.py": "33d6fe13a2042728567aeb645ccb940b331a0d6dc21bdedd1c55f044de25e7cf",
+    "stratus/inspection/ground.py": "e844354c0eab193fd772d210f178aff6f5fed9ae0a2168038e9bb71dc37ccf0f",
+    "stratus/inspection/loader.py": "ac5bed83fda08ea703a5d80abc6042e967d9706c7821c7003f80d8fcb3820d3e",
+    "stratus/inspection/missions/solar-array-001.json": "5da1a5d44d51aa1df5ff839894ddeaf9ef21702be8020af2d8e4d26ddc634789",
+    "stratus/inspection/operator.py": "c3c8b5527286469865668c1c48d3c9a4b421f12908c455763f2b3b9233a616b0",
+    "stratus/inspection/persistence.py": "a1cec9cabd9f01216c2c734093adebf59a323f6abc75f6e9b4b056325252f6fe",
+    "stratus/inspection/png.py": "3ed05bd6df86eaf98f0f6c24bb7c386e390f40f92704c0371b628fc9410d5884",
+    "stratus/inspection/report.py": "eba8c98f8a95a806afad3f8fa85b6530a6642ce05845b9dd0b331efc73a22726",
+    "stratus/inspection/review.py": "838ebb2722ae4ef8a191e611b25f50572f8a5078d2fe1ca6123796308de3f11d",
+    "stratus/inspection/sensor_worker.py": "6f0f24bd385a0f46e3a44b7d51b686acc2bbc0933be310d5d4a743de3d8a0aa3",
+    "stratus/inspection/usb_reader.py": "8c2ef81e6ffc93be0f4548d8b0bce75869cb94ccf6a80f735b78eff5e2cf028d",
+    "stratus/inspection/web/app.js": "772f696861e579af351ad13bf7a728071972e3d015928ad9472a67632701c112",
+    "stratus/inspection/web/fleet.css": "e67fe3ce0a53ec5d8a3a6e0a59473a0d05009ba767f8bb8a3efd378085790c29",
+    "stratus/inspection/web/fleet.html": "4f5776f51acf32244de1698b767672d077e2df6f27a2ab4e662653cab33289a6",
+    "stratus/inspection/web/fleet.js": "efa79d54ac3c03be370a8215bbf039dc75c1c814b9fc8fb59628380d9fb35f4e",
+    "stratus/inspection/web/fleet_playback.js": "b03f3c607776c4a320a2ab1ade57bc554bbc87ed55f5b1054dde9ff6328d8ed3",
+    "stratus/inspection/web/hazards.css": "1796ecb7d06d7ff9d7d740689dd6559c9b2992ca0e0e461059e8c448043b0a77",
+    "stratus/inspection/web/hazards.html": "5389675103085dbba38f0bc7d28d86a1c076d73844c93463c18c2bb5d49b657f",
+    "stratus/inspection/web/hazards.js": "82a782d71f0793197bf27c470c27d10d291d68b5bdc718be82a78add72f6cbf7",
+    "stratus/inspection/web/index.html": "1295abfa19fc97cdd32bd6451dd7396272e8645cce53184ef9cce243d0ff9f90",
+    "stratus/inspection/web/style.css": "46ae3144ed34796f92659a8872e7720f1d988efe7f0497a2d7ebba3a75ec45db",
+    "stratus/inspection/wolfram/fleet_costs.wls": "043334ee71f0f394030d1d362da8745a93bbb5156be3b5b94716ef82fb024004",
+    "stratus/inspection/wolfram/inspection_costs.wls": "ace845427dc9ec9c774d71f645d1b8a1b3a3b2e6a1df277eae63a9923c450b9e",
+    "stratus/inspection/workflow.py": "dd0ed5c6dcabbc59625c1a404a4b9f55426e42fdf5163b0fc1782e1e43ae3650"
+  },
+  "changed_since_part9": [
+    "stratus/inspection/web/fleet.css",
+    "stratus/inspection/web/fleet.html",
+    "stratus/inspection/web/fleet.js",
+    "stratus/inspection/web/index.html",
+    "stratus/inspection/web/style.css"
+  ],
+  "python_product_unchanged": true,
+  "original_scenario_inputs_unchanged": true,
+  "files": {
+    "README.md": "902c6691e12f2275f2e6dd531516969a5fdfbe6dcf96a91540cb820462732ebb",
+    "docs/HARDWARE_HANDOFF.md": "f463749f2bc5fc0fb18c8869a05d5b5a82fa39176e824e78b7d8e10f84ebcb4d",
+    "docs/PART10_HANDOFF.md": "7086136e76d02db76e027910a3181b56c3c9fe58428e3e111b742803c75ede9a",
+    "docs/evidence/inspection-0.0.2/part8/comparison-results.json": "30b7484883d0967c34578669e0d7d5c8f0f6efd3899d236b526b2d0a863c8962",
+    "docs/evidence/inspection-0.0.2/part8/comparison-results.csv": "f1e29ac4d610b7ec4d276e72044c440d1b85a593a0dabefdcb1ee27d1053889d",
+    "docs/evidence/inspection-0.0.2/part12/verification.json": "f7698f6fea183766ec9830785f39c820344d96729c6c234618ad89b2283ec6d9",
+    "docs/evidence/inspection-0.0.2/part12/matrix-summary.json": "64b2a988c7cbbedc5019c79b94b0d310cd6e93bac30d2f0909d43faa1bbbb013",
+    "docs/evidence/inspection-0.0.2/part13/verification.json": "a7b28650ae2ac3d974fa2fd211a4c490d6074a4c9c5d70832a06c840db28063f",
+    "docs/evidence/inspection-0.0.2/part13/wolfram-evidence.json": "649194109c36712d92391f96ba55a4d167e412285febf8c1a1ce13df1583f981",
+    "docs/evidence/inspection-0.0.2/part9/FINAL_FREEZE.json": "e6635c13f06f011fb31c653d5a8cbbcc0c001c362c024f05523b416e787464ac",
+    "docs/evidence/inspection-0.0.2/part9/browser-walkthrough.json": "f667b7836454eaf02ee8c0b7a1fadfdc2e058fab829e6f786f2a8c69ee8b7d46",
+    "saved-runs/adaptive-465640c2-dca87f.json": "d62cb943f38eebcb7bc09e98d334e7d5495c6117e4e14a40389796099c2936ac",
+    "saved-runs/fleet/fleet-8b7beb5eb6ae45d897d6de82f47650f1.json": "f482a8061a0c3bec967c3519f270b11240a478835acc854930633ee9cf6f9cea",
+    "context/hardware-status.json": "5dc0676d29982e9504c7d4b54baa4022b121fb56c7ab0f3b0dc428ce15796703",
+    "context/hardware-packages.txt": "9bbc02deae54347cef65f8a7212e7dc8697dcde1b88c20979b1201f8aa8ce738",
+    "context/ground-measurements/observations-20261114.jsonl": "9f20bce90e816431ac48915828abb301fb32174dd6dfa6484cf3d36640922bbc"
+  },
+  "report_checkpoint_checks": [
+    {
+      "case": "part9_hazard_50",
+      "checkpoint": "saved-runs/fleet/fleet-c89be77ba8c8458bba4ce16d49679bbf.json",
+      "report_html": "saved-runs/reports/fleet-c89be77b-20261114T222932296184Z.html",
+      "report_json": "saved-runs/reports/fleet-c89be77b-20261114T222932296184Z.json",
+      "drone_records": 50,
+      "registry_revision": 1,
+      "ground_snapshot_id": "ground-0e4995e32c7f6517e03a15b9030ddacfc27747c4c3e6e1411e73f64a0e7d65a2",
+      "all_checkpoint_fields_equal_report": true,
+      "offline_images_embedded": 2,
+      "checkpoint_checksum_and_loader_validation": "passed"
+    },
+    {
+      "case": "video_hazard_50",
+      "checkpoint": "saved-runs/fleet/fleet-8a74ac5e339e4cd5be482d22e1a78eb4.json",
+      "report_html": "saved-runs/reports/fleet-8a74ac5e-20261115T005613146515Z.html",
+      "report_json": "saved-runs/reports/fleet-8a74ac5e-20261115T005613146515Z.json",
+      "drone_records": 50,
+      "registry_revision": 1,
+      "ground_snapshot_id": "ground-3d45a90e232f0f998bb18a0a31fb3b96fef02eaad6ae48ea51d8824cc5e13e35",
+      "all_checkpoint_fields_equal_report": true,
+      "offline_images_embedded": 2,
+      "checkpoint_checksum_and_loader_validation": "passed"
+    },
+    {
+      "case": "part10_recorded_2",
+      "checkpoint": "saved-runs/fleet/fleet-98456d08a90749958c566a37cd6be7fe.json",
+      "report_html": "saved-runs/reports/fleet-98456d08-20261115T033427620553Z.html",
+      "report_json": "saved-runs/reports/fleet-98456d08-20261115T033427620553Z.json",
+      "drone_records": 2,
+      "registry_revision": 0,
+      "ground_snapshot_id": "ground-53bf45b273725bad17278ef7db814302ae55d9ef10167e9ba69c35cb710e4b33",
+      "all_checkpoint_fields_equal_report": true,
+      "offline_images_embedded": 2,
+      "checkpoint_checksum_and_loader_validation": "passed"
+    }
+  ],
+  "nominal": {
+    "drones": 50,
+    "captures": 150,
+    "every_drone_within_cap_and_reserve": true
+  },
+  "ground": {
+    "snapshot_id": "ground-53bf45b273725bad17278ef7db814302ae55d9ef10167e9ba69c35cb710e4b33",
+    "observations": 6,
+    "all_recorded": true,
+    "raw_source_hashes_match": true,
+    "original_times": [
+      "2026-11-14T11:15:05.460291+00:00",
+      "2026-11-14T11:15:05.460291+00:00",
+      "2026-11-14T11:15:05.460291+00:00",
+      "2026-11-14T11:15:05.183760+00:00",
+      "2026-11-14T11:15:05.183760+00:00",
+      "2026-11-14T11:15:05.183760+00:00"
+    ]
+  },
+  "browser_observations": {
+    "host_url": "http://127.0.0.1:8774/fleet",
+    "new_2_drone_run_paused": true,
+    "recorded_snapshot_attached": true,
+    "unavailable_context_kept_each_battery_100_and_capture_allowance_3": true,
+    "reopen_restored_recorded_ground_times_and_units": true,
+    "portable_report_opened": true,
+    "original_50_drone_run_restored": true,
+    "original_restored_resources": {
+      "captures": 150,
+      "total_battery": 3632.98,
+      "usable": 129,
+      "unresolved": 71
+    }
+  },
+  "video": {
+    "file": "C:\\Users\\shill\\OneDrive\\Desktop\\STRATUS\\.publish\\STRATUS_2min_Demo.mp4",
+    "size_bytes": 6724214,
+    "duration_seconds": 120.0,
+    "video": {
+      "kind": "vide",
+      "width": 1280.0,
+      "height": 720.0,
+      "frames": 1200,
+      "fps": 10.0
+    },
+    "codec": "H.264 / avc1",
+    "audio": "silent",
+    "sha256": "bc1015627f8de682212a3be27c8cabb4f86a56d01600f3cbccba38dac26ca638",
+    "source": "Edited browser captures of the actual STRATUS app; independent nominal and hazard runs",
+    "review": "Beginning, budget, crane impact, baseline, ground context, and closing frames visually checked",
+    "independent_local_decode": {
+      "passed": true,
+      "seconds": [
+        0,
+        35,
+        56,
+        65,
+        83,
+        95,
+        110,
+        119.9
+      ],
+      "dimensions": [
+        [
+          1280,
+          720
+        ],
+        [
+          1280,
+          720
+        ],
+        [
+          1280,
+          720
+        ],
+        [
+          1280,
+          720
+        ],
+        [
+          1280,
+          720
+        ],
+        [
+          1280,
+          720
+        ],
+        [
+          1280,
+          720
+        ],
+        [
+          1280,
+          720
+        ]
+      ],
+      "input": "C:/Users/shill/OneDrive/Desktop/STRATUS/.publish/STRATUS_2min_Demo.mp4",
+      "result_head": "List"
+    },
+    "sampled_frames_visually_checked": true,
+    "uses_live_services_or_usb_for_playback": false,
+    "format": "silent edited app captures; no continuous-screen-recording claim"
+  },
+  "gallery": {
+    "file": "STRATUS_Image_Gallery.zip",
+    "images": 6,
+    "archive_crc": "passed"
+  },
+  "user_confirmation": {
+    "demo_video_finished": true,
+    "live_demo_preparation_finished": true,
+    "basis": "Rebecca explicitly confirmed both in this conversation",
+    "assistant_measured_spoken_rehearsal": false
+  },
+  "external_access": {
+    "repository_visibility": "public; confirmed through GitHub connector",
+    "documentation": "native Google Doc exists; sharing unchanged; public repository README provides basic documentation",
+    "video": "owner-access backup exists; public submission video URL not verified",
+    "actual_submission_form_and_receipt": "0.0.3 work; not submitted"
+  },
+  "limits": [
+    "No new physical sensor acquisition or filmed physical-kit view claimed",
+    "No uninterrupted real-time playback or stopwatch measurement claimed",
+    "Historical full-test counts are not a new full regression run",
+    "No external deployment, public video upload or submission receipt claimed"
+  ],
+  "links": {
+    "doc": "https://docs.google.com/document/d/1VTsmvEPlQLCkvQC-u-jMniFk_A46YAS4cChJtrX7E9A/edit",
+    "repo": "https://github.com/rebeccashill/STRATUS",
+    "event": "https://hackprinceton-fall-26.devpost.com/",
+    "rules": "https://hackprinceton-fall-26.devpost.com/rules"
+  },
+  "notion_handoff": {
+    "0.0.2_status": "Done",
+    "0.0.2_actions": "169/169",
+    "part10_actions": "16/16",
+    "0.0.3": "Ready to start tonight; 0/24 final-verification/submission actions complete",
+    "updates": "Notion content/property updates returned success without warnings"
+  },
+  "google_doc_verification": {
+    "revision": "AHj4eMS7d9iMKSM5_nIPTxPtSMFdz00PhgwW5ZZiPOG4BI4WtrseAOWDuORg42ok9VkgKPNEbA1J7J-DrYw0zSWaSZ80UL-FKmM1U2rDSUU",
+    "tables": 7,
+    "all_16_status_cells_complete": true,
+    "two_minute_pitch_unchanged": true,
+    "first_six_results_hardware_tables_unchanged": true
+  }
+}

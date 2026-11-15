@@ -12,6 +12,7 @@ from stratus.inspection.agent import ServiceError
 from stratus.inspection.dashboard import Dashboard,make_server
 from stratus.inspection.loader import load_mission
 from stratus.inspection.review import InspectionSession
+from http_test_support import connection_for
 
 class FleetServiceTests(unittest.TestCase):
     def setUp(self):
@@ -64,10 +65,10 @@ class FleetServiceTests(unittest.TestCase):
         report=self.command('report')['report'];raw=(self.root/'saved-runs/reports'/report['json']).read_text();state=json.loads(raw)
         self.assertEqual(len(state['drones']),50);self.assertEqual(state['metrics']['drone_participation'],50);self.assertIn('illustration',next(iter(state['evidence'].values())))
         html=(self.root/'saved-runs/reports'/report['html']).read_text();self.assertIn('D050',html);self.assertIn('data:image/png;base64,',html)
-    def test_real_HTTP_origin_bounds_static_and_report_download_match(self):
+    def test_http_origin_bounds_static_and_report_download_match(self):
         server=make_server(self.app,0);threading.Thread(target=server.serve_forever,daemon=True).start();self.addCleanup(server.server_close);self.addCleanup(server.shutdown)
         def request(path,data=None,origin=None):
-            c=http.client.HTTPConnection('127.0.0.1',server.server_port,timeout=10);headers={}
+            c=connection_for(server, timeout=10);headers={}
             if data is not None:headers['Content-Type']='application/json'
             if origin:headers['Origin']=origin
             c.request('POST' if data is not None else 'GET',path,json.dumps(data) if data is not None else None,headers);r=c.getresponse();body=r.read();status=r.status;c.close();return status,body

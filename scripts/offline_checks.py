@@ -31,7 +31,9 @@ def main():
     sys.addaudithook(audit)
     suite=unittest.defaultTestLoader.discover(str(ROOT/'tests'),pattern=args.pattern)
     result=unittest.TextTestRunner(verbosity=1).run(suite)
-    record={'tests':result.testsRun,'passed':result.wasSuccessful(),'failures':len(result.failures),'errors':len(result.errors),'external_python_network':'denied by audit hook','scope':args.pattern}
+    from http_test_support import transport_counts
+    record={'tests':result.testsRun,'passed':result.wasSuccessful(),'failures':len(result.failures),'errors':len(result.errors),'external_python_network':'denied by audit hook','scope':args.pattern,
+            'http_test_transports':transport_counts(),'http_scope':'Real HTTP serialization, app handlers and response parsing; OS loopback sockets only where permitted'}
     if args.output:args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_text(json.dumps(record,indent=2)+'\n')
     print(json.dumps(record));return 0 if result.wasSuccessful() else 1
 if __name__=='__main__':raise SystemExit(main())
